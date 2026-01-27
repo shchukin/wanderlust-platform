@@ -1,0 +1,25 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: var(--sidebar);
+    padding-top: 30px;
+    padding-bottom: 60px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    background-color: #FFFFFF;
+}
+    .sidebar__logo {
+        width: 82px;
+        height: 82px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../images/logo@2x.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+    }

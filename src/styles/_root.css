@@ -6,15 +6,17 @@
     --transition-hover: 100ms ease;
     --transition-show: 1200ms var(--ease-out-quint);
     --image-fallback: #231E3A;
-    --container-padding: 40px;
-    --action-color: #0D7FC5;
-    --action-color-hover: #2FA5ED;
-    --input-border: #B3B3B3;
-    --input-border-hover-and-focus: #7E7E7E;
-    --placeholder-color: #999999;
-    --disabled-background: #F6F6F6;
-    --disabled-color: #999999;
-    --error: #FF0033;
+    /*--container-padding: 40px;*/
+    /*--action-color: #0D7FC5;*/
+    /*--action-color-hover: #2FA5ED;*/
+    /*--input-border: #B3B3B3;*/
+    /*--input-border-hover-and-focus: #7E7E7E;*/
+    /*--placeholder-color: #999999;*/
+    /*--disabled-background: #F6F6F6;*/
+    /*--disabled-color: #999999;*/
+    /*--error: #FF0033;*/
+
+    --sidebar: 300px;
 }
 
 @media (350px <= width < 740px) {

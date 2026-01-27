@@ -1,5 +1,6 @@
 body {
     height: 100%;
+    background-color: #F6F8FA;
     -webkit-font-smoothing: antialiased;
     font-family: var(--font);
     font-size: var(--body-font-size);
