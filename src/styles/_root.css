@@ -1,8 +1,9 @@
 :root {
     --font: "DM Sans", sans-serif;
+    --font-heading: "Poppins";
     --font-icons: "Material Symbols Outlined";
-    --body-font-size: 16px;
-    --body-line-height: 26px;
+    --base-font-size: 15px;
+    --base-line-height: 20px;
     --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
     --transition-hover: 100ms ease;
     --transition-show: 1200ms var(--ease-out-quint);
@@ -11,13 +12,15 @@
 
     --sidebar-widget-width: 222px;
     /*--container-padding: 40px;*/
-    /*--action-color: #0D7FC5;*/
-    /*--action-color-hover: #2FA5ED;*/
+    --action-color: #7035e1;
+    --action-color-hover: #b301fe;
+    --secondary-action: #2d2d2d;
+    --secondary-action-hover: #3f3f3f;
     /*--input-border: #B3B3B3;*/
     /*--input-border-hover-and-focus: #7E7E7E;*/
     /*--placeholder-color: #999999;*/
-    /*--disabled-background: #F6F6F6;*/
-    /*--disabled-color: #999999;*/
+    --disabled-background: #dadee4;
+    --disabled-color: #76839c;
     /*--error: #FF0033;*/
 
     --sidebar: 300px;
