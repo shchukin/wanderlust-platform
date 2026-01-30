@@ -17,7 +17,6 @@
     .user__handler:hover {
         background-color: var(--hover-over-body);
     }
-
         .user__preview {
             display: block;
             padding: 2px;
@@ -50,6 +49,32 @@
 
         .user--expanded .user__handler::after {
             transform: scaleY(-100%);
+        }
+
+    .user__edit {
+        position: absolute;
+        left: 24px;
+        top: -11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 4px solid transparent;
+        background-clip: padding-box;
+        background-color: blue;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: transform 400ms var(--ease-out-quint);
+    }
+
+    .user__edit:hover {
+        transform: scale(120%);
+    }
+        .user__edit .icon {
+            font-size: 11px;
+            line-height: 11px;
+            color: #ffffff;
         }
 
     .user__dropdown {

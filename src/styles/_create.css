@@ -8,6 +8,11 @@
             box-shadow: var(--shadow);
         }
 
+        .create--expanded .create__handler .button {
+            background-color: var(--blue-hover);
+            box-shadow: none;
+        }
+
     .create__dropdown {
         position: absolute;
         z-index: 100;

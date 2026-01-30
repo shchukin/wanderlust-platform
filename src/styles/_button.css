@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 14px;
     width: fit-content;
     border: none;
     padding: 12px 24px;
@@ -40,6 +40,8 @@
     cursor: default;
 }
     .button .icon {
+        margin-left: -6px;
+        margin-right: -6px;
         font-size: 18px;
         line-height: 20px;
     }
