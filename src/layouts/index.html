@@ -174,83 +174,90 @@
         </button>
         <header class="header">
             <div class="header__search">
+                <div class="search">
+                    <input class="search__input" type="text">
+                    <div class="search__filter">
 
+                    </div>
+                </div>
             </div>
-            <a class="header__action" href="#">
-                <i class="icon">mail</i>
-                <div class="header__action-counter">
-                    <div class="counter counter--bubble">2</div>
+            <div class="header__operations">
+                <a class="header__action" href="#">
+                    <i class="icon">mail</i>
+                    <div class="header__action-counter">
+                        <div class="counter counter--bubble">2</div>
+                    </div>
+                </a>
+                <a class="header__action" href="#">
+                    <i class="icon">notifications_active</i>
+                    <div class="header__action-counter">
+                        <div class="counter counter--bubble counter--pink">999</div>
+                    </div>
+                </a>
+                <div class="header__new-project">
+                    <div class="create">
+                        <div class="create__handler">
+                            <button class="button" type="button">
+                                <i class="icon">add</i>
+                                New Project
+                            </button>
+                        </div>
+                        <div class="create__dropdown">
+                            <div class="create__variants">
+                                <a class="button" href="#">
+                                    <i class="icon">diamond_shine</i>
+                                    PRO Project
+                                </a>
+                                <a class="button" href="#">
+                                    <i class="icon">star</i>
+                                    PRO Project
+                                </a>
+                            </div>
+                            <div class="create__close">
+                                <button class="button button--smaller button--black" type="button">
+                                    <i class="icon">close</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </a>
-            <a class="header__action" href="#">
-                <i class="icon">notifications_active</i>
-                <div class="header__action-counter">
-                    <div class="counter counter--bubble counter--pink">999</div>
-                </div>
-            </a>
-            <div class="header__new-project">
-                <div class="create">
-                    <div class="create__handler">
-                        <button class="button" type="button">
-                            <i class="icon">add</i>
-                            New Project
+                <div class="header__user">
+                    <div class="user">
+                        <button class="user__handler" type="button">
+                            <span class="user__preview">
+                                <img class="user__photo"
+                                     srcset="../temp/user/user@2x.jpg 2x"
+                                     src="../temp/user/user@1x.jpg"
+                                     width="40"
+                                     height="40"
+                                     alt=""
+                                >
+                            </span>
+                            <span class="user__name">
+                                Client Name
+                            </span>
                         </button>
-                    </div>
-                    <div class="create__dropdown">
-                        <div class="create__variants">
-                            <a class="button" href="#">
-                                <i class="icon">diamond_shine</i>
-                                PRO Project
+                        <button class="user__edit" type="button">
+                            <i class="icon">edit</i>
+                        </button>
+                        <div class="user__dropdown">
+                            <a class="user__action user__action--current" href="#">
+                                <i class="icon">settings</i>
+                                Manage Account
                             </a>
-                            <a class="button" href="#">
-                                <i class="icon">star</i>
-                                PRO Project
+                            <a class="user__action" href="#">
+                                <i class="icon">savings</i>
+                                WanderCoins
                             </a>
-                        </div>
-                        <div class="create__close">
-                            <button class="button button--smaller button--black" type="button">
-                                <i class="icon">close</i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header__user">
-                <div class="user">
-                    <button class="user__handler" type="button">
-                        <span class="user__preview">
-                            <img class="user__photo"
-                                 srcset="../temp/user/user@2x.jpg 2x"
-                                 src="../temp/user/user@1x.jpg"
-                                 width="40"
-                                 height="40"
-                                 alt=""
-                            >
-                        </span>
-                        <span class="user__name">
-                            Client Name
-                        </span>
-                    </button>
-                    <button class="user__edit" type="button">
-                        <i class="icon">edit</i>
-                    </button>
-                    <div class="user__dropdown">
-                        <a class="user__action user__action--current" href="#">
-                            <i class="icon">settings</i>
-                            Manage Account
-                        </a>
-                        <a class="user__action" href="#">
-                            <i class="icon">savings</i>
-                            WanderCoins
-                        </a>
-                        <a class="user__action" href="#">
-                            <i class="icon">logout</i>
-                            Logout
-                        </a>
-                        <div class="user__close">
-                            <button class="button button--smaller button--black" type="button">
-                                <i class="icon">close</i>
-                            </button>
+                            <a class="user__action" href="#">
+                                <i class="icon">logout</i>
+                                Logout
+                            </a>
+                            <div class="user__close">
+                                <button class="button button--smaller button--black" type="button">
+                                    <i class="icon">close</i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

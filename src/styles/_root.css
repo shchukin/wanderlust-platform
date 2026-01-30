@@ -17,10 +17,10 @@
     --black-hover: #3f3f3f;
     --hover-over-white: #f9fafb; /* matching with body background */
     --hover-over-body: #fbe8f3; /* matching with body background */
-    /*--input-border: #B3B3B3;*/
-    /*--input-border-hover-and-focus: #7E7E7E;*/
-    /*--placeholder-color: #999999;*/
-    --disabled-background: #dadee4;
+    --input-border: #d5d5d5;
+    --input-border-hover-and-focus: var(--blue);
+    --placeholder-color: #999999;
+    --disabled-background: #76839c;
     --disabled-color: #76839c;
     /*--error: #FF0033;*/
 

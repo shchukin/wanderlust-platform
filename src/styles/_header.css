@@ -1,51 +1,59 @@
 .header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100px;
-    justify-content: flex-end;
     border-left: var(--container-padding) solid transparent;
     border-right: var(--container-padding) solid transparent;
 }
-    .header__search {
-
+    .header::before {
+        content: ""; /* pusher */
     }
 
-    .header__action {
-        position: relative;
+    .header__search {
+        width: 584px;
+    }
+
+    .header__operations {
         display: flex;
         align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        text-decoration: none;
-        color: inherit;
     }
-        .header__action::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            border-radius: 50%;
-        }
-
-        .header__action:hover::before {
-            background-color: var(--hover-over-body);
-        }
-
-        .header__action .icon {
+        .header__action {
             position: relative;
-            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            text-decoration: none;
+            color: inherit;
+        }
+            .header__action::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                border-radius: 50%;
+            }
+
+            .header__action:hover::before {
+                background-color: var(--hover-over-body);
+            }
+
+            .header__action .icon {
+                position: relative;
+                font-size: 22px;
+            }
+
+            .header__action-counter {
+                position: absolute;
+                left: calc(50% + 3px);
+                top: -4px;
+            }
+
+        .header__new-project {
+            margin-left: 16px;
         }
 
-        .header__action-counter {
-            position: absolute;
-            left: calc(50% + 3px);
-            top: -4px;
+        .header__user {
+            margin-left: 24px;
         }
-
-    .header__new-project {
-        margin-left: 16px;
-    }
-
-    .header__user {
-        margin-left: 24px;
-    }
