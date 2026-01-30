@@ -81,50 +81,9 @@
         position: absolute;
         right: 0;
         top: calc(100% + 8px);
-        padding-top: 13px;
-        padding-bottom: 13px;
-        border: 1px solid #d5d5d5;
-        background-color: #ffffff;
-        box-shadow: var(--shadow);
-        border-radius: 15px;
         display: none;
     }
 
     .user--expanded .user__dropdown {
         display: block;
     }
-        .user__action {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 7px 24px 7px 16px;
-            font-size: 15px;
-            line-height: 20px;
-            color: #76839c;
-            text-decoration: none;
-            white-space: nowrap;
-        }
-
-        .user__action:hover {
-            background-color: var(--hover-over-white);
-        }
-
-        .user__action--current {
-            color: var(--blue);
-        }
-
-            .user__action .icon {
-                flex-shrink: 0;
-                font-size: 18px;
-                line-height: 18px;
-            }
-
-        .user__close {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: calc(100% + 5px);
-            margin-left: auto;
-            margin-right: auto;
-            width: fit-content;
-        }

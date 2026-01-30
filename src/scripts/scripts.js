@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        if (event.target.closest('.user__close .button')) {
+        if (event.target.closest('.menu__close .button')) {
             event.preventDefault();
             event.target.closest('.user').classList.remove('user--expanded');
             return;
