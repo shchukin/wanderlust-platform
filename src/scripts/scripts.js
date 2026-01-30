@@ -28,16 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         /* Close by clicking outside */
         if (!event.target.closest('.nav__sub-menu')) {
-            const expandedSection = document.querySelector('.nav__section--expanded');
-            expandedSection?.classList.remove('nav__section--expanded');
+            const $navSections = document.querySelector('.nav__section--expanded');
+            $navSections?.classList.remove('nav__section--expanded');
         }
     });
 
     /* Close by Esc */
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
-            const expandedSections = document.querySelectorAll('.nav__section--expanded');
-            expandedSections.forEach((section) => {
+            const $navSections = document.querySelectorAll('.nav__section--expanded');
+            $navSections.forEach((section) => {
                 section.classList.remove('nav__section--expanded');
             });
         }
