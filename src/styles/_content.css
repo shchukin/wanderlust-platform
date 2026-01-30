@@ -1,3 +1,4 @@
 .content {
     margin-left: var(--sidebar-outer-width);
+    transition: margin var(--transition-sidebar);
 }

@@ -7,6 +7,7 @@
     --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
     --transition-hover: 100ms ease;
     --transition-show: 1200ms var(--ease-out-quint);
+    --transition-sidebar: 500ms var(--ease-out-quint);
     --image-fallback: #231e3a;
 
     --blue: #670aea;
@@ -26,14 +27,30 @@
 
     --shadow: 0 0 7px rgb(0 0 0 / 14%);
 
-
+    --header-height: 126px;
     --sidebar-outer-width: 114px;
     --sidebar-inner-width: 36px;
-    --container-padding: 24px;
+    --container-padding: 32px;
 }
-
 
 .sidebar-expanded {
     --sidebar-outer-width: 300px;
     --sidebar-inner-width: 222px;
+}
+
+
+
+@media (width < 1500px) {
+
+    :root {
+        --header-height: 96px;
+        --sidebar-outer-width: 114px;
+        --sidebar-inner-width: 36px;
+        --container-padding: 24px;
+    }
+
+    .sidebar-expanded {
+        --sidebar-outer-width: 260px;
+        --sidebar-inner-width: 210px;
+    }
 }

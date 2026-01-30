@@ -41,6 +41,7 @@
             }
 
             .nav__link .icon {
+                margin-left: -2px;
                 font-size: 18px;
             }
 
@@ -159,19 +160,22 @@
                 color: var(--blue);
             }
 
-            .sidebar-expanded .nav__section:has(.nav__sub-menu) > .nav__link > .nav__container::after {
-                content: "keyboard_arrow_down";
-                position: absolute;
-                right: 0;
-                top: 11px;
-                font-family: var(--font-icons);
-                font-size: 18px;
-                line-height: 18px;
+            .sidebar-expanded .nav__section:has(.nav__sub-menu) > .nav__link > .nav__container {
+                padding-right: 16px;
             }
+                .sidebar-expanded .nav__section:has(.nav__sub-menu) > .nav__link > .nav__container::after {
+                    content: "keyboard_arrow_down";
+                    position: absolute;
+                    right: -4px;
+                    top: 11px;
+                    font-family: var(--font-icons);
+                    font-size: 18px;
+                    line-height: 18px;
+                }
 
-            .sidebar-expanded .nav__section:has(.nav__sub-menu):has(.nav__link--current) > .nav__link > .nav__container::after {
-                transform: scaleY(-100%);
-            }
+                .sidebar-expanded .nav__section:has(.nav__sub-menu):has(.nav__link--current) > .nav__link > .nav__container::after {
+                    transform: scaleY(-100%);
+                }
 
 
         .sidebar-expanded .nav__more {

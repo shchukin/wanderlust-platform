@@ -1,14 +1,16 @@
 .header {
     margin-left: var(--sidebar-outer-width);
+    transition: margin var(--transition-sidebar);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+    height: var(--header-height);
     border-left: var(--container-padding) solid transparent;
     border-right: var(--container-padding) solid transparent;
 }
     .header::before {
-        content: "";
+        content: ""; /* pusher */
+        height: 100%;
     }
 
     .header__search {

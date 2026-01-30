@@ -4,6 +4,7 @@
     top: 0;
     bottom: 0;
     width: var(--sidebar-outer-width);
+    transition: width var(--transition-sidebar);
     padding-top: 30px;
     padding-bottom: 60px;
     background-color: #ffffff;
