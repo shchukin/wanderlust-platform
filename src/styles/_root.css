@@ -10,6 +10,7 @@
     --transition-sidebar: 500ms var(--ease-out-quint);
     --image-fallback: #231e3a;
 
+    --background: #f6f8fa;
     --blue: #670aea;
     --blue-hover: #813ae5;
     --pink: #f2289f;

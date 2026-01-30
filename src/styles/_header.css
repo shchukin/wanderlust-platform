@@ -1,12 +1,16 @@
 .header {
-    margin-left: var(--sidebar-outer-width);
-    transition: margin var(--transition-sidebar);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: var(--sidebar-outer-width);
+    transition: left var(--transition-sidebar);
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: var(--header-height);
     border-left: var(--container-padding) solid transparent;
     border-right: var(--container-padding) solid transparent;
+    background-color: var(--background);
 }
     .header::before {
         content: ""; /* pusher */
