@@ -32,9 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         /* Close by clicking outside */
         if (!event.target.closest('.nav__sub-menu')) {
             const expandedSection = document.querySelector('.nav__section--expanded');
-            if (expandedSection) {
-                expandedSection.classList.remove('nav__section--expanded');
-            }
+            expandedSection?.classList.remove('nav__section--expanded');
         }
     });
 
@@ -49,35 +47,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-
     /* Toggle create dropdown ("New Project" in the header) */
 
     document.addEventListener('click', (event) => {
 
         if (event.target.closest('.create__handler .button')) {
             event.preventDefault();
-            const createBlock = event.target.closest('.create');
-            if (createBlock) {
-                createBlock.classList.toggle('create--expanded');
-            }
+            const createBlock = event.target.closest('.create').classList.toggle('create--expanded');
             return;
         }
 
         if (event.target.closest('.create__close .button')) {
             event.preventDefault();
-            const createBlock = event.target.closest('.create');
-            if (createBlock) {
-                createBlock.classList.remove('create--expanded');
-            }
+            const createBlock = event.target.closest('.create').classList.remove('create--expanded');
             return;
         }
 
         /* Close by clicking outside */
         if (!event.target.closest('.create')) {
             const expandedCreate = document.querySelector('.create--expanded');
-            if (expandedCreate) {
-                expandedCreate.classList.remove('create--expanded');
-            }
+            expandedCreate?.classList.remove('create--expanded');
         }
     });
 
