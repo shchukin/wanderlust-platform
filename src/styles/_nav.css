@@ -31,11 +31,16 @@
                 color: #2d2d2d;
             }
 
-            .nav__link--current .nav__container {
+
+            .nav__link--current .nav__container,
+            .nav__section:has(.nav__link--current) > .nav__link .nav__container /* if current item is in sub-menu */
+            {
                 background-color: var(--action-color);
                 box-shadow: none;
                 color: #ffffff;
             }
+
+
 
 
             .nav__link .icon {
@@ -117,91 +122,90 @@
 
 
 
-.sidebar-expanded {
+.sidebar-expanded .nav {
 
-    .nav {
+}
+    .sidebar-expanded .nav__section {
 
     }
-        .nav__section {
-
+        .sidebar-expanded .nav__link {
+            padding-top: 0;
+            padding-bottom: 0;
         }
-            .nav__link {
-                padding-top: 0;
-                padding-bottom: 0;
+
+        .sidebar-expanded .nav__link:hover {
+            background-color: var(--transparent-action-hover);
+        }
+            .sidebar-expanded .nav__container {
+                box-shadow: none;
+                border-radius: 0;
+                justify-content: flex-start;
+                height: auto;
+                gap: 10px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                background-color: transparent;
             }
 
-            .nav__link:hover {
-                background-color: var(--transparent-action-hover);
-            }
-                .nav__container {
-                    box-shadow: none;
-                    border-radius: 0;
-                    justify-content: flex-start;
-                    height: auto;
-                    gap: 10px;
-                    padding-top: 8px;
-                    padding-bottom: 8px;
-                    background-color: transparent;
-                }
+            .sidebar-expanded .nav__link .icon {
 
-                .nav__link .icon {
-
-                }
-
-                .nav__label {
-                    display: block;
-                }
-
-                .nav__link--current .nav__container {
-                    background-color: transparent;
-                    color: var(--action-color);
-                }
-
-                .nav__section:has(.nav__sub-menu) > .nav__link > .nav__container::after {
-                    content: "keyboard_arrow_down";
-                    position: absolute;
-                    right: 0;
-                    top: 11px;
-                    font-family: var(--font-icons);
-                    font-size: 18px;
-                    line-height: 18px;
-                }
-
-                .nav__section:has(.nav__sub-menu):has(.nav__link--current) > .nav__link > .nav__container::after {
-                    transform: scaleY(-100%);
-                }
-
-
-            .nav__more {
-                display: none !important;
             }
 
-            .nav__sub-menu {
-                display: none;
-                position: static;
-            }
-
-            .nav__section:has(.nav__link--current) .nav__sub-menu {
+            .sidebar-expanded .nav__label {
                 display: block;
             }
 
-                .nav__sub-menu .nav__link {
+            .sidebar-expanded .nav__link--current .nav__container,
+            .sidebar-expanded .nav__section:has(.nav__link--current) > .nav__link .nav__container /* if current item is in sub-menu */
+            {
+                background-color: transparent;
+                color: var(--action-color);
+            }
 
+            .sidebar-expanded .nav__section:has(.nav__sub-menu) > .nav__link > .nav__container::after {
+                content: "keyboard_arrow_down";
+                position: absolute;
+                right: 0;
+                top: 11px;
+                font-family: var(--font-icons);
+                font-size: 18px;
+                line-height: 18px;
+            }
+
+            .sidebar-expanded .nav__section:has(.nav__sub-menu):has(.nav__link--current) > .nav__link > .nav__container::after {
+                transform: scaleY(-100%);
+            }
+
+
+        .sidebar-expanded .nav__more {
+            display: none !important;
+        }
+
+        .sidebar-expanded .nav__sub-menu {
+            display: none;
+            position: static;
+        }
+
+        .sidebar-expanded .nav__section:has(.nav__link--current) .nav__sub-menu {
+            display: block;
+        }
+
+            .sidebar-expanded .nav__sub-menu .nav__link {
+
+            }
+                .sidebar-expanded .nav__sub-menu .nav__container {
+                    padding-left: 26px;
+                    gap: 8px;
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                    background-image: linear-gradient(to right, transparent, transparent 8px, #d5d5d5 8px, #d5d5d5 9px, transparent 6px, transparent);
+                    font-size: 15px;
+                    line-height: 22px;
                 }
-                    .nav__sub-menu .nav__container {
-                        padding-left: 26px;
-                        gap: 8px;
-                        padding-top: 6px;
-                        padding-bottom: 6px;
-                        background-image: linear-gradient(to right, transparent, transparent 8px, #d5d5d5 8px, #d5d5d5 9px, transparent 6px, transparent);
-                        font-size: 15px;
-                        line-height: 22px;
-                    }
 
-                    .nav__sub-menu .nav__link:hover .nav__container {
-                        background-color: transparent;
-                    }
-}
+                .sidebar-expanded .nav__sub-menu .nav__link:hover .nav__container {
+                    background-color: transparent;
+                }
 
 
 

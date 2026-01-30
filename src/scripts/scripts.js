@@ -19,11 +19,29 @@ document.addEventListener('DOMContentLoaded', () => {
     /* toggle nav sub-menu (collapsed sidebar only)*/
 
     document.addEventListener('click', (event) => {
-        if (!event.target.closest('.nav__more')) return;
-        event.preventDefault();
-        const navSection = event.target.closest('.nav__section');
-        if (navSection) {
-            navSection.classList.toggle('nav__section--expanded');
+        if (event.target.closest('.nav__more')) {
+            event.preventDefault();
+            const navSection = event.target.closest('.nav__section');
+            if (navSection) {
+                navSection.classList.toggle('nav__section--expanded');
+            }
+            return;
+        }
+
+        if (!event.target.closest('.nav__sub-menu')) {
+            const expandedSection = document.querySelector('.nav__section--expanded');
+            if (expandedSection) {
+                expandedSection.classList.remove('nav__section--expanded');
+            }
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            const expandedSections = document.querySelectorAll('.nav__section--expanded');
+            expandedSections.forEach((section) => {
+                section.classList.remove('nav__section--expanded');
+            });
         }
     });
 });
