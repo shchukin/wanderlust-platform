@@ -47,4 +47,46 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+
+
+    /* Toggle create dropdown */
+
+    document.addEventListener('click', (event) => {
+
+        if (event.target.closest('.create__handler .button')) {
+            event.preventDefault();
+            const createBlock = event.target.closest('.create');
+            if (createBlock) {
+                createBlock.classList.toggle('create--expanded');
+            }
+            return;
+        }
+
+        if (event.target.closest('.create__close .button')) {
+            event.preventDefault();
+            const createBlock = event.target.closest('.create');
+            if (createBlock) {
+                createBlock.classList.remove('create--expanded');
+            }
+            return;
+        }
+
+        /* Close by clicking outside */
+        if (!event.target.closest('.create')) {
+            const expandedCreate = document.querySelector('.create--expanded');
+            if (expandedCreate) {
+                expandedCreate.classList.remove('create--expanded');
+            }
+        }
+    });
+
+    /* Close by Esc */
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            const expandedCreates = document.querySelectorAll('.create--expanded');
+            expandedCreates.forEach((create) => {
+                create.classList.remove('create--expanded');
+            });
+        }
+    });
 });
