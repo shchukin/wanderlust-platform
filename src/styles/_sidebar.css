@@ -54,3 +54,42 @@
         margin-right: auto;
         width: var(--sidebar-inner-width);
     }
+
+
+
+@media (width < 1500px) {
+
+    .sidebar {
+
+    }
+        .sidebar__logo {
+            width: 52px;
+            height: 52px;
+        }
+
+        .sidebar__nav {
+
+        }
+
+        .sidebar__info {
+
+        }
+
+
+
+
+    .sidebar-expanded .sidebar {
+
+    }
+        .sidebar-expanded .sidebar__logo {
+
+        }
+
+        .sidebar__nav {
+
+        }
+
+        .sidebar-expanded .sidebar__info {
+
+        }
+}

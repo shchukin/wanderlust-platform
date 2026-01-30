@@ -61,3 +61,10 @@
         .header__user {
             margin-left: 24px;
         }
+
+
+@media (width < 1500px) {
+    .header__search {
+        width: 440px;
+    }
+}

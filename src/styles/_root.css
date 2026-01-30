@@ -44,7 +44,7 @@
 
     :root {
         --header-height: 96px;
-        --sidebar-outer-width: 114px;
+        --sidebar-outer-width: 92px;
         --sidebar-inner-width: 36px;
         --container-padding: 24px;
     }

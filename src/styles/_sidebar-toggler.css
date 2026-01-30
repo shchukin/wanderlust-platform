@@ -1,6 +1,7 @@
 .sidebar-toggler {
     position: fixed;
     left: var(--sidebar-outer-width);
+    transition: left var(--transition-sidebar);
     transform: translateX(-50%);
     top: 33px;
     padding: 16px;
@@ -42,4 +43,11 @@
 
 .sidebar-expanded .sidebar-toggler {
     top: 42px;
+}
+
+
+@media (width < 1500px) {
+    .sidebar-toggler {
+        top: 27px;
+    }
 }
