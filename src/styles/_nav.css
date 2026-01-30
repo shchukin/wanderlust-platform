@@ -35,6 +35,10 @@
                 font-size: 18px;
             }
 
+            .nav__label {
+                display: none;
+            }
+
             .nav__link--current .nav__container {
                 color: var(--action-color);
             }
@@ -98,6 +102,10 @@
 
             .sidebar-expanded .nav__link .icon {
                 /*font-size: 18px;*/
+            }
+
+            .sidebar-expanded .nav__label {
+                display: block;
             }
 
             .sidebar-expanded .nav__link--current .nav__container {
