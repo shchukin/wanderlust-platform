@@ -61,7 +61,7 @@
 
 .choice__widget:checked ~ .choice__icon {
     transition: none;
-    background-color: var(--action-color);
+    background-color: var(--blue);
     border-color: transparent;
 }
 
@@ -69,8 +69,8 @@
 /* Checked & Hovered */
 
 .choice__widget:checked ~ .choice__label:hover ~ .choice__icon {
-    background-color: var(--action-color-hover);
-    border-color: var(--action-color-hover);
+    background-color: var(--blue-hover);
+    border-color: var(--blue-hover);
 }
 
 .choice__widget[type="radio"]:checked ~ .choice__label {
@@ -78,7 +78,7 @@
 }
 
 .choice__widget[type="radio"]:checked ~ .choice__label:hover ~ .choice__icon {
-    background-color: var(--action-color); /* checked radio button can’t be hovered, so taket the original color back */
+    background-color: var(--blue); /* checked radio button can’t be hovered, so taket the original color back */
     border-color: transparent; /* checked radio button can’t be hovered, so taket the original color back */
 }
 

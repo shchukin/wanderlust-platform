@@ -35,7 +35,7 @@
             .nav__link--current .nav__container,
             .nav__section:has(.nav__link--current) > .nav__link .nav__container /* if current item is deeper in the sub-menu we still need to color parental item (this is especially needed on smartphones) */
             {
-                background-color: var(--action-color);
+                background-color: var(--blue);
                 box-shadow: none;
                 color: #ffffff;
             }
@@ -156,7 +156,7 @@
             .sidebar-expanded .nav__section:has(.nav__link--current) > .nav__link .nav__container /* if current item is deeper in the sub-menu we still need to color parental item (this is especially needed on smartphones) */
             {
                 background-color: transparent;
-                color: var(--action-color);
+                color: var(--blue);
             }
 
             .sidebar-expanded .nav__section:has(.nav__sub-menu) > .nav__link > .nav__container::after {

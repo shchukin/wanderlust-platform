@@ -10,10 +10,12 @@
     --image-fallback: #231e3a;
 
     /*--container-padding: 40px;*/
-    --action-color: #6f35e1;
-    --action-color-hover: #b301fe;
-    --secondary-action: #2d2d2d;
-    --secondary-action-hover: #3f3f3f;
+    --blue: #6f35e1;
+    --blue-hover: #b301fe;
+    --pink: #f2289f;
+    --pink-hover: #ef5db3;
+    --black: #2d2d2d;
+    --black-hover: #3f3f3f;
     --transparent-action-hover: #f9fafb; /* matching with body background */
     /*--input-border: #B3B3B3;*/
     /*--input-border-hover-and-focus: #7E7E7E;*/
