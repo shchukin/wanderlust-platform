@@ -14,7 +14,7 @@
         }
 
         .nav__link:hover {
-            background-color: var(--nav-hover);
+            background-color: var(--transparent-action-hover);
         }
             .nav__container {
                 position: relative;
