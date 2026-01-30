@@ -5,12 +5,19 @@
         display: flex;
         align-items: center;
         border: none;
-        padding: 0;
+        padding: 0 12px 0 0;
+        margin-right: -12px;
         background-color: transparent;
+        border-radius: 22px;
         text-decoration: none;
         color: inherit;
         cursor: pointer;
     }
+
+    .user__handler:hover {
+        background-color: var(--hover-over-body);
+    }
+
         .user__preview {
             display: block;
             padding: 2px;
@@ -39,6 +46,10 @@
             font-family: var(--font-icons);
             font-size: 18px;
             line-height: 18px;
+        }
+
+        .user--expanded .user__handler::after {
+            transform: scaleY(-100%);
         }
 
     .user__dropdown {

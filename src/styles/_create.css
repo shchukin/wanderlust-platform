@@ -21,15 +21,23 @@
         display: block;
     }
 
-        .create__variant {
+        .create__variants {
             margin-bottom: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 5px;
         }
-            .create__variant .button {
+            .create__variants .button {
                 width: 100%;
             }
 
         .create__close {
-            width: fit-content;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: calc(100% + 5px);
             margin-left: auto;
             margin-right: auto;
+            width: fit-content;
         }
