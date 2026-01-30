@@ -1,0 +1,114 @@
+'use strict';
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    /* global consts */
+
+    const $html = document.documentElement;
+
+
+    /* toggle sidebar */
+
+    document.addEventListener('click', (event) => {
+        if (!event.target.closest('.sidebar-toggler')) return;
+        event.preventDefault();
+        $html.classList.toggle('sidebar-expanded');
+    });
+
+
+    /* Toggle nav sub-menu (collapsed sidebar only) */
+
+    document.addEventListener('click', (event) => {
+
+        if (event.target.closest('.nav__more')) {
+            event.preventDefault();
+            event.target.closest('.nav__section').classList.toggle('nav__section--expanded');
+            return;
+        }
+
+        /* Close by clicking outside */
+        if (!event.target.closest('.nav__sub-menu')) {
+            const $navSections = document.querySelector('.nav__section--expanded');
+            $navSections?.classList.remove('nav__section--expanded');
+        }
+    });
+
+    /* Close by Esc */
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            const $navSections = document.querySelectorAll('.nav__section--expanded');
+            $navSections.forEach((section) => {
+                section.classList.remove('nav__section--expanded');
+            });
+        }
+    });
+
+
+
+    /* Toggle New Project dropdown ("New Project" in the header) */
+
+    document.addEventListener('click', (event) => {
+
+        if (event.target.closest('.create__handler .button')) {
+            event.preventDefault();
+            event.target.closest('.create').classList.toggle('create--expanded');
+            return;
+        }
+
+        if (event.target.closest('.create__close .button')) {
+            event.preventDefault();
+            event.target.closest('.create').classList.remove('create--expanded');
+            return;
+        }
+
+        /* Close by clicking outside */
+        if (!event.target.closest('.create')) {
+            const $create = document.querySelector('.create--expanded');
+            $create?.classList.remove('create--expanded');
+        }
+    });
+
+    /* Close by Esc */
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            const $create = document.querySelectorAll('.create--expanded');
+            $create.forEach((create) => {
+                create.classList.remove('create--expanded');
+            });
+        }
+    });
+
+
+    /* Toggle user dropdown */
+
+    document.addEventListener('click', (event) => {
+
+        if (event.target.closest('.user__handler')) {
+            event.preventDefault();
+            event.target.closest('.user').classList.toggle('user--expanded');
+            return;
+        }
+
+        if (event.target.closest('.user__close .button')) {
+            event.preventDefault();
+            event.target.closest('.user').classList.remove('user--expanded');
+            return;
+        }
+
+        /* Close by clicking outside */
+        if (!event.target.closest('.user')) {
+            const $user = document.querySelector('.user--expanded');
+            $user?.classList.remove('user--expanded');
+        }
+    });
+
+    /* Close by Esc */
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            const $user = document.querySelectorAll('.user--expanded');
+            $user.forEach((user) => {
+                user.classList.remove('user--expanded');
+            });
+        }
+    });
+});
