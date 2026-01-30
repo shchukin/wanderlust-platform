@@ -34,16 +34,19 @@
                 color: #2d2d2d;
             }
 
+            .nav__link--current .nav__container {
+                background-color: var(--action-color);
+                box-shadow: none;
+                color: #ffffff;
+            }
+
+
             .nav__link .icon {
                 font-size: 18px;
             }
 
             .nav__label {
                 display: none;
-            }
-
-            .nav__link--current .nav__container {
-                color: var(--action-color);
             }
 
 
@@ -105,7 +108,8 @@
             }
 
             .sidebar-expanded .nav__link--current .nav__container {
-                /*color: var(--action-color);*/
+                background-color: transparent;
+                color: var(--action-color);
             }
 
             .sidebar-expanded .nav__section:has(.nav__sub-menu) > .nav__link > .nav__container::after {
