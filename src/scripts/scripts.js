@@ -16,9 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    /* toggle nav sub-menu (collapsed sidebar only)*/
+    /* Toggle nav sub-menu (collapsed sidebar only) */
 
     document.addEventListener('click', (event) => {
+
         if (event.target.closest('.nav__more')) {
             event.preventDefault();
             const navSection = event.target.closest('.nav__section');
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        /* Close by clicking outside */
         if (!event.target.closest('.nav__sub-menu')) {
             const expandedSection = document.querySelector('.nav__section--expanded');
             if (expandedSection) {
@@ -36,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    /* Close by Esc */
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
             const expandedSections = document.querySelectorAll('.nav__section--expanded');
