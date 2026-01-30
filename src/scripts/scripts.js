@@ -22,10 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (event.target.closest('.nav__more')) {
             event.preventDefault();
-            const navSection = event.target.closest('.nav__section');
-            if (navSection) {
-                navSection.classList.toggle('nav__section--expanded');
-            }
+            event.target.closest('.nav__section').classList.toggle('nav__section--expanded');
             return;
         }
 
