@@ -3,6 +3,8 @@
     align-items: center;
     height: 100px;
     justify-content: flex-end;
+    border-left: var(--container-padding) solid transparent;
+    border-right: var(--container-padding) solid transparent;
 }
     .header__search {
 

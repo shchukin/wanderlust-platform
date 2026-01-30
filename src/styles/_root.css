@@ -9,7 +9,6 @@
     --transition-show: 1200ms var(--ease-out-quint);
     --image-fallback: #231e3a;
 
-    /*--container-padding: 40px;*/
     --blue: #670aea;
     --blue-hover: #813ae5;
     --pink: #f2289f;
@@ -25,9 +24,12 @@
     --disabled-color: #76839c;
     /*--error: #FF0033;*/
 
+    --shadow: 0 0 7px rgb(0 0 0 / 14%);
+
+
     --sidebar-outer-width: 114px;
     --sidebar-inner-width: 36px;
-    --shadow: 0 0 7px rgb(0 0 0 / 14%);
+    --container-padding: 24px;
 }
 
 

@@ -50,13 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (event.target.closest('.create__handler .button')) {
             event.preventDefault();
-            const createBlock = event.target.closest('.create').classList.toggle('create--expanded');
+            event.target.closest('.create').classList.toggle('create--expanded');
             return;
         }
 
         if (event.target.closest('.create__close .button')) {
             event.preventDefault();
-            const createBlock = event.target.closest('.create').classList.remove('create--expanded');
+            event.target.closest('.create').classList.remove('create--expanded');
             return;
         }
 

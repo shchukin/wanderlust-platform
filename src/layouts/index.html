@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="sidebar-expanded" lang="en">
     <head>
         <meta charset="utf-8">
         <title>Wanderlust</title>
@@ -218,7 +218,41 @@
                 </div>
             </div>
             <div class="header__user">
-                User
+                <div class="user">
+                    <button class="user__handler" type="button">
+                        <span class="user__preview">
+                            <img class="user__photo"
+                                 srcset="../temp/user/user@2x.jpg 2x"
+                                 src="../temp/user/user@1x.jpg"
+                                 width="40"
+                                 height="40"
+                                 alt=""
+                            >
+                        </span>
+                        <span class="user__name">
+                            Client Name
+                        </span>
+                    </button>
+                    <div class="user__dropdown">
+                        <a class="user__action user__action--current" href="#">
+                            <i class="icon">settings</i>
+                            Manage Account
+                        </a>
+                        <a class="user__action" href="#">
+                            <i class="icon">savings</i>
+                            WanderCoins
+                        </a>
+                        <a class="user__action" href="#">
+                            <i class="icon">logout</i>
+                            Logout
+                        </a>
+                        <div class="user__close">
+                            <button class="button button--smaller button--black" type="button">
+                                <i class="icon">close</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <div class="container">

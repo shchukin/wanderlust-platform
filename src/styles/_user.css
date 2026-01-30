@@ -1,0 +1,89 @@
+.user {
+    position: relative;
+}
+    .user__handler {
+        display: flex;
+        align-items: center;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+        .user__preview {
+            display: block;
+            padding: 2px;
+            background-color: var(--pink);
+            border-radius: 50%;
+        }
+            .user__photo {
+                vertical-align: top;
+                border-radius: 50%;
+                background-color: var(--image-fallback);
+            }
+
+        .user__name {
+            margin-left: 14px;
+            flex-shrink: 0;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20px;
+            white-space: nowrap;
+        }
+
+        .user__handler::after {
+            content: "keyboard_arrow_down";
+            margin-left: 4px;
+            flex-shrink: 0;
+            font-family: var(--font-icons);
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+    .user__dropdown {
+        position: absolute;
+        right: 0;
+        top: calc(100% + 8px);
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border: 1px solid #d5d5d5;
+        background-color: #FFFFFF;
+        box-shadow: var(--shadow);
+        border-radius: 15px;
+    }
+        .user__action {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 16px;
+            font-size: 15px;
+            line-height: 20px;
+            color: #76839c;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .user__action:hover {
+            background-color: var(--hover-over-white);
+        }
+
+        .user__action--current {
+            color: var(--blue);
+        }
+
+            .user__action .icon {
+                flex-shrink: 0;
+                font-size: 18px;
+                line-height: 18px;
+            }
+
+        .user__close {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: calc(100% + 5px);
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+        }
