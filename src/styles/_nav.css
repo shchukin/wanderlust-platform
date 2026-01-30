@@ -56,13 +56,7 @@
 
             }
                 .nav__sub-menu .nav__container {
-                    padding-left: 26px;
-                    gap: 8px;
-                    padding-top: 6px;
-                    padding-bottom: 6px;
-                    background-image: linear-gradient(to right, transparent, transparent 8px, #d5d5d5 8px, #d5d5d5 9px, transparent 6px, transparent);
-                    font-size: 15px;
-                    line-height: 22px;
+
                 }
 
 
@@ -78,8 +72,7 @@
 
     }
         .sidebar-expanded .nav__link {
-            /*display: block;*/
-            /*text-decoration: none;*/
+
         }
 
         .sidebar-expanded .nav__link:hover {
@@ -138,13 +131,13 @@
 
             }
                 .sidebar-expanded .nav__sub-menu .nav__container {
-                    /*padding-left: 26px;*/
-                    /*gap: 8px;*/
-                    /*padding-top: 6px;*/
-                    /*padding-bottom: 6px;*/
-                    /*background-image: linear-gradient(to right, transparent, transparent 8px, #d5d5d5 8px, #d5d5d5 9px, transparent 6px, transparent);*/
-                    /*font-size: 15px;*/
-                    /*line-height: 22px;*/
+                    padding-left: 26px;
+                    gap: 8px;
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                    background-image: linear-gradient(to right, transparent, transparent 8px, #d5d5d5 8px, #d5d5d5 9px, transparent 6px, transparent);
+                    font-size: 15px;
+                    line-height: 22px;
                 }
 
 
