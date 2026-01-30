@@ -21,7 +21,7 @@
     }
 
     .sidebar-toggler:hover .sidebar-toggler__inner {
-        background-color: var(--transparent-action-hover);
+        background-color: var(--hover-over-white);
     }
         .sidebar-toggler__inner::after {
             content: "keyboard_double_arrow_right";

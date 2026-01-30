@@ -12,7 +12,7 @@
         }
 
         .nav__link:hover {
-            background-color: var(--transparent-action-hover);
+            background-color: var(--hover-over-white);
         }
             .nav__container {
                 position: relative;
@@ -75,7 +75,7 @@
             }
 
             .nav__more:hover::before {
-                background-color: var(--transparent-action-hover);
+                background-color: var(--hover-over-white);
             }
 
             /* icon */
@@ -114,7 +114,7 @@
                 }
 
                 .nav__sub-menu .nav__link:not(.nav__link--current):hover .nav__container {
-                    background-color: var(--transparent-action-hover);
+                    background-color: var(--hover-over-white);
                 }
 
 
@@ -131,7 +131,7 @@
         }
 
         .sidebar-expanded .nav__link:hover {
-            background-color: var(--transparent-action-hover);
+            background-color: var(--hover-over-white);
         }
             .sidebar-expanded .nav__container {
                 box-shadow: none;

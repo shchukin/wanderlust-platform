@@ -18,6 +18,17 @@
         text-decoration: none;
         color: inherit;
     }
+        .header__action::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+        }
+
+        .header__action:hover::before {
+            background-color: var(--hover-over-body);
+        }
+
         .header__action .icon {
             position: relative;
             font-size: 22px;
