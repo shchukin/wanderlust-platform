@@ -44,35 +44,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    /* Toggle create dropdown ("New Project" in the header) */
+    /* Toggle user dropdown */
 
     document.addEventListener('click', (event) => {
 
-        if (event.target.closest('.create__handler .button')) {
+        if (event.target.closest('.user__handler')) {
             event.preventDefault();
-            event.target.closest('.create').classList.toggle('create--expanded');
+            event.target.closest('.user').classList.toggle('user--expanded');
             return;
         }
 
-        if (event.target.closest('.create__close .button')) {
+        if (event.target.closest('.user__close .button')) {
             event.preventDefault();
-            event.target.closest('.create').classList.remove('create--expanded');
+            event.target.closest('.user').classList.remove('user--expanded');
             return;
         }
 
         /* Close by clicking outside */
-        if (!event.target.closest('.create')) {
-            const expandedCreate = document.querySelector('.create--expanded');
-            expandedCreate?.classList.remove('create--expanded');
+        if (!event.target.closest('.user')) {
+            const $user = document.querySelector('.user--expanded');
+            $user?.classList.remove('user--expanded');
         }
     });
 
     /* Close by Esc */
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
-            const expandedCreates = document.querySelectorAll('.create--expanded');
-            expandedCreates.forEach((create) => {
-                create.classList.remove('create--expanded');
+            const $user = document.querySelectorAll('.user--expanded');
+            $user.forEach((user) => {
+                user.classList.remove('user--expanded');
             });
         }
     });
