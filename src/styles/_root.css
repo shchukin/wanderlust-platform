@@ -1,11 +1,15 @@
 :root {
     --font: "DM Sans", sans-serif;
+    --font-icons: "Material Symbols Outlined";
     --body-font-size: 16px;
     --body-line-height: 26px;
     --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
     --transition-hover: 100ms ease;
     --transition-show: 1200ms var(--ease-out-quint);
-    --image-fallback: #231E3A;
+    --image-fallback: #231e3a;
+    --nav-hover: rgb(45 45 45 / 4%);
+
+    --sidebar-widget-width: 222px;
     /*--container-padding: 40px;*/
     /*--action-color: #0D7FC5;*/
     /*--action-color-hover: #2FA5ED;*/

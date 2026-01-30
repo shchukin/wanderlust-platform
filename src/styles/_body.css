@@ -1,8 +1,9 @@
 body {
     height: 100%;
-    background-color: #F6F8FA;
+    background-color: #f6f8fA;
     -webkit-font-smoothing: antialiased;
     font-family: var(--font);
     font-size: var(--body-font-size);
     line-height: var(--body-line-height);
+    letter-spacing: -0.025em;
 }

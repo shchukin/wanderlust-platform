@@ -8,7 +8,7 @@
     padding-bottom: 60px;
     overflow-y: auto;
     scrollbar-width: thin;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
     .sidebar__logo {
         width: 82px;
@@ -22,4 +22,8 @@
         text-indent: 200%;
         white-space: nowrap;
         overflow: hidden;
+    }
+
+    .sidebar__nav {
+        margin-top: 27px;
     }
