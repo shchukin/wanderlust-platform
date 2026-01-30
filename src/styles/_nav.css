@@ -2,11 +2,7 @@
 
 }
     .nav__section {
-
-    }
-
-    .nav__section--expanded {
-
+        position: relative;
     }
         .nav__link {
             display: block;
@@ -49,6 +45,37 @@
                 display: none;
             }
 
+        .nav__more {
+            position: absolute;
+            left: calc(50% + var(--sidebar-inner-width) / 2);
+            top: calc(50% - var(--sidebar-inner-width) / 2);
+            width: 22px;
+            height: var(--sidebar-inner-width);
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+            display: none;
+        }
+
+        .nav__section:has(.nav__link--current) .nav__more {
+            display: block;
+        }
+
+            /* icon */
+            .nav__more::after {
+                content: "more_vert";
+                position: absolute;
+                inset: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: var(--font-icons);
+                text-indent: 0;
+            }
 
         .nav__sub-menu {
             display: none;
@@ -66,10 +93,6 @@
 
 }
     .sidebar-expanded .nav__section {
-
-    }
-
-    .sidebar-expanded .nav__section--expanded {
 
     }
         .sidebar-expanded .nav__link {
@@ -122,15 +145,20 @@
                 line-height: 18px;
             }
 
-            .sidebar-expanded .nav__section--expanded > .nav__link > .nav__container::after {
+            .sidebar-expanded .nav__section:has(.nav__sub-menu):has(.nav__link--current) > .nav__link > .nav__container::after {
                 transform: scaleY(-100%);
             }
+
+
+        .sidebar-expanded .nav__more {
+            display: none !important;
+        }
 
         .sidebar-expanded .nav__sub-menu {
             display: none;
         }
 
-        .sidebar-expanded .nav__section--expanded .nav__sub-menu {
+        .sidebar-expanded .nav__section:has(.nav__link--current) .nav__sub-menu {
             display: block;
         }
 
