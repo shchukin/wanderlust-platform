@@ -9,7 +9,6 @@
     --transition-show: 1200ms var(--ease-out-quint);
     --image-fallback: #231e3a;
 
-    --sidebar-widget-width: 222px;
     /*--container-padding: 40px;*/
     --action-color: #6f35e1;
     --action-color-hover: #b301fe;
@@ -23,7 +22,9 @@
     --disabled-color: #76839c;
     /*--error: #FF0033;*/
 
-    --sidebar: 300px;
+    --sidebar-outer-width: 300px;
+    --sidebar-inner-width: 222px;
+
 }
 
 @media (350px <= width < 740px) {

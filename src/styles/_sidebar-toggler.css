@@ -1,0 +1,39 @@
+.sidebar-toggler {
+    position: fixed;
+    left: var(--sidebar-outer-width);
+    transform: translateX(-50%);
+    top: 42px;
+    padding: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+    .sidebar-toggler__inner {
+        display: block;
+        width: 26px;
+        height: 26px;
+        background-color: #ffffff;
+        box-shadow: 0 0 7px rgb(0 0 0 / 14%);
+        border-radius: 50%;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .sidebar-toggler:hover .sidebar-toggler__inner {
+        background-color: var(--transparent-action-hover);
+    }
+        .sidebar-toggler__inner::after {
+            content: "keyboard_double_arrow_left";
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-icons);
+            text-indent: 0;
+        }
+
+        .sidebar-expanded .sidebar-toggler__inner::after {
+            content: "keyboard_double_arrow_right";
+        }
