@@ -13,7 +13,7 @@
         width: 26px;
         height: 26px;
         background-color: #ffffff;
-        box-shadow: 0 0 7px rgb(0 0 0 / 14%);
+        box-shadow: var(--shadow);
         border-radius: 50%;
         text-indent: 200%;
         white-space: nowrap;

@@ -10,8 +10,8 @@
     --image-fallback: #231e3a;
 
     /*--container-padding: 40px;*/
-    --blue: #6f35e1;
-    --blue-hover: #b301fe;
+    --blue: #670aea;
+    --blue-hover: #813ae5;
     --pink: #f2289f;
     --pink-hover: #ef5db3;
     --black: #2d2d2d;
@@ -27,6 +27,7 @@
 
     --sidebar-outer-width: 114px;
     --sidebar-inner-width: 36px;
+    --shadow: 0 0 7px rgb(0 0 0 / 14%);
 }
 
 
