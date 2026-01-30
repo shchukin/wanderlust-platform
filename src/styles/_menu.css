@@ -1,4 +1,6 @@
 .menu {
+    position: relative;
+    width: fit-content;
     padding-top: 13px;
     padding-bottom: 13px;
     border: 1px solid #d5d5d5;
