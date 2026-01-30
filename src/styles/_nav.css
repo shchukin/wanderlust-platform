@@ -33,15 +33,12 @@
 
 
             .nav__link--current .nav__container,
-            .nav__section:has(.nav__link--current) > .nav__link .nav__container /* if current item is in sub-menu */
+            .nav__section:has(.nav__link--current) > .nav__link .nav__container /* if current item is deeper in the sub-menu we still need to color parental item (this is especially needed on smartphones) */
             {
                 background-color: var(--action-color);
                 box-shadow: none;
                 color: #ffffff;
             }
-
-
-
 
             .nav__link .icon {
                 font-size: 18px;
@@ -116,7 +113,7 @@
 
                 }
 
-                .nav__sub-menu .nav__link:hover .nav__container {
+                .nav__sub-menu .nav__link:not(.nav__link--current):hover .nav__container {
                     background-color: var(--transparent-action-hover);
                 }
 
@@ -156,7 +153,7 @@
             }
 
             .sidebar-expanded .nav__link--current .nav__container,
-            .sidebar-expanded .nav__section:has(.nav__link--current) > .nav__link .nav__container /* if current item is in sub-menu */
+            .sidebar-expanded .nav__section:has(.nav__link--current) > .nav__link .nav__container /* if current item is deeper in the sub-menu we still need to color parental item (this is especially needed on smartphones) */
             {
                 background-color: transparent;
                 color: var(--action-color);
