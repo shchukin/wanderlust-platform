@@ -24,7 +24,7 @@
         background-color: var(--transparent-action-hover);
     }
         .sidebar-toggler__inner::after {
-            content: "keyboard_double_arrow_left";
+            content: "keyboard_double_arrow_right";
             position: absolute;
             inset: 0;
             display: flex;
@@ -35,5 +35,5 @@
         }
 
         .sidebar-expanded .sidebar-toggler__inner::after {
-            content: "keyboard_double_arrow_right";
+            content: "keyboard_double_arrow_left";
         }
