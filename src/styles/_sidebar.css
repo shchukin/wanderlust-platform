@@ -11,8 +11,8 @@
     background-color: #ffffff;
 }
     .sidebar__logo {
-        width: 82px;
-        height: 82px;
+        width: 64px;
+        height: 64px;
         margin-left: auto;
         margin-right: auto;
         background-image: url("../images/logo@2x.png");
@@ -33,4 +33,13 @@
         margin-left: auto;
         margin-right: auto;
         width: var(--sidebar-inner-width);
+    }
+
+
+.sidebar-expanded {
+
+}
+    .sidebar-expanded .sidebar__logo {
+        width: 82px;
+        height: 82px;
     }

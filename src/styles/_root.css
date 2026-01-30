@@ -22,19 +22,12 @@
     --disabled-color: #76839c;
     /*--error: #FF0033;*/
 
+    --sidebar-outer-width: 114px;
+    --sidebar-inner-width: 36px;
+}
+
+
+.sidebar-expanded {
     --sidebar-outer-width: 300px;
     --sidebar-inner-width: 222px;
-
-}
-
-@media (350px <= width < 740px) {
-    :root {
-        --container-padding: 24px;
-    }
-}
-
-@media (width < 350px) {
-    :root {
-        --container-padding: 16px;
-    }
 }

@@ -2,7 +2,7 @@
     position: fixed;
     left: var(--sidebar-outer-width);
     transform: translateX(-50%);
-    top: 42px;
+    top: 33px;
     padding: 16px;
     border: none;
     background-color: transparent;
@@ -37,3 +37,9 @@
         .sidebar-expanded .sidebar-toggler__inner::after {
             content: "keyboard_double_arrow_left";
         }
+
+
+
+.sidebar-expanded .sidebar-toggler {
+    top: 42px;
+}
