@@ -1,7 +1,21 @@
 .counter {
-
+    display: block;
+    width: fit-content;
+    padding: 2px 6px;
+    min-width: 18px;
+    background-color: var(--blue);
+    border-radius: 9px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    color: #ffffff;
+    text-align: center;
 }
 
-.counter--secondary {
+.counter--pink {
+    background-color: var(--pink);
+}
 
+.counter--bubble {
+    border-radius: 7px 7px 7px 0;
 }
