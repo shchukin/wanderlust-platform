@@ -65,7 +65,6 @@
         .nav__section:has(.nav__link--current) .nav__more {
             display: block;
         }
-
             .nav__more::before {
                 content: "";
                 position: absolute;
@@ -104,8 +103,16 @@
                 padding-top: 3px;
                 padding-bottom: 3px;
             }
+
+            .nav__sub-menu .nav__link:hover {
+                background-color: transparent;
+            }
                 .nav__sub-menu .nav__container {
 
+                }
+
+                .nav__sub-menu .nav__link:hover .nav__container {
+                    background-color: var(--transparent-action-hover);
                 }
 
 
@@ -122,7 +129,7 @@
         }
 
         .sidebar-expanded .nav__link:hover {
-            /*background-color: var(--transparent-action-hover);*/
+            background-color: var(--transparent-action-hover);
         }
             .sidebar-expanded .nav__container {
                 /*position: relative;*/
@@ -196,6 +203,10 @@
                     background-image: linear-gradient(to right, transparent, transparent 8px, #d5d5d5 8px, #d5d5d5 9px, transparent 6px, transparent);
                     font-size: 15px;
                     line-height: 22px;
+                }
+
+                .sidebar-expanded .nav__sub-menu .nav__link:hover .nav__container {
+                    background-color: transparent;
                 }
 
 
