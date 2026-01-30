@@ -6,8 +6,6 @@
     width: var(--sidebar-outer-width);
     padding-top: 30px;
     padding-bottom: 60px;
-    overflow-y: auto;
-    scrollbar-width: thin;
     background-color: #ffffff;
 }
     .sidebar__logo {
@@ -29,17 +27,29 @@
     }
 
     .sidebar__info {
-        margin-top: 63px;
-        margin-left: auto;
-        margin-right: auto;
-        width: var(--sidebar-inner-width);
+        display: none;
     }
 
 
-.sidebar-expanded {
 
+
+.sidebar-expanded .sidebar {
+    overflow-y: auto;
+    scrollbar-width: thin;
 }
     .sidebar-expanded .sidebar__logo {
         width: 82px;
         height: 82px;
+    }
+
+    .sidebar__nav {
+
+    }
+
+    .sidebar-expanded .sidebar__info {
+        display: block;
+        margin-top: 63px;
+        margin-left: auto;
+        margin-right: auto;
+        width: var(--sidebar-inner-width);
     }
