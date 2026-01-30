@@ -10,9 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* toggle sidebar */
 
     document.addEventListener('click', (event) => {
-        const toggler = event.target.closest('.sidebar-toggler');
-        if (!toggler) return;
-
+        if (!event.target.closest('.sidebar-toggler')) return;
         event.preventDefault();
         $html.classList.toggle('sidebar-expanded');
     });
