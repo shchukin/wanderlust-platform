@@ -1,6 +1,38 @@
 .header {
-    padding-top: 36px;
-    padding-bottom: 36px;
     display: flex;
+    align-items: center;
+    height: 100px;
     justify-content: flex-end;
 }
+    .header__search {
+
+    }
+
+    .header__action {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        text-decoration: none;
+        color: inherit;
+    }
+        .header__action .icon {
+            position: relative;
+            font-size: 22px;
+        }
+
+        .header__action-counter {
+            position: absolute;
+            left: calc(50% + 3px);
+            top: -4px;
+        }
+
+    .header__new-project {
+        margin-left: 50px;
+    }
+
+    .header__user {
+        margin-left: 50px;
+    }
