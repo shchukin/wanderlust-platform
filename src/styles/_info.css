@@ -24,8 +24,10 @@
             font-weight: 600;
             font-size: 24px;
             line-height: 28px;
-            color: #fa6181;
             text-align: center;
+            background-image: linear-gradient(to right, #fd5392, #f86f64);
+            background-clip: text;
+            color: transparent;
         }
 
         .info__message {
