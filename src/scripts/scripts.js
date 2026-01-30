@@ -49,7 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    /* Toggle create dropdown */
+
+    /* Toggle create dropdown ("New Project" in the header) */
 
     document.addEventListener('click', (event) => {
 
