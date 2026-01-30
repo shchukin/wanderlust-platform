@@ -1,5 +1,5 @@
 .nav {
-
+    --nav-more-width: 21px;
 }
     .nav__section {
         position: relative;
@@ -50,7 +50,7 @@
             position: absolute;
             left: calc(50% + var(--sidebar-inner-width) / 2);
             top: calc(50% - var(--sidebar-inner-width) / 2);
-            width: 22px;
+            width: var(--nav-more-width);
             height: var(--sidebar-inner-width);
             padding: 0;
             border: none;
@@ -91,9 +91,18 @@
 
         .nav__sub-menu {
             display: none;
+            position: absolute;
+            z-index: 10;
+            left: calc(50% + var(--sidebar-inner-width) / 2 + var(--nav-more-width));
+            top: 7px;
+        }
+
+        .nav__section--expanded .nav__sub-menu {
+            display: block;
         }
             .nav__sub-menu .nav__link {
-
+                padding-top: 3px;
+                padding-bottom: 3px;
             }
                 .nav__sub-menu .nav__container {
 
@@ -169,6 +178,7 @@
 
         .sidebar-expanded .nav__sub-menu {
             display: none;
+            position: static;
         }
 
         .sidebar-expanded .nav__section:has(.nav__link--current) .nav__sub-menu {
