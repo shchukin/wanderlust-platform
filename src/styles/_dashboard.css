@@ -8,3 +8,10 @@
     .dashboard__notification {
         margin-top: 14px;
     }
+
+    .dashboard__summary {
+        margin-top: 17px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 20px;
+    }
