@@ -1,5 +1,18 @@
 .content {
-    padding-top: var(--header-height);
+    display: flex;
+    align-items: flex-start;
+    padding-top: calc(var(--header-height) + 7px); /* 7px is because some elements inside have shadow that overlapped by header */
     margin-left: var(--sidebar-outer-width);
     transition: margin var(--transition-sidebar);
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    gap: var(--container-padding);
 }
+    .content__body {
+        flex-grow: 1;
+    }
+
+    .content__aside {
+        flex-shrink: 0;
+        width: 292px;
+    }
