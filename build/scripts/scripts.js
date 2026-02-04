@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    /* Toggle user dropdown */
+    /* Toggle search dropdown */
 
     document.addEventListener('click', (event) => {
 
@@ -145,4 +145,64 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+
+
+
+    /* Toggle sort */
+
+    document.addEventListener('click', (event) => {
+
+        const $sortOrder = event.target.closest('.sort__order');
+        if ($sortOrder) {
+            event.preventDefault();
+            const $sort = $sortOrder.closest('.sort');
+            if ($sort) {
+                const isDescending = $sort.classList.contains('sort__order--descending');
+                $sort.classList.toggle('sort__order--ascending', isDescending);
+                $sort.classList.toggle('sort__order--descending', !isDescending);
+                alert('Change sort ascending/descending here')
+            }
+            return;
+        }
+
+        if (event.target.closest('.sort__handler')) {
+            event.preventDefault();
+            event.target.closest('.sort').classList.toggle('sort--expanded');
+            return;
+        }
+
+        if (event.target.closest('.sort__apply .button')) {
+            event.preventDefault();
+            alert('Apply sort here');
+            event.target.closest('.sort').classList.remove('sort--expanded');
+            return;
+        }
+
+        /* Close by clicking outside */
+        if (!event.target.closest('.sort')) {
+            const $sort = document.querySelector('.sort--expanded');
+            $sort?.classList.remove('sort--expanded');
+        }
+    });
+
+    /* Close by Esc */
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            const $sort = document.querySelectorAll('.sort--expanded');
+            $sort.forEach((sort) => {
+                sort.classList.remove('sort--expanded');
+            });
+        }
+    });
+
+
+    /* Detect if page was scrolled down */
+    const togglePageScrollClass = () => {
+        $html.classList.toggle('page-is-scrolled', window.scrollY >= 10);
+    };
+
+    togglePageScrollClass();
+    window.addEventListener('scroll', togglePageScrollClass, { passive: true });
+
+
 });
