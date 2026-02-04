@@ -10,6 +10,10 @@
     margin-left: -12px;
     margin-right: -12px;
     border-radius: 5px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #2d2d2d;
+    user-select: none;
     cursor: pointer;
 }
 
@@ -30,13 +34,13 @@
 
     }
 
-    .choice__icon--unchecked {
-        display: inline;
-    }
+    /* stylelint-disable */
+    .choice__icon--unchecked { display: inline; }
+    .choice__icon--checked { display: none; }
+    .choice__widget:checked ~ .choice__icon--unchecked { display: none; }
+    .choice__widget:checked ~ .choice__icon--checked { display: block; }
+    /* stylelint-enable */
 
-    .choice__icon--checked {
-        display: none;
-    }
         .choice__icon .icon {
             font-size: 16px;
             line-height: 22px;
@@ -51,85 +55,44 @@
     }
 
     .choice__label {
-        position: relative;
-        display: flex;
-        vertical-align: top;
-        font-size: 15px;
-        line-height: 22px;
-        color: #2d2d2d;
-        user-select: none;
+
     }
 
 
 
-
-
-/* Checked */
-
-.choice__widget:checked ~ .choice__icon--unchecked {
-    display: none;
-}
-
-.choice__widget:checked ~ .choice__icon--checked {
-    display: block;
-}
-
-
-
-/* Checked & Hovered */
-
-.choice__widget:checked ~ .choice__label:hover ~ .choice__icon {
-    /*background-color: var(--blue-hover);*/
-    /*border-color: var(--blue-hover);*/
-}
-
-.choice__widget[type="radio"]:checked ~ .choice__label {
-    /*cursor: default; !* checked radio button can’t be hovered *!*/
-}
-
-.choice__widget[type="radio"]:checked ~ .choice__label:hover ~ .choice__icon {
-    /*background-color: var(--blue); !* checked radio button can’t be hovered, so taket the original color back *!*/
-    /*border-color: transparent; !* checked radio button can’t be hovered, so taket the original color back *!*/
-}
-
-
 /* Focused */
 
-.choice__widget:focus-visible ~ .choice__icon {
+.choice:has(.choice__widget:focus-visible) {
     outline: auto;
 }
 
 
 /* Disabled */
-.choice__widget:disabled ~ .choice__label {
-    cursor: default;
+.choice:has(.choice__widget:disabled) {
     color: var(--disabled-color);
+    cursor: default;
 }
 
-.choice__widget:disabled ~ .choice__icon,
-.choice__widget:disabled ~ .choice__label:hover ~ .choice__icon {
+.choice:has(.choice__widget:disabled):hover {
     background-color: transparent;
-    border-color: var(--input-border);
-}
-
-.choice__widget:disabled:checked ~ .choice__icon,
-.choice__widget:disabled:checked ~ .choice__label:hover ~ .choice__icon {
-    background-color: var(--input-border);
-    border-color: transparent;
 }
 
 
-
-.choice--bolder {
-
-}
-    .choice--bolder .choice__label {
-        font-weight: 600;
-        font-size: 13px;
-        line-height: 20px;
-    }
 
 
 .choice--full-width {
     width: 100%;
 }
+
+
+
+/*.choice--bolder {*/
+
+/*}*/
+/*    .choice--bolder .choice__label {*/
+/*        font-weight: 600;*/
+/*        font-size: 13px;*/
+/*        line-height: 20px;*/
+/*    }*/
+
+
