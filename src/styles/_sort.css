@@ -37,11 +37,11 @@
         border-radius: 50%;
     }
 
-    .sort__order--descending {
-
+    .sort.sort__order--descending .sort__order {
+        transform: none;
     }
 
-    .sort__order--ascending {
+    .sort.sort__order--ascending .sort__order {
         transform: scaleY(-1);
     }
 

@@ -152,18 +152,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('click', (event) => {
 
-        const $sortHandler = event.target.closest('.sort__handler');
-        if ($sortHandler) {
-            const $sortOrder = event.target.closest('.sort__order');
-            if ($sortOrder && $sortHandler.contains($sortOrder)) {
-                event.preventDefault();
-                const isDescending = $sortOrder.classList.contains('sort__order--descending');
-                $sortOrder.classList.toggle('sort__order--ascending', isDescending);
-                $sortOrder.classList.toggle('sort__order--descending', !isDescending);
-                alert('Change sort ascending/descending');
-                return;
+        const $sortOrder = event.target.closest('.sort__order');
+        if ($sortOrder) {
+            event.preventDefault();
+            const $sort = $sortOrder.closest('.sort');
+            if ($sort) {
+                const isDescending = $sort.classList.contains('sort__order--descending');
+                $sort.classList.toggle('sort__order--ascending', isDescending);
+                $sort.classList.toggle('sort__order--descending', !isDescending);
+                alert('Change sort ascending/descending here')
             }
+            return;
+        }
 
+        if (event.target.closest('.sort__handler')) {
             event.preventDefault();
             event.target.closest('.sort').classList.toggle('sort--expanded');
             return;
