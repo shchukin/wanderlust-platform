@@ -1,0 +1,66 @@
+.callout {
+    position: relative;
+    padding: 14px 50px 14px 44px;
+    background-color: #e7ebfd;
+    border-radius: 8px;
+}
+    .callout__icon {
+        position: absolute;
+        left: 16px;
+        top: 13px;
+        vertical-align: top;
+        color: var(--blue);
+    }
+        .callout__icon .icon {
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+    .callout__message {
+        font-size: 15px;
+        line-height: 22px;
+        color: #0a2365;
+    }
+        .callout__message strong {
+            font-weight: 600;
+        }
+
+    .callout__close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+        .callout__close::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+        }
+
+        .callout__close:hover::before {
+            background-color: rgb(255 255 255 / 50%);
+        }
+
+        .callout__close .icon {
+            position: relative;
+            z-index: 10;
+            font-size: 24px;
+            line-height: 24px;
+            color: #5c6690;
+        }
+
+        .callout__close:hover .icon {
+            color: #2d2d2d;
+        }
