@@ -1,0 +1,9 @@
+.monitor-only {
+
+}
+
+@media (width < 1500px) {
+    .monitor-only {
+        display: none;
+    }
+}

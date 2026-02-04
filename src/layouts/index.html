@@ -324,11 +324,6 @@
                                     <div class="preview__note">
                                         New messages for&nbsp;you
                                     </div>
-                                    <div class="preview__progress">
-                                        <div class="progress">
-                                            <div class="progress__bar" style="width: 40%"></div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="preview__link">
@@ -346,9 +341,6 @@
                                     </div>
                                     <div class="preview__note">
                                         Projects in progress
-                                    </div>
-                                    <div class="preview__progress">
-
                                     </div>
                                 </div>
                             </div>
@@ -369,7 +361,9 @@
                                         50% there
                                     </div>
                                     <div class="preview__progress">
-
+                                        <div class="progress">
+                                            <div class="progress__bar" style="clip-path: inset(0 66% 0 0);"></div> <!-- calculate "100% - i" here -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -389,13 +383,13 @@
                                     <div class="preview__note">
                                         Gift(s) available
                                     </div>
-                                    <div class="preview__progress">
-
-                                    </div>
                                 </div>
                             </div>
                             <div class="preview__link">
-                                <a class="link link--text-alike" href="#">Click here to redeem your gift(s) before they expire!</a>
+                                <a class="link link--text-alike" href="#">
+                                    <span class="preview__click-string">Click here to</span>
+                                    <span class="preview__gifts-string">redeem your gift(s) before they expire!</span>
+                                </a>
                             </div>
                         </div>
                     </div>
