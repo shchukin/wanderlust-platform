@@ -1,4 +1,8 @@
 .choice {
+    --choice-padding: 12px;
+}
+
+.choice {
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -6,9 +10,9 @@
     width: fit-content;
     min-width: 20px;
     min-height: 40px;
-    padding: 9px 12px;
-    margin-left: -12px;
-    margin-right: -12px;
+    padding: 9px var(--choice-padding);
+    margin-left: calc(-1 * var(--choice-padding));
+    margin-right: calc(-1 * var(--choice-padding));
     border-radius: 5px;
     font-size: 15px;
     line-height: 22px;
@@ -80,7 +84,7 @@
 
 
 .choice--full-width {
-    width: 100%;
+    width: calc(100% + 2 * var(--choice-padding));
 }
 
 
