@@ -24,6 +24,10 @@
                 line-height: 18px;
             }
 
+            .table__section--body .table__cell--heading-column {
+                text-align: left;
+            }
+
             .table__section--body .table__cell:first-child {
                 border-left: none;
             }
@@ -50,6 +54,7 @@
                 font-weight: 500;
                 font-size: 15px;
                 line-height: 18px;
+                text-align: center;
                 white-space: nowrap;
             }
 
