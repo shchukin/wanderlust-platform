@@ -1,4 +1,8 @@
 .table {
+    --table-cell-padding: 15px;
+}
+
+.table {
     vertical-align: top;
     width: 100%;
     border-collapse: collapse;
@@ -18,7 +22,7 @@
 
         }
             .table__section--body .table__cell {
-                padding: 25px 15px;
+                padding: 25px var(--table-cell-padding);
                 border: 1px solid #e2e2e2;
                 font-size: 15px;
                 line-height: 18px;
@@ -51,7 +55,7 @@
 
             .table__section--head .table__cell {
                 position: relative;
-                padding: 16px 15px;
+                padding: 16px var(--table-cell-padding);
                 font-weight: 500;
                 font-size: 15px;
                 line-height: 18px;
@@ -108,3 +112,10 @@
                 .table__label {
                     position: relative;
                 }
+
+
+@media (width < 1500px) {
+    .table {
+        --table-cell-padding: 12px;
+    }
+}
