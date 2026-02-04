@@ -1,0 +1,9 @@
+.progress {
+    height: 4px;
+    background-color: #ebc9eb;
+    border-radius: 2px;
+    overflow: hidden;
+}
+    .progress__bar {
+
+    }
