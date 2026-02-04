@@ -42,8 +42,16 @@
     .button .icon {
         margin-left: -6px;
         margin-right: -6px;
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 1.2em;
+        line-height: inherit;
+    }
+
+    .button__svg-icon {
+        vertical-align: top;
+        margin-left: -6px;
+        margin-right: -6px;
+        scale: 120%; /* because svg icons are smaller */
+        fill: currentColor;
     }
 
 
@@ -104,30 +112,68 @@
 }
 
 
-.button--smaller {
+.button--height-40px,
+.button--input-height {
     min-width: 90px;
     padding: 11px 20px;
     font-size: 14px;
     line-height: 18px;
 }
 
-.button--smaller.button--square {
+.button--height-40px.button--square,
+.button--input-height.button--square {
     min-width: 0;
     width: 40px;
+    padding-left: 0;
+    padding-right: 0;
     border-radius: 8px;
 }
 
 
-.button--micro {
-    min-width: 80px;
+.button--height-36px {
+    min-width: 76px;
+    padding: 9px 15px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.button--height-36px.button--square {
+    min-width: 0;
+    width: 36px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 8px;
+}
+
+
+
+.button--height-30px {
+    min-width: 70px;
     padding: 6px 15px;
     font-size: 14px;
     line-height: 18px;
 }
 
-.button--micro.button--square {
+.button--height-30px.button--square {
     min-width: 0;
     width: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 8px;
+}
+
+.button--height-24px {
+    min-width: 60px;
+    padding: 3px 14px;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.button--height-24px.button--square {
+    min-width: 0;
+    width: 24px;
+    padding-left: 0;
+    padding-right: 0;
     border-radius: 8px;
 }
 
