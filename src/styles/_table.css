@@ -112,6 +112,9 @@
                     position: relative;
                 }
 
+                .table__cell .profile-card {
+                    margin-left: -8px;
+                }
 
 @media (width < 1500px) {
     .table {
