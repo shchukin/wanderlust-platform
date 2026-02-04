@@ -1,5 +1,5 @@
 .choice {
-    --choice-outset: 12px;
+    --choice-outset: 16px;
 }
 
 .choice {
@@ -8,7 +8,7 @@
     align-items: flex-start;
     gap: 8px;
     width: fit-content;
-    padding: 5px var(--choice-outset);
+    padding: 9px var(--choice-outset);
     margin-left: calc(-1 * var(--choice-outset));
     margin-right: calc(-1 * var(--choice-outset));
     border-radius: 5px;
@@ -112,21 +112,15 @@
 
 
 
-/* Padding/height same as in the input */
-.choice--input-height {
-    --choice-outset: 16px;
+
+
+/* Smaller */
+
+.choice--smaller {
+    --choice-outset: 12px;
 }
 
-.choice--input-height {
-    padding-top: 9px;
-    padding-bottom: 9px;
+.choice--smaller {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
-
-
-
-
-
-
-
-
-
