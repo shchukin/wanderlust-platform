@@ -13,3 +13,20 @@
     .tasks__item:first-child {
         margin-top: 0;
     }
+
+
+
+@media (width < 1500px) {
+
+    .tasks {
+
+    }
+        .tasks__item {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .tasks__item:first-child {
+
+        }
+}

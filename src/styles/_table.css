@@ -60,7 +60,6 @@
                 font-size: 15px;
                 line-height: 18px;
                 text-align: center;
-                white-space: nowrap;
             }
 
             .table__section--head .table__cell::before {
