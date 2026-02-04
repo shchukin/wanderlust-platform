@@ -1,0 +1,70 @@
+.table {
+    vertical-align: top;
+    width: 100%;
+    border-collapse: collapse;
+}
+    .table__section {
+
+    }
+
+    .table__section--head {
+
+    }
+
+    .table__section--body {
+
+    }
+        .table__row {
+
+        }
+            .table__section--body .table__cell {
+                padding: 25px 15px;
+                border: 1px solid #e2e2e2;
+                font-size: 15px;
+                line-height: 18px;
+            }
+
+            .table__section--body .table__cell:first-child {
+                border-left: none;
+            }
+
+            .table__section--body .table__cell:last-child {
+                border-right: none;
+            }
+
+            .table__section--body .table__row:first-child .table__cell {
+                border-top: none;
+            }
+
+            .table__section--body .table__row:last-child .table__cell {
+                border-bottom: none;
+            }
+
+
+            .table__section--head {
+                background-color: #f6f6f6;
+            }
+
+            .table__section--head .table__cell {
+                padding: 16px 15px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                white-space: nowrap;
+            }
+
+            .table__section--head .table__cell:first-child {
+                border-left: 1px solid #d5d5d5;
+            }
+
+            .table__section--head .table__cell:last-child {
+                border-right: 1px solid #d5d5d5;
+            }
+
+            .table__section--head .table__row:first-child .table__cell {
+                border-top: 1px solid #d5d5d5;
+            }
+
+            .table__section--head .table__row:last-child .table__cell {
+                border-bottom: 1px solid #d5d5d5;
+            }

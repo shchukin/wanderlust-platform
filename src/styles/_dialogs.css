@@ -1,0 +1,19 @@
+.dialogs {
+
+}
+    .dialogs__panel {
+        padding: 23px 14px 0;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+        .dialogs__heading {
+
+        }
+
+        .dialogs__widget {
+            margin-top: 18px;
+        }
+
+    .dialogs__pagination {
+        margin-top: 20px;
+    }
