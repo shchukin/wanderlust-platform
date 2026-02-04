@@ -30,6 +30,8 @@
     --disabled-color: #76839c;
     /*--error: #FF0033;*/
 
+    --table-header-background: #f6f6f6;
+    --table-header-hover: #eeeeee;
     --shadow: 0 0 7px rgb(0 0 0 / 14%);
 
     --header-height: 126px;

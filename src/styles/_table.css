@@ -63,7 +63,7 @@
                 content: "";
                 position: absolute;
                 inset: 0;
-                background-color: #f6f6f6;
+                background-color: var(--table-header-background);
                 border-top: 1px solid #d5d5d5;
                 border-bottom: 1px solid #d5d5d5;
             }
@@ -83,7 +83,7 @@
                 top: 0;
                 bottom: 0;
                 width: 5px;
-                background-color: #f6f6f6;
+                background-color: var(--table-header-background);
                 border-left: 1px solid #d5d5d5;
                 border-top: 1px solid #d5d5d5;
                 border-bottom: 1px solid #d5d5d5;
@@ -98,7 +98,7 @@
                 top: 0;
                 bottom: 0;
                 width: 5px;
-                background-color: #f6f6f6;
+                background-color: var(--table-header-background);
                 border-right: 1px solid #d5d5d5;
                 border-top: 1px solid #d5d5d5;
                 border-bottom: 1px solid #d5d5d5;

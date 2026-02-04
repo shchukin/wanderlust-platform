@@ -1,7 +1,7 @@
 .null {
     display: flex;
     min-height: 100px;
-    background-color: #f6f6f6;
+    background-color: var(--table-header-background);
     border: 1px solid var(--input-border);
     border-radius: 10px;
     align-items: center;
