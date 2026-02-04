@@ -46,10 +46,15 @@
     }
 
 
-
+/* Hover */
 .choice:hover {
     background-color: var(--hover-over-white);
     border-color: var(--input-border-hover-and-focus);
+}
+
+/* Checked */
+.choice:has(.choice__widget:checked) {
+    color: var(--blue);
 }
 
 
@@ -109,7 +114,7 @@
 
 /* Padding/height same as in the input */
 .choice--input-height {
-    --choice-outset: 14px;
+    --choice-outset: 16px;
 }
 
 .choice--input-height {
