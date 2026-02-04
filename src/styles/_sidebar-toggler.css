@@ -1,6 +1,6 @@
 .sidebar-toggler {
     position: fixed;
-    z-index: 200;
+    z-index: 1100;
     left: var(--sidebar-outer-width);
     transition: left var(--transition-sidebar);
     transform: translateX(-50%);

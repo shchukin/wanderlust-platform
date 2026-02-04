@@ -26,7 +26,7 @@
     --input-border: #d5d5d5;
     --input-border-hover-and-focus: var(--blue);
     --placeholder-color: #999999;
-    --disabled-background: #ECECEC;
+    --disabled-background: #ececec;
     --disabled-color: #76839c;
     /*--error: #FF0033;*/
 
@@ -36,6 +36,7 @@
     --sidebar-outer-width: 114px;
     --sidebar-inner-width: 36px;
     --container-padding: 32px;
+    --aside-width: 300px;
 }
 
 .sidebar-expanded {
@@ -52,6 +53,7 @@
         --sidebar-outer-width: 92px;
         --sidebar-inner-width: 36px;
         --container-padding: 24px;
+        --aside-width: 260px;
     }
 
     .sidebar-expanded {

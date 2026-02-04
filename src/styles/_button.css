@@ -50,6 +50,8 @@
         vertical-align: top;
         margin-left: -6px;
         margin-right: -6px;
+        width: 18px;
+        height: 18px;
         scale: 120%; /* because svg icons are smaller */
         fill: currentColor;
     }
