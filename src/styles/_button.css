@@ -2,17 +2,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 14px;
+    gap: 12px;
     width: fit-content;
     border: none;
-    padding: 12px 24px;
-    min-width: 100px;
+    padding: 11px 20px;
+    min-width: 90px;
     background-color: var(--blue);
     border-radius: 22px;
     font-family: inherit;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
@@ -102,26 +102,7 @@
 }
 
 
-
 .button--square {
-    min-width: 0;
-    width: 44px;
-    padding-left: 0;
-    padding-right: 0;
-    border-radius: 8px;
-}
-
-
-.button--height-40px,
-.button--input-height {
-    min-width: 90px;
-    padding: 11px 20px;
-    font-size: 14px;
-    line-height: 18px;
-}
-
-.button--height-40px.button--square,
-.button--input-height.button--square {
     min-width: 0;
     width: 40px;
     padding-left: 0;
@@ -130,7 +111,27 @@
 }
 
 
+.button--height-44px,
+.button--input-height {
+    gap: 14px;
+    min-width: 100px;
+    padding: 12px 24px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.button--height-44px.button--square,
+.button--input-height.button--square {
+    min-width: 0;
+    width: 44px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 8px;
+}
+
+
 .button--height-36px {
+    gap: 10px;
     min-width: 76px;
     padding: 9px 15px;
     font-size: 14px;
@@ -146,8 +147,8 @@
 }
 
 
-
 .button--height-30px {
+    gap: 10px;
     min-width: 70px;
     padding: 6px 15px;
     font-size: 14px;
@@ -163,6 +164,7 @@
 }
 
 .button--height-24px {
+    gap: 10px;
     min-width: 60px;
     padding: 3px 14px;
     font-size: 15px;
