@@ -19,5 +19,5 @@
             top: var(--header-height);
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 6px;
         }

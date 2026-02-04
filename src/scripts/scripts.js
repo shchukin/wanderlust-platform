@@ -145,4 +145,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+
+
+    /* Detect if page was scrolled down */
+    const togglePageScrollClass = () => {
+        $html.classList.toggle('page-is-scrolled', window.scrollY >= 10);
+    };
+
+    togglePageScrollClass();
+    window.addEventListener('scroll', togglePageScrollClass, { passive: true });
+
+
 });

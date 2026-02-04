@@ -9,14 +9,10 @@
     align-items: center;
     justify-content: space-between;
     height: var(--header-height);
-    border-left: var(--container-padding) solid transparent;
-    border-right: var(--container-padding) solid transparent;
-}
-
-.page-scrolled {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
     background-color: var(--background);
 }
-
     .header::before {
         content: ""; /* pusher */
         height: 100%;
