@@ -1,18 +1,16 @@
 .choice {
-    --choice-padding: 12px;
+    --choice-outset: 12px;
 }
 
 .choice {
     position: relative;
     display: flex;
     align-items: flex-start;
-    gap: 6px;
+    gap: 8px;
     width: fit-content;
-    min-width: 20px;
-    min-height: 40px;
-    padding: 9px var(--choice-padding);
-    margin-left: calc(-1 * var(--choice-padding));
-    margin-right: calc(-1 * var(--choice-padding));
+    padding: 5px var(--choice-outset);
+    margin-left: calc(-1 * var(--choice-outset));
+    margin-right: calc(-1 * var(--choice-outset));
     border-radius: 5px;
     font-size: 15px;
     line-height: 22px;
@@ -21,7 +19,7 @@
     cursor: pointer;
 }
     .choice__icon {
-
+        margin-left: -2px; /* because icon has some white space inside */
     }
 
     /* stylelint-disable */
@@ -32,7 +30,7 @@
     /* stylelint-enable */
 
         .choice__icon .icon {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 22px;
         }
 
@@ -84,23 +82,46 @@
 
 /* Full width */
 .choice--full-width {
-    width: calc(100% + 2 * var(--choice-padding));
+    width: calc(100% + 2 * var(--choice-outset));
 }
 
 
 /* Input Alike */
 .choice--input-alike {
-    box-shadow: inset 0 0 0 1px var(--input-border);
-    margin-left: 0;
-    margin-right: 0;
+    --choice-outset: 0;
 }
 
-.choice--input-alike.choice--full-width {
-    width: 100%;
+.choice--input-alike {
+    box-shadow: inset 0 0 0 1px var(--input-border);
+    padding: 9px 13px;
+    gap: 6px;
 }
 
 .choice--input-alike:has(.choice__widget:checked) {
     box-shadow: inset 0 0 0 1px var(--blue);
     color: var(--blue);
 }
+    .choice--input-alike .icon {
+        font-size: 16px;
+    }
+
+
+
+/* Padding/height same as in the input */
+.choice--input-height {
+    --choice-outset: 14px;
+}
+
+.choice--input-height {
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+
+
+
+
+
+
+
 

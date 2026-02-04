@@ -257,26 +257,6 @@
 
             </div>
 
-
-            <br>
-            <br>
-            <br>
-            <h2>Long string test</h2>
-
-            <label class="choice">
-                <input class="choice__widget" type="checkbox">
-                <div class="choice__icon choice__icon--unchecked">
-                    <div class="icon">check_box_outline_blank</div>
-                </div>
-                <div class="choice__icon choice__icon--checked">
-                    <div class="icon">check_box</div>
-                </div>
-                <div class="choice__label">
-                    By checking this box, you acknowledge that you have read, understood, and agree to be bound by the <a class="link" href="#">terms and conditions</a> of the License Agreement, including but not limited to all provisions regarding usage right.
-                </div>
-            </label>
-
-
             <br>
             <br>
             <br>
@@ -398,9 +378,62 @@
                     </div>
                 </label>
 
+            </div>
 
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.choice--input-height</h2>
+            <p>
+                There might be a case where checkbox needs to be aligned with input.
+                Somewhere in the settings, for example. We may want them to have the same height
+                of 40px. Use <b><i>.choice--input-height</i></b> modifier for that:
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 18px;">
+
+                <div class="input">
+                    <input class="input__widget" type="text" placeholder="Platform cut">
+                </div>
+
+                <label class="choice choice--input-height">
+                    <input class="choice__widget" type="checkbox">
+                    <div class="choice__icon choice__icon--unchecked">
+                        <div class="icon">check_box_outline_blank</div>
+                    </div>
+                    <div class="choice__icon choice__icon--checked">
+                        <div class="icon">check_box</div>
+                    </div>
+                    <div class="choice__label">
+                        Vat Included
+                    </div>
+                </label>
 
             </div>
+
+            <br>
+            <br>
+            <p>
+                Also, this bigger checkbox looks better with long lines:
+            </p>
+            <br>
+
+
+            <label class="choice choice--input-height">
+                <input class="choice__widget" type="checkbox">
+                <div class="choice__icon choice__icon--unchecked">
+                    <div class="icon">check_box_outline_blank</div>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <div class="icon">check_box</div>
+                </div>
+                <div class="choice__label">
+                    By checking this box, you acknowledge that you have read, understood, and agree to be bound by the <a class="link" href="#">terms and conditions</a> of the License Agreement, including but not limited to all provisions regarding usage right.
+                </div>
+            </label>
+
 
             <br>
             <br>
