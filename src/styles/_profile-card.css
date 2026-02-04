@@ -1,0 +1,17 @@
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 12px;
+    margin-right: -12px;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+}
+
+.profile-card:hover {
+    background-color: var(--hover-over-white);
+    border-radius: 100px;
+}

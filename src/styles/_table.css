@@ -46,10 +46,11 @@
 
 
             .table__section--head {
-                background-color: #f6f6f6;
+
             }
 
             .table__section--head .table__cell {
+                position: relative;
                 padding: 16px 15px;
                 font-weight: 500;
                 font-size: 15px;
@@ -58,18 +59,52 @@
                 white-space: nowrap;
             }
 
-            .table__section--head .table__cell:first-child {
-                border-left: 1px solid #d5d5d5;
-            }
-
-            .table__section--head .table__cell:last-child {
-                border-right: 1px solid #d5d5d5;
-            }
-
-            .table__section--head .table__row:first-child .table__cell {
+            .table__section--head .table__cell::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background-color: #f6f6f6;
                 border-top: 1px solid #d5d5d5;
-            }
-
-            .table__section--head .table__row:last-child .table__cell {
                 border-bottom: 1px solid #d5d5d5;
             }
+
+            .table__section--head .table__cell:first-child::before {
+                left: 5px;
+            }
+
+            .table__section--head .table__cell:last-child::before {
+                right: 5px;
+            }
+
+            .table__section--head .table__cell:first-child::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 5px;
+                background-color: #f6f6f6;
+                border-left: 1px solid #d5d5d5;
+                border-top: 1px solid #d5d5d5;
+                border-bottom: 1px solid #d5d5d5;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+
+            .table__section--head .table__cell:last-child::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 5px;
+                background-color: #f6f6f6;
+                border-right: 1px solid #d5d5d5;
+                border-top: 1px solid #d5d5d5;
+                border-bottom: 1px solid #d5d5d5;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+                .table__label {
+                    position: relative;
+                }

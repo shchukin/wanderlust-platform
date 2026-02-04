@@ -1,0 +1,17 @@
+.logo {
+    display: block;
+    width: fit-content;
+}
+    .logo__image {
+        vertical-align: top;
+        background-color: var(--image-fallback);
+        border-radius: 50%;
+    }
+
+
+.logo--with-hover {
+
+}
+    .logo--with-hover:hover .logo__image {
+        opacity: 80%;
+    }

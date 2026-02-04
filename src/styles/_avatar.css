@@ -1,0 +1,20 @@
+.avatar {
+    display: block;
+    width: fit-content;
+    background-color: var(--pink);
+    padding: 1px;
+    border-radius: 50%;
+}
+    .avatar__image {
+        vertical-align: top;
+        background-color: var(--image-fallback);
+        border-radius: 50%;
+    }
+
+
+.avatar--with-hover {
+
+}
+    .avatar--with-hover:hover .avatar__image {
+        filter: brightness(105%) contrast(105%);
+    }
