@@ -103,6 +103,7 @@
     border-radius: 8px;
 }
 
+
 .button--smaller {
     min-width: 90px;
     padding: 11px 20px;
@@ -110,10 +111,23 @@
     line-height: 18px;
 }
 
+.button--smaller.button--square {
+    min-width: 0;
+    width: 40px;
+    border-radius: 8px;
+}
+
+
 .button--micro {
     min-width: 80px;
     padding: 6px 15px;
     font-size: 14px;
     line-height: 18px;
+}
+
+.button--micro.button--square {
+    min-width: 0;
+    width: 30px;
+    border-radius: 8px;
 }
 
