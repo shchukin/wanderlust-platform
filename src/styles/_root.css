@@ -37,6 +37,7 @@
     --sidebar-inner-width: 36px;
     --container-padding: 32px;
     --aside-width: 300px;
+    --aside-padding: 20px;
 }
 
 .sidebar-expanded {
@@ -54,6 +55,7 @@
         --sidebar-inner-width: 36px;
         --container-padding: 24px;
         --aside-width: 260px;
+        --aside-padding: 16px;
     }
 
     .sidebar-expanded {

@@ -3,7 +3,7 @@
     padding-bottom: 7px;
 }
     .share__inner {
-        padding: 27px 20px 22px;
+        padding: 27px var(--aside-padding) 22px;
     }
         .share__heading {
 
