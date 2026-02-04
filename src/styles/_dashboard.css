@@ -29,3 +29,24 @@
     .dashboard__widget {
         margin-top: 32px;
     }
+        .dashboard__widget-panel {
+            padding: 23px 14px 0;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+            .dashboard__widget-heading {
+
+            }
+
+            .dashboard__widget-body {
+                margin-top: 18px;
+                padding-bottom: 15px;
+            }
+
+            .dashboard__widget-body:has(.table) {
+                padding-bottom: 0;
+            }
+
+            .dashboard__widget-pagination {
+                margin-top: 20px;
+            }
