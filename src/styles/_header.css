@@ -11,8 +11,12 @@
     height: var(--header-height);
     border-left: var(--container-padding) solid transparent;
     border-right: var(--container-padding) solid transparent;
+}
+
+.page-scrolled {
     background-color: var(--background);
 }
+
     .header::before {
         content: ""; /* pusher */
         height: 100%;
