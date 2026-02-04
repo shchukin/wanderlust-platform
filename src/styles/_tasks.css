@@ -1,0 +1,15 @@
+.tasks {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+    .tasks__item {
+        margin-top: 10px;
+        font-size: var(--base-font-size);
+        line-height: var(--base-line-height);
+    }
+
+    .tasks__item:first-child {
+        margin-top: 0;
+    }
