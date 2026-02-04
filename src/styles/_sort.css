@@ -76,14 +76,14 @@
             }
 
 
-        .sort__submit {
+        .sort__apply {
             padding: 12px 18px 24px;
         }
-            .sort__submit .button {
+            .sort__apply .button {
                 position: relative;
             }
                 /*.make clickable area larger */
-                .sort__submit .button::before {
+                .sort__apply .button::before {
                     content: "";
                     position: absolute;
                     inset: -6px;
