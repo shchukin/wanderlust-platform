@@ -82,10 +82,13 @@
 }
 
 
-
+/* Full width */
 .choice--full-width {
     width: calc(100% + 2 * var(--choice-padding));
 }
+
+
+/* Input Alike */
 
 
 
