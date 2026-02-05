@@ -62,5 +62,5 @@
         }
 
         .callout__close:hover .icon {
-            color: #2d2d2d;
+            color: var(--black);
         }
