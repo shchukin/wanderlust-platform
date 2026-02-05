@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>.input</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/styles.css?1770213124">
+        <link rel="stylesheet" href="../styles/styles.css?1770267529">
     </head>
     <body style="background-color: white;">
 
@@ -151,10 +151,7 @@
                 set in the styles will limit the computed height, even if it exceeds any reasonable value.
             </p>
             <p>
-                The value for this <b><i>max-height</i></b> should be calculated based on the number of lines plus vertical paddings and borders. Currently, it is <b>266px</b>:
-                <br>• <b>10 lines</b> of <b>24px</b> each (line-height)
-                <br>• Plus <b>2×11px</b> — two vertical paddings (top and bottom ones)
-                <br>• Plus <b>4px</b> of border
+                The value for this <b><i>max-height</i></b> is calculated based on the number of lines plus vertical paddings and borders.
             </p>
 
             <div class="input input--expandable">
@@ -364,6 +361,26 @@
             </div>
 
 
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Password toggler</h2>
+
+            <div class="input">
+                <input class="input__widget" type="password" value="foobarbaz">
+                <button class="input__show-password" type="button">
+                    <div class="input__eye-on">
+                        <i class="icon">visibility</i>
+                    </div>
+                    <div class="input__eye-off">
+                        <i class="icon">visibility_off</i>
+                    </div>
+                </button>
+            </div>
+
+
             <br>
             <br>
             <br>
@@ -378,9 +395,8 @@
         </div>
 
 
-        <script src="../scripts/scripts.js?1770213124"></script>
+        <script type="module" src="../scripts/scripts.js?1770267529"></script>
 
 
     </body>
 </html>
-
