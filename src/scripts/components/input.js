@@ -1,5 +1,8 @@
 export const input = () => {
+
+
     /* Input error */
+
     document.addEventListener('focusin', (event) => {
         const $input = event.target.closest('.input');
         if (!$input) return;
@@ -12,7 +15,9 @@ export const input = () => {
         }
     });
 
+
     /* Select placeholder */
+
     const selectPlaceholder = ($element) => {
         const $parent = $element.closest('.input');
         if (!$parent) return;
@@ -26,7 +31,9 @@ export const input = () => {
         });
     });
 
+
     /* Expanding textarea */
+
     const expandTextarea = ($element) => {
         $element.style.height = 'auto';
         const computedStyles = window.getComputedStyle($element);
@@ -41,14 +48,16 @@ export const input = () => {
         });
     });
 
+
     /* Toggle password visibility */
+
     document.addEventListener('click', (event) => {
-        const $toggle = event.target.closest('.input__show-password');
-        if (!$toggle) return;
-        const $input = $toggle.closest('.input');
-        if (!$input) return;
+        const $inputShowPassword = event.target.closest('.input__show-password');
+        if (!$inputShowPassword) {
+            return;
+        }
+        const $input = $inputShowPassword.closest('.input');
         const $widget = $input.querySelector('.input__widget');
-        if (!$widget) return;
         const isVisible = $input.classList.toggle('input--password-is-visible');
         if ($widget.type === 'password' || $widget.type === 'text') {
             $widget.type = isVisible ? 'text' : 'password';

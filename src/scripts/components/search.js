@@ -1,4 +1,5 @@
 export const search = () => {
+
     /* Toggle search dropdown */
     document.addEventListener('click', (event) => {
         if (event.target.closest('.search__handler')) {

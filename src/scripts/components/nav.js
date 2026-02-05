@@ -1,5 +1,7 @@
 export const nav = () => {
+
     /* Toggle nav sub-menu (collapsed sidebar only) */
+
     document.addEventListener('click', (event) => {
         if (event.target.closest('.nav__more')) {
             event.preventDefault();

@@ -1,4 +1,5 @@
 export const user = () => {
+
     /* Toggle user dropdown */
     document.addEventListener('click', (event) => {
         if (event.target.closest('.user__handler')) {

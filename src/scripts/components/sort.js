@@ -1,4 +1,9 @@
+/* TO DO: this component needs actual programming
+ * At the moment we have only dropdown functionality in here
+ */
+
 export const sort = () => {
+
     /* Toggle sort */
     document.addEventListener('click', (event) => {
         const $sortOrder = event.target.closest('.sort__order');
@@ -9,7 +14,6 @@ export const sort = () => {
                 const isDescending = $sort.classList.contains('sort__order--descending');
                 $sort.classList.toggle('sort__order--ascending', isDescending);
                 $sort.classList.toggle('sort__order--descending', !isDescending);
-                alert('Change sort ascending/descending here');
             }
             return;
         }
@@ -22,7 +26,12 @@ export const sort = () => {
 
         if (event.target.closest('.sort__apply .button')) {
             event.preventDefault();
-            alert('Apply sort here');
+            event.target.closest('.sort').classList.remove('sort--expanded');
+            return;
+        }
+
+        if (event.target.closest('.sort__cancel .link')) {
+            event.preventDefault();
             event.target.closest('.sort').classList.remove('sort--expanded');
             return;
         }

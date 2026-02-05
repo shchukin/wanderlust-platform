@@ -1,4 +1,5 @@
 export const create = () => {
+
     /* Toggle New Project dropdown ("New Project" in the header) */
     document.addEventListener('click', (event) => {
         if (event.target.closest('.create__handler .button')) {

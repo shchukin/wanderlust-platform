@@ -109,15 +109,27 @@
             }
 
 
-        .sort__apply {
+        .sort__footer {
+            display: flex;
+            align-items: center;
+            gap: 12px;
             padding: 12px 18px 24px;
         }
-            .sort__apply .button {
-                position: relative;
+
+            .sort__apply {
+
             }
-                /*.make clickable area larger */
-                .sort__apply .button::before {
-                    content: "";
-                    position: absolute;
-                    inset: -6px;
+                .sort__apply .button {
+                    position: relative;
                 }
+                    /*.make clickable area larger */
+                    .sort__apply .button::before {
+                        content: "";
+                        position: absolute;
+                        inset: -6px;
+                    }
+
+            .sort__cancel {
+                font-size: 13px;
+                line-height: 16px;
+            }
