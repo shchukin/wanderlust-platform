@@ -23,6 +23,10 @@
         background-color: var(--table-header-hover);
     }
 
+    .sort__handler:active {
+        transform: translateY(1px);
+    }
+
     .sort__order {
         position: absolute;
         right: 0;
@@ -46,19 +50,28 @@
         transform: scaleY(-1);
     }
 
-    .sort__order::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        margin: auto;
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
+    .sort__order:active {
+        margin-top: 1px;
     }
 
-    .sort__order:hover::before {
-        background-color: var(--table-header-hover);
+    /* .sort__handler and .sort__order are not connected, but it looks weird when .sort__handler pressed and moved 1px down but .sort__order doesn't follow */
+    .sort:has(.sort__handler:active) .sort__order {
+        margin-top: 2px;
     }
+        .sort__order::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+
+        .sort__order:hover::before {
+            background-color: var(--table-header-hover);
+        }
+
         .sort__order .icon {
             position: relative;
             font-size: 16px;

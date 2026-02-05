@@ -1,5 +1,5 @@
 .input {
-
+    position: relative;
 }
     .input__widget {
         vertical-align: top;
@@ -147,4 +147,55 @@ select.input__widget:disabled {
         .input--placeholder-is-chosen select.input__widget option {
             color: #000000; /* Browsers on Windows inherit grey color from <select> to <option>`s. Reset it. */
         }
+
+
+
+.input:has(.input__show-password) .input__widget {
+    padding-right: 40px;
+}
+    .input__show-password {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+    }
+
+    .input__show-password:active {
+        transform: translateY(1px);
+    }
+        .input__show-password::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        .input__show-password:hover::before {
+            background-color: var(--hover-over-white);
+        }
+
+        .input__eye-on {
+            display: none;
+        }
+
+        .input__eye-off {
+
+        }
+            .input__show-password .icon {
+                position: relative;
+                font-size: 18px;
+                line-height: 18px;
+                color: var(--black);
+            }
 

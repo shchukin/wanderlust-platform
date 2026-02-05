@@ -37,6 +37,11 @@
             text-decoration: none;
             color: inherit;
         }
+
+        .header__action:active {
+            transform: translateY(1px);
+        }
+
             .header__action::before {
                 content: "";
                 position: absolute;

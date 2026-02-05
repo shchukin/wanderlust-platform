@@ -14,6 +14,11 @@
         .nav__link:hover {
             background-color: var(--hover-over-white);
         }
+
+        .nav__link:active {
+            transform: translateY(1px);
+        }
+
             .nav__container {
                 position: relative;
                 display: flex;

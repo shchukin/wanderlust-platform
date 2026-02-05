@@ -17,6 +17,10 @@
     .user__handler:hover {
         background-color: var(--hover-over-body);
     }
+
+    .user__handler:active {
+        transform: translateY(1px);
+    }
         .user__preview {
             display: block;
             padding: 2px;
@@ -70,6 +74,15 @@
 
     .user__edit:hover {
         transform: scale(120%);
+    }
+
+    .user__edit:active {
+        margin-top: 1px;
+    }
+
+    /* .user__handler and .user__edit are not connected, but it looks weird when .user__handler pressed and moved 1px down but .user__edit doesn't follow */
+    .user:has(.user__handler:active) .user__edit {
+        margin-top: 1px;
     }
         .user__edit .icon {
             font-size: 11px;

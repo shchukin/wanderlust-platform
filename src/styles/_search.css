@@ -53,6 +53,10 @@
             color: inherit;
             cursor: pointer;
         }
+
+        .search__handler:active {
+            transform: translateY(1px);
+        }
             /* hover */
             .search__handler::before {
                 content: "";

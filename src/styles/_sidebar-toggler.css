@@ -10,6 +10,10 @@
     background-color: transparent;
     cursor: pointer;
 }
+
+.sidebar-toggler:active {
+    margin-top: 1px;
+}
     .sidebar-toggler__inner {
         display: block;
         width: 26px;
