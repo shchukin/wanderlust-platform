@@ -70,24 +70,12 @@
 @media (1500px <= width < 1800px) {
 
     .preview {
-        /*padding: 24px 21px;*/
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*background-color: #ffffff;*/
-        /*box-shadow: var(--shadow);*/
-        /*border-radius: 25px;*/
+
     }
         .preview__body {
-            /*display: flex;*/
-            /*align-items: flex-start;*/
-            /*gap: 10px;*/
-            /*padding-bottom: 14px;*/
+
         }
             .preview__icon {
-                /*flex-shrink: 0;*/
-                /*display: flex;*/
-                /*align-items: center;*/
-                /*justify-content: center;*/
                 width: 50px;
                 height: 50px;
                 border-radius: 12px;
@@ -99,7 +87,7 @@
                 }
 
             .preview__content {
-                /*align-self: center;*/
+
             }
                 .preview__heading {
                     font-size: 22px;
@@ -107,20 +95,15 @@
                 }
 
                 .preview__note {
-                    /*margin-top: 2px;*/
                     font-size: 14px;
                     line-height: 18px;
                 }
 
                 .preview__progress {
-                    /*margin-top: 8px;*/
+
                 }
 
             .preview__link {
-                /*margin-top: auto;*/
-                /*min-height: 36px;*/
-                /*display: flex;*/
-                /*align-items: flex-end;*/
                 font-size: 14px;
                 line-height: 18px;
             }
@@ -132,34 +115,22 @@
 
     .preview {
         padding: 20px 16px;
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*background-color: #ffffff;*/
-        /*box-shadow: var(--shadow);*/
         border-radius: 25px;
     }
         .preview__body {
-            /*align-items: flex-start;*/
             gap: 7px;
-            /*padding-bottom: 14px;*/
         }
             .preview__icon {
-                /*flex-shrink: 0;*/
-                /*display: flex;*/
-                /*align-items: center;*/
-                /*justify-content: center;*/
                 width: 40px;
                 height: 40px;
-                /*border-radius: 15px;*/
             }
                 .preview__icon .icon {
-                    /*font-weight: 300;*/
                     font-size: 24px;
                     line-height: 24px;
                 }
 
             .preview__content {
-                /*align-self: center;*/
+
             }
                 .preview__heading {
                     font-size: 22px;
@@ -173,14 +144,10 @@
                 }
 
                 .preview__progress {
-                    /*margin-top: 8px;*/
+
                 }
 
             .preview__link {
-                /*margin-top: auto;*/
-                /*min-height: 36px;*/
-                /*display: flex;*/
-                /*align-items: flex-end;*/
                 font-size: 14px;
                 line-height: 16px;
             }
