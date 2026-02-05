@@ -1,7 +1,7 @@
 :root {
     --font: "DM Sans", sans-serif;
     --font-heading: "Poppins";
-    --font-icons: "Material Symbols Outlined";
+    --font-icons: "Material Symbols Rounded";
     --base-font-size: 15px;
     --base-line-height: 20px;
     --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
