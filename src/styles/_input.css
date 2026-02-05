@@ -185,13 +185,12 @@ select.input__widget:disabled {
             background-color: var(--hover-over-white);
         }
 
-        .input__eye-on {
-            display: none;
-        }
+        .input__eye-on { display: none; }
+        .input__eye-off { display: block; }
+        .input--password-is-visible .input__eye-on { display: block; }
+        .input--password-is-visible .input__eye-off { display: none; }
 
-        .input__eye-off {
 
-        }
             .input__show-password .icon {
                 position: relative;
                 font-size: 18px;

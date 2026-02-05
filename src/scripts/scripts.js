@@ -232,6 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
     /* Expanding textarea */
     const expandTextarea = ($element) => {
         $element.style.height = 'auto';
@@ -245,6 +246,19 @@ document.addEventListener('DOMContentLoaded', () => {
         $element.addEventListener('input', () => {
             expandTextarea($element);
         });
+    });
+
+
+    /* Toggle password visibility */
+    document.addEventListener('click', (event) => {
+        const $toggle = event.target.closest('.input__show-password');
+        if (!$toggle) {
+            return;
+        }
+        const $input = event.target.closest('.input__show-password').closest('.input');
+        const $widget = $input.querySelector('.input__widget');
+        const isVisible = $input.classList.toggle('input--password-is-visible');
+        $widget.type = isVisible ? 'text' : 'password';
     });
 
 });
