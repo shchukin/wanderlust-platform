@@ -25,12 +25,12 @@
     }
 
     .search__input:hover {
-        border-color: var(--input-border-hover-and-focus);
+        border-color: var(--input-border-focus);
     }
 
     .search__input:focus-visible {
-        border-color: var(--input-border-hover-and-focus);
-        box-shadow: 0 0 0 1px var(--input-border-hover-and-focus);
+        border-color: var(--input-border-focus);
+        box-shadow: 0 0 0 1px var(--input-border-focus);
         transition: none;
     }
 

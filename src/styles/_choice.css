@@ -49,7 +49,7 @@
 /* Hover */
 .choice:hover {
     background-color: var(--hover-over-white);
-    border-color: var(--input-border-hover-and-focus);
+    border-color: var(--input-border-focus);
 }
 
 /* Checked */

@@ -24,11 +24,12 @@
     --hover-over-white: #f9fafb; /* matching with body background */
     --hover-over-body: #fbe8f3; /* matching with body background */
     --input-border: #d5d5d5;
-    --input-border-hover-and-focus: var(--blue);
+    --input-border-hover: #8c8c8c;
+    --input-border-focus: var(--blue);
     --placeholder-color: #999999;
     --disabled-background: #ececec;
-    --disabled-color: #76839c;
-    /*--error: #FF0033;*/
+    --disabled-color: #737373;
+    --error: #ff0033;
 
     --table-header-background: #f6f6f6;
     --table-header-hover: #eeeeee;
