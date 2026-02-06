@@ -50,16 +50,18 @@
                         }
 
                     .account__picture {
-                        display: flex;
+                        margin-top: -22px;
+                        margin-bottom: -8px;
+                        display: grid;
+                        grid-template-columns: minmax(0, 1fr) auto;
                         align-items: center;
                     }
                         .account__picture-heading {
-                            flex-grow: 1;
-                            overflow: hidden;
+
                         }
 
                         .account__picture-preview {
-                            flex-shrink: 0;
+
                         }
 
         .account__sidebar {
