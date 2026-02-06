@@ -51,6 +51,21 @@
     }
 
 
+.peer--online {
+
+}
+    .peer--online .peer__preview::after {
+        content: '';
+        position: absolute;
+        right: -2px;
+        bottom: -2px;
+        width: 13px;
+        height: 13px;
+        border: 1px solid #ffffff;
+        background-color: #5cca53;
+        border-radius: 50%;
+    }
+
 .peer--selected,
 .peer--selected:hover {
     background-color: #f2ecfb;
