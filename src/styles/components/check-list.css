@@ -1,13 +1,15 @@
 .check-list {
-
+    --check-list-padding: 24px;
 }
+    /* override all choices inside */
+    .check-list .choice {
+        --choice-outset: 0;
+    }
+
     .check-list .choice {
         border-radius: 0;
-        padding-left: 24px;
-        padding-right: 24px;
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
+        padding-left: var(--check-list-padding);
+        padding-right: var(--check-list-padding);
     }
 
     .check-list__heading {
@@ -25,11 +27,17 @@
     .check-list__section {
 
     }
+        .check-list__section-heading {
+            padding: 15px var(--check-list-padding) 9px;
+            font-size: 15px;
+            line-height: 22px;
+        }
+
         .check-list__sub-list {
 
         }
             .check-list__sub-list .choice {
-                padding-left: 44px;
+                padding-left: 48px;
                 background-image: linear-gradient(to right, transparent, transparent 32px, #d5d5d5 32px, #d5d5d5 33px, transparent 33px, transparent);
             }
 
@@ -38,26 +46,20 @@
 @media (width < 1500px) {
 
     .check-list {
-
+        --check-list-padding: 16px;
     }
         .check-list .choice {
-            /*border-radius: 0;*/
-            padding-left: 16px;
-            padding-right: 16px;
-            /*margin-left: 0;*/
-            /*margin-right: 0;*/
-            /*width: 100%;*/
+
         }
 
         .check-list__heading {
 
         }
             .check-list__heading .choice {
-                /*font-size: 20px;*/
-                /*line-height: 28px;*/
+
             }
                 .check-list__heading .choice__icon {
-                    /*margin-top: 4px;*/
+
                 }
 
         .check-list__section {
@@ -68,6 +70,6 @@
             }
                 .check-list__sub-list .choice {
                     padding-left: 32px;
-                    background-image: linear-gradient(to right, transparent, transparent 22px, #d5d5d5 22px, #d5d5d5 23px, transparent 23px, transparent);
+                    background-image: linear-gradient(to right, transparent, transparent 20px, #d5d5d5 20px, #d5d5d5 21px, transparent 21px, transparent);
                 }
 }

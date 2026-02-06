@@ -162,7 +162,18 @@
 
 .choice--blue-when-checked.choice--input-alike:has(.choice__widget:checked) {
     box-shadow: inset 0 0 0 1px var(--blue);
-    color: var(--blue);
 }
 
 
+/* Blue icon when checked */
+
+.choice--blue-icon-when-checked {
+
+}
+
+.choice--blue-icon-when-checked {
+
+}
+    .choice--blue-icon-when-checked:has(.choice__widget:checked) .choice__icon .icon {
+        color: var(--blue);
+    }
