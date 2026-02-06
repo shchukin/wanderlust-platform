@@ -1,4 +1,4 @@
-.nav {
+    .nav {
     --nav-more-width: 21px;
 }
     .nav__section {
@@ -38,8 +38,7 @@
 
 
             .nav__link--current .nav__container,
-            .nav__section:has(.nav__link--current) > .nav__link .nav__container /* if current item is deeper in the sub-menu we still need to color parental item (this is especially needed on smartphones) */
-            {
+            .nav__section:has(.nav__link--current) > .nav__link .nav__container { /* if current item is deeper in the sub-menu we still need to color parental item (this is especially needed on smartphones) */
                 background-color: var(--blue);
                 box-shadow: none;
                 color: #ffffff;
@@ -159,8 +158,7 @@
             }
 
             .sidebar-expanded .nav__link--current .nav__container,
-            .sidebar-expanded .nav__section:has(.nav__link--current) > .nav__link .nav__container /* if current item is deeper in the sub-menu we still need to color parental item (this is especially needed on smartphones) */
-            {
+            .sidebar-expanded .nav__section:has(.nav__link--current) > .nav__link .nav__container { /* if current item is deeper in the sub-menu we still need to color parental item (this is especially needed on smartphones) */
                 background-color: transparent;
                 color: var(--blue);
             }

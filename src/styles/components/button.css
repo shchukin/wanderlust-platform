@@ -37,8 +37,7 @@
 .button:disabled:active,
 .button.button--disabled,
 .button.button--disabled:hover,
-.button.button--disabled:active
-{
+.button.button--disabled:active {
     background-color: var(--disabled-background);
     box-shadow: none; /* cancel border in outlined buttons */
     color: var(--disabled-color);

@@ -41,11 +41,10 @@
         border-radius: 50%;
         cursor: pointer;
     }
-    
+
     .photo-upload__edit:hover {
         background-color: #d1d1d1;
     }
-    
         .photo-upload__edit .icon {
             font-size: 11px;
             line-height: 12px;
