@@ -10,10 +10,11 @@
     }
 
     .account__description {
-
+        margin-top: 16px;
     }
 
     .account__body {
+        margin-top: 32px;
         display: grid;
         grid-template-columns: minmax(0, 850fr) minmax(0, 330fr);
         gap: var(--container-padding);
