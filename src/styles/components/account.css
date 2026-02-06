@@ -17,6 +17,7 @@
         margin-top: 32px;
         display: grid;
         grid-template-columns: minmax(0, 850fr) minmax(0, 330fr);
+        align-items: start;
         gap: var(--container-padding);
     }
         .account__content {
@@ -56,6 +57,9 @@
                             grid-template-columns: minmax(0, 120fr) minmax(0, 240fr);
                             gap: 12px;
                         }
+                            .account__field--halved .input {
+                                width: 50%;
+                            }
 
                     .account__picture {
                         margin-top: -22px;
@@ -74,6 +78,8 @@
                         }
 
         .account__sidebar {
+            padding-top: 14px;
+            padding-bottom: 36px;
             background-color: #ffffff;
             border-radius: 10px;
         }
@@ -81,3 +87,13 @@
     .account__submit {
         margin-top: 22px;
     }
+
+
+
+@media (width < 1500px) {
+
+    .account {
+        --account-padding: 20px;
+    }
+}
+

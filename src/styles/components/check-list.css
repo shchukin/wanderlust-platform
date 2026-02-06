@@ -1,0 +1,72 @@
+.check-list {
+
+}
+    .check-list .choice {
+        border-radius: 0;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .check-list__heading {
+
+    }
+        .check-list__heading .choice {
+            font-size: 20px;
+            line-height: 28px;
+        }
+            .check-list__heading .choice__icon {
+                margin-top: 4px;
+            }
+
+    .check-list__section {
+
+    }
+        .check-list__sub-list {
+
+        }
+            .check-list__sub-list .choice {
+                padding-left: 44px;
+                background-image: linear-gradient(to right, transparent, transparent 32px, #d5d5d5 32px, #d5d5d5 33px, transparent 33px, transparent);
+            }
+
+
+
+@media (width < 1500px) {
+
+    .check-list {
+
+    }
+        .check-list .choice {
+            /*border-radius: 0;*/
+            padding-left: 16px;
+            padding-right: 16px;
+            /*margin-left: 0;*/
+            /*margin-right: 0;*/
+            /*width: 100%;*/
+        }
+
+        .check-list__heading {
+
+        }
+            .check-list__heading .choice {
+                /*font-size: 20px;*/
+                /*line-height: 28px;*/
+            }
+                .check-list__heading .choice__icon {
+                    /*margin-top: 4px;*/
+                }
+
+        .check-list__section {
+
+        }
+            .check-list__sub-list {
+
+            }
+                .check-list__sub-list .choice {
+                    padding-left: 32px;
+                    background-image: linear-gradient(to right, transparent, transparent 22px, #d5d5d5 22px, #d5d5d5 23px, transparent 23px, transparent);
+                }
+}
