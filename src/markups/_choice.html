@@ -15,7 +15,6 @@
             <p>
                 <i>Same as <a href="_button.html">.button</a> and <a href="_input.html">.input</a> this component has a height of 40px by default</i>
             </p>
-            <br>
 
 
             <label class="choice">
@@ -44,6 +43,11 @@
                 </div>
             </label>
 
+            <br>
+            <p>
+                Replace choice__widget's type and icons to get the radio buttons:
+            </p>
+
             <label class="choice">
                 <input class="choice__widget" type="radio" name="PFdomUtPW5">
                 <div class="choice__icon choice__icon--unchecked">
@@ -69,6 +73,39 @@
                     Sydney
                 </div>
             </label>
+
+
+            <br>
+            <p>
+                Replace icon and add <b><i>.choice--toggler</i></b> class. Extra class was needed to make icon bigger:
+            </p>
+
+            <label class="choice choice--toggler">
+                <input class="choice__widget" type="checkbox">
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">toggle_off</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">toggle_on</i>
+                </div>
+                <div class="choice__label">
+                    Bangkok
+                </div>
+            </label>
+
+            <label class="choice choice--toggler">
+                <input class="choice__widget" type="checkbox" checked>
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">toggle_off</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">toggle_on</i>
+                </div>
+                <div class="choice__label">
+                    Moscow
+                </div>
+            </label>
+
 
 
 
@@ -164,6 +201,31 @@
                 </div>
             </label>
 
+            <label class="choice choice--toggler">
+                <input class="choice__widget" type="checkbox" disabled>
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">toggle_off</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">toggle_on</i>
+                </div>
+                <div class="choice__label">
+                    California
+                </div>
+            </label>
+
+            <label class="choice choice--toggler">
+                <input class="choice__widget" type="checkbox" disabled checked>
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">toggle_off</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">toggle_on</i>
+                </div>
+                <div class="choice__label">
+                    Meat Lovers
+                </div>
+            </label>
 
             <br>
             <br>
@@ -296,6 +358,105 @@
 
             </div>
 
+
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.choice--stretched</h2>
+            <p>
+                Add <b><i>.choice--stretched</i></b> class and also move icons to the right side.
+            </p>
+
+            <label class="choice choice--stretched">
+                <input class="choice__widget" type="checkbox">
+                <div class="choice__label">
+                    Mystery
+                </div>
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">check_box_outline_blank</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">check_box</i>
+                </div>
+            </label>
+
+            <label class="choice choice--stretched">
+                <input class="choice__widget" type="checkbox">
+                <div class="choice__label">
+                    Fantasy
+                </div>
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">check_box_outline_blank</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">check_box</i>
+                </div>
+            </label>
+
+            <label class="choice choice--stretched">
+                <input class="choice__widget" type="checkbox">
+                <div class="choice__label">
+                    Romance
+                </div>
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">check_box_outline_blank</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">check_box</i>
+                </div>
+            </label>
+
+            <label class="choice choice--stretched">
+                <input class="choice__widget" type="checkbox">
+                <div class="choice__label">
+                    Science Fiction
+                </div>
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">check_box_outline_blank</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">check_box</i>
+                </div>
+            </label>
+
+            <br>
+            <p>
+                Makes sense with togglers:
+            </p>
+            <br>
+
+
+            <label class="choice choice--toggler choice--stretched">
+                <input class="choice__widget" type="checkbox">
+                <div class="choice__label">
+                    Thriller
+                </div>
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">toggle_off</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">toggle_on</i>
+                </div>
+            </label>
+
+            <label class="choice choice--toggler choice--stretched">
+                <input class="choice__widget" type="checkbox" checked>
+                <div class="choice__label">
+                    Horror
+                </div>
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">toggle_off</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">toggle_on</i>
+                </div>
+            </label>
+
+
+
+
             <br>
             <br>
             <br>
@@ -410,6 +571,58 @@
                     </div>
                 </label>
 
+                <label class="choice choice--full-width choice--input-alike choice--toggler">
+                    <input class="choice__widget" type="checkbox">
+                    <div class="choice__icon choice__icon--unchecked">
+                        <i class="icon">toggle_off</i>
+                    </div>
+                    <div class="choice__icon choice__icon--checked">
+                        <i class="icon">toggle_on</i>
+                    </div>
+                    <div class="choice__label">
+                        Nautilus
+                    </div>
+                </label>
+
+                <label class="choice choice--full-width choice--input-alike choice--toggler">
+                    <input class="choice__widget" type="checkbox">
+                    <div class="choice__icon choice__icon--unchecked">
+                        <i class="icon">toggle_off</i>
+                    </div>
+                    <div class="choice__icon choice__icon--checked">
+                        <i class="icon">toggle_on</i>
+                    </div>
+                    <div class="choice__label">
+                        Titanic
+                    </div>
+                </label>
+
+                <label class="choice choice--full-width choice--input-alike choice--toggler">
+                    <input class="choice__widget" type="checkbox">
+                    <div class="choice__icon choice__icon--unchecked">
+                        <i class="icon">toggle_off</i>
+                    </div>
+                    <div class="choice__icon choice__icon--checked">
+                        <i class="icon">toggle_on</i>
+                    </div>
+                    <div class="choice__label">
+                        Santa Maria
+                    </div>
+                </label>
+
+                <label class="choice choice--full-width choice--input-alike choice--toggler">
+                    <input class="choice__widget" type="checkbox">
+                    <div class="choice__icon choice__icon--unchecked">
+                        <i class="icon">toggle_off</i>
+                    </div>
+                    <div class="choice__icon choice__icon--checked">
+                        <i class="icon">toggle_on</i>
+                    </div>
+                    <div class="choice__label">
+                        The Flying Dutchman
+                    </div>
+                </label>
+
             </div>
 
 
@@ -435,7 +648,7 @@
             </label>
 
             <label class="choice choice--smaller">
-                <input class="choice__widget" type="checkbox" checked>
+                <input class="choice__widget" type="checkbox">
                 <div class="choice__icon choice__icon--unchecked">
                     <i class="icon">check_box_outline_blank</i>
                 </div>
@@ -461,7 +674,7 @@
             </label>
 
             <label class="choice choice--smaller">
-                <input class="choice__widget" type="radio" name="KcDsuEG" checked>
+                <input class="choice__widget" type="radio" name="KcDsuEG">
                 <div class="choice__icon choice__icon--unchecked">
                     <i class="icon">radio_button_unchecked</i>
                 </div>
@@ -473,6 +686,31 @@
                 </div>
             </label>
 
+            <label class="choice choice--smaller choice--toggler">
+                <input class="choice__widget" type="checkbox">
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">toggle_off</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">toggle_on</i>
+                </div>
+                <div class="choice__label">
+                    Bangkok
+                </div>
+            </label>
+
+            <label class="choice choice--smaller choice--toggler">
+                <input class="choice__widget" type="checkbox">
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">toggle_off</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">toggle_on</i>
+                </div>
+                <div class="choice__label">
+                    Moscow
+                </div>
+            </label>
 
             <br>
             <br>
@@ -520,6 +758,86 @@
                     Inbox
                 </div>
             </label>
+
+            <label class="choice choice--gray">
+                <input class="choice__widget" type="radio" name="iFh7fBSCRxA" checked>
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">radio_button_unchecked</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">radio_button_checked</i>
+                </div>
+                <div class="choice__label">
+                    Foo
+                </div>
+            </label>
+
+            <label class="choice choice--gray">
+                <input class="choice__widget" type="radio" name="iFh7fBSCRxA">
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">radio_button_unchecked</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">radio_button_checked</i>
+                </div>
+                <div class="choice__label">
+                    Bar
+                </div>
+            </label>
+
+            <label class="choice choice--gray">
+                <input class="choice__widget" type="radio" name="iFh7fBSCRxA">
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">radio_button_unchecked</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">radio_button_checked</i>
+                </div>
+                <div class="choice__label">
+                    Baz
+                </div>
+            </label>
+
+            <label class="choice choice--gray choice--toggler">
+                <input class="choice__widget" type="checkbox" checked>
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">toggle_off</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">toggle_on</i>
+                </div>
+                <div class="choice__label">
+                    Video ready for review
+                </div>
+            </label>
+
+            <label class="choice choice--gray choice--toggler">
+                <input class="choice__widget" type="checkbox">
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">toggle_off</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">toggle_on</i>
+                </div>
+                <div class="choice__label">
+                    Uploaded project files
+                </div>
+            </label>
+
+            <label class="choice choice--gray choice--toggler">
+                <input class="choice__widget" type="checkbox">
+                <div class="choice__icon choice__icon--unchecked">
+                    <i class="icon">toggle_off</i>
+                </div>
+                <div class="choice__icon choice__icon--checked">
+                    <i class="icon">toggle_on</i>
+                </div>
+                <div class="choice__label">
+                    Approved projects
+                </div>
+            </label>
+
+
 
 
 

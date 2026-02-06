@@ -32,7 +32,7 @@
         .choice__icon .icon {
             font-size: 18px;
             line-height: 22px;
-            }
+        }
 
     .choice__widget {
         opacity: 0;
@@ -90,6 +90,12 @@
     width: calc(100% + 2 * var(--choice-outset));
 }
 
+/* Stretched */
+.choice--stretched {
+    width: calc(100% + 2 * var(--choice-outset));
+    justify-content: space-between;
+}
+
 
 /* Input Alike */
 .choice--input-alike {
@@ -112,8 +118,6 @@
 
 
 
-
-
 /* Smaller */
 
 .choice--smaller {
@@ -132,3 +136,17 @@
 .choice--gray {
     color: #76839c;
 }
+
+
+
+/* Toggle */
+
+.choice--toggler {
+
+}
+    .choice--toggler .choice__icon .icon {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+
