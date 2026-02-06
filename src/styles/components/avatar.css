@@ -3,6 +3,7 @@
     width: fit-content;
     background-color: var(--pink);
     padding: 1px;
+    border: none;
     border-radius: 50%;
 }
     .avatar__image {
@@ -13,7 +14,7 @@
 
 
 .avatar--with-hover {
-
+    cursor: pointer;
 }
     .avatar--with-hover:hover .avatar__image {
         filter: brightness(105%) contrast(105%);

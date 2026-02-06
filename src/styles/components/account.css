@@ -50,14 +50,16 @@
                         }
 
                     .account__picture {
-
+                        display: flex;
+                        align-items: center;
                     }
                         .account__picture-heading {
-
+                            flex-grow: 1;
+                            overflow: hidden;
                         }
 
                         .account__picture-preview {
-
+                            flex-shrink: 0;
                         }
 
         .account__sidebar {
