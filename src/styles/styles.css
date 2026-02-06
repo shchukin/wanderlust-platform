@@ -35,6 +35,8 @@
 @import url("components/callout.css");
 @import url("components/progress.css");
 @import url("components/status.css");
+@import url("components/tasks.css");
+@import url("components/definitions.css");
 
 @import url("components/sidebar.css");
 @import url("components/sidebar-toggler.css");
@@ -49,7 +51,6 @@
 @import url("components/share.css");
 @import url("components/dashboard.css");
 @import url("components/preview.css");
-@import url("components/tasks.css");
 @import url("components/account.css");
 @import url("components/check-list.css");
 

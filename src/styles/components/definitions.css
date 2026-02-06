@@ -1,0 +1,28 @@
+.definitions {
+    display: table;
+    vertical-align: top;
+    width: fit-content;
+    border-collapse: collapse;
+}
+    .definitions__item {
+        display: table-row;
+        border-top: 10px solid transparent;
+    }
+
+    .definitions__item:first-child {
+        border-top: none;
+    }
+        .definitions__term {
+            display: table-cell;
+            vertical-align: top;
+            padding: 0;
+            font-weight: 500;
+            font-size: var(--base-font-size);
+            line-height: var(--base-line-height);
+            color: #76839c;
+        }
+
+        .definitions__details {
+            vertical-align: top;
+            padding: 0 0 0 28px;
+        }
