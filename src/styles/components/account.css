@@ -1,3 +1,70 @@
 .account {
+    --account-padding: 28px;
+}
+
+.account {
 
 }
+    .account__heading {
+
+    }
+
+    .account__description {
+
+    }
+
+    .account__body {
+        display: grid;
+        grid-template-columns: minmax(0, 850fr) minmax(0, 330fr);
+        gap: var(--container-padding);
+    }
+        .account__content {
+
+        }
+            .account__widget {
+                margin-top: 22px;
+                padding: 23px var(--account-padding) 42px;
+                background-color: #ffffff;
+                border-radius: 10px;
+            }
+
+            .account__widget:first-child {
+                margin-top: 0;
+            }
+                .account__widget-heading {
+
+                }
+
+                .account__widget-body {
+                    margin-top: 26px;
+                }
+                    .account__form {
+                        display: grid;
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                        gap: 20px var(--account-padding);
+                    }
+                        .account__field {
+                            display: grid;
+                            grid-template-columns: minmax(0, 120fr) minmax(0, 240fr);
+                            gap: 12px;
+                        }
+
+                    .account__picture {
+
+                    }
+                        .account__picture-heading {
+
+                        }
+
+                        .account__picture-preview {
+
+                        }
+
+        .account__sidebar {
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+    .account__submit {
+        margin-top: 22px;
+    }
