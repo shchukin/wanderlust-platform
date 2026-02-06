@@ -38,6 +38,7 @@ gulp.task('clean', function () {
 gulp.task('manifest', function () {
     return gulp.src([
         'src/manifest.json',
+        'src/index.html',
         'src/favicon.ico'], {encoding: false})
         .pipe(plumber())
         .pipe(gulp.dest('build/'))
