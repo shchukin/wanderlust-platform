@@ -12,7 +12,7 @@
         outline: none;
         border-radius: 26px;
         font-family: inherit;
-        font-size: 16px; /* not less than 16px (otherwise mobile browsers will zoom in on focus) */
+        font-size: 16px;
         line-height: 22px;
         color: var(--black);
         opacity: 1; /* reset select:disabled default fade on iOS */
