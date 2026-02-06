@@ -68,4 +68,13 @@
 }
 
 
+.link .icon {
+    font-size: inherit;
+    line-height: inherit;
+}
 
+.link--sup-icon .icon {
+    position: relative;
+    top: -4px;
+    font-size: 0.9em;
+}
