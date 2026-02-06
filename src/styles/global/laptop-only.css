@@ -1,10 +1,10 @@
-.monitor-only {
+.laptop-only {
 
 }
 
-@media (width < 1500px) {
+@media (1500px <= width) {
 
-    .monitor-only {
+    .laptop-only {
         display: none !important; /* !important is necessary to override any existing display value on what we are trying to hide */
     }
 }

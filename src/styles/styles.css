@@ -8,6 +8,7 @@
 @import url("global/container.css");
 @import url("global/panel.css");
 @import url("global/monitor-only.css");
+@import url("global/laptop-only.css");
 @import url("global/hide-scrollbar.css");
 
 @import url("components/icon.css");

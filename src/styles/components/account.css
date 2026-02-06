@@ -44,6 +44,13 @@
                         grid-template-columns: repeat(2, minmax(0, 1fr));
                         gap: 20px var(--account-padding);
                     }
+
+                    @media (width < 1500px) {
+                        .account__form {
+                            grid-template-columns: repeat(1, minmax(0, 1fr));
+                        }
+                    }
+
                         .account__field {
                             display: grid;
                             grid-template-columns: minmax(0, 120fr) minmax(0, 240fr);
@@ -56,6 +63,7 @@
                         display: grid;
                         grid-template-columns: minmax(0, 1fr) auto;
                         align-items: center;
+                        gap: 32px;
                     }
                         .account__picture-heading {
 
