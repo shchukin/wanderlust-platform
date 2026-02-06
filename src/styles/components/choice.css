@@ -54,7 +54,7 @@
 
 /* Checked */
 .choice:has(.choice__widget:checked) {
-    color: var(--blue);
+
 }
 
 
@@ -109,8 +109,7 @@
 }
 
 .choice--input-alike:has(.choice__widget:checked) {
-    box-shadow: inset 0 0 0 1px var(--blue);
-    color: var(--blue);
+
 }
     .choice--input-alike .icon {
         font-size: 16px;
@@ -148,5 +147,22 @@
         font-size: 20px;
         line-height: 22px;
     }
+
+
+
+/* Blue when checked */
+
+.choice--blue-when-checked {
+
+}
+
+.choice--blue-when-checked:has(.choice__widget:checked) {
+    color: var(--blue);
+}
+
+.choice--blue-when-checked.choice--input-alike:has(.choice__widget:checked) {
+    box-shadow: inset 0 0 0 1px var(--blue);
+    color: var(--blue);
+}
 
 
