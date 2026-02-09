@@ -4,7 +4,14 @@ export const message = () => {
     document.addEventListener('click', (event) => {
         if (event.target.closest('.message__show-actions')) {
             event.preventDefault();
-            event.target.closest('.message').classList.toggle('message--actions-expanded');
+            const $currentMessage = event.target.closest('.message');
+            const $expandedMessages = document.querySelectorAll('.message--actions-expanded');
+            $expandedMessages.forEach((message) => {
+                if (message !== $currentMessage) {
+                    message.classList.remove('message--actions-expanded');
+                }
+            });
+            $currentMessage.classList.toggle('message--actions-expanded');
             return;
         }
 
