@@ -19,7 +19,7 @@
             font-weight: 500;
             font-size: var(--base-font-size);
             line-height: var(--base-line-height);
-            color: #76839c;
+            color: var(--gray);
         }
 
         .definitions__details {

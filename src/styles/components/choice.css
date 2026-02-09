@@ -133,7 +133,7 @@
 /* Gray */
 
 .choice--gray {
-    color: #76839c;
+    color: var(--gray);
 }
 
 
