@@ -1,10 +1,20 @@
 .message {
+    --message-left: 60px;
+    --message-right: 34px;
+}
+
+.message {
     position: relative;
-    padding-left: 60px;
-    padding-right: 34px;
+    padding-left: var(--message-left);
+    padding-right: var(--message-right);
     display: block;
     width: fit-content;
 }
+
+.message--actions-expanded {
+    z-index: 100;
+}
+
     .message__preview {
         position: absolute;
         left: 0;
@@ -32,8 +42,8 @@
         bottom: 22px; /* height of .message__time */
         margin-top: auto;
         margin-bottom: auto;
-        width: 34px;
-        height: 34px;
+        width: var(--message-right);
+        height: var(--message-right);
     }
         .message__show-actions {
             display: flex;
@@ -53,6 +63,7 @@
                 margin: auto;
                 width: 28px;
                 height: 28px;
+                border-radius: 50%;
             }
 
             .message__show-actions:hover::before {
@@ -78,8 +89,8 @@
 
 .message--self {
     margin-left: auto;
-    padding-left: 30px;
-    padding-right: 60px;
+    padding-left: var(--message-right);
+    padding-right: var(--message-left);
 }
     .message--self .message__bubble {
         background-color: #6f35e1;
