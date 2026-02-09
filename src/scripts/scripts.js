@@ -6,6 +6,7 @@ import { search } from './components/search.js';
 import { sort } from './components/sort.js';
 import { input } from './components/input.js';
 import { message } from './components/message.js';
+import { enter } from './components/enter.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     sidebarToggler();
@@ -16,4 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
     sort();
     input();
     message();
+    enter();
 });
