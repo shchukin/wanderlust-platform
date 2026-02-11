@@ -1,5 +1,6 @@
 .chat {
-    --side-padding: 14px;
+    --side-padding: 16px;
+    --body-padding: 20px;
 }
 
 .chat {
@@ -48,11 +49,14 @@
         border-radius: 10px;
         border: 1px solid #e8e8e8;
     }
-        .chat__body {
+        .chat__content {
+            display: flex;
+            flex-direction: column;
             border-right: 1px solid var(--light-gray);
         }
             .chat__head {
-
+                flex-shrink: 0;
+                border-bottom: 1px solid var(--light-gray);
             }
                 .chat__current-peer-photo {
 
@@ -67,11 +71,12 @@
                 }
 
             .chat__body {
-
+                flex-grow: 1;
             }
 
             .chat__input {
-
+                flex-shrink: 0;
+                padding: var(--body-padding);
             }
 
         .chat__aside {
@@ -91,3 +96,6 @@
                 .chat__widget-body {
                     margin-top: 24px;
                 }
+                    .chat__widget-body .tasks-check-list .choice {
+
+                    }
