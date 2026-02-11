@@ -23,6 +23,7 @@
         }
 
         .definitions__details {
+            display: table-cell;
             vertical-align: top;
             padding: 0 0 0 28px;
         }
@@ -30,3 +31,40 @@
     .definitions__more {
         margin-top: 24px;
     }
+
+
+
+@media (width < 1500px) {
+
+    .definitions {
+        display: block;
+        width: auto;
+    }
+        .definitions__item {
+            display: block;
+            border: none;
+            margin-top: 14px;
+        }
+
+        .definitions__item:first-child {
+            margin-top: 0;
+        }
+            .definitions__term {
+                display: block;
+                /*font-weight: 500;*/
+                /*font-size: var(--base-font-size);*/
+                /*line-height: var(--base-line-height);*/
+                /*color: var(--gray);*/
+            }
+
+            .definitions__details {
+                margin-top: 4px;
+                display: block;
+                /*vertical-align: top;*/
+                padding: 0;
+            }
+
+        .definitions__more {
+            /*margin-top: 24px;*/
+        }
+}

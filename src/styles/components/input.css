@@ -99,7 +99,7 @@ textarea.input__widget {
 
 select.input__widget {
     appearance: none;
-    padding-right: 50px;
+    padding-right: 38px;
     background-image: url("../../images/keyboard_arrow_down.svg");
     background-size: 20px 20px;
     background-repeat: no-repeat;

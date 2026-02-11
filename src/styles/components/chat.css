@@ -1,14 +1,16 @@
 .chat {
-    --side-padding: 16px;
-    --body-padding: 20px;
+    --chat-side-padding: 16px;
+    --chat-body-padding: 20px;
 }
 
 .chat {
-    height: calc(100svh - var(--header-height) - var(--page-bottom-padding));
+    height: calc(100svh - var(--header-height));
+    margin-bottom: calc(-1 * var(--page-bottom-padding));
     display: grid;
     grid-template-columns: minmax(0, 292fr) minmax(0, 1238fr);
-    gap: 20px;
+    gap: calc(var(--container-padding) / 3 * 2);
     padding-top: 2px;
+    padding-bottom: 24px;
 }
     .chat__sidebar {
         padding-top: 22px;
@@ -16,25 +18,27 @@
         box-shadow: var(--shadow-light);
         border-radius: 10px;
         border: 1px solid #e8e8e8;
+        overflow-y: auto;
+        scrollbar-width: thin;
     }
         .chat__heading {
-            padding-left: var(--side-padding);
-            padding-right: var(--side-padding);
+            padding-left: var(--chat-side-padding);
+            padding-right: var(--chat-side-padding);
         }
 
         .chat__search {
             margin-top: 20px;
             padding-bottom: 18px;
-            padding-left: var(--side-padding);
-            padding-right: var(--side-padding);
+            padding-left: var(--chat-side-padding);
+            padding-right: var(--chat-side-padding);
         }
 
         .chat__section {
             margin-top: 10px;
         }
             .chat__section-heading {
-                padding-left: var(--side-padding);
-                padding-right: var(--side-padding);
+                padding-left: var(--chat-side-padding);
+                padding-right: var(--chat-side-padding);
             }
 
             .chat__section-list {
@@ -48,18 +52,32 @@
         box-shadow: var(--shadow-light);
         border-radius: 10px;
         border: 1px solid #e8e8e8;
+        min-height: 0; /* Override default "min-height: auto" so the grid item can actually be constrained by height: 100% (below) */
     }
         .chat__content {
             display: flex;
             flex-direction: column;
             border-right: 1px solid var(--light-gray);
+            min-height: 0; /* Override default "min-height: auto" so the grid item can actually be constrained by height: 100% (below) */
         }
             .chat__head {
+                position: relative;
+                height: 110px;
+                padding: 12px var(--chat-side-padding) 12px 100px;
                 flex-shrink: 0;
                 border-bottom: 1px solid var(--light-gray);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
                 .chat__current-peer-photo {
-
+                    position: absolute;
+                    left: var(--chat-side-padding);
+                    top: 0;
+                    bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
 
                 .chat__current-peer-name {
@@ -67,20 +85,39 @@
                 }
 
                 .chat__current-peer-note {
-
+                    font-size: 18px;
+                    line-height: 20px;
                 }
 
             .chat__body {
                 flex-grow: 1;
+                overflow-y: auto;
+                scrollbar-width: thin;
+                padding: 24px var(--chat-body-padding) 0;
             }
+                .chat__ribbon {
+                    min-height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    gap: 22px;
+                }
+                    .chat__ribbon .message:nth-last-child(2) .message__dropdown,
+                    .chat__ribbon .message:nth-last-child(1) .message__dropdown {
+                        top: auto;
+                        bottom: calc(100% + 2px);
+                    }
 
             .chat__input {
                 flex-shrink: 0;
-                padding: var(--body-padding);
+                padding: var(--chat-body-padding);
             }
 
         .chat__aside {
-            padding: 22px var(--side-padding) 48px;
+            padding: 22px var(--chat-side-padding) 48px;
+            height: 100%;
+            overflow-y: auto;
+            scrollbar-width: thin;
         }
             .chat__widget {
                 margin-top: 36px;
