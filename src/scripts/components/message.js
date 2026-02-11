@@ -12,6 +12,19 @@ export const message = () => {
                 }
             });
             $currentMessage.classList.toggle('message--actions-expanded');
+            const $dropdown = $currentMessage.querySelector('.message__dropdown');
+            const $chatBody = document.querySelector('.chat__body');
+            if ($dropdown && $chatBody && $currentMessage.classList.contains('message--actions-expanded')) {
+                const dropdownRect = $dropdown.getBoundingClientRect();
+                const chatBodyRect = $chatBody.getBoundingClientRect();
+                if (dropdownRect.bottom >= chatBodyRect.bottom) {
+                    $dropdown.style.top = 'auto';
+                    $dropdown.style.bottom = 'calc(100% + 2px)';
+                } else {
+                    $dropdown.style.top = '';
+                    $dropdown.style.bottom = '';
+                }
+            }
             return;
         }
 
