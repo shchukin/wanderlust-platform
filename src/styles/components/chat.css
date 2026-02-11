@@ -1,3 +1,93 @@
 .chat {
-
+    --side-padding: 14px;
 }
+
+.chat {
+    height: calc(100svh - var(--header-height) - var(--page-bottom-padding));
+    display: grid;
+    grid-template-columns: minmax(0, 292fr) minmax(0, 1238fr);
+    gap: 20px;
+    padding-top: 2px;
+}
+    .chat__sidebar {
+        padding-top: 22px;
+        background-color: #ffffff;
+        box-shadow: var(--shadow-light);
+        border-radius: 10px;
+        border: 1px solid #e8e8e8;
+    }
+        .chat__heading {
+            padding-left: var(--side-padding);
+            padding-right: var(--side-padding);
+        }
+
+        .chat__search {
+            margin-top: 20px;
+            padding-bottom: 18px;
+            padding-left: var(--side-padding);
+            padding-right: var(--side-padding);
+        }
+
+        .chat__section {
+            margin-top: 10px;
+        }
+            .chat__section-heading {
+                padding-left: var(--side-padding);
+                padding-right: var(--side-padding);
+            }
+
+            .chat__section-list {
+                margin-top: 11px;
+            }
+
+    .chat__window {
+        display: grid;
+        grid-template-columns: minmax(0, 866fr) minmax(0, 372fr);
+        background-color: #ffffff;
+        box-shadow: var(--shadow-light);
+        border-radius: 10px;
+        border: 1px solid #e8e8e8;
+    }
+        .chat__body {
+            border-right: 1px solid var(--light-gray);
+        }
+            .chat__head {
+
+            }
+                .chat__current-peer-photo {
+
+                }
+
+                .chat__current-peer-name {
+
+                }
+
+                .chat__current-peer-note {
+
+                }
+
+            .chat__body {
+
+            }
+
+            .chat__input {
+
+            }
+
+        .chat__aside {
+            padding: 22px var(--side-padding) 48px;
+        }
+            .chat__widget {
+                margin-top: 36px;
+            }
+
+            .chat__widget:first-child {
+                margin-top: 0;
+            }
+                .chat__widget-heading {
+
+                }
+
+                .chat__widget-body {
+                    margin-top: 24px;
+                }

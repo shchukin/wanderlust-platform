@@ -25,7 +25,7 @@
     --light-gray: #d5d5d5;
     --hover-over-white: #f9fafb; /* matching with body background */
     --hover-over-body: #fbe8f3; /* matching with body background */
-    --input-border: #d5d5d5;
+    --input-border: var(--light-gray);
     --input-border-hover: #8c8c8c;
     --input-border-focus: var(--blue);
     --placeholder-color: #999999;
@@ -35,9 +35,11 @@
 
     --table-header-background: #f6f6f6;
     --table-header-hover: #eeeeee;
-    --shadow: 0 0 7px rgb(0 0 0 / 14%);
+    --shadow: 0 0 7px rgb(0 0 0 / 10%);
+    --shadow-light: 0 0 4px rgb(0 0 0 / 5%);
 
     --header-height: 126px;
+    --page-bottom-padding: 48px;
     --sidebar-outer-width: 114px;
     --sidebar-inner-width: 36px;
     --container-padding: 32px;

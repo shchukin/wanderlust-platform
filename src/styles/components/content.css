@@ -2,7 +2,7 @@
     display: flex;
     align-items: stretch;
     gap: var(--container-padding);
-    padding: var(--header-height) var(--container-padding) 48px;
+    padding: var(--header-height) var(--container-padding) var(--page-bottom-padding);
     margin-left: var(--sidebar-outer-width);
     transition: margin var(--transition-sidebar);
 }

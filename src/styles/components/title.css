@@ -6,12 +6,17 @@
     line-height: 28px;
 }
 
-.title--main {
+.title--30px {
     font-size: 30px;
     line-height: 36px;
 }
 
-.title--side {
+.title--24px {
     font-size: 24px;
     line-height: 30px;
+}
+
+.title--18px {
+    font-size: 18px;
+    line-height: 24px;
 }
