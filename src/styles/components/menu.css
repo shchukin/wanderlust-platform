@@ -28,6 +28,10 @@
         color: var(--blue);
     }
 
+    .menu__item--danger {
+        color: var(--red);
+    }
+
         .menu__item .icon {
             flex-shrink: 0;
             font-size: 18px;
