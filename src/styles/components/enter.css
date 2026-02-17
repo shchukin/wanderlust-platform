@@ -1,5 +1,5 @@
 .enter {
-    --enter-top: 10px;
+    --enter-v-padding: 10px;
     --enter-bottom: 52px;
 }
 
@@ -19,9 +19,9 @@
         width: 100%;
         height: auto; /* user rows="" attribute to set a default height */
         min-height: 40px; /* 1 row */
-        max-height: calc(10 * 20px + var(--enter-top) + var(--enter-bottom)); /* rows + paddings */
+        max-height: calc(10 * 20px + 2 * var(--enter-v-padding)); /* rows + paddings */
         scrollbar-width: thin;
-        padding: var(--enter-top) 60px var(--enter-bottom) 12px;
+        padding: var(--enter-v-padding) 60px var(--enter-v-padding) 12px;
         resize: none;
         background-color: #ffffff; /* reset grey background in some cases, such as <select> */
         background-clip: padding-box; /* hack for iOS to make box-shadow works (same as border-radius in the past) */
@@ -88,12 +88,6 @@
             color: #ffffff;
         }
 
-    .enter__menu {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        vertical-align: top;
-    }
 
 /* Disabled */
 .enter__input:disabled {
