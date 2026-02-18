@@ -4,6 +4,7 @@
 
 .chat {
     height: calc(100svh - var(--header-height));
+    min-height: 480px;
     margin-bottom: calc(-1 * var(--page-bottom-padding));
     display: grid;
     grid-template-columns: minmax(0, 292fr) minmax(0, 1238fr);
