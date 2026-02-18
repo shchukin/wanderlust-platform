@@ -1,0 +1,20 @@
+.project {
+    --project-aside-width: calc((100vw - var(--sidebar-outer-width) - 2 * var(--container-padding)) * 4 / 10); /* 4/10 = 40% (of available space) */
+}
+
+.project {
+    margin-right: var(--project-aside-width);
+    padding-right: var(--container-padding);
+}
+    .project__body {
+
+    }
+
+    .project__chat {
+        position: fixed;
+        top: var(--header-height);
+        bottom: var(--page-bottom-padding);
+        right: var(--container-padding);
+        width: var(--project-aside-width);
+        padding-top: 20px;
+    }

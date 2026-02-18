@@ -1,0 +1,56 @@
+.threads {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #d5d5d5;
+    border-radius: 15px;
+}
+    .threads__heading {
+        flex-shrink: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 12px var(--chat-padding);
+    }
+
+    .threads__navigation {
+        flex-shrink: 0;
+        padding-left: var(--chat-padding);
+        padding-right: var(--chat-padding);
+        border-bottom: 1px solid #d5d5d5;
+        overflow-x: auto;
+    }
+        .threads__ribbon {
+            flex-shrink: 0;
+            display: flex;
+            width: fit-content;
+            align-items: flex-start;
+        }
+            .threads__tab {
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                padding: 12px 14px;
+                color: var(--gray);
+                white-space: nowrap;
+                cursor: pointer;
+            }
+
+            .threads__tab--current {
+                color: var(--blue);
+                cursor: default;
+            }
+
+                .threads__person {
+
+                }
+
+                .threads__person + .threads__person {
+                    margin-left: -13px;
+                }
+
+    .threads__widget {
+        flex-grow: 1;
+        min-height: 0;
+    }
