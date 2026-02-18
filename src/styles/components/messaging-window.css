@@ -1,20 +1,45 @@
 .messaging-window {
+    --messaging-window-padding: 20px;
+}
+
+.messaging-window {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
     .messaging-window__body {
+        position: relative;
         flex-grow: 1;
         min-height: 0; /* Override default "min-height: auto" so the grid item can actually be constrained by height: 100% (below) */
         overflow-y: auto;
         scrollbar-width: thin;
-        padding: 24px var(--chat-body-padding) 0;
     }
+        .messaging-window__body::before,
+        .messaging-window__body::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 24px;
+            background-color: red;
+        }
+
+        .messaging-window__body::before {
+            top: 0;
+            background-image: linear-gradient(#ffffff, transparent);
+        }
+
+        .messaging-window__body::after {
+            bottom: 0;
+            background-image: linear-gradient(transparent, #ffffff);
+        }
+
         .messaging-window__ribbon {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             gap: 22px;
+            padding: 24px var(--messaging-window-padding);
         }
             .messaging-window__ribbon .message:nth-last-child(2) .message__dropdown,
             .messaging-window__ribbon .message:nth-last-child(1) .message__dropdown {
@@ -24,5 +49,5 @@
 
     .messaging-window__input {
         flex-shrink: 0;
-        padding: var(--chat-body-padding);
+        padding: 0 var(--messaging-window-padding) 20px;
     }
