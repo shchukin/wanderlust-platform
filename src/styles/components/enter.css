@@ -1,0 +1,57 @@
+.enter {
+    --enter-v-padding: 10px;
+}
+
+.enter {
+    padding: 1px;
+    border-radius: 20px;
+    background-image: linear-gradient(var(--pink), var(--blue));
+}
+
+.enter:has(.enter__field:hover) {
+
+}
+
+.enter:has(.enter__field:focus) {
+    background-color: var(--blue);
+    background-image: none;
+}
+    .enter__field {
+        vertical-align: top;
+        width: 100%;
+        height: auto; /* user rows="" attribute to set a default height */
+        min-height: 40px; /* 1 row */
+        max-height: calc(10 * 20px + 2 * var(--enter-v-padding)); /* rows + paddings */
+        scrollbar-width: thin;
+        padding: var(--enter-v-padding) 60px var(--enter-v-padding) 12px;
+        resize: none;
+        background-color: #ffffff; /* reset grey background in some cases, such as <select> */
+        background-clip: padding-box; /* hack for iOS to make box-shadow works (same as border-radius in the past) */
+        border-radius: 19px;
+        border: none;
+        outline: none;
+        font-family: inherit;
+        font-size: 15px;
+        line-height: 20px;
+        color: var(--black);
+        letter-spacing: -0.025em;
+        opacity: 1; /* reset select:disabled default fade on iOS */
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .enter__field::placeholder {
+        opacity: 1; /* reset opacity drop Firefox */
+        color: var(--placeholder-color);
+    }
+
+
+    /* Disabled */
+    .enter__field:disabled {
+        border-color: var(--input-border);
+        background-color: var(--disabled-background);
+        color: var(--disabled-color);
+    }
+
+    .enter__field:disabled::placeholder {
+        color: var(--disabled-color);
+    }

@@ -9,7 +9,7 @@ export const enter = () => {
         $element.style.height = `${$element.scrollHeight + 2 * borderWidth}px`;
     };
 
-    document.querySelectorAll('.messaging-window__input').forEach(($element) => {
+    document.querySelectorAll('.enter__field').forEach(($element) => {
         expandTextarea($element);
         $element.addEventListener('input', () => {
             expandTextarea($element);
