@@ -14,32 +14,12 @@
         overflow-y: auto;
         scrollbar-width: thin;
     }
-        .messaging-window__body::before,
-        .messaging-window__body::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            height: 24px;
-            background-color: red;
-        }
-
-        .messaging-window__body::before {
-            top: 0;
-            background-image: linear-gradient(#ffffff, transparent);
-        }
-
-        .messaging-window__body::after {
-            bottom: 0;
-            background-image: linear-gradient(transparent, #ffffff);
-        }
-
         .messaging-window__ribbon {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             gap: 22px;
-            padding: 24px var(--messaging-window-padding);
+            padding: 24px var(--messaging-window-padding) 20px;
         }
             .messaging-window__ribbon .message:nth-last-child(2) .message__dropdown,
             .messaging-window__ribbon .message:nth-last-child(1) .message__dropdown {
