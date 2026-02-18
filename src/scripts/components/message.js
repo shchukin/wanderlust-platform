@@ -13,7 +13,7 @@ export const message = () => {
             });
             $currentMessage.classList.toggle('message--actions-expanded');
             const $dropdown = $currentMessage.querySelector('.message__dropdown');
-            const $chatBody = document.querySelector('.chat__body');
+            const $chatBody = document.querySelector('.messaging-window');
             if ($dropdown && $chatBody && $currentMessage.classList.contains('message--actions-expanded')) {
                 const dropdownRect = $dropdown.getBoundingClientRect();
                 const chatBodyRect = $chatBody.getBoundingClientRect();
