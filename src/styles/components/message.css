@@ -45,7 +45,14 @@
         margin-bottom: auto;
         width: var(--message-right);
         height: var(--message-right);
+        display: none;
     }
+
+    .message:hover .message__actions,
+    .message:focus-within .message__actions {
+        display: block;
+    }
+
         .message__show-actions {
             display: flex;
             align-items: center;
