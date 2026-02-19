@@ -4,9 +4,10 @@ export const dropdown = () => {
         if (event.target.closest('.dropdown__handler .button')) {
             event.preventDefault();
 
-
             const $currentDropdown = event.target.closest('.dropdown');
             const $expandedDropdowns = document.querySelectorAll('.dropdown--expanded');
+
+            /* Close all other dropdowns */
             $expandedDropdowns.forEach((dropdown) => {
                 if (dropdown !== $currentDropdown) {
                     dropdown.classList.remove('dropdown--expanded');
@@ -17,7 +18,7 @@ export const dropdown = () => {
             return;
         }
 
-        if (event.target.closest('.dropdown__close .button')) {
+        if (event.target.closest('.menu__close .button')) {
             event.preventDefault();
             event.target.closest('.dropdown').classList.remove('dropdown--expanded');
             return;

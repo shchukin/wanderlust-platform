@@ -6,12 +6,17 @@ export const message = () => {
             event.preventDefault();
             const $currentMessage = event.target.closest('.message');
             const $expandedMessages = document.querySelectorAll('.message--actions-expanded');
+
+            /* Close all other dropdowns */
             $expandedMessages.forEach((message) => {
                 if (message !== $currentMessage) {
                     message.classList.remove('message--actions-expanded');
                 }
             });
+
             $currentMessage.classList.toggle('message--actions-expanded');
+
+            /* If it's too close to the bottom of scrolling area, output it to the top. Otherwise it will be cut. */
             const $dropdown = $currentMessage.querySelector('.message__dropdown');
             const $chatBody = document.querySelector('.messaging-window');
             if ($dropdown && $chatBody && $currentMessage.classList.contains('message--actions-expanded')) {
@@ -28,6 +33,7 @@ export const message = () => {
             return;
         }
 
+        /* Normally there would be .menu__close button, and let's keep this piece of code for compatibility (although that button looks a bit too heavy for a small message and currently removed from DOM) */
         if (event.target.closest('.message__dropdown .menu__close .button')) {
             event.preventDefault();
             event.target.closest('.message').classList.remove('message--actions-expanded');
