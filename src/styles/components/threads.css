@@ -1,4 +1,8 @@
 .threads {
+    --threads-tab-padding: 10px;
+}
+
+.threads {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -10,14 +14,15 @@
         flex-shrink: 0;
         margin-top: 0;
         margin-bottom: 0;
-        padding: 12px var(--chat-padding);
+        padding: 24px var(--chat-padding) 14px;
     }
 
     .threads__navigation {
+        position: relative;
         flex-shrink: 0;
-        padding-left: var(--chat-padding);
-        padding-right: var(--chat-padding);
-        border-bottom: 1px solid #d5d5d5;
+        padding-left: calc(var(--chat-padding) - var(--threads-tab-padding));
+        padding-right: calc(var(--chat-padding) - var(--threads-tab-padding));
+        background-image: linear-gradient(to top, #d5d5d5, #d5d5d5 1px, transparent 1px, transparent);
         overflow-x: auto;
     }
         .threads__ribbon {
@@ -31,13 +36,15 @@
                 display: flex;
                 align-items: center;
                 gap: 7px;
-                padding: 12px 14px;
+                padding: 12px var(--threads-tab-padding) 10px;
+                border-bottom: 2px solid transparent;
                 color: var(--gray);
                 white-space: nowrap;
                 cursor: pointer;
             }
 
             .threads__tab--current {
+                border-block-color: currentColor;
                 color: var(--blue);
                 cursor: default;
             }

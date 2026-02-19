@@ -6,14 +6,21 @@
 }
     .callout__icon {
         position: absolute;
-        left: 16px;
-        top: 13px;
+        left: 12px;
+        top: 9px;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         vertical-align: top;
+        font-size: 18px;
+        line-height: 18px;
         color: var(--blue);
     }
         .callout__icon .icon {
-            font-size: 24px;
-            line-height: 24px;
+            font-size: inherit;
+            line-height: inherit;
         }
 
     .callout__message {
@@ -38,6 +45,7 @@
         border: none;
         padding: 0;
         cursor: pointer;
+        color: #5c6690;
     }
 
     .callout__close:active {
@@ -63,9 +71,25 @@
             z-index: 10;
             font-size: 24px;
             line-height: 24px;
-            color: #5c6690;
         }
 
-        .callout__close:hover .icon {
+        .callout__close:hover {
             color: var(--black);
         }
+
+
+.callout--danger {
+    background-color: #fcd0d0;
+}
+    .callout--danger .callout__message {
+        color: #791515;
+    }
+
+    .callout--danger .callout__icon {
+        color: #650a1b;
+    }
+
+
+    .callout--danger .callout__close {
+        color: #650a1b;
+    }
