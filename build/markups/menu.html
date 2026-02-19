@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>.menu</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/styles.css?1770393771">
+        <link rel="stylesheet" href="../styles/styles.css?1771518649">
     </head>
     <body>
 
@@ -13,7 +13,11 @@
             <br>
             <h1>.menu</h1>
             <p>
-                This is static component. No dropdown dynamics in here.
+                This is static component. Used inside different components, but always looks the same.
+                No dropdown dynamics in here.
+            </p>
+            <p>
+                For actual dropdown see <a href="dropdown.html">.dropdown</a>
             </p>
             <br>
 
@@ -37,6 +41,30 @@
                 </div>
             </div>
 
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="menu">
+                <a class="menu__item" href="#">
+                    <i class="icon">forward</i>
+                    Forward to QA
+                </a>
+                <a class="menu__item" href="#">
+                    <i class="icon">forward</i>
+                    Forward to Editor
+                </a>
+                <a class="menu__item" href="#">
+                    <i class="icon">forward</i>
+                    Forward to both
+                </a>
+                <a class="menu__item menu__item--danger" href="#">
+                    <i class="icon">delete</i>
+                    Delete
+                </a>
+            </div>
+
 
 
             <br>
@@ -54,7 +82,7 @@
 
 
 
-        <script type="module" src="../scripts/scripts.js?1770393771"></script>
+        <script type="module" src="../scripts/scripts.js?1771518649"></script>
 
 
     </body>

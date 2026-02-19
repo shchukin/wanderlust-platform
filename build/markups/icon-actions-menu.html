@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>.progress</title>
+        <title>.icon-actions-menu</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../styles/styles.css?1771518649">
     </head>
@@ -11,16 +11,27 @@
         <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
             <br>
-            <h1>.progress</h1>
+            <h1>.icon-actions-menu</h1>
             <p>
-                To output value of <b><i>N</i></b> percent please calculate it as <b><i>100% - N</i></b> because of how mask being used:
+                Simple wrapper that sets up spacing and line break rules
             </p>
-            <br>
 
-
-            <div class="progress">
-                <div class="progress__bar" style="clip-path: inset(0 33% 0 0);"></div> <!-- calculate "100% - i" here -->
+            <div class="icon-actions-menu">
+                <button class="icon-action" type="button">
+                    <i class="icon">refresh</i>
+                </button>
+                <button class="icon-action" type="button">
+                    <i class="icon">content_copy</i>
+                </button>
+                <button class="icon-action" type="button">
+                    <i class="icon">edit</i>
+                </button>
+                <button class="icon-action" type="button">
+                    <i class="icon">north_east</i>
+                </button>
             </div>
+
+
 
 
 
@@ -36,7 +47,6 @@
             <br>
             <br>
         </div>
-
 
 
         <script type="module" src="../scripts/scripts.js?1771518649"></script>
