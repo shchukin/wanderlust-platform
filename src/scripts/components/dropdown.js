@@ -3,7 +3,17 @@ export const dropdown = () => {
     document.addEventListener('click', (event) => {
         if (event.target.closest('.dropdown__handler .button')) {
             event.preventDefault();
-            event.target.closest('.dropdown').classList.toggle('dropdown--expanded');
+
+
+            const $currentDropdown = event.target.closest('.dropdown');
+            const $expandedDropdowns = document.querySelectorAll('.dropdown--expanded');
+            $expandedDropdowns.forEach((dropdown) => {
+                if (dropdown !== $currentDropdown) {
+                    dropdown.classList.remove('dropdown--expanded');
+                }
+            });
+
+            $currentDropdown.classList.toggle('dropdown--expanded');
             return;
         }
 
