@@ -12,6 +12,9 @@
             <br>
             <br>
             <h1>.actions-menu</h1>
+            <p>
+                Simple wrapper that sets up spacing and line break rules
+            </p>
 
             <div class="actions-menu">
                 <button class="button button--square button--light-gray-outline" type="button">
@@ -29,6 +32,55 @@
                 <button class="button button--square button--red" type="button">
                     <i class="icon">thumb_down</i>
                 </button>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <p>
+                Feel free to use <a href="dropdown.html">.dropdown</a> inside:
+            </p>
+
+            <div class="actions-menu">
+                <button class="button button--square button--light-gray-outline" type="button">
+                    <i class="icon">notifications_active</i>
+                </button>
+                <button class="button button--square button--light-gray-outline" type="button">
+                    <i class="icon">label</i>
+                </button>
+                <div class="dropdown">
+                    <div class="dropdown__handler">
+                        <button class="button button--square button--light-gray-outline" type="button">
+                            <i class="icon">more_vert</i>
+                        </button>
+                    </div>
+                    <div class="dropdown__body">
+                        <div class="menu">
+                            <a class="menu__item" href="#">
+                                <i class="icon">forward</i>
+                                Lorem Ipsum
+                            </a>
+                            <a class="menu__item" href="#">
+                                <i class="icon">forward</i>
+                                Dolor
+                            </a>
+                            <a class="menu__item" href="#">
+                                <i class="icon">forward</i>
+                                Sit amen
+                            </a>
+                            <a class="menu__item menu__item--danger" href="#">
+                                <i class="icon">delete</i>
+                                Delete
+                            </a>
+                            <div class="menu__close">
+                                <button class="button button--height-30px button--black" type="button">
+                                    <i class="icon">close</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
