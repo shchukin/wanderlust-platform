@@ -18,22 +18,25 @@ export const message = () => {
 
             /* If it's too close to the bottom of scrolling area, output it to the top. Otherwise it will be cut. */
             const $dropdown = $currentMessage.querySelector('.message__dropdown');
-            const $chatBody = document.querySelector('.messaging-window');
+            const $chatBody = document.querySelector('.messaging-window__body');
+
             if ($dropdown && $chatBody && $currentMessage.classList.contains('message--actions-expanded')) {
+                $dropdown.style.top = '';
+                $dropdown.style.bottom = '';
                 const dropdownRect = $dropdown.getBoundingClientRect();
                 const chatBodyRect = $chatBody.getBoundingClientRect();
-                if (dropdownRect.bottom >= chatBodyRect.bottom) {
+                if (dropdownRect.bottom > chatBodyRect.bottom) {
                     $dropdown.style.top = 'auto';
                     $dropdown.style.bottom = 'calc(100% + 2px)';
-                } else {
-                    $dropdown.style.top = '';
-                    $dropdown.style.bottom = '';
                 }
             }
             return;
         }
 
-        /* Normally there would be .menu__close button, and let's keep this piece of code for compatibility (although that button looks a bit too heavy for a small message and currently removed from DOM) */
+        /* Normally, there would be .menu__close button, and let's keep this piece of code for compatibility.
+         * Although that button looks a bit too heavy for a small message and currently removed from DOM).
+         * Also we try ro keep that menu smaller so it not overlaps outside of the scrollable area
+         */
         if (event.target.closest('.message__dropdown .menu__close .button')) {
             event.preventDefault();
             event.target.closest('.message').classList.remove('message--actions-expanded');
