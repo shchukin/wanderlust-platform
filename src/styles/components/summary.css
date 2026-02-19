@@ -1,0 +1,67 @@
+.summary {
+    display: flex;
+    align-items: flex-start;
+    gap: 4%;
+    background-color: #ffffff;
+    border: 1px solid #d5d5d5;
+    padding: 14px 4px;
+    box-shadow: var(--shadow-light);
+    border-radius: 10px;
+}
+    .summary__column {
+        flex-grow: 1;
+    }
+        .summary__table {
+            vertical-align: top;
+            border-collapse: collapse;
+        }
+            .summary__tbody {
+
+            }
+                .summary__row {
+
+                }
+                    .summary__cell {
+                        padding: 6px 10px;
+                        vertical-align: top;
+                        font-size: var(--base-font-size);
+                        line-height: var(--base-line-height);
+                    }
+
+                    .summary__cell--heading {
+                        font-weight: normal;
+                        color: var(--gray);
+                        text-align: left;
+                        width: 1px;
+                        white-space: nowrap;
+                    }
+
+                    .summary__cell--value {
+
+                    }
+
+                    .summary__cell--section-heading {
+                        padding-top: 32px;
+                        padding-bottom: 14px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-align: left;
+                    }
+
+                    .summary__cell--actions {
+                        width: 1px;
+                        white-space: nowrap;
+                    }
+                        .summary__cell--actions .icon-action {
+                            margin-top: -6px;
+                            margin-bottom: -6px;
+                        }
+
+                        .summary__cell--actions .icon-action:first-child {
+                            margin-left: -6px;
+                        }
+
+                        .summary__cell--actions .icon-action:last-child {
+                            margin-right: -6px;
+                        }

@@ -23,7 +23,6 @@
 .link:active,
 .wysiwyg a:active {
     color: var(--disabled-color);
-    transition: none;
 }
 
 

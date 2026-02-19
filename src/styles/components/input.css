@@ -31,7 +31,6 @@
 
     .input__widget:focus-visible {
         border-color: var(--input-border-focus);
-        transition: none;
     }
 
 

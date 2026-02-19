@@ -1,0 +1,55 @@
+.icon-action {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.icon-action:active {
+    translate: 0 1px;
+}
+    .icon-action::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+    }
+
+    .icon-action:hover::before {
+        background-color: var(--hover-over-white);
+    }
+
+    .icon-action .icon {
+        position: relative;
+        font-size: 16px;
+        line-height: 16px;
+        color: var(--blue);
+    }
+
+
+.icon-action:disabled,
+.icon-action:disabled:hover,
+.icon-action:disabled:active {
+    background-color: var(--disabled-background);
+    box-shadow: none; /* cancel border in outlined icon-actions */
+    color: var(--disabled-color);
+    translate: none;
+    cursor: default;
+}
+    .icon-action .icon {
+        margin-left: -6px;
+        margin-right: -6px;
+        font-size: 1.2em;
+        line-height: inherit;
+    }
+

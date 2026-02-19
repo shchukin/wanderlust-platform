@@ -49,5 +49,4 @@
 
         .find__input:focus-visible {
             border-color: var(--input-border-focus);
-            transition: none;
         }

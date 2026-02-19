@@ -7,7 +7,7 @@
 .status--internal-review { color: #d48310; }
 .status--client-review   { color: #0b41dc; }
 .status--under-revision  { color: var(--pink); }
-.status--pending-footage { color: var(--red); }
+.status--pending { color: var(--red); }
 .status--rejected        { color: #ff1401; }
 .status--file-requested  { color: #189fd7; }
 .status--approved        { color: var(--black); }
