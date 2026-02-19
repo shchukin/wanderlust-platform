@@ -9,6 +9,28 @@
     .project__body {
 
     }
+        .project__notifications {
+            margin-bottom: 18px;
+        }
+
+        .project__head {
+            display: flex;
+            align-items: center;
+        }
+            .project__heading {
+
+            }
+
+            .project__actions {
+                margin-left: auto;
+                min-height: 40px;
+                display: flex;
+                align-items: center;
+            }
+
+        .project__summary {
+            margin-top: 14px;
+        }
 
     .project__chat {
         position: fixed;

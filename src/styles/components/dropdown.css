@@ -1,0 +1,13 @@
+.dropdown {
+    position: relative;
+    width: fit-content;
+}
+    .dropdown__handler {
+
+    }
+
+    .dropdown__body {
+        position: absolute;
+        right: 0;
+        top: calc(100% + 8px);
+    }
