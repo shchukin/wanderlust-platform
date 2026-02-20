@@ -7,8 +7,24 @@
 .status--internal-review { color: #d48310; }
 .status--client-review   { color: #0b41dc; }
 .status--under-revision  { color: var(--pink); }
-.status--pending { color: var(--red); }
+.status--pending         { color: var(--red); }
 .status--rejected        { color: #ff1401; }
 .status--file-requested  { color: #189fd7; }
 .status--approved        { color: var(--black); }
 /* stylelint-enable */
+
+
+.status--pending {
+    position: relative;
+}
+    .status--pending::before {
+        content: "";
+        position: absolute;
+        right: 100%;
+        margin-right: 6px;
+        top: 5px;
+        width: 8px;
+        height: 8px;
+        background-color: currentColor;
+        border-radius: 50%;
+    }

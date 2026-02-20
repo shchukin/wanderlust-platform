@@ -40,6 +40,10 @@
 
                     }
 
+                    .summary__cell--value:has(.input) {
+                        padding: 0;
+                    }
+
                     .summary__cell--section-heading {
                         padding-top: 32px;
                         padding-bottom: 14px;
@@ -54,3 +58,8 @@
                         width: 1px;
                         white-space: nowrap;
                     }
+                        .summary__inline-editing {
+                            display: grid;
+                            grid-template-columns: 1fr 32px;
+                            gap: 8px;
+                        }

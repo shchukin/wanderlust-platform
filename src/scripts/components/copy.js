@@ -16,7 +16,7 @@ export const copy = () => {
 
                 setTimeout(() => {
                     container.classList.remove('copy--bubble-is-shown');
-                }, 2000);
+                }, 1500);
             }).catch(err => {
                 alert('Unexpected error occurred. Please copy manually' + err);
             });

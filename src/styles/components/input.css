@@ -34,26 +34,49 @@
     }
 
 
+.input--height-32px {
+
+}
+    .input--height-32px .input__widget {
+        height: 32px;
+        padding: 6px 9px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+.input__widget[type="password"] {
+
+}
     .input__widget[type="password"]:not(:placeholder-shown) {
         font-family: "Tahoma", sans-serif;
         letter-spacing: 2px;
     }
 
 
+.input__widget[type="color"] {
+
+}
     .input__widget[type="color"] {
         width: 100px;
         padding: 4px 8px;
     }
 
-
-    /* Either "appearance: none; width: 100%;" or "width: auto; to reset the width set above" */
-    .input__widget[type="date"],
-    .input__widget[type="datetime-local"],
-    .input__widget[type="week"],
-    .input__widget[type="month"],
-    .input__widget[type="time"] {
-        width: auto;
+    .input--height-32px .input__widget[type="color"] {
+        padding: 1px 4px;
     }
+
+
+/* Either "appearance: none; width: 100%;" or "width: auto; to reset the width set above" */
+.input__widget[type="date"],
+.input__widget[type="datetime-local"],
+.input__widget[type="week"],
+.input__widget[type="month"],
+.input__widget[type="time"] {
+    width: auto;
+}
+
+
 
 
 /* Disabled */
@@ -96,6 +119,17 @@ textarea.input__widget {
 /* stylelint-enable */
 
 
+/* stylelint-disable */
+.input--height-32px textarea.input__widget {
+    height: auto; /* user rows="" attribute to set a default height */
+    min-height: 32px; /* 1 row */
+    max-height: calc(10*18px + 2*6px + 2*2px); /* rows + vertical paddings + vertical borders */
+    resize: vertical;
+}
+/* stylelint-enable */
+
+
+
 select.input__widget {
     appearance: none;
     padding-right: 38px;
@@ -116,6 +150,10 @@ select.input__widget:hover {
 select.input__widget:disabled {
     background-color: var(--disabled-background);
     cursor: default;
+}
+
+.input--height-32px select.input__widget {
+    background-position: right 6px center;
 }
 
 

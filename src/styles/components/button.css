@@ -153,17 +153,17 @@
 }
 
 
-.button--height-30px {
+.button--height-32px {
     gap: 10px;
     min-width: 70px;
-    padding: 6px 15px;
+    padding: 7px 15px;
     font-size: 14px;
     line-height: 18px;
 }
 
-.button--height-30px.button--square {
+.button--height-32px.button--square {
     min-width: 0;
-    width: 30px;
+    width: 32px;
     padding-left: 0;
     padding-right: 0;
     border-radius: 8px;
