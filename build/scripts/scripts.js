@@ -1,25 +1,235 @@
-import { sidebarToggler } from './components/sidebar-toggler.js';
-import { nav } from './components/nav.js';
-import { create } from './components/create.js';
-import { user } from './components/user.js';
-import { search } from './components/search.js';
-import { sort } from './components/sort.js';
-import { input } from './components/input.js';
-import { message } from './components/message.js';
-import { enter } from './components/enter.js';
-import { dropdown } from './components/dropdown.js';
-import { copy } from './components/copy.js';
-
-document.addEventListener('DOMContentLoaded', () => {
-    sidebarToggler();
-    nav();
-    create();
-    user();
-    search();
-    sort();
-    input();
-    message();
-    enter();
-    dropdown();
-    copy();
-});
+(() => {
+    var a = () => {
+        let e = document.documentElement;
+        document.addEventListener("click", t => {
+            t.target.closest(".sidebar-toggler") && (t.preventDefault(), e.classList.toggle("sidebar-expanded"))
+        })
+    };
+    var d = () => {
+        document.addEventListener("click", e => {
+            if (e.target.closest(".nav__more")) {
+                e.preventDefault(), e.target.closest(".nav__section").classList.toggle("nav__section--expanded");
+                return
+            }
+            if (!e.target.closest(".nav__sub-menu")) {
+                let t = document.querySelector(".nav__section--expanded");
+                t == null || t.classList.remove("nav__section--expanded")
+            }
+        }), document.addEventListener("keydown", e => {
+            e.key === "Escape" && document.querySelectorAll(".nav__section--expanded").forEach(s => {
+                s.classList.remove("nav__section--expanded")
+            })
+        })
+    };
+    var l = () => {
+        document.addEventListener("click", e => {
+            if (e.target.closest(".create__handler .button")) {
+                e.preventDefault(), e.target.closest(".create").classList.toggle("create--expanded");
+                return
+            }
+            if (e.target.closest(".create__close .button")) {
+                e.preventDefault(), e.target.closest(".create").classList.remove("create--expanded");
+                return
+            }
+            if (!e.target.closest(".create")) {
+                let t = document.querySelector(".create--expanded");
+                t == null || t.classList.remove("create--expanded")
+            }
+        }), document.addEventListener("keydown", e => {
+            e.key === "Escape" && document.querySelectorAll(".create--expanded").forEach(s => {
+                s.classList.remove("create--expanded")
+            })
+        })
+    };
+    var i = () => {
+        document.addEventListener("click", e => {
+            if (e.target.closest(".user__handler")) {
+                e.preventDefault(), e.target.closest(".user").classList.toggle("user--expanded");
+                return
+            }
+            if (e.target.closest(".user__dropdown .menu__close .button")) {
+                e.preventDefault(), e.target.closest(".user").classList.remove("user--expanded");
+                return
+            }
+            if (!e.target.closest(".user")) {
+                let t = document.querySelector(".user--expanded");
+                t == null || t.classList.remove("user--expanded")
+            }
+        }), document.addEventListener("keydown", e => {
+            e.key === "Escape" && document.querySelectorAll(".user--expanded").forEach(s => {
+                s.classList.remove("user--expanded")
+            })
+        })
+    };
+    var p = () => {
+        document.addEventListener("click", e => {
+            if (e.target.closest(".search__handler")) {
+                e.preventDefault(), e.target.closest(".search__filter").classList.toggle("search__filter--expanded");
+                return
+            }
+            if (e.target.closest(".search__dropdown .menu__close .button")) {
+                e.preventDefault(), e.target.closest(".search__filter").classList.remove("search__filter--expanded");
+                return
+            }
+            if (!e.target.closest(".search__filter")) {
+                let t = document.querySelector(".search__filter--expanded");
+                t == null || t.classList.remove("search__filter--expanded")
+            }
+        }), document.addEventListener("keydown", e => {
+            e.key === "Escape" && document.querySelectorAll(".search__filter--expanded").forEach(s => {
+                s.classList.remove("search__filter--expanded")
+            })
+        })
+    };
+    var u = () => {
+        document.addEventListener("click", e => {
+            let t = e.target.closest(".sort__order");
+            if (t) {
+                e.preventDefault();
+                let s = t.closest(".sort");
+                if (s) {
+                    let o = s.classList.contains("sort__order--descending");
+                    s.classList.toggle("sort__order--ascending", o), s.classList.toggle("sort__order--descending", !o)
+                }
+                return
+            }
+            if (e.target.closest(".sort__handler")) {
+                e.preventDefault(), e.target.closest(".sort").classList.toggle("sort--expanded");
+                return
+            }
+            if (e.target.closest(".sort__apply .button")) {
+                e.preventDefault(), e.target.closest(".sort").classList.remove("sort--expanded");
+                return
+            }
+            if (e.target.closest(".sort__cancel .link")) {
+                e.preventDefault(), e.target.closest(".sort").classList.remove("sort--expanded");
+                return
+            }
+            if (!e.target.closest(".sort")) {
+                let s = document.querySelector(".sort--expanded");
+                s == null || s.classList.remove("sort--expanded")
+            }
+        }), document.addEventListener("keydown", e => {
+            e.key === "Escape" && document.querySelectorAll(".sort--expanded").forEach(s => {
+                s.classList.remove("sort--expanded")
+            })
+        })
+    };
+    var g = () => {
+        document.addEventListener("focusin", s => {
+            let o = s.target.closest(".input");
+            if (!o) return;
+            o.classList.remove("input--error");
+            let r = o.nextElementSibling;
+            for (; r && r.classList.contains("helper");) r.classList.remove("helper--error"), r.hidden = !0, r = r.nextElementSibling
+        });
+        let e = s => {
+            let o = s.closest(".input");
+            o && o.classList.toggle("input--placeholder-is-chosen", s.value === "placeholder")
+        };
+        document.querySelectorAll("select.input__widget").forEach(s => {
+            e(s), s.addEventListener("change", () => {
+                e(s)
+            })
+        });
+        let t = s => {
+            s.style.height = "auto";
+            let o = window.getComputedStyle(s), r = parseInt(o.borderWidth, 10) || 0;
+            s.style.height = `${s.scrollHeight + 2 * r}px`
+        };
+        document.querySelectorAll(".input--expandable .input__widget").forEach(s => {
+            t(s), s.addEventListener("input", () => {
+                t(s)
+            })
+        }), document.addEventListener("click", s => {
+            let o = s.target.closest(".input__show-password");
+            if (!o) return;
+            let r = o.closest(".input"), c = r.querySelector(".input__widget"), n = r.classList.toggle("input--password-is-visible");
+            (c.type === "password" || c.type === "text") && (c.type = n ? "text" : "password")
+        })
+    };
+    var m = () => {
+        document.addEventListener("click", e => {
+            if (e.target.closest(".message__show-actions")) {
+                e.preventDefault();
+                let t = e.target.closest(".message");
+                document.querySelectorAll(".message--actions-expanded").forEach(c => {
+                    c !== t && c.classList.remove("message--actions-expanded")
+                }), t.classList.toggle("message--actions-expanded");
+                let o = t.querySelector(".message__dropdown"), r = document.querySelector(".messaging-window__body");
+                if (o && r && t.classList.contains("message--actions-expanded")) {
+                    o.style.top = "", o.style.bottom = "";
+                    let c = o.getBoundingClientRect(), n = r.getBoundingClientRect();
+                    c.bottom > n.bottom && (o.style.top = "auto", o.style.bottom = "calc(100% + 2px)")
+                }
+                return
+            }
+            if (e.target.closest(".message__dropdown .menu__close .button")) {
+                e.preventDefault(), e.target.closest(".message").classList.remove("message--actions-expanded");
+                return
+            }
+            if (!e.target.closest(".message__actions")) {
+                let t = document.querySelector(".message--actions-expanded");
+                t == null || t.classList.remove("message--actions-expanded")
+            }
+        }), document.addEventListener("keydown", e => {
+            e.key === "Escape" && document.querySelectorAll(".message--actions-expanded").forEach(s => {
+                s.classList.remove("message--actions-expanded")
+            })
+        })
+    };
+    var _ = () => {
+        let e = t => {
+            t.style.height = "auto";
+            let s = window.getComputedStyle(t), o = parseInt(s.borderWidth, 10) || 0;
+            t.style.height = `${t.scrollHeight + 2 * o}px`
+        };
+        document.querySelectorAll(".enter__field").forEach(t => {
+            e(t), t.addEventListener("input", () => {
+                e(t)
+            })
+        })
+    };
+    var f = () => {
+        document.addEventListener("click", e => {
+            if (e.target.closest(".dropdown__handler .button")) {
+                e.preventDefault();
+                let t = e.target.closest(".dropdown");
+                document.querySelectorAll(".dropdown--expanded").forEach(o => {
+                    o !== t && o.classList.remove("dropdown--expanded")
+                }), t.classList.toggle("dropdown--expanded");
+                return
+            }
+            if (e.target.closest(".menu__close .button")) {
+                e.preventDefault(), e.target.closest(".dropdown").classList.remove("dropdown--expanded");
+                return
+            }
+            if (!e.target.closest(".dropdown")) {
+                let t = document.querySelector(".dropdown--expanded");
+                t == null || t.classList.remove("dropdown--expanded")
+            }
+        }), document.addEventListener("keydown", e => {
+            e.key === "Escape" && document.querySelectorAll(".dropdown--expanded").forEach(s => {
+                s.classList.remove("dropdown--expanded")
+            })
+        })
+    };
+    var x = () => {
+        document.querySelectorAll(".copy").forEach(t => {
+            let s = t.querySelector(".copy .icon-action"), o = t.querySelector(".copy__bubble"), r = t.dataset.value;
+            !s || !o || !r || s.addEventListener("click", () => {
+                navigator.clipboard.writeText(r).then(() => {
+                    t.classList.add("copy--bubble-is-shown"), setTimeout(() => {
+                        t.classList.remove("copy--bubble-is-shown")
+                    }, 1500)
+                }).catch(c => {
+                    alert("Unexpected error occurred. Please copy manually" + c)
+                })
+            })
+        })
+    };
+    document.addEventListener("DOMContentLoaded", () => {
+        a(), d(), l(), i(), p(), u(), g(), m(), _(), f(), x()
+    });
+})();
+//# sourceMappingURL=scripts.js.map
