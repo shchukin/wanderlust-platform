@@ -9,7 +9,7 @@ var postcssPresetEnv = require('postcss-preset-env');
 var postcssHoverMediaFeature = require('postcss-hover-media-feature');
 var base64 = require('gulp-base64');
 var change = require('gulp-change');
-
+var esbuild = require('gulp-esbuild');
 
 function addSourcesTimestamp(content) {
     const timestamp = Math.round(Date.now() / 1000);
@@ -106,10 +106,16 @@ gulp.task('vendors', function () {
 // Scripts: copy
 
 gulp.task('scripts', function () {
-    return gulp.src('src/scripts/**/*', {encoding: false})
+    return gulp.src('src/scripts/scripts.js') // Указываем только ОДИН входной файл
         .pipe(plumber())
-        .pipe(gulp.dest('build/scripts/'))
-        ;
+        .pipe(esbuild({
+            outfile: 'scripts.js',
+            bundle: true,          // Собирает все импорты в один файл
+            minify: true,          // Опционально: сжимает файл
+            sourcemap: true,       // Помогает при отладке в браузере
+            target: 'es2015',      // Формат для поддержки браузерами
+        }))
+        .pipe(gulp.dest('build/scripts/'));
 });
 
 
