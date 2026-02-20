@@ -1,5 +1,5 @@
-/* TO DO: this component needs actual programming
- * At the moment we have only dropdown functionality in here
+/* TO DO: this component needs actual programming.
+ * At the moment we have only dropdown functionality in here.
  */
 
 export const sort = () => {

@@ -1,3 +1,7 @@
+/* TO DO: this component needs actual programming.
+ * At the moment we have only dropdown functionality in here.
+ */
+
 export const search = () => {
 
     /* Toggle search dropdown */
