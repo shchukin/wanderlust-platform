@@ -1,0 +1,27 @@
+.copy {
+    position: absolute;
+    width: fit-content;
+}
+    .copy__bubble {
+        position: absolute;
+        left: 50%;
+        bottom: 100%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        background-color: var(--black);
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #ffffff;
+    }
+        .copy__bubble::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -4px;
+            border-top: 5px solid var(--black);
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
