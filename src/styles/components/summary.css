@@ -50,18 +50,7 @@
                     }
 
                     .summary__cell--actions {
+                        padding: 0 4px;
                         width: 1px;
                         white-space: nowrap;
                     }
-                        .summary__cell--actions .icon-action {
-                            margin-top: -6px;
-                            margin-bottom: -6px;
-                        }
-
-                        .summary__cell--actions .icon-action:first-child {
-                            margin-left: -6px;
-                        }
-
-                        .summary__cell--actions .icon-action:last-child {
-                            margin-right: -6px;
-                        }
