@@ -1,6 +1,6 @@
 .icon {
     vertical-align: top;
-    font-family: "Material Symbols Rounded";
+    font-family: var(--font-icons);
     font-weight: normal;
     font-style: normal;
     font-size: 24px;
