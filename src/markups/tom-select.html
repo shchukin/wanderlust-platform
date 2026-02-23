@@ -4,11 +4,12 @@
         <!-- meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>.copy</title>
+        <title>Tom Select</title>
 
         <!-- vendors -->
         <link rel="stylesheet" href="../../node_modules/sweetalert2/dist/sweetalert2.min.css">
-        <script type="module" src="../vendors/sweet-alerts.js"></script>
+        <link rel="stylesheet" href="../../node_modules/tom-select/dist/css/tom-select.css">
+
 
         <!-- assets -->
         <link rel="stylesheet" href="../styles/styles.css">
@@ -19,18 +20,13 @@
         <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
             <br>
-            <h1>.copy</h1>
+            <h1>Tom Select</h1>
             <br>
 
-            <div class="copy" data-value="#1243">
-                <button class="icon-action" type="button">
-                    <i class="icon">content_copy</i>
-                </button>
-                <div class="copy__bubble">
-                    Copied
-                </div>
-            </div>
-
+            <select class="js-select">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+            </select>
 
             <br>
             <br>
@@ -46,7 +42,9 @@
         </div>
 
 
-
+        <script type="module" src="../vendors/sweet-alerts.js"></script>
+        <script src="../../node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
+        <script type="module" src="../vendors/tom-select.js"></script>
 
     </body>
 </html>
