@@ -1,3 +1,6 @@
+@import url("../../node_modules/sweetalert2/dist/sweetalert2.min.css");
+@import url("../styles/overrides/sweet-alert-overrides.css");
+
 @import url("global/fonts.css");
 @import url("../vendors/normalize/normalize.css");
 @import url("global/box-sizing.css");
