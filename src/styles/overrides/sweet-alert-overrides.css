@@ -1,3 +1,7 @@
 .swal2-actions {
     gap: 8px;
 }
+
+:root {
+    --swal2-padding: 0 0 2.5rem
+}
