@@ -1,4 +1,4 @@
-@import url("../../node_modules/sweetalert2/dist/sweetalert2.min.css");
+@import url("../../");
 @import url("../styles/overrides/sweet-alert-overrides.css");
 
 @import url("global/fonts.css");
