@@ -2,7 +2,7 @@
 @import url("../styles/overrides/sweet-alert-overrides.css");
 
 @import url("global/fonts.css");
-@import url("../vendors/normalize/normalize.css");
+@import url("global/normalize.css");
 @import url("global/box-sizing.css");
 @import url("global/visuallyhidden.css");
 @import url("global/root.css");
