@@ -17,10 +17,6 @@
 
     .chat__sidebar {
         padding-top: 22px;
-        background-color: #ffffff;
-        box-shadow: var(--shadow-light);
-        border-radius: 10px;
-        border: 1px solid #e8e8e8;
         overflow-y: auto;
         scrollbar-width: thin;
     }
@@ -51,10 +47,6 @@
     .chat__window {
         display: grid;
         grid-template-columns: minmax(0, 866fr) minmax(0, 372fr);
-        background-color: #ffffff;
-        box-shadow: var(--shadow-light);
-        border-radius: 10px;
-        border: 1px solid #e8e8e8;
         min-height: 0; /* Override default "min-height: auto" so the grid item can actually be constrained by height: 100% (below) */
     }
         .chat__content {

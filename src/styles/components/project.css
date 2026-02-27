@@ -32,6 +32,19 @@
             margin-top: 14px;
         }
 
+        .project__navigation {
+
+        }
+            .project__tab {
+                font-size: 15px;
+                line-height: 20px;
+            }
+
+            .project__tab--current {
+
+            }
+
+
     .project__chat {
         position: fixed;
         top: var(--header-height);
