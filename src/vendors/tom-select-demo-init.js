@@ -14,6 +14,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Single select (no typing/static)
+    document.querySelectorAll('.js-select-single-static').forEach((selectElement) => {
+        new TomSelect(selectElement, {
+            allowEmptyOption: true,
+            create: false,
+            placeholder: selectElement.getAttribute('placeholder') || 'Select an option',
+            onInitialize: function() {
+                this.control_input.readOnly = true;
+            }
+        });
+    });
+
     // Multi-select (max 3)
     document.querySelectorAll('.js-select-multi').forEach((selectElement) => {
         new TomSelect(selectElement, {
