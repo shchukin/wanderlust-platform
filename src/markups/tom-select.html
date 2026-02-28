@@ -26,9 +26,30 @@
             <br>
             <br>
             <h1>Tom Select</h1>
+            <p>A flexible selection component with support for autocomplete and custom rendering.</p>
             <br>
 
+            <h3>Single Select</h3>
+            <p>Standard single choice with search.</p>
+            <br>
+            <select class="js-select-single" placeholder="Select a state...">
+                <option value="">Select a state...</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+            </select>
+
+            <br>
+            <br>
             <h3>Multi-select (max 3)</h3>
+            <p>Multiple selection with a limit on the number of items and a remove button.</p>
             <br>
             <select class="js-select-multi" multiple placeholder="Pick up to 3 states">
                 <option value="CA">California</option>
@@ -46,6 +67,7 @@
             <br>
             <br>
             <h3>Multi-select (no typing)</h3>
+            <p>Multiple selection without text input (selection from the list only).</p>
             <br>
             <select class="js-select-multi-static" multiple placeholder="Choose up to 3 destinations">
                 <option value="">Choose up to 3 destinations</option>
@@ -59,8 +81,23 @@
             <br>
             <br>
             <h3>Tags (create on the fly)</h3>
+            <p>Tag mode: create new items by pressing Enter.</p>
             <br>
             <input class="js-select-tags" type="text" placeholder="Add tags: ui, docs, frontend">
+
+            <br>
+            <br>
+            <h3>Custom Rendering</h3>
+            <p>Custom rendering of items using avatars and additional information.</p>
+            <br>
+            <select class="js-select-custom" placeholder="Search for a person..."></select>
+
+            <br>
+            <br>
+            <h3>Remote Loading (GitHub API)</h3>
+            <p>Loading data from an external server as you type.</p>
+            <br>
+            <select class="js-select-remote" placeholder="Search for GitHub repository..."></select>
 
             <br>
             <br>
