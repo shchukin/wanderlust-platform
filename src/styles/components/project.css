@@ -38,10 +38,11 @@
             .project__tab {
                 font-size: 15px;
                 line-height: 20px;
+                color: var(--gray);
             }
 
             .project__tab--current {
-
+                color: var(--blue);
             }
 
 
