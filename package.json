@@ -17,6 +17,7 @@
     "postcss-preset-env": "^11.1.2"
   },
   "dependencies": {
+    "choices.js": "^11.1.0",
     "sweetalert2": "^11.26.20",
     "tom-select": "^2.5.1"
   }

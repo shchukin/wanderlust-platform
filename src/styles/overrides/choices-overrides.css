@@ -1,0 +1,15 @@
+/* Custom overrides for Choices.js to match project style if needed */
+.choices__inner {
+    border-radius: 4px;
+    background-color: #fff;
+    min-height: 44px;
+    padding: 7.5px 10px;
+}
+
+.choices__list--dropdown {
+    border-radius: 4px;
+}
+
+.choices__item--selectable {
+    font-size: 14px;
+}

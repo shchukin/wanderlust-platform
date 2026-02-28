@@ -1,13 +1,13 @@
 /* Draft */
 
-/*.ts-wrapper.ts-wrapper .ts-control input {*/
-/*	cursor: inherit;*/
-/*}*/
+.ts-wrapper.ts-wrapper .ts-control input {
+	cursor: inherit;
+}
 
 
-/*.ts-wrapper .ts-control {*/
-/*	cursor: text;*/
-/*}*/
+.ts-wrapper .ts-control {
+	cursor: text;
+}
 
 
 /*.ts-wrapper.disabled .ts-control,*/
