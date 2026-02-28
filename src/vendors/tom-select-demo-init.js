@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             placeholder: selectElement.getAttribute('placeholder') || 'Select an option',
             onInitialize: function() {
                 this.control_input.readOnly = true;
+                this.wrapper.classList.add('ts-control-readonly');
             }
         });
     });
@@ -46,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             placeholder: selectElement.getAttribute('placeholder') || 'Pick up to 3 options',
             onInitialize: function() {
                 this.control_input.readOnly = true;
+                this.wrapper.classList.add('ts-control-readonly');
             }
         });
     });

@@ -1,0 +1,24 @@
+/* Draft */
+
+/*.ts-wrapper.ts-wrapper .ts-control input {*/
+/*	cursor: inherit;*/
+/*}*/
+
+
+/*.ts-wrapper .ts-control {*/
+/*	cursor: text;*/
+/*}*/
+
+
+/*.ts-wrapper.disabled .ts-control,*/
+/*.ts-wrapper.readonly .ts-control {*/
+/*	cursor: default;*/
+/*}*/
+
+/*.ts-wrapper .ts-control input[readonly] {*/
+/*	cursor: pointer;*/
+/*}*/
+
+/*.ts-wrapper.ts-control-readonly .ts-control {*/
+/*    cursor: pointer;*/
+/*}*/
