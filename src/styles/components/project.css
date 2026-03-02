@@ -43,6 +43,7 @@
             .project__nav-list {
                 display: flex;
                 align-items: stretch;
+                overflow: hidden;
             }
                 .project__tab {
                     flex-shrink: 0;
