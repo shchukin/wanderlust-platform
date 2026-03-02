@@ -1,0 +1,15 @@
+.project-price {
+
+}
+    .project-price__title {
+        font-weight: normal;
+        font-size: var(--base-font-size);
+        line-height: var(--base-line-height);
+    }
+
+    .project-price__info {
+        margin-top: var(--defenitions-spacing);
+    }
+        .project-price__heading {
+            color: var(--gray);
+        }

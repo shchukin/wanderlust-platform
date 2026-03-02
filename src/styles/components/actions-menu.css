@@ -3,3 +3,9 @@
     flex-wrap: wrap;
     gap: 9px;
 }
+
+.actions-menu--4-columns {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(4, 1fr);
+}
