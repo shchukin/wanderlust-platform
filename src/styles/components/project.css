@@ -35,7 +35,6 @@
         .project__navigation {
             margin-top: 18px;
             padding-left: 5px;
-            padding-right: 5px;
             display: flex;
             align-items: stretch;
             background-color: #ffffff;
@@ -82,6 +81,51 @@
                     bottom: 0;
                     height: 2px;
                     background-color: var(--blue);
+                }
+
+            .project__nav-dropdown {
+                position: relative;
+                margin-left: auto;
+            }
+                .project__nav-dropdown-handler {
+                    background-color: transparent;
+                    border: none;
+                    padding: 0;
+                    width: 44px;
+                    height: 100%;
+                    cursor: pointer;
+                }
+                    /* hover */
+                    .project__nav-dropdown-handler::before {
+                        content: "";
+                        position: absolute;
+                        inset: 0;
+                        margin: auto;
+                        width: 34px;
+                        height: 34px;
+                        border-radius: 50%;
+                    }
+
+                    .project__nav-dropdown-handler:hover::before {
+                        background-color: var(--hover-over-white);
+                    }
+
+                    .project__nav-dropdown-handler .icon {
+                        position: relative;
+                        font-size: 24px;
+                        line-height: 24px;
+                    }
+
+                .project__nav-dropdown-body {
+                    position: absolute;
+                    z-index: 100;
+                    right: 0;
+                    top: calc(100% - 10px);
+                    display: none;
+                }
+
+                .project__nav--expanded .project__nav-dropdown-body {
+                    display: block;
                 }
 
         .project__widget {
