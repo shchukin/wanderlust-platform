@@ -32,8 +32,6 @@ export const project = () => {
         let currentTabs = Array.from($navList.querySelectorAll('.project__tab'));
         let lastTab = currentTabs[currentTabs.length - 1];
 
-        const $menuClose = $dropdownMenu.querySelector('.menu__close');
-
         while (lastTab) {
             const tabRect = lastTab.getBoundingClientRect();
 
@@ -61,7 +59,12 @@ export const project = () => {
                 menuItem.classList.add('menu__item--current');
             }
 
-            if ($menuClose) {
+            const $firstOverflow = $dropdownMenu.querySelector('.project__nav-overflow-item');
+            const $menuClose = $dropdownMenu.querySelector('.menu__close');
+
+            if ($firstOverflow) {
+                $dropdownMenu.insertBefore(menuItem, $firstOverflow);
+            } else if ($menuClose) {
                 $dropdownMenu.insertBefore(menuItem, $menuClose);
             } else {
                 $dropdownMenu.appendChild(menuItem);
@@ -82,8 +85,33 @@ export const project = () => {
     };
 
     if ($navigation) {
-        window.addEventListener('resize', updateTabsOverflow);
-        window.requestAnimationFrame(updateTabsOverflow);
+        const scheduleUpdate = () => {
+            window.requestAnimationFrame(updateTabsOverflow);
+        };
+
+        window.addEventListener('resize', scheduleUpdate);
+        scheduleUpdate();
+
+        const $html = document.documentElement;
+        let sidebarTimer = null;
+
+        const observer = new MutationObserver((mutations) => {
+            for (const mutation of mutations) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                    /* дождаться окончания анимации сайдбара */
+                    clearTimeout(sidebarTimer);
+                    sidebarTimer = setTimeout(() => {
+                        scheduleUpdate();
+                    }, 550);
+                    break;
+                }
+            }
+        });
+
+        observer.observe($html, {
+            attributes: true,
+            attributeFilter: ['class'],
+        });
     }
 
     document.addEventListener('click', (event) => {
