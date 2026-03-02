@@ -94,6 +94,10 @@
                 flex-shrink: 0;
                 position: relative;
             }
+
+            .project__nav-addition--is-not-needed {
+                display: none;
+            }
                 .project__nav-addition-handler {
                     background-color: transparent;
                     border: none;
