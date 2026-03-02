@@ -1,4 +1,39 @@
 export const project = () => {
+
+    /* Dropdown functionality */
+
+    document.addEventListener('click', (event) => {
+        if (event.target.closest('.project__nav-addition-handler')) {
+            event.preventDefault();
+            event.target.closest('.project__nav-addition').classList.toggle('project__nav-addition--expanded');
+            return;
+        }
+
+        if (event.target.closest('.project__nav-addition .menu__close .button')) {
+            event.preventDefault();
+            event.target.closest('.project__nav-addition').classList.remove('project__nav-addition--expanded');
+            return;
+        }
+
+        /* Close by clicking outside */
+        if (!event.target.closest('.project__nav-addition')) {
+            const $project = document.querySelector('.project__nav-addition--expanded');
+            $project?.classList.remove('project__nav-addition--expanded');
+        }
+    });
+
+    /* Close by Esc */
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            const $project = document.querySelectorAll('.project__nav-addition--expanded');
+            $project.forEach((project) => {
+                project.classList.remove('project__nav-addition--expanded');
+            });
+        }
+    });
+
+
+    /* Go through nav items and move them into dropdown if they don't fit */
     const $navigation = document.querySelector('.project__navigation');
     const $navList = $navigation?.querySelector('.project__nav-list');
     const $addition = $navigation?.querySelector('.project__nav-addition');
@@ -19,14 +54,13 @@ export const project = () => {
             item.remove();
         });
 
-        const navigationRect = $navigation.getBoundingClientRect();
-        const additionRect = $addition.getBoundingClientRect();
+        const navListRect = $navList.getBoundingClientRect();
 
-        if (!navigationRect.width || !additionRect.width) {
+        if (!navListRect.width) {
             return;
         }
 
-        const maxRight = additionRect.left;
+        const maxRight = navListRect.right;
         let movedAny = false;
 
         let currentTabs = Array.from($navList.querySelectorAll('.project__tab'));
@@ -95,14 +129,38 @@ export const project = () => {
         const $html = document.documentElement;
         let sidebarTimer = null;
 
+        const getSidebarTransitionDuration = () => {
+            const styles = getComputedStyle($html);
+            const raw = styles.getPropertyValue('--transition-sidebar').trim();
+
+            if (!raw) {
+                return 500;
+            }
+
+            const firstToken = raw.split(/\s+/)[0]; /* for example, "500ms" or "0.5s" */
+
+            if (firstToken.endsWith('ms')) {
+                const value = parseFloat(firstToken.slice(0, -2));
+                return Number.isFinite(value) ? value : 500;
+            }
+
+            if (firstToken.endsWith('s')) {
+                const value = parseFloat(firstToken.slice(0, -1));
+                return Number.isFinite(value) ? value * 1000 : 500;
+            }
+
+            return 500;
+        };
+
         const observer = new MutationObserver((mutations) => {
             for (const mutation of mutations) {
                 if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-                    /* дождаться окончания анимации сайдбара */
+                    /* wait for sidebar animation to finish */
                     clearTimeout(sidebarTimer);
+                    const duration = getSidebarTransitionDuration();
                     sidebarTimer = setTimeout(() => {
                         scheduleUpdate();
-                    }, 550);
+                    }, duration + 100);
                     break;
                 }
             }
@@ -113,34 +171,4 @@ export const project = () => {
             attributeFilter: ['class'],
         });
     }
-
-    document.addEventListener('click', (event) => {
-        if (event.target.closest('.project__nav-addition-handler')) {
-            event.preventDefault();
-            event.target.closest('.project__nav-addition').classList.toggle('project__nav-addition--expanded');
-            return;
-        }
-
-        if (event.target.closest('.project__nav-addition .menu__close .button')) {
-            event.preventDefault();
-            event.target.closest('.project__nav-addition').classList.remove('project__nav-addition--expanded');
-            return;
-        }
-
-        /* Close by clicking outside */
-        if (!event.target.closest('.project__nav-addition')) {
-            const $project = document.querySelector('.project__nav-addition--expanded');
-            $project?.classList.remove('project__nav-addition--expanded');
-        }
-    });
-
-    /* Close by Esc */
-    document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') {
-            const $project = document.querySelectorAll('.project__nav-addition--expanded');
-            $project.forEach((project) => {
-                project.classList.remove('project__nav-addition--expanded');
-            });
-        }
-    });
 };

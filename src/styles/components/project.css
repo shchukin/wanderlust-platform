@@ -41,6 +41,7 @@
             border-radius: 10px;
         }
             .project__nav-list {
+                flex-grow: 1;
                 display: flex;
                 align-items: stretch;
                 overflow: hidden;
@@ -90,8 +91,8 @@
                     }
 
             .project__nav-addition {
+                flex-shrink: 0;
                 position: relative;
-                margin-left: auto;
             }
                 .project__nav-addition-handler {
                     background-color: transparent;
