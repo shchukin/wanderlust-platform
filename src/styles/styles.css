@@ -51,7 +51,9 @@
 @import url("components/messaging-window.css");
 @import url("components/tasks-check-list.css");
 @import url("components/project-price.css");
-@import url("components/statuses-choice.css");
+@import url("components/statuses-list.css");
+@import url("components/described-action.css");
+@import url("components/described-actions-list.css");
 
 @import url("components/sidebar.css");
 @import url("components/sidebar-toggler.css");
