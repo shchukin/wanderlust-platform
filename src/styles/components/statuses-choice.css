@@ -1,0 +1,11 @@
+.statuses-choice {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+    .statuses-choice .status {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }

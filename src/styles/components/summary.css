@@ -58,7 +58,7 @@
                         width: 1px;
                         white-space: nowrap;
                     }
-                        .summary__inline-editing {
+                        .summary__editing {
                             display: grid;
                             grid-template-columns: 1fr 32px;
                             gap: 8px;

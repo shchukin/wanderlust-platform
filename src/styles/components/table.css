@@ -121,3 +121,12 @@
         --table-cell-padding: 12px;
     }
 }
+
+
+
+.table--align-top {
+
+}
+    .table--align-top .table__section--body .table__cell {
+        vertical-align: top;
+    }

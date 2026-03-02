@@ -1,5 +1,15 @@
 .status {
-
+    display: inline;
+    vertical-align: baseline;
+    background-color: transparent;
+    padding: 0;
+    font-family: inherit; /* in case of the <button> */
+    font-size: var(--hover-over-body);
+    line-height: var(--base-line-height);
+    letter-spacing: inherit; /* in case of the <button> */
+    text-align: left;
+    white-space: nowrap;
+    border: none;
 }
 
 /* stylelint-disable */
@@ -13,18 +23,37 @@
 .status--approved        { color: var(--black); }
 /* stylelint-enable */
 
-
-.status--pending {
-    position: relative;
-}
-    .status--pending::before {
-        content: "";
-        position: absolute;
-        right: 100%;
-        margin-right: 6px;
-        top: 5px;
-        width: 8px;
-        height: 8px;
-        background-color: currentColor;
-        border-radius: 50%;
+    .status .icon {
+        margin-right: 4px;
+        font-size: 16px;
+        line-height: inherit;
     }
+
+    .status--pending .icon {
+        position: relative;
+        text-indent: 200%;
+        white-space: normal;
+        overflow: hidden;
+    }
+        .status--pending .icon::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            display: block;
+            width: 8px;
+            height: 8px;
+            background-color: currentColor;
+            border-radius: 50%;
+        }
+
+
+button.status {
+    cursor: pointer;
+    text-decoration: 1px underline transparent;
+    text-underline-offset: 4px;
+}
+
+button.status:hover {
+    text-decoration-color: currentColor;
+}

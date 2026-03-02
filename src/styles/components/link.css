@@ -5,9 +5,10 @@
     padding: 6px 0; /* Extend the clickable area and ensure the link remains clickable even if the cursor is between lines */
     background-color: transparent;
     border: none;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
+    font-family: inherit; /* in case of <button> */
+    font-size: inherit; /* in case of <button> */
+    line-height: inherit; /* in case of <button> */
+    letter-spacing: inherit; /* in case of <button> */
     color: var(--blue);
     text-decoration: underline;
     text-decoration-thickness: 1px;
