@@ -27,6 +27,7 @@
 @import url("components/title.css");
 @import url("components/pagination.css");
 @import url("components/table.css");
+@import url("components/sheet.css");
 @import url("components/avatar.css");
 @import url("components/logo.css");
 @import url("components/profile-card.css");
@@ -77,5 +78,6 @@
 @import url("components/summary.css");
 @import url("components/copy.css");
 @import url("components/references.css");
+@import url("components/clients-payment.css");
 
 

@@ -130,3 +130,27 @@
     .table--align-top .table__section--body .table__cell {
         vertical-align: top;
     }
+
+
+.table--no-rows-separator {
+
+}
+    .table--no-rows-separator .table__section--body .table__cell {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .table--no-rows-separator .table__section--body .table__row:first-child .table__cell {
+        padding-top: 18px;
+    }
+
+    .table--no-rows-separator .table__section--body .table__row:last-child .table__cell {
+        padding-bottom: 18px;
+    }
+
+
+.table--equal-columns {
+    table-layout: fixed;
+}
