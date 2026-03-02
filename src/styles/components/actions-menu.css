@@ -5,7 +5,7 @@
 }
 
 .actions-menu--4-columns {
-    display: grid;
     width: fit-content;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
