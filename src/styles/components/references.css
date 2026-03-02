@@ -1,0 +1,33 @@
+.references {
+    padding: 4px 8px 12px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+    .references__column {
+
+    }
+        .references__heading {
+
+        }
+
+        .references__item {
+            margin-top: 24px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+            .references__definition {
+                flex-shrink: 0;
+                width: 30%;
+                font-weight: normal;
+                font-size: var(--base-font-size);
+                line-height: var(--base-line-height);
+                color: var(--gray);
+            }
+
+            .references__term {
+                font-size: var(--base-font-size);
+                line-height: var(--base-line-height);
+                word-break: break-word;
+            }
