@@ -33,111 +33,62 @@
         }
 
         .project__navigation {
-            display: flex;
-            align-items: stretch;
             margin-top: 18px;
             padding-left: 5px;
             background-color: #ffffff;
             border-radius: 10px;
         }
-            .project__nav-list {
-                flex-grow: 1;
-                display: flex;
-                align-items: stretch;
-                overflow: hidden;
+            .project__nav-scroll {
+                overflow: auto;
             }
-                .project__tab {
-                    flex-shrink: 0;
-                    position: relative;
-                    padding: 24px;
-                    font-size: 15px;
-                    line-height: 20px;
-                    color: var(--gray);
-                    text-decoration: none;
+                .project__ribbon {
+                    display: flex;
+                    width: fit-content;
+                    align-items: flex-start;
                 }
-                    .project__tab::before {
-                        content: "";
-                        position: absolute;
-                        inset: 8px 4px;
-                        background-color: transparent;
-                        border-radius: 8px;
-                    }
-
-                    .project__tab:hover::before {
-                        background-color: var(--hover-over-white);
-                    }
-
-                    .project__tab-label {
+                    .project__tab {
+                        flex-shrink: 0;
                         position: relative;
+                        padding: 24px;
+                        font-size: 15px;
+                        line-height: 20px;
+                        color: var(--gray);
+                        text-decoration: none;
+                    }
+                        .project__tab::before {
+                            content: "";
+                            position: absolute;
+                            inset: 8px 4px;
+                            background-color: transparent;
+                            border-radius: 8px;
+                        }
+
+                        .project__tab:hover::before {
+                            background-color: var(--hover-over-white);
+                        }
+
+                        .project__tab-label {
+                            position: relative;
+                        }
+
+                    .project__tab--current {
+                        color: var(--blue);
+                        cursor: default;
                     }
 
-                .project__tab--current {
-                    color: var(--blue);
-                    cursor: default;
-                }
+                        .project__tab--current::before {
+                            display: none;
+                        }
 
-                    .project__tab--current::before {
-                        display: none;
-                    }
-
-                    .project__tab--current::after {
-                        content: "";
-                        position: absolute;
-                        left: 8px;
-                        right: 8px;
-                        bottom: 0;
-                        height: 2px;
-                        background-color: var(--blue);
-                    }
-
-            .project__nav-addition {
-                flex-shrink: 0;
-                position: relative;
-            }
-
-            .project__nav-addition--is-not-needed {
-                display: none;
-            }
-                .project__nav-addition-handler {
-                    background-color: transparent;
-                    border: none;
-                    padding: 0;
-                    width: 44px;
-                    height: 100%;
-                    cursor: pointer;
-                }
-                    /* hover */
-                    .project__nav-addition-handler::before {
-                        content: "";
-                        position: absolute;
-                        inset: 0;
-                        margin: auto;
-                        width: 34px;
-                        height: 34px;
-                        border-radius: 50%;
-                    }
-
-                    .project__nav-addition-handler:hover::before {
-                        background-color: var(--hover-over-white);
-                    }
-
-                    .project__nav-addition-handler .icon {
-                        position: relative;
-                        font-size: 24px;
-                        line-height: 24px;
-                    }
-
-                .project__nav-addition-dropdown {
-                    position: absolute;
-                    z-index: 100;
-                    right: 0;
-                    top: calc(100% - 10px);
-                    display: none;
-                }
-
-                .project__nav-addition--expanded .project__nav-addition-dropdown {
-                    display: block;
-                }
+                        .project__tab--current::after {
+                            content: "";
+                            position: absolute;
+                            left: 8px;
+                            right: 8px;
+                            bottom: 0;
+                            height: 2px;
+                            background-color: var(--blue);
+                        }
 
         .project__widget {
             margin-top: 18px;

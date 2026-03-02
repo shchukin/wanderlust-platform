@@ -9,7 +9,6 @@ import { message } from './components/message.js';
 import { enter } from './components/enter.js';
 import { dropdown } from './components/dropdown.js';
 import { copy } from './components/copy.js';
-import { project } from './components/project.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     sidebarToggler();
@@ -23,5 +22,4 @@ document.addEventListener('DOMContentLoaded', () => {
     enter();
     dropdown();
     copy();
-    project();
 });
