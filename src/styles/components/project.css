@@ -33,55 +33,60 @@
         }
 
         .project__navigation {
-            margin-top: 18px;
-            padding-left: 5px;
             display: flex;
             align-items: stretch;
+            margin-top: 18px;
+            padding-left: 5px;
             background-color: #ffffff;
             border-radius: 10px;
         }
-            .project__tab {
-                position: relative;
-                padding: 24px;
-                font-size: 15px;
-                line-height: 20px;
-                color: var(--gray);
-                text-decoration: none;
+            .project__nav-list {
+                display: flex;
+                align-items: stretch;
             }
-                .project__tab::before {
-                    content: "";
-                    position: absolute;
-                    inset: 8px 4px;
-                    background-color: transparent;
-                    border-radius: 8px;
-                }
-
-                .project__tab:hover::before {
-                    background-color: var(--hover-over-white);
-                }
-
-                .project__tab-label {
+                .project__tab {
+                    flex-shrink: 0;
                     position: relative;
+                    padding: 24px;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: var(--gray);
+                    text-decoration: none;
                 }
+                    .project__tab::before {
+                        content: "";
+                        position: absolute;
+                        inset: 8px 4px;
+                        background-color: transparent;
+                        border-radius: 8px;
+                    }
 
-            .project__tab--current {
-                color: var(--blue);
-                cursor: default;
-            }
+                    .project__tab:hover::before {
+                        background-color: var(--hover-over-white);
+                    }
 
-                .project__tab--current::before {
-                    display: none;
-                }
+                    .project__tab-label {
+                        position: relative;
+                    }
 
-                .project__tab--current::after {
-                    content: "";
-                    position: absolute;
-                    left: 8px;
-                    right: 8px;
-                    bottom: 0;
-                    height: 2px;
-                    background-color: var(--blue);
-                }
+                    .project__tab--current {
+                        color: var(--blue);
+                        cursor: default;
+                    }
+
+                        .project__tab--current::before {
+                            display: none;
+                        }
+
+                        .project__tab--current::after {
+                            content: "";
+                            position: absolute;
+                            left: 8px;
+                            right: 8px;
+                            bottom: 0;
+                            height: 2px;
+                            background-color: var(--blue);
+                        }
 
             .project__nav-addition {
                 position: relative;
