@@ -26,7 +26,7 @@ export const project = () => {
         if (event.key === 'Escape') {
             const $project = document.querySelectorAll('.project__nav-addition--expanded');
             $project.forEach((project) => {
-                project.classList.remove('project--expanded');
+                project.classList.remove('project__nav-addition--expanded');
             });
         }
     });
