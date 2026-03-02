@@ -22,10 +22,10 @@
 
         }
             .table__section--body .table__cell {
-                padding: 25px var(--table-cell-padding);
+                padding: 24px var(--table-cell-padding);
                 border: 1px solid #e2e2e2;
-                font-size: 15px;
-                line-height: 18px;
+                font-size: var(--base-font-size);
+                line-height: var(--base-line-height);
             }
 
             .table__section--body .table__cell--heading-column {

@@ -17,6 +17,8 @@
 
         .definitions__details {
             margin-top: 4px;
+            font-size: var(--base-font-size);
+            line-height: var(--base-line-height);
         }
 
     .definitions__more {

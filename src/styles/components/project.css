@@ -33,18 +33,67 @@
         }
 
         .project__navigation {
-
+            margin-top: 18px;
+            padding-left: 5px;
+            padding-right: 5px;
+            display: flex;
+            align-items: stretch;
+            background-color: #ffffff;
+            border-radius: 10px;
         }
             .project__tab {
+                position: relative;
+                padding: 24px;
                 font-size: 15px;
                 line-height: 20px;
                 color: var(--gray);
+                text-decoration: none;
             }
+                .project__tab::before {
+                    content: "";
+                    position: absolute;
+                    inset: 8px 4px;
+                    background-color: transparent;
+                    border-radius: 8px;
+                }
+
+                .project__tab:hover::before {
+                    background-color: var(--hover-over-white);
+                }
+
+                .project__tab-label {
+                    position: relative;
+                }
 
             .project__tab--current {
                 color: var(--blue);
+                cursor: default;
             }
 
+                .project__tab--current::before {
+                    display: none;
+                }
+
+                .project__tab--current::after {
+                    content: "";
+                    position: absolute;
+                    left: 8px;
+                    right: 8px;
+                    bottom: 0;
+                    height: 2px;
+                    background-color: var(--blue);
+                }
+
+        .project__data {
+            margin-top: 18px;
+            padding: 16px 10px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .project__add {
+            margin-top: 18px;
+        }
 
     .project__chat {
         position: fixed;
