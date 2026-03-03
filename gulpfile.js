@@ -89,20 +89,6 @@ gulp.task('layouts', function () {
 });
 
 
-// Vendors: copy but exclude normalize
-
-gulp.task('vendors', function () {
-    return gulp.src([
-        'src/vendors/**/*',
-        '!src/vendors/normalize',
-        '!src/vendors/normalize/**/*',
-    ], {encoding: false})
-        .pipe(plumber())
-        .pipe(gulp.dest('build/vendors/'))
-        ;
-});
-
-
 // Scripts: copy
 
 gulp.task('scripts', function () {
@@ -163,7 +149,7 @@ gulp.task('lint', function () {
 
 
 gulp.task('default', function (fn) {
-    run('clean', 'manifest', 'favicon', 'temp', 'markups', 'layouts', 'vendors', 'scripts', 'styles', 'lint', fn);
+    run('clean', 'manifest', 'favicon', 'temp', 'markups', 'layouts', 'scripts', 'styles', 'lint', fn);
 });
 
 
