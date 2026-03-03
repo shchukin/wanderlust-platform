@@ -24,6 +24,16 @@
     margin-bottom: var(--wysiwyg-line-height);
 }
 
+.wysiwyg--sparse p,
+.wysiwyg--sparse ul,
+.wysiwyg--sparse ol,
+.wysiwyg--sparse hr,
+.wysiwyg--sparse figure,
+.wysiwyg--sparse blockquote {
+    margin-top: calc(var(--wysiwyg-line-height) / 2);
+    margin-bottom: calc(var(--wysiwyg-line-height) / 2);
+}
+
 .wysiwyg p:first-child,
 .wysiwyg ul:first-child,
 .wysiwyg ol:first-child,
