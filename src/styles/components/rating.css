@@ -27,40 +27,58 @@
         flex-shrink: 0;
         width: var(--star-size);
         height: var(--star-size);
-        background-color: var(--light-gray);
         cursor: pointer;
-        mask: url("../../images/star.svg") center / contain no-repeat;
+    }
+        .rating__label::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: var(--light-gray);
+            mask-image: url("../../images/star.svg");
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+        }
+
+        .rating__label::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: var(--blue-50pct);
+            mask-image: url("../../images/star-outline.svg");
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            opacity: 0;
+        }
+
+    .rating__label:hover::after,
+    .rating__label:hover ~ .rating__label::after {
+        opacity: 1;
     }
 
-    .rating__label:hover,
-    .rating__label:hover ~ .rating__label {
+    .rating__label:has(.rating__input:checked)::before,
+    .rating__label:has(.rating__input:checked) ~ .rating__label::before {
         background-color: var(--blue);
     }
 
-    .rating__label:has(.rating__input:checked),
-    .rating__label:has(.rating__input:checked) ~ .rating__label {
-        background-color: var(--blue);
-    }
 
-
-/* Static rating */
 .rating--output {
     position: relative;
     width: calc(5 * var(--star-size));
     height: var(--star-size);
     background-color: var(--light-gray);
     mask-image: url("../../images/star.svg");
-    mask-position: left center;
     mask-size: var(--star-size);
     mask-repeat: repeat-x;
+    mask-position: left center;
 }
-
     .rating--output .rating__fill {
         position: absolute;
         inset: 0;
         background-color: var(--blue);
         mask-image: url("../../images/star.svg");
-        mask-position: left center;
         mask-size: var(--star-size);
         mask-repeat: repeat-x;
+        mask-position: left center;
     }
