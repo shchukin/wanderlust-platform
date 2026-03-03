@@ -16,18 +16,18 @@
         <link rel="manifest" href="../manifest.json">
 
         <!-- Sweet Alerts -->
-        <link rel="stylesheet" href="../../node_modules/sweetalert2/dist/sweetalert2.min.css?1772506511">
-        <script src="../../node_modules/sweetalert2/dist/sweetalert2.all.min.js?1772506511"></script>
+        <link rel="stylesheet" href="../../node_modules/sweetalert2/dist/sweetalert2.min.css?1772535632">
+        <script src="../../node_modules/sweetalert2/dist/sweetalert2.all.min.js?1772535632"></script>
         <script src="../vendors/sweet-alerts-demo-init.js"></script>
 
         <!-- Tom Select-->
-        <link rel="stylesheet" href="../../node_modules/tom-select/dist/css/tom-select.css?1772506511">
-        <script src="../../node_modules/tom-select/dist/js/tom-select.complete.min.js?1772506511"></script>
+        <link rel="stylesheet" href="../../node_modules/tom-select/dist/css/tom-select.css?1772535632">
+        <script src="../../node_modules/tom-select/dist/js/tom-select.complete.min.js?1772535632"></script>
         <script src="../vendors/tom-select-demo-init.js"></script>
 
         <!-- assets -->
-        <link rel="stylesheet" href="../styles/styles.css?1772506511">
-        <script type="module" src="../scripts/scripts.js?1772506511"></script>
+        <link rel="stylesheet" href="../styles/styles.css?1772535632">
+        <script type="module" src="../scripts/scripts.js?1772535632"></script>
 
     </head>
     <body>
@@ -377,7 +377,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="project__summary panel">
+                        <div class="project__summary">
                             <div class="summary">
                                 <div class="summary__column">
                                     <table class="summary__table">
@@ -548,308 +548,438 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="project__sub-page">
+
+                            <!-- temp -->
+                            <br>
+                            <br>
+                            <p>
+                                There are 7 tabs (subpages) in total. Each created via it's own component:
+                                <br>- <b><i>video-info</i></b>
+                                <br>- <b><i>technical-template</i></b>
+                                <br>- <b><i>references</i></b>
+                                <br>- <b><i>payment</i></b>
+                                <br>- <b><i>editor</i></b> (admin only)
+                                <br>- <b><i>feedback</i></b> (admin only)
+                                <br>- <b><i>notes</i></b> (admin only)
+                            </p>
+                            <p>
+                                In some cases, client and admin may have slightly different contains: different fields, different actions.
+                                But the layouting components are always the same.
+                            </p>
+                            <!--/temp -->
+
+                            <!-- temp -->
+                            <br>
+                            <h2>video-info</h2>
+                            <p>Client variant:</p>
+                            <!--/temp -->
+
+                            <div class="video-info">
+                                <div class="video-info__body">
+                                    <table class="table table--align-top">
+                                        <thead class="table__section table__section--head">
+                                            <tr class="table__row">
+                                                <th class="table__cell">
+                                                    <div class="table__label">Video Type</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Settings</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Reviews</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Status</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Actions</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table__section table__section--body">
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    Documentary Full Film
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="definitions">
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Resolution:</b>
+                                                            <div class="definitions__details">3840x2160 Letterbox <span class="nobr">(UHD 4K)</span></div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Creative FX:</b>
+                                                            <div class="definitions__details">No</div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Duration:</b>
+                                                            <div class="definitions__details">3-5 min</div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Extra Export:</b>
+                                                            <div class="definitions__details">No</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    1 / 2
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="statuses-list">
+                                                        <button class="status status--editing" type="button">
+                                                            <i class="icon">edit</i>Editing
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="described-actions-list">
+                                                        <button class="described-action" type="button">
+                                                            <div class="described-action__icon">
+                                                                <i class="icon">play_circle</i>
+                                                            </div>
+                                                            Watch Video
+                                                        </button>
+                                                        <button class="described-action" type="button">
+                                                            <div class="described-action__icon">
+                                                                <i class="icon">thumb_up</i>
+                                                            </div>
+                                                            Approve
+                                                        </button>
+                                                        <button class="described-action" type="button">
+                                                            <div class="described-action__icon">
+                                                                <i class="icon">thumb_down</i>
+                                                            </div>
+                                                            Request Revisions
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    Documentary Full Film
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="definitions">
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Resolution:</b>
+                                                            <div class="definitions__details">3840x2160 Letterbox <span class="nobr">(UHD 4K)</span></div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Creative FX:</b>
+                                                            <div class="definitions__details">No</div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Duration:</b>
+                                                            <div class="definitions__details">3-5 min</div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Extra Export:</b>
+                                                            <div class="definitions__details">No</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    1 / 2
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="statuses-list">
+                                                        <button class="status status--editing" type="button">
+                                                            <i class="icon">edit</i>Editing
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="described-actions-list">
+                                                        <button class="described-action" type="button">
+                                                            <div class="described-action__icon">
+                                                                <i class="icon">play_circle</i>
+                                                            </div>
+                                                            Watch Video
+                                                        </button>
+                                                        <button class="described-action" type="button">
+                                                            <div class="described-action__icon">
+                                                                <i class="icon">thumb_up</i>
+                                                            </div>
+                                                            Approve
+                                                        </button>
+                                                        <button class="described-action" type="button">
+                                                            <div class="described-action__icon">
+                                                                <i class="icon">thumb_down</i>
+                                                            </div>
+                                                            Request Revisions
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="video-info__add">
+                                    <button class="button button--height-44px button--blue-outline button--panel" type="button">
+                                        <i class="icon">add</i>
+                                        Add Another Video, Save 5%
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- temp -->
+                            <br>
+                            <p>Admin variant (has more information):</p>
+                            <!--/temp -->
+
+                            <div class="video-info">
+                                <div class="video-info__body">
+                                    <table class="table table--align-top">
+                                        <thead class="table__section table__section--head">
+                                            <tr class="table__row">
+                                                <th class="table__cell">
+                                                    <div class="table__label">Video Type</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Settings</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Reviews</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Duration</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Status</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Actions</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table__section table__section--body">
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    <div class="project-price">
+                                                        <b class="project-price__title">
+                                                            Ceremony Clean Edit
+                                                        </b>
+                                                        <div class="project-price__info">
+                                                            <span class="project-price__heading">Price:</span> $684
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="definitions">
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Resolution:</b>
+                                                            <div class="definitions__details">3840x2160 Letterbox <span class="nobr">(UHD 4K)</span></div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Creative FX:</b>
+                                                            <div class="definitions__details">No</div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Duration:</b>
+                                                            <div class="definitions__details">3-5 min</div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Extra Export:</b>
+                                                            <div class="definitions__details">No</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="definitions">
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Internal:</b>
+                                                            <div class="definitions__details">01</div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Client:</b>
+                                                            <div class="definitions__details">00</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    7 days
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="statuses-list">
+                                                        <button class="status status--editing" type="button">
+                                                            <i class="icon">edit</i>Editing
+                                                        </button>
+                                                        <button class="status status--internal-review" type="button">
+                                                            <i class="icon">content_copy</i>Internal Review
+                                                        </button>
+                                                        <button class="status status--client-review" type="button">
+                                                            <i class="icon">rotate_right</i>Client Review
+                                                        </button>
+                                                        <button class="status status--under-revision" type="button">
+                                                            <i class="icon">refresh</i>Under Revision
+                                                        </button>
+                                                        <button class="status status--pending" type="button">
+                                                            <i class="icon">circle</i>Pending
+                                                        </button>
+                                                        <button class="status status--rejected" type="button">
+                                                            <i class="icon">star</i>Rejected
+                                                        </button>
+                                                        <button class="status status--file-requested" type="button">
+                                                            <i class="icon">logout</i>File Requested
+                                                        </button>
+                                                        <button class="status status--approved" type="button">
+                                                            <i class="icon">label</i>Approved
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="actions-menu actions-menu--4-columns">
+                                                        <button class="button button--square button--light-gray-outline" type="button">
+                                                            <i class="icon">play_circle</i>
+                                                        </button>
+                                                        <button class="button button--square button--light-gray-outline" type="button">
+                                                            <i class="icon">edit</i>
+                                                        </button>
+                                                        <button class="button button--square button--light-gray-outline" type="button">
+                                                            <i class="icon">settings</i>
+                                                        </button>
+                                                        <button class="button button--square button--light-gray-outline" type="button">
+                                                            <i class="icon">delete</i>
+                                                        </button>
+                                                        <button class="button button--square button--light-gray-outline" type="button">
+                                                            <i class="icon">create_new_folder</i>
+                                                        </button>
+                                                        <button class="button button--square button--light-gray-outline" type="button">
+                                                            <i class="icon">visibility</i>
+                                                        </button>
+                                                        <button class="button button--square button--green" type="button">
+                                                            <i class="icon">thumb_up</i>
+                                                        </button>
+                                                        <button class="button button--square button--red" type="button">
+                                                            <i class="icon">thumb_down</i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="video-info__add">
+                                    <button class="button button--height-44px button--blue-outline button--panel" type="button">
+                                        <i class="icon">add</i>
+                                    </button>
+                                </div>
+                            </div>
 
 
-                        <!-- temp -->
-                        <br>
-                        <h2>Client video</h2>
-                        <!--/temp -->
 
-                        <div class="project__widget">
-                            <table class="table table--align-top">
-                                <thead class="table__section table__section--head">
+                            <!-- temp -->
+                            <br>
+                            <h2>technical-template</h2>
+                            <p>Similar to both client and admin</p>
+                            <!--/temp -->
+
+                            <div class="technical-template">
+                                <table class="table table--align-top">
+                                    <thead class="table__section table__section--head">
                                     <tr class="table__row">
-                                        <th class="table__cell">
-                                            <div class="table__label">Video Type</div>
-                                        </th>
                                         <th class="table__cell">
                                             <div class="table__label">Settings</div>
                                         </th>
                                         <th class="table__cell">
-                                            <div class="table__label">Reviews</div>
+                                            <div class="table__label">LUTS</div>
                                         </th>
                                         <th class="table__cell">
-                                            <div class="table__label">Status</div>
+                                            <div class="table__label">Branding</div>
                                         </th>
                                         <th class="table__cell">
-                                            <div class="table__label">Actions</div>
+                                            <div class="table__label">Font</div>
                                         </th>
                                     </tr>
-                                </thead>
-                                <tbody class="table__section table__section--body">
+                                    </thead>
+                                    <tbody class="table__section table__section--body">
                                     <tr class="table__row">
-                                        <td class="table__cell">
-                                            Documentary Full Film
-                                        </td>
                                         <td class="table__cell">
                                             <div class="definitions">
                                                 <div class="definitions__item">
-                                                    <b class="definitions__term">Resolution:</b>
-                                                    <div class="definitions__details">3840x2160 Letterbox <span class="nobr">(UHD 4K)</span></div>
+                                                    <b class="definitions__term">Software:</b>
+                                                    <div class="definitions__details">FCPX</div>
                                                 </div>
                                                 <div class="definitions__item">
-                                                    <b class="definitions__term">Creative FX:</b>
-                                                    <div class="definitions__details">No</div>
+                                                    <b class="definitions__term">Codec:</b>
+                                                    <div class="definitions__details">H264</div>
                                                 </div>
                                                 <div class="definitions__item">
-                                                    <b class="definitions__term">Duration:</b>
-                                                    <div class="definitions__details">3-5 min</div>
+                                                    <b class="definitions__term">Compression:</b>
+                                                    <div class="definitions__details">Youtube 4k <span class="nobr">(35-45 mbps)</span></div>
                                                 </div>
                                                 <div class="definitions__item">
-                                                    <b class="definitions__term">Extra Export:</b>
-                                                    <div class="definitions__details">No</div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="table__cell">
-                                            1 / 2
-                                        </td>
-                                        <td class="table__cell">
-                                            <div class="statuses-list">
-                                                <button class="status status--editing" type="button">
-                                                    <i class="icon">edit</i>Editing
-                                                </button>
-                                            </div>
-                                        </td>
-                                        <td class="table__cell">
-                                            <div class="described-actions-list">
-                                                <button class="described-action" type="button">
-                                                    <div class="described-action__icon">
-                                                        <i class="icon">play_circle</i>
-                                                    </div>
-                                                    Watch Video
-                                                </button>
-                                                <button class="described-action" type="button">
-                                                    <div class="described-action__icon">
-                                                        <i class="icon">thumb_up</i>
-                                                    </div>
-                                                    Approve
-                                                </button>
-                                                <button class="described-action" type="button">
-                                                    <div class="described-action__icon">
-                                                        <i class="icon">thumb_down</i>
-                                                    </div>
-                                                    Request Revisions
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="table__row">
-                                        <td class="table__cell">
-                                            Documentary Full Film
-                                        </td>
-                                        <td class="table__cell">
-                                            <div class="definitions">
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Resolution:</b>
-                                                    <div class="definitions__details">3840x2160 Letterbox <span class="nobr">(UHD 4K)</span></div>
-                                                </div>
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Creative FX:</b>
-                                                    <div class="definitions__details">No</div>
-                                                </div>
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Duration:</b>
-                                                    <div class="definitions__details">3-5 min</div>
-                                                </div>
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Extra Export:</b>
-                                                    <div class="definitions__details">No</div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="table__cell">
-                                            1 / 2
-                                        </td>
-                                        <td class="table__cell">
-                                            <div class="statuses-list">
-                                                <button class="status status--editing" type="button">
-                                                    <i class="icon">edit</i>Editing
-                                                </button>
-                                            </div>
-                                        </td>
-                                        <td class="table__cell">
-                                            <div class="described-actions-list">
-                                                <button class="described-action" type="button">
-                                                    <div class="described-action__icon">
-                                                        <i class="icon">play_circle</i>
-                                                    </div>
-                                                    Watch Video
-                                                </button>
-                                                <button class="described-action" type="button">
-                                                    <div class="described-action__icon">
-                                                        <i class="icon">thumb_up</i>
-                                                    </div>
-                                                    Approve
-                                                </button>
-                                                <button class="described-action" type="button">
-                                                    <div class="described-action__icon">
-                                                        <i class="icon">thumb_down</i>
-                                                    </div>
-                                                    Request Revisions
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="project__add">
-                            <button class="button button--height-44px button--blue-outline button--panel" type="button">
-                                <i class="icon">add</i>
-                                Add Another Video, Save 5%
-                            </button>
-                        </div>
-
-                        <!-- temp -->
-                        <br>
-                        <h2>or Admin video</h2>
-                        <!--/temp -->
-
-                        <div class="project__widget">
-                            <table class="table table--align-top">
-                                <thead class="table__section table__section--head">
-                                    <tr class="table__row">
-                                        <th class="table__cell">
-                                            <div class="table__label">Video Type</div>
-                                        </th>
-                                        <th class="table__cell">
-                                            <div class="table__label">Settings</div>
-                                        </th>
-                                        <th class="table__cell">
-                                            <div class="table__label">Reviews</div>
-                                        </th>
-                                        <th class="table__cell">
-                                            <div class="table__label">Duration</div>
-                                        </th>
-                                        <th class="table__cell">
-                                            <div class="table__label">Status</div>
-                                        </th>
-                                        <th class="table__cell">
-                                            <div class="table__label">Actions</div>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody class="table__section table__section--body">
-                                    <tr class="table__row">
-                                        <td class="table__cell">
-                                            <div class="project-price">
-                                                <b class="project-price__title">
-                                                    Ceremony Clean Edit
-                                                </b>
-                                                <div class="project-price__info">
-                                                    <span class="project-price__heading">Price:</span> $684
+                                                    <b class="definitions__term">FPS:</b>
+                                                    <div class="definitions__details">23,976</div>
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="table__cell">
                                             <div class="definitions">
                                                 <div class="definitions__item">
-                                                    <b class="definitions__term">Resolution:</b>
-                                                    <div class="definitions__details">3840x2160 Letterbox <span class="nobr">(UHD 4K)</span></div>
+                                                    <b class="definitions__term">Name:</b>
+                                                    <div class="definitions__details">Zeeshan’s LUT</div>
                                                 </div>
                                                 <div class="definitions__item">
-                                                    <b class="definitions__term">Creative FX:</b>
+                                                    <b class="definitions__term">Incidence:</b>
                                                     <div class="definitions__details">No</div>
                                                 </div>
                                                 <div class="definitions__item">
-                                                    <b class="definitions__term">Duration:</b>
-                                                    <div class="definitions__details">3-5 min</div>
-                                                </div>
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Extra Export:</b>
-                                                    <div class="definitions__details">No</div>
+                                                    <b class="definitions__term">Type:</b>
+                                                    <div class="definitions__details">Corrective</div>
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="table__cell">
                                             <div class="definitions">
                                                 <div class="definitions__item">
-                                                    <b class="definitions__term">Internal:</b>
-                                                    <div class="definitions__details">01</div>
+                                                    <b class="definitions__term">File:</b>
+                                                    <div class="definitions__details"><a class="link" href="#">Click here to download logo</a></div>
                                                 </div>
                                                 <div class="definitions__item">
-                                                    <b class="definitions__term">Client:</b>
-                                                    <div class="definitions__details">00</div>
+                                                    <b class="definitions__term">Size:</b>
+                                                    <div class="definitions__details">10</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Appearance:</b>
+                                                    <div class="definitions__details">Opening</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Animation:</b>
+                                                    <div class="definitions__details">Other: I want the font to appear as if out of nowhere!</div>
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="table__cell">
-                                            7 days
-                                        </td>
-                                        <td class="table__cell">
-                                            <div class="statuses-list">
-                                                <button class="status status--editing" type="button">
-                                                    <i class="icon">edit</i>Editing
-                                                </button>
-                                                <button class="status status--internal-review" type="button">
-                                                    <i class="icon">content_copy</i>Internal Review
-                                                </button>
-                                                <button class="status status--client-review" type="button">
-                                                    <i class="icon">rotate_right</i>Client Review
-                                                </button>
-                                                <button class="status status--under-revision" type="button">
-                                                    <i class="icon">refresh</i>Under Revision
-                                                </button>
-                                                <button class="status status--pending" type="button">
-                                                    <i class="icon">circle</i>Pending
-                                                </button>
-                                                <button class="status status--rejected" type="button">
-                                                    <i class="icon">star</i>Rejected
-                                                </button>
-                                                <button class="status status--file-requested" type="button">
-                                                    <i class="icon">logout</i>File Requested
-                                                </button>
-                                                <button class="status status--approved" type="button">
-                                                    <i class="icon">label</i>Approved
-                                                </button>
-                                            </div>
-                                        </td>
-                                        <td class="table__cell">
-                                            <div class="actions-menu actions-menu--4-columns">
-                                                <button class="button button--square button--light-gray-outline" type="button">
-                                                    <i class="icon">play_circle</i>
-                                                </button>
-                                                <button class="button button--square button--light-gray-outline" type="button">
-                                                    <i class="icon">edit</i>
-                                                </button>
-                                                <button class="button button--square button--light-gray-outline" type="button">
-                                                    <i class="icon">settings</i>
-                                                </button>
-                                                <button class="button button--square button--light-gray-outline" type="button">
-                                                    <i class="icon">delete</i>
-                                                </button>
-                                                <button class="button button--square button--light-gray-outline" type="button">
-                                                    <i class="icon">create_new_folder</i>
-                                                </button>
-                                                <button class="button button--square button--light-gray-outline" type="button">
-                                                    <i class="icon">visibility</i>
-                                                </button>
-                                                <button class="button button--square button--green" type="button">
-                                                    <i class="icon">thumb_up</i>
-                                                </button>
-                                                <button class="button button--square button--red" type="button">
-                                                    <i class="icon">thumb_down</i>
-                                                </button>
+                                            <div class="definitions">
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Name:</b>
+                                                    <div class="definitions__details">DM Sans</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Link:</b>
+                                                    <div class="definitions__details"><a class="link" href="#">Click here to download</a></div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Appearance:</b>
+                                                    <div class="definitions__details">Opening</div>
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="project__add">
-                            <button class="button button--height-44px button--blue-outline button--panel" type="button">
-                                <i class="icon">add</i>
-                            </button>
-                        </div>
+                                    </tbody>
+                                </table>
+                            </div>
 
 
-                        <!-- temp -->
-                        <br>
-                        <h2>or References (both Admin and Client)</h2>
-                        <!--/temp -->
 
-                        <div class="project__widget">
+                            <!-- temp -->
+                            <br>
+                            <h2>references</h2>
+                            <p>Similar to both client and admin</p>
+                            <!--/temp -->
+
                             <div class="references">
                                 <div class="references__column">
                                     <div class="references__heading">
@@ -936,222 +1066,24 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
 
-                        <!-- temp -->
-                        <br>
-                        <h2>or Technical Template (both Admin and Client)</h2>
-                        <!--/temp -->
+                            <!-- temp -->
+                            <br>
+                            <h2>payment</h2>
+                            <p>
+                                Client variant has Totals section and extra headings:
+                            </p>
+                            <!--/temp -->
 
-                        <div class="project__widget">
-                            <table class="table table--align-top">
-                                <thead class="table__section table__section--head">
-                                    <tr class="table__row">
-                                        <th class="table__cell">
-                                            <div class="table__label">Settings</div>
-                                        </th>
-                                        <th class="table__cell">
-                                            <div class="table__label">LUTS</div>
-                                        </th>
-                                        <th class="table__cell">
-                                            <div class="table__label">Branding</div>
-                                        </th>
-                                        <th class="table__cell">
-                                            <div class="table__label">Font</div>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody class="table__section table__section--body">
-                                    <tr class="table__row">
-                                        <td class="table__cell">
-                                            <div class="definitions">
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Software:</b>
-                                                    <div class="definitions__details">FCPX</div>
-                                                </div>
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Codec:</b>
-                                                    <div class="definitions__details">H264</div>
-                                                </div>
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Compression:</b>
-                                                    <div class="definitions__details">Youtube 4k <span class="nobr">(35-45 mbps)</span></div>
-                                                </div>
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">FPS:</b>
-                                                    <div class="definitions__details">23,976</div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="table__cell">
-                                            <div class="definitions">
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Name:</b>
-                                                    <div class="definitions__details">Zeeshan’s LUT</div>
-                                                </div>
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Incidence:</b>
-                                                    <div class="definitions__details">No</div>
-                                                </div>
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Type:</b>
-                                                    <div class="definitions__details">Corrective</div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="table__cell">
-                                            <div class="definitions">
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">File:</b>
-                                                    <div class="definitions__details"><a class="link" href="#">Click here to download logo</a></div>
-                                                </div>
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Size:</b>
-                                                    <div class="definitions__details">10</div>
-                                                </div>
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Appearance:</b>
-                                                    <div class="definitions__details">Opening</div>
-                                                </div>
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Animation:</b>
-                                                    <div class="definitions__details">Other: I want the font to appear as if out of nowhere!</div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="table__cell">
-                                            <div class="definitions">
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Name:</b>
-                                                    <div class="definitions__details">DM Sans</div>
-                                                </div>
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Link:</b>
-                                                    <div class="definitions__details"><a class="link" href="#">Click here to download</a></div>
-                                                </div>
-                                                <div class="definitions__item">
-                                                    <b class="definitions__term">Appearance:</b>
-                                                    <div class="definitions__details">Opening</div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-
-                        <!-- temp -->
-                        <br>
-                        <h2>or Admin Payment</h2>
-                        <!--/temp -->
-
-                        <div class="project__widget">
-                            <table class="
-                                table
-                                table--align-top
-                                table--no-rows-separator
-                            ">
-                                <thead class="table__section table__section--head">
-                                    <tr class="table__row">
-                                        <th class="table__cell">
-                                            <div class="table__label">Date</div>
-                                        </th>
-                                        <th class="table__cell">
-                                            <div class="table__label">Amount</div>
-                                        </th>
-                                        <th class="table__cell">
-                                            <div class="table__label">Method</div>
-                                        </th>
-                                        <th class="table__cell">
-                                            <div class="table__label">Description</div>
-                                        </th>
-                                        <th class="table__cell">
-                                            <div class="table__label">Type</div>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody class="table__section table__section--body">
-                                    <tr class="table__row">
-                                        <td class="table__cell">
-                                            <a class="date-time" name="fake-link-to-prevent-browser-parsing">
-                                                <b class="date-time__date">16 Jul, 2025</b>
-                                                <div class="date-time__time">03:12 PM</div>
-                                            </a>
-                                        </td>
-                                        <td class="table__cell">
-                                            $621
-                                        </td>
-                                        <td class="table__cell">
-                                            Paypal
-                                        </td>
-                                        <td class="table__cell">
-                                            Project ID: #1234 - Ross & Rachel
-                                        </td>
-                                        <td class="table__cell">
-                                            Sale
-                                        </td>
-                                    </tr>
-                                    <tr class="table__row">
-                                        <td class="table__cell">
-                                            <a class="date-time" name="fake-link-to-prevent-browser-parsing">
-                                                <b class="date-time__date">30 Sep, 2025</b>
-                                                <div class="date-time__time">06:49 PM</div>
-                                            </a>
-                                        </td>
-                                        <td class="table__cell">
-                                            $119
-                                        </td>
-                                        <td class="table__cell">
-                                            Payoneer
-                                        </td>
-                                        <td class="table__cell">
-                                            Payment to Miguel Aram Miranda Eliazarián
-                                        </td>
-                                        <td class="table__cell">
-                                            Editor Expense
-                                        </td>
-                                    </tr>
-                                    <tr class="table__row">
-                                        <td class="table__cell">
-                                            <a class="date-time" name="fake-link-to-prevent-browser-parsing">
-                                                <b class="date-time__date">07 Oct, 2025</b>
-                                                <div class="date-time__time">03:58 PM</div>
-                                            </a>
-                                        </td>
-                                        <td class="table__cell">
-                                            $142.80
-                                        </td>
-                                        <td class="table__cell">
-                                            Payoneer
-                                        </td>
-                                        <td class="table__cell">
-                                            Payment to Miguel Aram Miranda Eliazarián
-                                        </td>
-                                        <td class="table__cell">
-                                            Editor Expense
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-
-                        <!-- temp -->
-                        <br>
-                        <h2>or Client Payment</h2>
-                        <!--/temp -->
-
-                        <div class="project__widget">
-                            <div class="clients-payment">
-                                <div class="clients-payment__totals">
-                                    <div class="clients-payment__totals-heading">
+                            <div class="payment">
+                                <div class="payment__totals">
+                                    <div class="payment__totals-heading">
                                         <h3 class="title">
                                             Totals
                                         </h3>
                                     </div>
-                                    <div class="clients-payment__list">
+                                    <div class="payment__list">
                                         <div class="sheet">
                                             <div class="sheet__row">
                                                 <b class="sheet__param">Subtotal</b>
@@ -1184,13 +1116,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="clients-payment__payment-details">
-                                    <div class="clients-payment__payment-details-heading">
+                                <div class="payment__payment-details">
+                                    <div class="payment__payment-details-heading">
                                         <h3 class="title">
                                             Payment Details
                                         </h3>
                                     </div>
-                                    <div class="clients-payment__data">
+                                    <div class="payment__data">
                                         <table class="
                                             table
                                             table--align-top
@@ -1249,48 +1181,488 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
 
-                        <!-- temp -->
-                        <br>
-                        <h2>Notes (Admin only)</h2>
-                        <!--/temp -->
+                            <br>
+                            <p>
+                                Admin variant is simpler. Don't output <b><i>.payment__totals</i></b> and <b><i>.payment__payment-details-heading</i></b>:
+                            </p>
 
-                        <div class="project__widget">
-                            <div class="notes">
-                                <div class="notes__heading">
-                                    <h2 class="title">Note title here</h2>
-                                </div>
-                                <div class="notes__info">
-                                    by <a class="link link--text-alike" href="#">Zeeshan Syed</a> - <a class="link link--fake" name="fake-link-to-prevent-browser-parsing">03 Jan, 2026 04:29 AM</a>
-                                </div>
-                                <div class="notes__actions">
-                                    <button class="button button--square button--height-36px button--light-gray-outline" type="button">
-                                        <span class="icon">edit</span>
-                                    </button>
-                                    <button class="button button--square button--height-36px button--light-gray-outline" type="button">
-                                        <span class="icon">delete</span>
-                                    </button>
-                                </div>
-                                <div class="notes__body panel panel--gray">
-                                    <div class="wysiwyg wysiwyg--sparse">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <a href="#">ullamco laboris</a> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                        <ul>
-                                            <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</li>
-                                            <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</li>
-                                            <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <a href="#">ullamco laboris</a> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <div class="payment">
+                                <div class="payment__payment-details">
+                                    <div class="payment__data">
+                                        <table class="
+                                            table
+                                            table--align-top
+                                            table--no-rows-separator
+                                        ">
+                                            <thead class="table__section table__section--head">
+                                            <tr class="table__row">
+                                                <th class="table__cell">
+                                                    <div class="table__label">Date</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Amount</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Method</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Description</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Type</div>
+                                                </th>
+                                            </tr>
+                                            </thead>
+                                            <tbody class="table__section table__section--body">
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    <a class="date-time" name="fake-link-to-prevent-browser-parsing">
+                                                        <b class="date-time__date">16 Jul, 2025</b>
+                                                        <div class="date-time__time">03:12 PM</div>
+                                                    </a>
+                                                </td>
+                                                <td class="table__cell">
+                                                    $621
+                                                </td>
+                                                <td class="table__cell">
+                                                    Paypal
+                                                </td>
+                                                <td class="table__cell">
+                                                    Project ID: #1234 - Ross & Rachel
+                                                </td>
+                                                <td class="table__cell">
+                                                    Sale
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    <a class="date-time" name="fake-link-to-prevent-browser-parsing">
+                                                        <b class="date-time__date">30 Sep, 2025</b>
+                                                        <div class="date-time__time">06:49 PM</div>
+                                                    </a>
+                                                </td>
+                                                <td class="table__cell">
+                                                    $119
+                                                </td>
+                                                <td class="table__cell">
+                                                    Payoneer
+                                                </td>
+                                                <td class="table__cell">
+                                                    Payment to Miguel Aram Miranda Eliazarián
+                                                </td>
+                                                <td class="table__cell">
+                                                    Editor Expense
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    <a class="date-time" name="fake-link-to-prevent-browser-parsing">
+                                                        <b class="date-time__date">07 Oct, 2025</b>
+                                                        <div class="date-time__time">03:58 PM</div>
+                                                    </a>
+                                                </td>
+                                                <td class="table__cell">
+                                                    $142.80
+                                                </td>
+                                                <td class="table__cell">
+                                                    Payoneer
+                                                </td>
+                                                <td class="table__cell">
+                                                    Payment to Miguel Aram Miranda Eliazarián
+                                                </td>
+                                                <td class="table__cell">
+                                                    Editor Expense
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="project__add">
-                            <button class="button button--height-44px button--blue-outline button--panel" type="button">
-                                <i class="icon">add</i>
-                                Add a Note
-                            </button>
+
+
+
+                            <!-- temp -->
+                            <br>
+                            <h2>editor (admin only)</h2>
+                            <!--/temp -->
+
+                            <div class="editor">
+                                <div class="editor__summary">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid animi commodi delectus error incidunt odio officia officiis, perferendis porro quaerat soluta tempore temporibus velit? Ab architecto corporis hic illum ipsa laudantium molestiae, nam nobis omnis perferendis, placeat quas quasi quia, quisquam reiciendis tempore vero. A consequatur culpa cumque delectus, eligendi esse, fuga illum nam nihil quidem, repellat sit soluta sunt. Beatae dignissimos doloribus harum illo ipsam iste labore neque, quibusdam sed similique soluta unde veritatis voluptates. Ducimus ea iure, maxime nobis numquam odio! Accusantium blanditiis, deleniti exercitationem itaque, laudantium odit officiis quam quo repellendus sint vel vero. Eveniet!
+                                </div>
+                                <div class="editor__data">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid animi commodi delectus error incidunt odio officia officiis, perferendis porro quaerat soluta tempore temporibus velit? Ab architecto corporis hic illum ipsa laudantium molestiae, nam nobis omnis perferendis, placeat quas quasi quia, quisquam reiciendis tempore vero. A consequatur culpa cumque delectus, eligendi esse, fuga illum nam nihil quidem, repellat sit soluta sunt. Beatae dignissimos doloribus harum illo ipsam iste labore neque, quibusdam sed similique soluta unde veritatis voluptates. Ducimus ea iure, maxime nobis numquam odio! Accusantium blanditiis, deleniti exercitationem itaque, laudantium odit officiis quam quo repellendus sint vel vero. Eveniet!
+                                </div>
+                                <div class="editor__payment">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid animi commodi delectus error incidunt odio officia officiis, perferendis porro quaerat soluta tempore temporibus velit? Ab architecto corporis hic illum ipsa laudantium molestiae, nam nobis omnis perferendis, placeat quas quasi quia, quisquam reiciendis tempore vero. A consequatur culpa cumque delectus, eligendi esse, fuga illum nam nihil quidem, repellat sit soluta sunt. Beatae dignissimos doloribus harum illo ipsam iste labore neque, quibusdam sed similique soluta unde veritatis voluptates. Ducimus ea iure, maxime nobis numquam odio! Accusantium blanditiis, deleniti exercitationem itaque, laudantium odit officiis quam quo repellendus sint vel vero. Eveniet!
+                                </div>
+                            </div>
+
+
+                            <!-- temp -->
+                            <br>
+                            <h2>notes (admin only)</h2>
+                            <!--/temp -->
+
+                            <div class="notes">
+                                <div class="notes__item">
+                                    <div class="notes__heading">
+                                        <h2 class="title">Note title here</h2>
+                                    </div>
+                                    <div class="notes__info">
+                                        by <a class="link link--text-alike" href="#">Zeeshan Syed</a> - <a class="link link--fake" name="fake-link-to-prevent-browser-parsing">03 Jan, 2026 04:29 AM</a>
+                                    </div>
+                                    <div class="notes__actions">
+                                        <button class="button button--square button--height-36px button--light-gray-outline" type="button">
+                                            <span class="icon">edit</span>
+                                        </button>
+                                        <button class="button button--square button--height-36px button--light-gray-outline" type="button">
+                                            <span class="icon">delete</span>
+                                        </button>
+                                    </div>
+                                    <div class="notes__body">
+                                        <div class="wysiwyg wysiwyg--sparse">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <a href="#">ullamco laboris</a> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                            <ul>
+                                                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</li>
+                                                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</li>
+                                                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</li>
+                                            </ul>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <a href="#">ullamco laboris</a> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notes__add">
+                                    <button class="button button--height-44px button--blue-outline button--panel" type="button">
+                                        <i class="icon">add</i>
+                                        Add a Note
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <!-- temp -->
+                            <br>
+                            <h2>feedback (admin only)</h2>
+                            <!--/temp -->
+
+                            <div class="feedback__item">
+                                <div class="feedback__heading">
+                                    <h2 class="title">Customer Feedback</h2>
+                                </div>
+                                <div class="feedback__description">
+                                    Your feedback is highly valuable to us. We use your feedback to analyze each project and improve our services. Please rate every
+                                    aspect of your project using a 5-star method.
+                                </div>
+                                <div class="feedback__rating">
+                                    <div class="feedback__rating-table">
+                                        <table class="grading">
+                                            <tbody class="grading__section">
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Storytelling
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating">
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="storytelling-rating" value="5">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="storytelling-rating" value="4">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="storytelling-rating" value="3">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="storytelling-rating" value="2">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="storytelling-rating" value="1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Sound Editing
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating">
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="sound-editing-rating" value="5">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="sound-editing-rating" value="4">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="sound-editing-rating" value="3">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="sound-editing-rating" value="2">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="sound-editing-rating" value="1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Quality
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating">
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="quality-rating" value="5">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="quality-rating" value="4">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="quality-rating" value="3">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="quality-rating" value="2">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="quality-rating" value="1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="feedback__rating-table">
+                                        <table class="grading">
+                                            <tbody class="grading__section">
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Customer Services
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating">
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="customer-services-rating" value="5">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="customer-services-rating" value="4">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="customer-services-rating" value="3">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="customer-services-rating" value="2">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="customer-services-rating" value="1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Turnaround Time
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating">
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="turnaround-time-rating" value="5">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="turnaround-time-rating" value="4">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="turnaround-time-rating" value="3">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="turnaround-time-rating" value="2">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="turnaround-time-rating" value="1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="feedback__edit-comment">
+                                    <div class="commenting">
+                                        <div class="commenting__heading">
+                                            <h3 class="title title--18px">Leave us a comment</h3>
+                                        </div>
+                                        <div class="commenting__field">
+                                            <div class="input input--expandable">
+                                                <textarea class="input__widget" placeholder="Your message" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="commenting__permissions-description">
+                                            Please let us know if we can share your feedback, and how you'd like it to appear. We may feature comments on our website,
+                                            social media, email newsletters, or other promotional channels.
+                                        </div>
+                                        <div class="commenting__permissions-list">
+                                            <label class="
+                                                choice
+                                                choice--gray
+                                                choice--black-when-checked
+                                                choice--smaller
+                                                choice--full-width
+                                            ">
+                                                <input class="choice__widget" type="radio" name="permissions">
+                                                <div class="choice__icon choice__icon--unchecked">
+                                                    <i class="icon">radio_button_unchecked</i>
+                                                </div>
+                                                <div class="choice__icon choice__icon--checked">
+                                                    <i class="icon">radio_button_checked</i>
+                                                </div>
+                                                <div class="choice__label">
+                                                    I give Wanderlust Videos permission to share this comment with reference to my name or business, as relevant.
+                                                </div>
+                                            </label>
+                                            <label class="
+                                                choice
+                                                choice--gray
+                                                choice--black-when-checked
+                                                choice--smaller
+                                                choice--full-width
+                                            ">
+                                                <input class="choice__widget" type="radio" name="permissions">
+                                                <div class="choice__icon choice__icon--unchecked">
+                                                    <i class="icon">radio_button_unchecked</i>
+                                                </div>
+                                                <div class="choice__icon choice__icon--checked">
+                                                    <i class="icon">radio_button_checked</i>
+                                                </div>
+                                                <div class="choice__label">
+                                                    I give Wanderlust Videos permission to share this comment without referencing my name or business.
+                                                </div>
+                                            </label>
+                                            <label class="
+                                                choice
+                                                choice--gray
+                                                choice--black-when-checked
+                                                choice--smaller
+                                                choice--full-width
+                                            ">
+                                                <input class="choice__widget" type="radio" name="permissions">
+                                                <div class="choice__icon choice__icon--unchecked">
+                                                    <i class="icon">radio_button_unchecked</i>
+                                                </div>
+                                                <div class="choice__icon choice__icon--checked">
+                                                    <i class="icon">radio_button_checked</i>
+                                                </div>
+                                                <div class="choice__label">
+                                                    I do not give permission to share this comment.
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="commenting__submit">
+                                            <button class="button button--black button--height-32px" type="button">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback__item">
+                                <div class="feedback__heading">
+                                    <h2 class="title">Customer Feedback</h2>
+                                </div>
+                                <div class="feedback__rating">
+                                    <div class="feedback__rating-table">
+                                        <table class="grading">
+                                            <tbody class="grading__section">
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Storytelling
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating rating--output">
+                                                            <div class="rating__fill" style="width: 70%;"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Sound Editing
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating rating--output">
+                                                            <div class="rating__fill" style="width: 70%;"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Quality
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating rating--output">
+                                                            <div class="rating__fill" style="width: 70%;"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="feedback__rating-table">
+                                        <table class="grading">
+                                            <tbody class="grading__section">
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Customer Services
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating rating--output">
+                                                            <div class="rating__fill" style="width: 70%;"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Turnaround Time
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating rating--output">
+                                                            <div class="rating__fill" style="width: 70%;"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="feedback__comment">
+                                    Hey guys! forgot to leave a review on this one. This film truly blew me away. You guys did phenomenal and I had little to no notes for it. It's probably the first time anyone has ever edited my own footage and made me cry haha. Job well done folks.
+                                </div>
+                                <div class="feedback__permission">
+                                    <label class="
+                                        choice
+                                        choice--gray
+                                        choice--black-when-checked
+                                        choice--smaller
+                                        choice--full-width
+                                    ">
+                                        <input class="choice__widget" type="radio" checked>
+                                        <div class="choice__icon choice__icon--unchecked">
+                                            <i class="icon">radio_button_unchecked</i>
+                                        </div>
+                                        <div class="choice__icon choice__icon--checked">
+                                            <i class="icon">radio_button_checked</i>
+                                        </div>
+                                        <div class="choice__label">
+                                            I give Wanderlust Videos permission to share this comment without referencing my name or business.
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                     <section class="project__chat">
