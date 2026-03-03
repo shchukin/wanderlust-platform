@@ -105,6 +105,22 @@ gulp.task('scripts', function () {
 });
 
 
+// Vendors: copy
+
+gulp.task('vendors', function () {
+    return gulp.src('src/scripts/vendors.js') // Указываем только ОДИН входной файл
+        .pipe(plumber())
+        .pipe(esbuild({
+            outfile: 'vendors.js',
+            bundle: true,          // Собирает все импорты в один файл
+            minify: true,          // Опционально: сжимает файл
+            sourcemap: true,       // Помогает при отладке в браузере
+            target: 'es2015',      // Формат для поддержки браузерами
+        }))
+        .pipe(gulp.dest('build/scripts/'));
+});
+
+
 // Styles: concat, add prefixes, compress, copy
 
 gulp.task('styles', function () {
@@ -149,7 +165,7 @@ gulp.task('lint', function () {
 
 
 gulp.task('default', function (fn) {
-    run('clean', 'manifest', 'favicon', 'temp', 'markups', 'layouts', 'scripts', 'styles', 'lint', fn);
+    run('clean', 'manifest', 'favicon', 'temp', 'markups', 'layouts', 'scripts', 'vendors', 'styles', 'lint', fn);
 });
 
 
