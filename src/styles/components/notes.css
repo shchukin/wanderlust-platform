@@ -1,18 +1,28 @@
 .notes {
-
+    padding: 0 8px 24px;
+    position: relative;
 }
     .notes__heading {
 
     }
 
     .notes__info {
-
+        margin-top: 4px;
+        font-size: 12px;
+        line-height: 15px;
     }
 
     .notes__actions {
-
+        position: absolute;
+        right: 4px;
+        top: 2px;
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
     }
 
     .notes__body {
-
+        margin-top: 13px;
+        padding: 16px 12px;
+        font-style: italic;
     }

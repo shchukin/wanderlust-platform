@@ -7,7 +7,6 @@
     transition: margin var(--transition-sidebar);
 }
     .content__body {
-        overflow: hidden;
         flex-grow: 1;
     }
 
