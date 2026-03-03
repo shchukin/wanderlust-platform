@@ -1,7 +1,7 @@
 /* Custom overrides for Choices.js to match project style if needed */
 .choices__inner {
     border-radius: 4px;
-    background-color: #fff;
+    background-color: #ffffff;
     min-height: 44px;
     padding: 7.5px 10px;
 }

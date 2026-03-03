@@ -149,6 +149,7 @@ gulp.task('lint', function () {
 
     return gulp.src([
         '!src/styles/styles.css',
+        '!src/styles/global/normalize.css',
         'src/styles/**/*.css'
     ], {encoding: false})
         .pipe(plumber())
