@@ -10,11 +10,10 @@
     flex-direction: row-reverse;
 }
 
-.rating:focus-within {
+.rating:has(.rating__input:focus-visible) {
     outline: 2px solid var(--blue);
     outline-offset: 2px;
 }
-
     .rating__input {
         position: absolute;
         opacity: 0;
@@ -46,7 +45,9 @@
     width: calc(5 * var(--star-size));
     height: var(--star-size);
     background-color: var(--light-gray);
-    mask: url("../../images/star.svg") left center / var(--star-size) no-repeat;
+    mask-image: url("../../images/star.svg");
+    mask-position: left center;
+    mask-size: var(--star-size);
     mask-repeat: repeat-x;
 }
 
@@ -54,6 +55,8 @@
         position: absolute;
         inset: 0;
         background-color: var(--blue);
-        mask: url("../../images/star.svg") left center / var(--star-size) no-repeat;
+        mask-image: url("../../images/star.svg");
+        mask-position: left center;
+        mask-size: var(--star-size);
         mask-repeat: repeat-x;
     }
