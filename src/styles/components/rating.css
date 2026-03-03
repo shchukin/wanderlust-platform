@@ -1,0 +1,59 @@
+.rating {
+    --star-size: 24px;
+}
+
+.rating {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.rating:focus-within {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+}
+
+    .rating__input {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .rating__label {
+        flex-shrink: 0;
+        width: var(--star-size);
+        height: var(--star-size);
+        background-color: var(--light-gray);
+        cursor: pointer;
+        mask: url("../../images/star.svg") center / contain no-repeat;
+    }
+
+    .rating__label:hover,
+    .rating__label:hover ~ .rating__label {
+        background-color: var(--blue);
+    }
+
+    .rating__input:checked ~ .rating__label {
+        background-color: var(--blue);
+    }
+
+
+/* Static rating */
+.rating--output {
+    position: relative;
+    width: calc(5 * var(--star-size));
+    height: var(--star-size);
+    background-color: var(--light-gray);
+    mask: url("../../images/star.svg") left center / var(--star-size) no-repeat;
+    mask-repeat: repeat-x;
+}
+
+    .rating--output .rating__fill {
+        position: absolute;
+        inset: 0;
+        background-color: var(--blue);
+        mask: url("../../images/star.svg") left center / var(--star-size) no-repeat;
+        mask-repeat: repeat-x;
+    }
