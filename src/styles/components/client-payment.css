@@ -1,0 +1,26 @@
+.client-payment {
+
+}
+    .client-payment__totals {
+        padding: var(--project-widget-padding);
+        padding-bottom: 0;
+    }
+        .client-payment__totals-heading {
+
+        }
+
+        .client-payment__list {
+            margin-top: 16px;
+        }
+
+    .client-payment__payment-details {
+        margin-top: 40px;
+    }
+        .client-payment__payment-details-heading {
+            padding-left: var(--project-widget-padding);
+            padding-right: var(--project-widget-padding);
+        }
+
+        .client-payment__data {
+            padding: var(--project-table-padding);
+        }

@@ -1,6 +1,10 @@
+/* stylelint-disable */
 .feedback {
-    padding: 4px 10px 32px;
+    padding: var(--project-widget-padding);
+    padding-bottom: calc(var(--project-widget-padding) + 12px);
 }
+/* stylelint-enable */
+
     .feedback__heading {
 
     }

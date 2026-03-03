@@ -1,7 +1,11 @@
+/* stylelint-disable */
 .notes {
-    padding: 4px 8px 24px;
+    padding: var(--project-widget-padding);
+    padding-bottom: calc(var(--project-widget-padding) + 4px);
     position: relative;
 }
+/* stylelint-enable */
+
     .notes__heading {
 
     }
@@ -14,8 +18,8 @@
 
     .notes__actions {
         position: absolute;
-        right: 4px;
-        top: 2px;
+        right: var(--project-widget-padding);
+        top: var(--project-widget-padding);
         display: flex;
         align-items: flex-start;
         gap: 5px;

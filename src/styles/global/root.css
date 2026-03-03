@@ -49,6 +49,8 @@
     --aside-width: 300px;
     --aside-padding: 20px;
     --defenitions-spacing: 4px;
+    --project-widget-padding: 20px;
+    --project-table-padding: 16px 10px 0;
 }
 
 .sidebar-expanded {

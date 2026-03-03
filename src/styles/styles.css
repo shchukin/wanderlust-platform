@@ -79,8 +79,12 @@
 @import url("components/threads.css");
 @import url("components/summary.css");
 @import url("components/copy.css");
+@import url("components/commenting.css");
+@import url("components/client-video.css");
+@import url("components/admin-video.css");
 @import url("components/references.css");
-@import url("components/clients-payment.css");
+@import url("components/technical-template.css");
+@import url("components/admin-payment.css");
+@import url("components/client-payment.css");
 @import url("components/notes.css");
 @import url("components/feedback.css");
-@import url("components/commenting.css");

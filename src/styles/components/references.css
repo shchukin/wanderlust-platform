@@ -1,9 +1,11 @@
 .references {
-    padding: 4px 8px 28px;
+    padding: var(--project-widget-padding);
+    padding-bottom: calc(var(--project-widget-padding) + 8px);
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
 }
+
     .references__column {
 
     }
