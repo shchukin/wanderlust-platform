@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tom Select</title>
+
+        <!-- Sweet Alerts -->
+        <link rel="stylesheet" href="../../node_modules/sweetalert2/dist/sweetalert2.min.css?1772504173">
+        <script src="../../node_modules/sweetalert2/dist/sweetalert2.all.min.js?1772504173"></script>
+        <script src="../vendors/sweet-alerts-demo-init.js"></script>
+
+        <!-- Tom Select-->
+        <link rel="stylesheet" href="../../node_modules/tom-select/dist/css/tom-select.css?1772504173">
+        <script src="../../node_modules/tom-select/dist/js/tom-select.complete.min.js?1772504173"></script>
+        <script src="../vendors/tom-select-demo-init.js"></script>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css?1772504173">
+        <script type="module" src="../scripts/scripts.js?1772504173"></script>
+    </head>
+    <body style="background-color: white;">
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>Tom Select</h1>
+            <p>A flexible selection component with support for autocomplete and custom rendering.</p>
+            <br>
+
+            <h3>Single Select</h3>
+            <p>Standard single choice with search.</p>
+            <br>
+            <select class="js-select-single" placeholder="Select a state...">
+                <option value="">Select a state...</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+            </select>
+
+            <br>
+            <br>
+            <h3>Single Select (no typing)</h3>
+            <p>Standard single choice without text input (standard select behavior).</p>
+            <br>
+            <select class="js-select-single-static" placeholder="Pick a destination...">
+                <option value="">Pick a destination...</option>
+                <option value="PAR">Paris</option>
+                <option value="LON">London</option>
+                <option value="ROM">Rome</option>
+                <option value="BER">Berlin</option>
+            </select>
+
+            <br>
+            <br>
+            <h3>Single Select (no typing, Role)</h3>
+            <p>Another example of a single choice list without search/input.</p>
+            <br>
+            <select class="js-select-single-static" placeholder="Choose a role...">
+                <option value="">Choose a role...</option>
+                <option value="ADM">Admin</option>
+                <option value="EDI">Editor</option>
+                <option value="VIE">Viewer</option>
+                <option value="MAN">Manager</option>
+            </select>
+
+            <br>
+            <br>
+            <h3>Multi-select (max 3)</h3>
+            <p>Multiple selection with a limit on the number of items and a remove button.</p>
+            <br>
+            <select class="js-select-multi" multiple placeholder="Pick up to 3 states">
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="FL">Florida</option>
+                <option value="HI">Hawaii</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="OR">Oregon</option>
+                <option value="TX">Texas</option>
+                <option value="WA">Washington</option>
+            </select>
+
+            <br>
+            <br>
+            <h3>Multi-select (no typing)</h3>
+            <p>Multiple selection without text input (selection from the list only).</p>
+            <br>
+            <select class="js-select-multi-static" multiple placeholder="Choose up to 3 destinations">
+                <option value="">Choose up to 3 destinations</option>
+                <option value="BCN">Barcelona</option>
+                <option value="LIS">Lisbon</option>
+                <option value="NAP">Naples</option>
+                <option value="OSL">Oslo</option>
+                <option value="PRG">Prague</option>
+            </select>
+
+            <br>
+            <br>
+            <h3>Tags (create on the fly)</h3>
+            <p>Tag mode: create new items by pressing Enter.</p>
+            <br>
+            <input class="js-select-tags" type="text" placeholder="Add tags: ui, docs, frontend">
+
+            <br>
+            <br>
+            <h3>Custom Rendering</h3>
+            <p>Custom rendering of items using avatars and additional information.</p>
+            <br>
+            <select class="js-select-custom" placeholder="Search for a person..."></select>
+
+            <br>
+            <br>
+            <h3>Remote Loading (GitHub API)</h3>
+            <p>Loading data from an external server as you type.</p>
+            <br>
+            <select class="js-select-remote" placeholder="Search for GitHub repository..."></select>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+    </body>
+</html>

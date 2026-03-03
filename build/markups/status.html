@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- meta -->
         <meta charset="utf-8">
-        <title>.status</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/styles.css?1771581133">
+        <title>.status</title>
+
+        <!-- Sweet Alerts -->
+        <link rel="stylesheet" href="../../node_modules/sweetalert2/dist/sweetalert2.min.css?1772504173">
+        <script src="../../node_modules/sweetalert2/dist/sweetalert2.all.min.js?1772504173"></script>
+        <script src="../vendors/sweet-alerts-demo-init.js"></script>
+
+        <!-- Tom Select-->
+        <link rel="stylesheet" href="../../node_modules/tom-select/dist/css/tom-select.css?1772504173">
+        <script src="../../node_modules/tom-select/dist/js/tom-select.complete.min.js?1772504173"></script>
+        <script src="../vendors/tom-select-demo-init.js"></script>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css?1772504173">
+        <script type="module" src="../scripts/scripts.js?1772504173"></script>
     </head>
     <body style="background-color: white;">
 
@@ -64,6 +78,143 @@
             <br>
             <br>
             <br>
+            <h2>With icons</h2>
+            <p>
+                Use any icons from the Materials Icon Font. Atm it's unclear what icons will represent what status,
+                so icons below are random.
+            </p>
+            <p>
+                Also note there is no spacing between icons and text.
+            </p>
+            <br>
+
+
+            <div class="status status--editing">
+                <i class="icon">edit</i>Editing
+            </div>
+
+            <br>
+
+            <div class="status status--internal-review">
+                <i class="icon">content_copy</i>Internal Review
+            </div>
+
+            <br>
+
+            <div class="status status--client-review">
+                <i class="icon">rotate_right</i>Client Review
+            </div>
+
+            <br>
+
+            <div class="status status--under-revision">
+                <i class="icon">refresh</i>Under Revision
+            </div>
+
+            <br>
+
+            <div class="status status--pending">
+                <i class="icon">circle</i>Pending / Pending Footage / Missing Footage
+            </div>
+
+
+            <br>
+
+            <div class="status status--rejected">
+                <i class="icon">star</i>Rejected
+            </div>
+
+            <br>
+
+            <div class="status status--file-requested">
+                <i class="icon">logout</i>File Requested
+            </div>
+
+            <br>
+
+            <div class="status status--approved">
+                <i class="icon">label</i>Approved
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Pending Icons</h2>
+            <p>
+                Unfortunately, there is no bullet icon in the font. So to make a single dot like the one below,
+                I had to write additional styles overriding the icon.
+            </p>
+            <p>
+                We still need to use <b><i>.icon</i></b> class in here, so the sizes and spacings will be similar
+                to the rest of the set, but the icon itself is overwritten under <b><i>.status--pending</i></b> class.
+            </p>
+
+            <div class="status status--pending">
+                <i class="icon">circle</i>Pending / Pending Footage / Missing Footage
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Clickable status</h2>
+            <p>
+                As far as I understand, admin can change the status, so it should be clickable.
+                Use <b><i>&lt;button&gt;</i></b> tag for that:
+            </p>
+
+
+            <button class="status status--rejected" type="button">
+                <i class="icon">star</i>Rejected
+            </button>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>
+                Statuses list
+            </h2>
+            <p>
+                Use a <b><i>&lt;div class="statuses-list"&gt;...&lt;/div&gt;</i></b> wrapper
+                when there is a list of them to give them similar clickable area and correct spacing
+                around first and last element.
+            </p>
+
+            <div class="statuses-list">
+                <button class="status status--editing" type="button">
+                    <i class="icon">edit</i>Editing
+                </button>
+                <button class="status status--internal-review" type="button">
+                    <i class="icon">content_copy</i>Internal Review
+                </button>
+                <button class="status status--client-review" type="button">
+                    <i class="icon">rotate_right</i>Client Review
+                </button>
+                <button class="status status--under-revision" type="button">
+                    <i class="icon">refresh</i>Under Revision
+                </button>
+                <button class="status status--pending" type="button">
+                    <i class="icon">circle</i>Pending
+                </button>
+                <button class="status status--rejected" type="button">
+                    <i class="icon">star</i>Rejected
+                </button>
+                <button class="status status--file-requested" type="button">
+                    <i class="icon">logout</i>File Requested
+                </button>
+                <button class="status status--approved" type="button">
+                    <i class="icon">label</i>Approved
+                </button>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
             <br>
             <br>
             <br>
@@ -75,7 +226,6 @@
         </div>
 
 
-        <script type="module" src="../scripts/scripts.js?1771581133"></script>
 
 
     </body>

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html class="sidebar-expanded" lang="en">
     <head>
+        <!-- meta -->
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Wanderlust</title>
 
         <!-- favicon -->
@@ -13,9 +15,19 @@
         <!-- manifest -->
         <link rel="manifest" href="../manifest.json">
 
+        <!-- Sweet Alerts -->
+        <link rel="stylesheet" href="../../node_modules/sweetalert2/dist/sweetalert2.min.css?1772504173">
+        <script src="../../node_modules/sweetalert2/dist/sweetalert2.all.min.js?1772504173"></script>
+        <script src="../vendors/sweet-alerts-demo-init.js"></script>
+
+        <!-- Tom Select-->
+        <link rel="stylesheet" href="../../node_modules/tom-select/dist/css/tom-select.css?1772504173">
+        <script src="../../node_modules/tom-select/dist/js/tom-select.complete.min.js?1772504173"></script>
+        <script src="../vendors/tom-select-demo-init.js"></script>
+
         <!-- assets -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/styles.css?1771581133">
+        <link rel="stylesheet" href="../styles/styles.css?1772504173">
+        <script type="module" src="../scripts/scripts.js?1772504173"></script>
 
     </head>
     <body>
@@ -365,7 +377,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="project__summary">
+                        <div class="project__summary panel">
                             <div class="summary">
                                 <div class="summary__column">
                                     <table class="summary__table">
@@ -484,21 +496,18 @@
                                                     </button>
                                                 </td>
                                             </tr>
-
                                             <tr class="summary__row">
                                                 <th class="summary__cell summary__cell--heading">
                                                     Footage Size:
                                                 </th>
                                                 <td class="summary__cell summary__cell--value">
-                                                    <div class="summary__inline-editing">
+                                                    <div class="summary__editing">
                                                         <div class="input input--height-32px">
                                                             <input class="input__widget" type="text" value="117 GB">
                                                         </div>
-                                                        <div class="inline-edit__submit">
-                                                            <button class="button button--height-32px button--square" type="button">
-                                                                <i class="icon">check</i>
-                                                            </button>
-                                                        </div>
+                                                        <button class="button button--height-32px button--square" type="button">
+                                                            <i class="icon">check</i>
+                                                        </button>
                                                     </div>
                                                 </td>
                                                 <td class="summary__cell summary__cell--actions">
@@ -512,6 +521,736 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="project__navigation">
+                            <div class="project__nav-scroll hide-scrollbar">
+                                <div class="project__ribbon">
+                                    <a class="project__tab project__tab--current" href="#">
+                                        <span class="project__tab-label">Videos</span>
+                                    </a>
+                                    <a class="project__tab" href="#">
+                                        <span class="project__tab-label">Editor</span>
+                                    </a>
+                                    <a class="project__tab" href="#">
+                                        <span class="project__tab-label">Internal Data</span>
+                                    </a>
+                                    <a class="project__tab" href="#">
+                                        <span class="project__tab-label">Technical Template</span>
+                                    </a>
+                                    <a class="project__tab" href="#">
+                                        <span class="project__tab-label">References</span>
+                                    </a>
+                                    <a class="project__tab" href="#">
+                                        <span class="project__tab-label">Payments</span>
+                                    </a>
+                                    <a class="project__tab" href="#">
+                                        <span class="project__tab-label">Notes</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- temp -->
+                        <br>
+                        <h2>Client video</h2>
+                        <!--/temp -->
+
+                        <div class="project__widget">
+                            <table class="table table--align-top">
+                                <thead class="table__section table__section--head">
+                                    <tr class="table__row">
+                                        <th class="table__cell">
+                                            <div class="table__label">Video Type</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Settings</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Reviews</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Status</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Actions</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__section table__section--body">
+                                    <tr class="table__row">
+                                        <td class="table__cell">
+                                            Documentary Full Film
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="definitions">
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Resolution:</b>
+                                                    <div class="definitions__details">3840x2160 Letterbox <span class="nobr">(UHD 4K)</span></div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Creative FX:</b>
+                                                    <div class="definitions__details">No</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Duration:</b>
+                                                    <div class="definitions__details">3-5 min</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Extra Export:</b>
+                                                    <div class="definitions__details">No</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell">
+                                            1 / 2
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="statuses-list">
+                                                <button class="status status--editing" type="button">
+                                                    <i class="icon">edit</i>Editing
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="described-actions-list">
+                                                <button class="described-action" type="button">
+                                                    <div class="described-action__icon">
+                                                        <i class="icon">play_circle</i>
+                                                    </div>
+                                                    Watch Video
+                                                </button>
+                                                <button class="described-action" type="button">
+                                                    <div class="described-action__icon">
+                                                        <i class="icon">thumb_up</i>
+                                                    </div>
+                                                    Approve
+                                                </button>
+                                                <button class="described-action" type="button">
+                                                    <div class="described-action__icon">
+                                                        <i class="icon">thumb_down</i>
+                                                    </div>
+                                                    Request Revisions
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">
+                                            Documentary Full Film
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="definitions">
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Resolution:</b>
+                                                    <div class="definitions__details">3840x2160 Letterbox <span class="nobr">(UHD 4K)</span></div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Creative FX:</b>
+                                                    <div class="definitions__details">No</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Duration:</b>
+                                                    <div class="definitions__details">3-5 min</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Extra Export:</b>
+                                                    <div class="definitions__details">No</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell">
+                                            1 / 2
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="statuses-list">
+                                                <button class="status status--editing" type="button">
+                                                    <i class="icon">edit</i>Editing
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="described-actions-list">
+                                                <button class="described-action" type="button">
+                                                    <div class="described-action__icon">
+                                                        <i class="icon">play_circle</i>
+                                                    </div>
+                                                    Watch Video
+                                                </button>
+                                                <button class="described-action" type="button">
+                                                    <div class="described-action__icon">
+                                                        <i class="icon">thumb_up</i>
+                                                    </div>
+                                                    Approve
+                                                </button>
+                                                <button class="described-action" type="button">
+                                                    <div class="described-action__icon">
+                                                        <i class="icon">thumb_down</i>
+                                                    </div>
+                                                    Request Revisions
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="project__add">
+                            <button class="button button--height-44px button--blue-outline button--panel" type="button">
+                                <i class="icon">add</i>
+                                Add Another Video, Save 5%
+                            </button>
+                        </div>
+
+                        <!-- temp -->
+                        <br>
+                        <h2>or Admin video</h2>
+                        <!--/temp -->
+
+                        <div class="project__widget">
+                            <table class="table table--align-top">
+                                <thead class="table__section table__section--head">
+                                    <tr class="table__row">
+                                        <th class="table__cell">
+                                            <div class="table__label">Video Type</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Settings</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Reviews</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Duration</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Status</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Actions</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__section table__section--body">
+                                    <tr class="table__row">
+                                        <td class="table__cell">
+                                            <div class="project-price">
+                                                <b class="project-price__title">
+                                                    Ceremony Clean Edit
+                                                </b>
+                                                <div class="project-price__info">
+                                                    <span class="project-price__heading">Price:</span> $684
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="definitions">
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Resolution:</b>
+                                                    <div class="definitions__details">3840x2160 Letterbox <span class="nobr">(UHD 4K)</span></div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Creative FX:</b>
+                                                    <div class="definitions__details">No</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Duration:</b>
+                                                    <div class="definitions__details">3-5 min</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Extra Export:</b>
+                                                    <div class="definitions__details">No</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="definitions">
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Internal:</b>
+                                                    <div class="definitions__details">01</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Client:</b>
+                                                    <div class="definitions__details">00</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell">
+                                            7 days
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="statuses-list">
+                                                <button class="status status--editing" type="button">
+                                                    <i class="icon">edit</i>Editing
+                                                </button>
+                                                <button class="status status--internal-review" type="button">
+                                                    <i class="icon">content_copy</i>Internal Review
+                                                </button>
+                                                <button class="status status--client-review" type="button">
+                                                    <i class="icon">rotate_right</i>Client Review
+                                                </button>
+                                                <button class="status status--under-revision" type="button">
+                                                    <i class="icon">refresh</i>Under Revision
+                                                </button>
+                                                <button class="status status--pending" type="button">
+                                                    <i class="icon">circle</i>Pending
+                                                </button>
+                                                <button class="status status--rejected" type="button">
+                                                    <i class="icon">star</i>Rejected
+                                                </button>
+                                                <button class="status status--file-requested" type="button">
+                                                    <i class="icon">logout</i>File Requested
+                                                </button>
+                                                <button class="status status--approved" type="button">
+                                                    <i class="icon">label</i>Approved
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="actions-menu actions-menu--4-columns">
+                                                <button class="button button--square button--light-gray-outline" type="button">
+                                                    <i class="icon">play_circle</i>
+                                                </button>
+                                                <button class="button button--square button--light-gray-outline" type="button">
+                                                    <i class="icon">edit</i>
+                                                </button>
+                                                <button class="button button--square button--light-gray-outline" type="button">
+                                                    <i class="icon">settings</i>
+                                                </button>
+                                                <button class="button button--square button--light-gray-outline" type="button">
+                                                    <i class="icon">delete</i>
+                                                </button>
+                                                <button class="button button--square button--light-gray-outline" type="button">
+                                                    <i class="icon">create_new_folder</i>
+                                                </button>
+                                                <button class="button button--square button--light-gray-outline" type="button">
+                                                    <i class="icon">visibility</i>
+                                                </button>
+                                                <button class="button button--square button--green" type="button">
+                                                    <i class="icon">thumb_up</i>
+                                                </button>
+                                                <button class="button button--square button--red" type="button">
+                                                    <i class="icon">thumb_down</i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="project__add">
+                            <button class="button button--height-44px button--blue-outline button--panel" type="button">
+                                <i class="icon">add</i>
+                            </button>
+                        </div>
+
+
+                        <!-- temp -->
+                        <br>
+                        <h2>or References (both Admin and Client)</h2>
+                        <!--/temp -->
+
+                        <div class="project__widget">
+                            <div class="references">
+                                <div class="references__column">
+                                    <div class="references__heading">
+                                        <h3 class="title">
+                                            Video References
+                                        </h3>
+                                    </div>
+                                    <div class="references__item">
+                                        <b class="references__definition">
+                                            Main reference
+                                        </b>
+                                        <div class="references__term">
+                                            <a class="link" href="#">https://galleries.vidflow.co/zvjn3w16123412fasdf32f23rfk23m4f24f23f4r2rf</a>
+                                        </div>
+                                    </div>
+                                    <div class="references__item">
+                                        <b class="references__definition">
+                                            Storytelling:
+                                        </b>
+                                        <div class="references__term">
+                                            <a class="link" href="#">https://www.instagram.com/reels/D12d3425rf23fd245f4f2d3op1234m235rfmo2p43m5fpo2</a>
+                                        </div>
+                                    </div>
+                                    <div class="references__item">
+                                        <b class="references__definition">
+                                            Video reference links for specific videos:
+                                        </b>
+                                        <div class="references__term">
+                                            -
+                                        </div>
+                                    </div>
+                                    <div class="references__item">
+                                        <div class="references__definition">
+                                            Observations video reference
+                                        </div>
+                                        <div class="references__term">
+                                            Please refer to the highlight video in the
+                                            main reference link, none of the others.
+                                        </div>
+                                    </div>
+                                    <div class="references__item">
+                                        <div class="references__definition">
+                                            Additional Notes for this project
+                                        </div>
+                                        <div class="references__term">
+                                            I'll take care of the opening title of the
+                                            couple. Just leave a spot open for me
+                                            to place it. Usually use a shot of the couple
+                                            as a backdrop. Use video references to
+                                            observe.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="references__column">
+                                    <div class="references__heading">
+                                        <h3 class="title">
+                                            Soundtrack References
+                                        </h3>
+                                    </div>
+                                    <div class="references__item">
+                                        <b class="references__definition">
+                                            Soundtrack:
+                                        </b>
+                                        <div class="references__term">
+                                            <a class="link" href="#">https://vimeo.com/11055ewee61939ndcasniduc8u2ncn298cn9123cjn0193nci3ec2r</a>
+                                        </div>
+                                    </div>
+                                    <div class="references__item">
+                                        <b class="references__definition">
+                                            Preferred music:
+                                        </b>
+                                        <div class="references__term">
+                                            <a class="link" href="#">https://vimeo.com/11055dsfdsf619323ircniu4nr9c24n50oin24cir0n2rcnu24r</a>
+                                        </div>
+                                    </div>
+                                    <div class="references__item">
+                                        <b class="references__definition">
+                                            Observations for referenced music:
+                                        </b>
+                                        <div class="references__term">
+                                            There's two songs. Open with the upbeat
+                                            song and second half will be the chill one.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- temp -->
+                        <br>
+                        <h2>or Technical Template (both Admin and Client)</h2>
+                        <!--/temp -->
+
+                        <div class="project__widget">
+                            <table class="table table--align-top">
+                                <thead class="table__section table__section--head">
+                                    <tr class="table__row">
+                                        <th class="table__cell">
+                                            <div class="table__label">Settings</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">LUTS</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Branding</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Font</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__section table__section--body">
+                                    <tr class="table__row">
+                                        <td class="table__cell">
+                                            <div class="definitions">
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Software:</b>
+                                                    <div class="definitions__details">FCPX</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Codec:</b>
+                                                    <div class="definitions__details">H264</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Compression:</b>
+                                                    <div class="definitions__details">Youtube 4k <span class="nobr">(35-45 mbps)</span></div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">FPS:</b>
+                                                    <div class="definitions__details">23,976</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="definitions">
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Name:</b>
+                                                    <div class="definitions__details">Zeeshan’s LUT</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Incidence:</b>
+                                                    <div class="definitions__details">No</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Type:</b>
+                                                    <div class="definitions__details">Corrective</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="definitions">
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">File:</b>
+                                                    <div class="definitions__details"><a class="link" href="#">Click here to download logo</a></div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Size:</b>
+                                                    <div class="definitions__details">10</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Appearance:</b>
+                                                    <div class="definitions__details">Opening</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Animation:</b>
+                                                    <div class="definitions__details">Other: I want the font to appear as if out of nowhere!</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="definitions">
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Name:</b>
+                                                    <div class="definitions__details">DM Sans</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Link:</b>
+                                                    <div class="definitions__details"><a class="link" href="#">Click here to download</a></div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Appearance:</b>
+                                                    <div class="definitions__details">Opening</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <!-- temp -->
+                        <br>
+                        <h2>or Admin Payment</h2>
+                        <!--/temp -->
+
+                        <div class="project__widget">
+                            <table class="
+                                table
+                                table--align-top
+                                table--no-rows-separator
+                            ">
+                                <thead class="table__section table__section--head">
+                                    <tr class="table__row">
+                                        <th class="table__cell">
+                                            <div class="table__label">Date</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Amount</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Method</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Description</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Type</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__section table__section--body">
+                                    <tr class="table__row">
+                                        <td class="table__cell">
+                                            <a class="date-time" name="fake-link-to-prevent-browser-parsing">
+                                                <b class="date-time__date">16 Jul, 2025</b>
+                                                <div class="date-time__time">03:12 PM</div>
+                                            </a>
+                                        </td>
+                                        <td class="table__cell">
+                                            $621
+                                        </td>
+                                        <td class="table__cell">
+                                            Paypal
+                                        </td>
+                                        <td class="table__cell">
+                                            Project ID: #1234 - Ross & Rachel
+                                        </td>
+                                        <td class="table__cell">
+                                            Sale
+                                        </td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">
+                                            <a class="date-time" name="fake-link-to-prevent-browser-parsing">
+                                                <b class="date-time__date">30 Sep, 2025</b>
+                                                <div class="date-time__time">06:49 PM</div>
+                                            </a>
+                                        </td>
+                                        <td class="table__cell">
+                                            $119
+                                        </td>
+                                        <td class="table__cell">
+                                            Payoneer
+                                        </td>
+                                        <td class="table__cell">
+                                            Payment to Miguel Aram Miranda Eliazarián
+                                        </td>
+                                        <td class="table__cell">
+                                            Editor Expense
+                                        </td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">
+                                            <a class="date-time" name="fake-link-to-prevent-browser-parsing">
+                                                <b class="date-time__date">07 Oct, 2025</b>
+                                                <div class="date-time__time">03:58 PM</div>
+                                            </a>
+                                        </td>
+                                        <td class="table__cell">
+                                            $142.80
+                                        </td>
+                                        <td class="table__cell">
+                                            Payoneer
+                                        </td>
+                                        <td class="table__cell">
+                                            Payment to Miguel Aram Miranda Eliazarián
+                                        </td>
+                                        <td class="table__cell">
+                                            Editor Expense
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <!-- temp -->
+                        <br>
+                        <h2>or Client Payment</h2>
+                        <!--/temp -->
+
+                        <div class="project__widget">
+                            <div class="clients-payment">
+                                <div class="clients-payment__section">
+                                    <div class="clients-payment__heading">
+                                        <h3 class="title">
+                                            Totals
+                                        </h3>
+                                    </div>
+                                    <div class="clients-payment__list">
+                                        <div class="sheet">
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Subtotal</b>
+                                                <div class="sheet__value">$648</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Total Discounts</b>
+                                                <div class="sheet__value">-$84.70</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Total Surcharges</b>
+                                                <div class="sheet__value">$0.00</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Refunds</b>
+                                                <div class="sheet__value">$0.00</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Total Due</b>
+                                                <div class="sheet__value">$563.30</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Total Paid</b>
+                                                <div class="sheet__value">$563.30</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Balance Due</b>
+                                                <div class="sheet__value">$0.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clients-payment__section">
+                                    <div class="clients-payment__heading">
+                                        <h3 class="title">
+                                            Payment Details
+                                        </h3>
+                                    </div>
+                                    <div class="clients-payment__data">
+                                        <table class="
+                                            table
+                                            table--align-top
+                                            table--no-rows-separator
+                                            table--equal-columns
+                                        ">
+                                            <thead class="table__section table__section--head">
+                                                <tr class="table__row">
+                                                    <th class="table__cell">
+                                                        <div class="table__label">Date</div>
+                                                    </th>
+                                                    <th class="table__cell">
+                                                        <div class="table__label">Method</div>
+                                                    </th>
+                                                    <th class="table__cell">
+                                                        <div class="table__label">Amount</div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="table__section table__section--body">
+                                                <tr class="table__row">
+                                                    <td class="table__cell">
+                                                        <a class="date-time" name="fake-link-to-prevent-browser-parsing">22 Jul, 2025</a>
+                                                    </td>
+                                                    <td class="table__cell">
+                                                        Stripe
+                                                    </td>
+                                                    <td class="table__cell">
+                                                        $404.10
+                                                    </td>
+                                                </tr>
+                                                <tr class="table__row">
+                                                    <td class="table__cell">
+                                                        <a class="date-time" name="fake-link-to-prevent-browser-parsing">25 Sep, 2025</a>
+                                                    </td>
+                                                    <td class="table__cell">
+                                                        Payoneer
+                                                    </td>
+                                                    <td class="table__cell">
+                                                        $159.20
+                                                    </td>
+                                                </tr>
+                                                <tr class="table__row">
+                                                    <td class="table__cell">
+                                                        <a class="date-time" name="fake-link-to-prevent-browser-parsing">01 Dec, 2025</a>
+                                                    </td>
+                                                    <td class="table__cell">
+                                                        External
+                                                    </td>
+                                                    <td class="table__cell">
+                                                        $100.00
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <section class="project__chat">
                         <div class="threads">
@@ -1006,13 +1745,7 @@
                     </section>
                 </div>
             </main>
-
         </div>
-
-
-
-
-        <script type="module" src="../scripts/scripts.js?1771581133"></script>
 
     </body>
 </html>
