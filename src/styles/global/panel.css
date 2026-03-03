@@ -3,3 +3,16 @@
     box-shadow: var(--shadow);
     border-radius: 10px;
 }
+
+.panel--light {
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    box-shadow: var(--shadow-light);
+    border-radius: 10px;
+}
+
+.panel--gray {
+    background-color: #f6f6f6;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+}
