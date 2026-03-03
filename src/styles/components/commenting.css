@@ -1,18 +1,29 @@
 .commenting {
-    padding: 10px 19px 26px;
+    padding: 18px 21px 26px;
 }
     .commenting__heading {
 
     }
 
     .commenting__field {
-        margin-top: 10px;
+        margin-top: 17px;
     }
 
     .commenting__permissions-description {
-        margin-top: 20px;
+        margin-top: 24px;
+        font-weight: 500;
+        font-size: var(--base-font-size);
+        line-height: var(--base-line-height);
     }
 
     .commenting__permissions-list {
-
+        margin-top: 5px;
     }
+
+    .commenting__submit {
+        margin-top: 21px;
+    }
+        .commenting__submit .button {
+            padding-left: 18px;
+            padding-right: 18px;
+        }

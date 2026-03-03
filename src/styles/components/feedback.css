@@ -1,5 +1,5 @@
 .feedback {
-
+    padding: 4px 10px 32px;
 }
     .feedback__heading {
 
@@ -10,7 +10,7 @@
     }
 
     .feedback__rating {
-        margin-top: 10px;
+        margin-top: 14px;
         display: flex;
         align-items: flex-start;
         gap: 24px;
@@ -20,8 +20,13 @@
             flex-grow: 1;
         }
 
+    .feedback__edit-comment {
+        margin-top: 16px;
+    }
+
     .feedback__comment {
         position: relative;
+        margin-top: 28px;
         padding-left: 48px;
         font-size: 18px;
         line-height: 30px;
@@ -36,6 +41,7 @@
             color: var(--blue);
         }
 
-    .feedback__edit-comment {
-        margin-top: 16px;
+    .feedback__permission {
+        margin-top: 32px;
+        padding-bottom: 12px;
     }
