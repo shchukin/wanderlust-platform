@@ -57,6 +57,7 @@
 @import url("components/described-actions-list.css");
 @import url("components/date-time.css");
 @import url("components/rating.css");
+@import url("components/grading.css");
 
 @import url("components/sidebar.css");
 @import url("components/sidebar-toggler.css");
@@ -81,3 +82,5 @@
 @import url("components/references.css");
 @import url("components/clients-payment.css");
 @import url("components/notes.css");
+@import url("components/feedback.css");
+@import url("components/commenting.css");

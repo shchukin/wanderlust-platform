@@ -6,5 +6,36 @@
     }
 
     .feedback__description {
+        margin-top: 10px;
+    }
 
+    .feedback__rating {
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        padding-right: 10%;
+    }
+        .feedback__rating-table {
+            flex-grow: 1;
+        }
+
+    .feedback__comment {
+        position: relative;
+        padding-left: 48px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+        .feedback__comment::before {
+            content: "“";
+            position: absolute;
+            top: -2px;
+            left: 0;
+            font-size: 72px;
+            line-height: 72px;
+            color: var(--blue);
+        }
+
+    .feedback__edit-comment {
+        margin-top: 16px;
     }

@@ -28,7 +28,7 @@
     --hover-over-white: #f9fafb; /* matching with body background */
     --hover-over-body: #fbe8f3; /* matching with body background */
     --input-border: var(--light-gray);
-    --input-border-hover: #8c8c8c;
+    --input-border-hover: var(--blue-50pct);
     --input-border-focus: var(--blue);
     --placeholder-color: #999999;
     --disabled-background: #ececec;

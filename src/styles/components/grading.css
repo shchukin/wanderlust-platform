@@ -1,0 +1,24 @@
+.grading {
+    vertical-align: top;
+    border-collapse: collapse;
+}
+    .grading__section {
+
+    }
+        .grading__row {
+
+        }
+            .grading__label {
+                padding: 12px 0;
+                border: none;
+                vertical-align: middle;
+                font-weight: 500;
+                font-size: var(--base-font-size);
+                line-height: var(--base-line-height);
+                text-align: left;
+            }
+
+            .grading__value {
+                border: none;
+                padding: 10px 0 10px 18px;
+            }
