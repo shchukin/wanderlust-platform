@@ -37,8 +37,9 @@
 
     --table-header-background: #f6f6f6;
     --table-header-hover: #eeeeee;
+    --radius: 10px;
     --shadow: 0 0 7px rgb(0 0 0 / 10%);
-    --shadow-light: 0 0 4px rgb(0 0 0 / 5%);
+    --shadow-light: 0 0 0 1px #e8e8e8, 0 0 5px rgb(0 0 0 / 7%);
 
     --header-height: 126px;
     --page-bottom-padding: 48px;
@@ -49,8 +50,8 @@
     --aside-width: 300px;
     --aside-padding: 20px;
     --defenitions-spacing: 4px;
-    --project-widget-padding: 20px;
-    --project-table-padding: 16px 10px 0;
+    --project-subpage-padding: 20px;
+    --project-subpage-with-table-padding: 16px 10px 0;
 }
 
 .sidebar-expanded {

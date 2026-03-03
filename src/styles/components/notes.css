@@ -1,32 +1,46 @@
-/* stylelint-disable */
 .notes {
-    padding: var(--project-widget-padding);
-    padding-bottom: calc(var(--project-widget-padding) + 4px);
-    position: relative;
+
 }
-/* stylelint-enable */
-
-    .notes__heading {
-
+    .notes__item {
+        margin-top: 18px;
+        position: relative;
+        padding: var(--project-subpage-padding);
+        padding-bottom: calc(var(--project-subpage-padding) + 4px);
+        background-color: #ffffff;
+        border-radius: var(--radius);
     }
 
-    .notes__info {
-        margin-top: 4px;
-        font-size: 12px;
-        line-height: 15px;
+    .notes__item:first-child {
+        margin-top: 0;
     }
+        .notes__heading {
 
-    .notes__actions {
-        position: absolute;
-        right: var(--project-widget-padding);
-        top: var(--project-widget-padding);
-        display: flex;
-        align-items: flex-start;
-        gap: 5px;
-    }
+        }
 
-    .notes__body {
-        margin-top: 13px;
-        padding: 16px 12px;
-        font-style: italic;
+        .notes__info {
+            margin-top: 4px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        .notes__actions {
+            position: absolute;
+            right: var(--project-subpage-padding);
+            top: var(--project-subpage-padding);
+            display: flex;
+            align-items: flex-start;
+            gap: 5px;
+        }
+
+        .notes__body {
+            margin-top: 13px;
+            padding: 16px 12px;
+            background-color: #f6f6f6;
+            border: 1px solid var(--light-gray);
+            border-radius: 5px;
+            font-style: italic;
+        }
+
+    .notes__add {
+        margin-top: 18px;
     }

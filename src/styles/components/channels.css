@@ -5,6 +5,9 @@
     .channels__inner {
         padding-top: 22px;
         padding-bottom: 22px;
+        background-color: #ffffff;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
     }
         .channels__heading {
             padding: 5px var(--aside-padding) 10px;

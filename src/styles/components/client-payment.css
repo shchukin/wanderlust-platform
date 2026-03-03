@@ -1,8 +1,9 @@
 .client-payment {
-
+    background-color: #ffffff;
+    border-radius: var(--radius);
 }
     .client-payment__totals {
-        padding: var(--project-widget-padding);
+        padding: var(--project-subpage-padding);
         padding-bottom: 0;
     }
         .client-payment__totals-heading {
@@ -17,10 +18,10 @@
         margin-top: 40px;
     }
         .client-payment__payment-details-heading {
-            padding-left: var(--project-widget-padding);
-            padding-right: var(--project-widget-padding);
+            padding-left: var(--project-subpage-padding);
+            padding-right: var(--project-subpage-padding);
         }
 
         .client-payment__data {
-            padding: var(--project-table-padding);
+            padding: var(--project-subpage-with-table-padding);
         }

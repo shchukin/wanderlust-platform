@@ -1,0 +1,22 @@
+.editor {
+
+}
+    .editor__summary {
+        padding: var(--project-subpage-padding);
+        background-color: #ffffff;
+        border-radius: var(--radius);
+    }
+
+    .editor__data {
+        margin-top: 26px;
+        padding: var(--project-subpage-padding);
+        background-color: #ffffff;
+        border-radius: var(--radius);
+    }
+
+    .editor__payment {
+        margin-top: 44px;
+        padding: var(--project-subpage-padding);
+        background-color: #ffffff;
+        border-radius: var(--radius);
+    }

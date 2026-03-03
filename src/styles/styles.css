@@ -10,7 +10,6 @@
 @import url("global/html.css");
 @import url("global/body.css");
 @import url("global/container.css");
-@import url("global/panel.css");
 @import url("global/monitor-only.css");
 @import url("global/laptop-only.css");
 @import url("global/hide-scrollbar.css");
@@ -86,5 +85,6 @@
 @import url("components/technical-template.css");
 @import url("components/admin-payment.css");
 @import url("components/client-payment.css");
+@import url("components/editor.css");
 @import url("components/notes.css");
 @import url("components/feedback.css");

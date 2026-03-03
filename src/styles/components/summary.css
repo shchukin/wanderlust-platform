@@ -3,10 +3,9 @@
     align-items: flex-start;
     gap: 4%;
     background-color: #ffffff;
-    border: 1px solid #d5d5d5;
+    border: 1px solid var(--light-gray);
     padding: 14px 4px;
-    box-shadow: var(--shadow-light);
-    border-radius: 10px;
+    border-radius: var(--radius);
 }
     .summary__column {
         flex-grow: 1;

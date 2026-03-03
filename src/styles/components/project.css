@@ -90,16 +90,6 @@
                             background-color: var(--blue);
                         }
 
-        .project__widget {
-            margin-top: 18px;
-            background-color: #ffffff;
-            border-radius: 10px;
-        }
-
-        .project__add {
-            margin-top: 18px;
-        }
-
     .project__chat {
         position: fixed;
         top: var(--header-height);

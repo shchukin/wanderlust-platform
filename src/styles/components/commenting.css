@@ -1,5 +1,8 @@
 .commenting {
     padding: 18px 21px 26px;
+    background-color: #f6f8fb;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
 }
     .commenting__heading {
 
