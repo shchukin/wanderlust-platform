@@ -554,29 +554,29 @@
                             <br>
                             <br>
                             <p>
-                                First 4 tabs (subpages) are available for both client and admin. Some are similar for both, while others are specific to either.
-                                Each subpage created via it's own component, and those components are sometimes similar between client and admin and sometimes not.
-                                Components are:
-                                <br>- <b><i>client-video</i></b> / <b><i>admin-video</i></b>
-                                <br>- <b><i>technical-template</i></b> (similar to both client and admin)
-                                <br>- <b><i>references</i></b> (similar to both client and admin)
-                                <br>- <b><i>client-payment</i></b> / <b><i>admin-payment</i></b>
-                            </p>
-                            <p>
-                                At the end, there are 3 more admin only subpages:
+                                There are 7 tabs (subpages) in total. Each created via it's own component:
+                                <br>- <b><i>video-info</i></b>
+                                <br>- <b><i>technical-template</i></b>
+                                <br>- <b><i>references</i></b>
+                                <br>- <b><i>payment</i></b>
                                 <br>- <b><i>editor</i></b> (admin only)
                                 <br>- <b><i>feedback</i></b> (admin only)
                                 <br>- <b><i>notes</i></b> (admin only)
+                            </p>
+                            <p>
+                                In some cases, client and admin may have slightly different contains: different fields, different actions.
+                                But the layouting components are always the same.
                             </p>
                             <!--/temp -->
 
                             <!-- temp -->
                             <br>
-                            <h2>client-video</h2>
+                            <h2>video-info</h2>
+                            <p>Client variant:</p>
                             <!--/temp -->
 
-                            <div class="client-video">
-                                <div class="client-video__body">
+                            <div class="video-info">
+                                <div class="video-info__body">
                                     <table class="table table--align-top">
                                         <thead class="table__section table__section--head">
                                             <tr class="table__row">
@@ -715,7 +715,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="client-video__add">
+                                <div class="video-info__add">
                                     <button class="button button--height-44px button--blue-outline button--panel" type="button">
                                         <i class="icon">add</i>
                                         Add Another Video, Save 5%
@@ -725,11 +725,11 @@
 
                             <!-- temp -->
                             <br>
-                            <h2>admin-video</h2>
+                            <p>Admin variant (has more information):</p>
                             <!--/temp -->
 
-                            <div class="admin-video">
-                                <div class="admin-video__body">
+                            <div class="video-info">
+                                <div class="video-info__body">
                                     <table class="table table--align-top">
                                         <thead class="table__section table__section--head">
                                             <tr class="table__row">
@@ -860,7 +860,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="admin-video__add">
+                                <div class="video-info__add">
                                     <button class="button button--height-44px button--blue-outline button--panel" type="button">
                                         <i class="icon">add</i>
                                     </button>
@@ -871,7 +871,8 @@
 
                             <!-- temp -->
                             <br>
-                            <h2>technical-template (similar to both client and admin)</h2>
+                            <h2>technical-template</h2>
+                            <p>Similar to both client and admin</p>
                             <!--/temp -->
 
                             <div class="technical-template">
@@ -975,7 +976,8 @@
 
                             <!-- temp -->
                             <br>
-                            <h2>references (similar to both client and admin)</h2>
+                            <h2>references</h2>
+                            <p>Similar to both client and admin</p>
                             <!--/temp -->
 
                             <div class="references">
@@ -1068,17 +1070,20 @@
 
                             <!-- temp -->
                             <br>
-                            <h2>client-payment</h2>
+                            <h2>payment</h2>
+                            <p>
+                                Client variant has Totals section and extra headings:
+                            </p>
                             <!--/temp -->
 
-                            <div class="client-payment">
-                                <div class="client-payment__totals">
-                                    <div class="client-payment__totals-heading">
+                            <div class="payment">
+                                <div class="payment__totals">
+                                    <div class="payment__totals-heading">
                                         <h3 class="title">
                                             Totals
                                         </h3>
                                     </div>
-                                    <div class="client-payment__list">
+                                    <div class="payment__list">
                                         <div class="sheet">
                                             <div class="sheet__row">
                                                 <b class="sheet__param">Subtotal</b>
@@ -1111,13 +1116,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="client-payment__payment-details">
-                                    <div class="client-payment__payment-details-heading">
+                                <div class="payment__payment-details">
+                                    <div class="payment__payment-details-heading">
                                         <h3 class="title">
                                             Payment Details
                                         </h3>
                                     </div>
-                                    <div class="client-payment__data">
+                                    <div class="payment__data">
                                         <table class="
                                             table
                                             table--align-top
@@ -1178,99 +1183,103 @@
                             </div>
 
 
-                            <!-- temp -->
                             <br>
-                            <h2>admin-payment</h2>
-                            <!--/temp -->
+                            <p>
+                                Admin variant is simpler. Don't output <b><i>.payment__totals</i></b> and <b><i>.payment__payment-details-heading</i></b>:
+                            </p>
 
-                            <div class="admin-payment">
-                                <table class="
-                                    table
-                                    table--align-top
-                                    table--no-rows-separator
-                                ">
-                                    <thead class="table__section table__section--head">
-                                        <tr class="table__row">
-                                            <th class="table__cell">
-                                                <div class="table__label">Date</div>
-                                            </th>
-                                            <th class="table__cell">
-                                                <div class="table__label">Amount</div>
-                                            </th>
-                                            <th class="table__cell">
-                                                <div class="table__label">Method</div>
-                                            </th>
-                                            <th class="table__cell">
-                                                <div class="table__label">Description</div>
-                                            </th>
-                                            <th class="table__cell">
-                                                <div class="table__label">Type</div>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="table__section table__section--body">
-                                        <tr class="table__row">
-                                            <td class="table__cell">
-                                                <a class="date-time" name="fake-link-to-prevent-browser-parsing">
-                                                    <b class="date-time__date">16 Jul, 2025</b>
-                                                    <div class="date-time__time">03:12 PM</div>
-                                                </a>
-                                            </td>
-                                            <td class="table__cell">
-                                                $621
-                                            </td>
-                                            <td class="table__cell">
-                                                Paypal
-                                            </td>
-                                            <td class="table__cell">
-                                                Project ID: #1234 - Ross & Rachel
-                                            </td>
-                                            <td class="table__cell">
-                                                Sale
-                                            </td>
-                                        </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell">
-                                                <a class="date-time" name="fake-link-to-prevent-browser-parsing">
-                                                    <b class="date-time__date">30 Sep, 2025</b>
-                                                    <div class="date-time__time">06:49 PM</div>
-                                                </a>
-                                            </td>
-                                            <td class="table__cell">
-                                                $119
-                                            </td>
-                                            <td class="table__cell">
-                                                Payoneer
-                                            </td>
-                                            <td class="table__cell">
-                                                Payment to Miguel Aram Miranda Eliazarián
-                                            </td>
-                                            <td class="table__cell">
-                                                Editor Expense
-                                            </td>
-                                        </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell">
-                                                <a class="date-time" name="fake-link-to-prevent-browser-parsing">
-                                                    <b class="date-time__date">07 Oct, 2025</b>
-                                                    <div class="date-time__time">03:58 PM</div>
-                                                </a>
-                                            </td>
-                                            <td class="table__cell">
-                                                $142.80
-                                            </td>
-                                            <td class="table__cell">
-                                                Payoneer
-                                            </td>
-                                            <td class="table__cell">
-                                                Payment to Miguel Aram Miranda Eliazarián
-                                            </td>
-                                            <td class="table__cell">
-                                                Editor Expense
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="payment">
+                                <div class="payment__payment-details">
+                                    <div class="payment__data">
+                                        <table class="
+                                            table
+                                            table--align-top
+                                            table--no-rows-separator
+                                        ">
+                                            <thead class="table__section table__section--head">
+                                            <tr class="table__row">
+                                                <th class="table__cell">
+                                                    <div class="table__label">Date</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Amount</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Method</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Description</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Type</div>
+                                                </th>
+                                            </tr>
+                                            </thead>
+                                            <tbody class="table__section table__section--body">
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    <a class="date-time" name="fake-link-to-prevent-browser-parsing">
+                                                        <b class="date-time__date">16 Jul, 2025</b>
+                                                        <div class="date-time__time">03:12 PM</div>
+                                                    </a>
+                                                </td>
+                                                <td class="table__cell">
+                                                    $621
+                                                </td>
+                                                <td class="table__cell">
+                                                    Paypal
+                                                </td>
+                                                <td class="table__cell">
+                                                    Project ID: #1234 - Ross & Rachel
+                                                </td>
+                                                <td class="table__cell">
+                                                    Sale
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    <a class="date-time" name="fake-link-to-prevent-browser-parsing">
+                                                        <b class="date-time__date">30 Sep, 2025</b>
+                                                        <div class="date-time__time">06:49 PM</div>
+                                                    </a>
+                                                </td>
+                                                <td class="table__cell">
+                                                    $119
+                                                </td>
+                                                <td class="table__cell">
+                                                    Payoneer
+                                                </td>
+                                                <td class="table__cell">
+                                                    Payment to Miguel Aram Miranda Eliazarián
+                                                </td>
+                                                <td class="table__cell">
+                                                    Editor Expense
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    <a class="date-time" name="fake-link-to-prevent-browser-parsing">
+                                                        <b class="date-time__date">07 Oct, 2025</b>
+                                                        <div class="date-time__time">03:58 PM</div>
+                                                    </a>
+                                                </td>
+                                                <td class="table__cell">
+                                                    $142.80
+                                                </td>
+                                                <td class="table__cell">
+                                                    Payoneer
+                                                </td>
+                                                <td class="table__cell">
+                                                    Payment to Miguel Aram Miranda Eliazarián
+                                                </td>
+                                                <td class="table__cell">
+                                                    Editor Expense
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
 
 
