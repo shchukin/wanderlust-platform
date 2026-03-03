@@ -1,14 +1,14 @@
-.video-info {
+.videos-info {
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
-    .video-info__body {
+    .videos-info__body {
         padding: var(--project-subpage-with-table-padding);
         background-color: #ffffff;
         border-radius: var(--radius);
     }
 
-    .video-info__add {
+    .videos-info__add {
 
     }
