@@ -1,0 +1,28 @@
+.sheet {
+
+}
+    .sheet__row {
+        margin-top: 8px;
+        border-top: 1px solid var(--light-gray);
+        padding-top: 8px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .sheet__row:first-child {
+        margin-top: 0;
+        border-top: none;
+    }
+        .sheet__param {
+            font-weight: normal;
+            font-size: var(--base-font-size);
+            line-height: var(--base-line-height);
+        }
+
+        .sheet__value {
+            font-weight: 600;
+            font-size: var(--base-font-size);
+            line-height: var(--base-line-height);
+        }

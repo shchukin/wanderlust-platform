@@ -1,0 +1,23 @@
+.date-time {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+    .date-time__date {
+        display: inline;
+        vertical-align: baseline;
+        min-width: 96px;
+        font-weight: normal;
+        font-size: var(--base-font-size);
+        line-height: var(--base-line-height);
+        white-space: nowrap;
+    }
+
+    .date-time__time {
+        display: inline;
+        vertical-align: baseline;
+        font-size: 12px;
+        line-height: inherit;
+        color: var(--gray);
+        white-space: nowrap;
+    }

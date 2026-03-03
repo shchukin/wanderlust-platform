@@ -1,0 +1,22 @@
+.clients-payment {
+    padding: 4px 8px 0;
+
+}
+    .clients-payment__section {
+        margin-top: 40px;
+    }
+
+    .clients-payment__section:first-child {
+        margin-top: 0;
+    }
+        .clients-payment__heading {
+
+        }
+
+        .clients-payment__list {
+            margin-top: 16px;
+        }
+
+        .clients-payment__data {
+            margin-top: 16px;
+        }
