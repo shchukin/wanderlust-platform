@@ -13,7 +13,7 @@
         <!-- meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>logo</title>
+        <title>prefixed</title>
 
         <!-- assets -->
         <link rel="stylesheet" href="../styles/styles.css">
@@ -21,48 +21,54 @@
     </head>
     <body style="background-color: white;">
 
-        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+        <div style="max-width: 920px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
             <br>
-            <h1>logo</h1>
-            <p>
-                See also <a href="avatar.html">.avatar</a>, <a href="profile-card.html">.profile-card</a>
-            </p>
+            <h1>prefixed</h1>
 
             <p>
-                It's unclear if there will be another logos and what ratio they will have,
-                but at the moment we use this one and unlike <a href="avatar.html">.avatar</a>
-                it doesn't need pink border.
+                In general, it is a way to prefix a string with a certain action:
             </p>
+            <br>
 
-            <div class="logo">
-                <img class="logo__image"
-                     srcset="../temp/logos/logo-32x32@2x.jpg 2x"
-                     src="../temp/logos/logo-32x32@1x.jpg"
-                     width="32"
-                     height="32"
-                     alt=""
-                >
+            <div class="prefixed">
+                <div class="prefixed__content">
+                    lorem ipsum
+                </div>
+                <div class="prefixed__action">
+                    <button class="icon-action" type="button">
+                        <i class="icon">refresh</i>
+                    </button>
+                </div>
             </div>
 
             <br>
             <br>
             <br>
-            <h2>logo--with-hover</h2>
             <p>
-                Unclear what hover can be used here, but for the sake of branding
-                I am not using brightness/contrast here as I did with avatar.
+                Any action and any text can be inside:
             </p>
+            <br>
+            <br>
 
-            <a class="logo logo--with-hover" href="#">
-                <img class="logo__image"
-                     srcset="../temp/logos/logo-32x32@2x.jpg 2x"
-                     src="../temp/logos/logo-32x32@1x.jpg"
-                     width="32"
-                     height="32"
-                     alt=""
-                >
-            </a>
+            <div class="prefixed">
+                <div class="prefixed__content">
+                    <a class="link link--inverted-text-alike" href="mailto:zeeshan@wanderlust-videos.com">
+                        zeeshan@wanderlust-videos.com
+                    </a>
+                </div>
+                <div class="prefixed__action">
+                    <div class="copy" data-value="zeeshan@wanderlust-videos.com">
+                        <button class="icon-action" type="button">
+                            <i class="icon">content_copy</i>
+                        </button>
+                        <div class="copy__bubble">
+                            Copied
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
             <br>

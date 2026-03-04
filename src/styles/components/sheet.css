@@ -2,9 +2,9 @@
 
 }
     .sheet__row {
-        margin-top: 8px;
         border-top: 1px solid var(--light-gray);
         padding-top: 8px;
+        padding-bottom: 8px;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -26,3 +26,24 @@
             font-size: var(--base-font-size);
             line-height: var(--base-line-height);
         }
+
+
+.sheet__row--total {
+
+}
+    .sheet__row--total .sheet__param {
+        font-weight: 600;
+    }
+
+    .sheet__row--total .sheet__value {
+        font-weight: bold;
+    }
+
+
+.sheet--sparse {
+
+}
+    .sheet--sparse .sheet__row {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }

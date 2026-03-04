@@ -33,7 +33,22 @@
 
     .editor__payment {
         margin-top: 44px;
+        position: relative;
         padding: var(--project-subpage-padding);
         background-color: #ffffff;
         border-radius: var(--radius);
     }
+        .editor__payment-heading {
+
+        }
+
+        .editor__payment-full-value {
+            position: absolute;
+            right: var(--project-subpage-padding);
+            top: var(--project-subpage-padding);
+        }
+
+        .editor__payment-details {
+            margin-top: 8px;
+            padding-bottom: 12px;
+        }
