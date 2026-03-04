@@ -88,6 +88,36 @@ document.querySelectorAll('[data-ref="init-tom-select-single-static"]').forEach(
     });
 });
 
+const renderApprovalStatus = (data, escape) => {
+    const label = escape(data.text || data.label || data.value || '');
+
+    if (label === 'Approved') {
+        return `<span class="blue">${label}</span>`;
+    }
+
+    if (label === 'N/A') {
+        return `<span class="gray">${label}</span>`;
+    }
+
+    return label;
+};
+
+// 3. Approval status (no typing/static, custom render)
+document.querySelectorAll('[data-ref="init-tom-select-approval"]').forEach((el) => {
+    new TomSelect(el, {
+        allowEmptyOption: true,
+        create: false,
+        render: {
+            option: (data, escape) => `<div>${renderApprovalStatus(data, escape)}</div>`,
+            item: (data, escape) => `<div>${renderApprovalStatus(data, escape)}</div>`
+        },
+        onInitialize: function() {
+            this.control_input.readOnly = true;
+            this.wrapper.classList.add('ts-control-readonly');
+        }
+    });
+});
+
 
 // 5. Tags (create on the fly)
 document.querySelectorAll('[data-ref="init-tom-select-tags"]').forEach((el) => {

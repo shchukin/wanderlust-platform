@@ -1,3 +1,7 @@
 .gray {
     color: var(--gray);
 }
+
+.blue {
+    color: var(--blue);
+}
