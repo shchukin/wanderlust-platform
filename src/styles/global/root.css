@@ -37,6 +37,7 @@
     --shadow: 0 0 7px rgb(0 0 0 / 10%);
     --shadow-light: 0 0 0 1px #e8e8e8, 0 0 5px rgb(0 0 0 / 7%);
 
+    --input-height: 40px;
     --input-h-padding: 12px;
     --input-radius: 5px;
     --input-font-size: 15px;

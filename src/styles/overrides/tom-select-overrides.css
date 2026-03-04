@@ -1,21 +1,11 @@
 .ts-control {
 	--item-padding: 4px;
+	--tom-tag-height: 28px;
 }
 
 .ts-control {
-	/*border: 1px solid #d0d0d0;*/
-	/*padding: 8px 8px;*/
-	/*width: 100%;*/
-	/*overflow: hidden;*/
-	/*position: relative;*/
-	/*z-index: 1;*/
-	/*box-sizing: border-box;*/
-	/*box-shadow: none;*/
-	/*border-radius: 3px;*/
-	/*display: flex;*/
-	/*flex-wrap: wrap;*/
 	gap: 4px;
-
+	height: var(--input-height);
 	padding: 5px var(--input-h-padding); /* 40px tall, same as default widget */
 	border-radius: var(--input-radius);
 	border-color: var(--input-border);
@@ -29,7 +19,7 @@
 	border-color: var(--input-border-hover);
 }
 
-.ts-control:has(> input:focus) {
+.focus .ts-control {
 	border-color: var(--input-border-focus);
 }
 
@@ -39,10 +29,7 @@
 .full .ts-control {
 	/*background-color: #fff;*/
 }
-.disabled .ts-control,
-.disabled .ts-control * {
-	/*cursor: default !important;*/
-}
+
 .focus .ts-control {
 	/*box-shadow: none;*/
 }
@@ -50,12 +37,17 @@
 	/*vertical-align: baseline;*/
 	/*display: inline-block;*/
 }
-.ts-wrapper.multi .ts-control > div {
+.ts-wrapper.multi .ts-control > div.item {
 	margin: 0;
-	padding: var(--item-padding) 10px;
-	border-radius: 100px;
-	background: var(--lightest-gray);
+	padding: 0 10px !important;
+	height: var(--tom-tag-height);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--lightest-gray);
+	border-radius: calc(var(--tom-tag-height) / 2);
 	color: var(--black);
+	white-space: nowrap;
 }
 
 .ts-wrapper.multi .ts-control > div.active {
@@ -66,8 +58,20 @@
 .ts-wrapper.multi.disabled .ts-control > div,
 .ts-wrapper.multi.disabled .ts-control > div.active {
 	color: var(--disabled-color);
-	/*background: white;*/
+	background: var(--light-gray);
 	/*border: 0 solid white;*/
+}
+
+.ts-wrapper.single .ts-control {
+	padding-left: var(--input-h-padding);
+	padding-right: var(--input-h-padding);
+}
+
+.ts-wrapper.single .ts-control > div.item {
+	height: var(--tom-tag-height);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .ts-control > input {
@@ -94,7 +98,7 @@
 /*margin: 0 4px 0 -2px !important;*/
 .disabled .ts-control,
 .disabled .ts-control:hover,
-.disabled .ts-control:has(> input:focus) {
+.disabled.focus .ts-control {
 	opacity: 100%;
 	background-color: var(--disabled-background);
 	color: var(--disabled-color);
@@ -314,20 +318,63 @@
 	/*align-items: center;*/
 }
 .ts-wrapper.plugin-remove_button .item .remove {
-	/*color: inherit;*/
-	/*text-decoration: none;*/
+	position: relative;
 	/*vertical-align: middle;*/
 	/*display: inline-block;*/
-	/*padding: 0 6px;*/
-	/*border-radius: 0 2px 2px 0;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	width: 28px;
+	margin-right: -10px;
+	height: var(--tom-tag-height);
+	background-color: transparent;
+	border-left: none !important;
+	border-top-right-radius: calc(var(--tom-tag-height) / 2);
+	border-bottom-right-radius: calc(var(--tom-tag-height) / 2);
+	text-indent: 500%;
+	white-space: nowrap;
+	overflow: hidden;
 	/*box-sizing: border-box;*/
 }
 .ts-wrapper.plugin-remove_button .item .remove:hover {
-	/*background: rgba(0, 0, 0, 0.05);*/
+	background-color: var(--light-gray);
 }
+
 .ts-wrapper.plugin-remove_button.disabled .item .remove:hover {
 	/*background: none;*/
 }
+	/* separator */
+	.ts-wrapper.plugin-remove_button .item .remove::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 7px;
+		bottom: 7px;
+		width: 1px;
+		background-color: var(--light-gray);
+	}
+
+	/* cross icon */
+	.ts-wrapper.plugin-remove_button .item .remove::after {
+		content: "";
+		position: absolute;
+		inset: 0 2px 0 0;
+		background-color: var(--black);
+		mask-image: url("../../images/close_small.svg");
+		mask-size: 20px 20px;
+		mask-repeat: no-repeat;
+		mask-position: center center;
+	}
+
+	.ts-wrapper.plugin-remove_button .item .remove:active::after {
+		transform: translateY(1px);
+	}
+
+    .disabled.ts-wrapper.plugin-remove_button .item .remove {
+		display: none !important;
+	}
+
 .ts-wrapper.plugin-remove_button .remove-single {
 	/*position: absolute;*/
 	/*right: 0;*/

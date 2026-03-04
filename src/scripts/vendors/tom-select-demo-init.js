@@ -75,17 +75,17 @@ document.querySelectorAll('[data-ref="init-tom-select-single"]').forEach((el) =>
 });
 
 // 2. Single select (no typing/static)
-// document.querySelectorAll('[data-ref="init-tom-select-single-static"]').forEach((el) => {
-//     new TomSelect(el, {
-//         allowEmptyOption: true,
-//         create: false,
-//         placeholder: el.getAttribute('placeholder') || 'Select an option',
-//         onInitialize: function() {
-//             this.control_input.readOnly = true;
-//             this.wrapper.classList.add('ts-control-readonly');
-//         }
-//     });
-// });
+document.querySelectorAll('[data-ref="init-tom-select-single-static"]').forEach((el) => {
+    new TomSelect(el, {
+        allowEmptyOption: true,
+        create: false,
+        placeholder: el.getAttribute('placeholder') || 'Select an option',
+        onInitialize: function() {
+            this.control_input.readOnly = true;
+            this.wrapper.classList.add('ts-control-readonly');
+        }
+    });
+});
 
 
 // 5. Tags (create on the fly)
