@@ -1,0 +1,94 @@
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px;
+}
+
+@media (width < 1500px) {
+    .numbers {
+        gap: 24px;
+    }
+}
+
+    .numbers__section {
+        position: relative;
+    }
+        .numbers__heading {
+
+        }
+
+        .numbers__total {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        .numbers__table {
+            margin-top: 24px;
+            border-collapse: collapse;
+            width: 100%;
+            vertical-align: top;
+            table-layout: fixed;
+        }
+            .numbers__tbody {
+
+            }
+                .numbers__row {
+                    border-top: 40px solid transparent;
+                }
+
+                .numbers__row:first-child {
+                    border-top: none;
+                }
+
+                    .numbers__cell {
+                        padding: 0;
+                    }
+
+                    .numbers__cell--param {
+                        text-align: left;
+                        font-weight: inherit;
+                        font-size: var(--base-font-size);
+                        line-height: var(--base-line-height);
+                        color: var(--gray);
+                    }
+
+                    .numbers__cell--value {
+                        width: 120px;
+                        padding-left: 20px;
+                    }
+
+                    .numbers__cell--editable-value {
+                        width: 150px;
+                        padding-left: 20px;
+                    }
+
+                    .numbers__cell--action {
+                        width: 130px;
+                        padding-left: 8px;
+                    }
+
+    .numbers__report {
+        margin-top: 26px;
+        padding: 22px 10px 20px;
+        background-color: #f6f8fb;
+        border: 1px solid var(--light-gray);
+        border-radius: 5px;
+    }
+        .numbers__report-heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+        }
+
+        .numbers__report-field {
+            margin-top: 20px;
+        }
+
+        .numbers__report-submit {
+            margin-top: 14px;
+        }

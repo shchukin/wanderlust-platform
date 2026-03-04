@@ -34,6 +34,7 @@ document.querySelectorAll('[data-ref="init-tom-select-bonuses"]').forEach((el) =
         searchField: ['amount'],
         allowEmptyOption: true,
         create: false,
+        items: [1],
         options: [
             {id: 1, amount: '31.42', change: '34%'},
             {id: 2, amount: '28.05', change: '12%'},
