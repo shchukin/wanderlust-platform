@@ -49,11 +49,11 @@ document.querySelectorAll('[data-ref="init-tom-select-bonuses"]').forEach((el) =
         render: {
             option: (data, escape) => `
                 <div>
-                    $${escape(data.amount)} <span class="gray">(${escape(data.change)})</span>
+                    $${escape(data.amount)}&nbsp;<span class="gray">(${escape(data.change)})</span>
                 </div>`,
             item: (data, escape) => `
                 <div>
-                    $${escape(data.amount)} <span class="gray">(${escape(data.change)})</span>
+                    $${escape(data.amount)}&nbsp;<span class="gray">(${escape(data.change)})</span>
                 </div>`
         },
         onInitialize: function() {
