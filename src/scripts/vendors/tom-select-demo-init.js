@@ -98,36 +98,6 @@ document.querySelectorAll('[data-ref="init-tom-select-tags"]').forEach((el) => {
     });
 });
 
-// 6. Custom Rendering (Avatars)
-document.querySelectorAll('[data-ref="init-tom-select-custom"]').forEach((el) => {
-    new TomSelect(el, {
-        valueField: 'id',
-        labelField: 'name',
-        searchField: ['name', 'email'],
-        options: [
-            {id: 1, name: 'Nikola Tesla', email: 'tesla@example.com', avatar: 'https://i.pravatar.cc/32?u=1'},
-            {id: 2, name: 'Marie Curie', email: 'curie@example.com', avatar: 'https://i.pravatar.cc/32?u=2'},
-            {id: 3, name: 'Albert Einstein', email: 'einstein@example.com', avatar: 'https://i.pravatar.cc/32?u=3'}
-        ],
-        render: {
-            option: (data, escape) => `
-                <div class="flex items-center">
-                    <div class="avatar mr-2">
-                        <img class="avatar__image" src="${escape(data.avatar)}" alt="${escape(data.name)}">
-                    </div>
-                    <div>
-                        <span class="block font-medium">${escape(data.name)}</span>
-                        <span class="block text-gray-500 text-xs">${escape(data.email)}</span>
-                    </div>
-                </div>`,
-            item: (data, escape) => `
-                <div class="flex items-center">
-                    <img class="avatar__image" src="${escape(data.avatar)}" style="width:18px; margin-right:5px">
-                    <span>${escape(data.name)}</span>
-                </div>`
-        }
-    });
-});
 
 // 8. Remote Loading (GitHub)
 document.querySelectorAll('[data-ref="init-tom-select-remote"]').forEach((el) => {
