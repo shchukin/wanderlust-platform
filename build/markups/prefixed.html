@@ -13,7 +13,7 @@
         <!-- meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>enter</title>
+        <title>prefixed</title>
 
         <!-- assets -->
         <link rel="stylesheet" href="../styles/styles.css?1772640699">
@@ -21,23 +21,54 @@
     </head>
     <body style="background-color: white;">
 
-        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+        <div style="max-width: 920px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
             <br>
-            <h1>enter</h1>
+            <h1>prefixed</h1>
 
+            <p>
+                In general, it is a way to prefix a string with a certain action:
+            </p>
+            <br>
 
-            <div class="enter">
-                <textarea class="enter__field" placeholder="Your message" rows="4"></textarea>
+            <div class="prefixed">
+                <div class="prefixed__content">
+                    lorem ipsum
+                </div>
+                <div class="prefixed__action">
+                    <button class="icon-action" type="button">
+                        <i class="icon">refresh</i>
+                    </button>
+                </div>
             </div>
 
             <br>
             <br>
             <br>
             <p>
-                <b><i>&lt;textarea&gt;</i></b>will only work with plain text so this component might be need to be replaced with <b><i>WYSIWYG</i></b> editor (discussed in slack).
-                That's why it is so minimalistic and isolated.
+                Any action and any text can be inside:
             </p>
+            <br>
+            <br>
+
+            <div class="prefixed">
+                <div class="prefixed__content">
+                    <a class="link link--inverted-text-alike" href="mailto:zeeshan@wanderlust-videos.com">
+                        zeeshan@wanderlust-videos.com
+                    </a>
+                </div>
+                <div class="prefixed__action">
+                    <div class="copy" data-value="zeeshan@wanderlust-videos.com">
+                        <button class="icon-action" type="button">
+                            <i class="icon">content_copy</i>
+                        </button>
+                        <div class="copy__bubble">
+                            Copied
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
             <br>

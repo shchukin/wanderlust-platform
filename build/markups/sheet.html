@@ -2,26 +2,29 @@
 <html lang="en">
     <head>
         <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1772546154">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1772546154">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1772546154">
-        <script type="module" src="../scripts/vendors.js?1772546154"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1772640699">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1772640699">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1772640699">
+        <script type="module" src="../scripts/vendors.js?1772640699"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
         <!-- meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>.sheet</title>
+        <title>sheet</title>
 
         <!-- assets -->
-        <link rel="stylesheet" href="../styles/styles.css?1772546154">
-        <script type="module" src="../scripts/scripts.js?1772546154"></script>
+        <link rel="stylesheet" href="../styles/styles.css?1772640699">
+        <script type="module" src="../scripts/scripts.js?1772640699"></script>
     </head>
     <body style="background-color: white;">
 
         <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
             <br>
-            <h1>.sheet</h1>
+            <h1>sheet</h1>
             <br>
 
             <div class="sheet">
@@ -55,6 +58,65 @@
                 </div>
             </div>
 
+            <br>
+            <br>
+            <br>
+            <h2>sheet--sparse</h2>
+
+            <div class="sheet sheet--sparse">
+                <div class="sheet__row">
+                    <b class="sheet__param">Subtotal</b>
+                    <div class="sheet__value">$648</div>
+                </div>
+                <div class="sheet__row">
+                    <b class="sheet__param">Total Discounts</b>
+                    <div class="sheet__value">-$84.70</div>
+                </div>
+                <div class="sheet__row">
+                    <b class="sheet__param">Total Surcharges</b>
+                    <div class="sheet__value">$0.00</div>
+                </div>
+                <div class="sheet__row">
+                    <b class="sheet__param">Refunds</b>
+                    <div class="sheet__value">$0.00</div>
+                </div>
+                <div class="sheet__row">
+                    <b class="sheet__param">Total Due</b>
+                    <div class="sheet__value">$563.30</div>
+                </div>
+                <div class="sheet__row">
+                    <b class="sheet__param">Total Paid</b>
+                    <div class="sheet__value">$563.30</div>
+                </div>
+                <div class="sheet__row">
+                    <b class="sheet__param">Balance Due</b>
+                    <div class="sheet__value">$0.00</div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <h2>sheet__row--total</h2>
+
+            <div class="sheet sheet--sparse">
+                <div class="sheet__row">
+                    <b class="sheet__param">Guaranteed Payout:</b>
+                    <div class="sheet__value">$68.31</div>
+                </div>
+                <div class="sheet__row">
+                    <b class="sheet__param">Performance Payout:</b>
+                    <div class="sheet__value">$13.66</div>
+                </div>
+                <div class="sheet__row">
+                    <b class="sheet__param">Bonus:</b>
+                    <div class="sheet__value">Peak Season 2026 - $0.00</div>
+                </div>
+                <div class="sheet__row sheet__row--total">
+                    <b class="sheet__param">Total Payment:</b>
+                    <div class="sheet__value">$81.97</div>
+                </div>
+            </div>
 
             <br>
             <br>

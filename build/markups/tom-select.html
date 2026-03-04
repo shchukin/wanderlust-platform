@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Vendors -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1772546154">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1772546154">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1772546154">
-        <script type="module" src="../scripts/vendors/sweet-alerts-demo-init.js"></script>
-        <script type="module" src="../scripts/vendors/choices-demo-init.js"></script>
-        <script type="module" src="../scripts/vendors/air-datepicker-demo-init.js"></script>
-        <script type="module" src="../scripts/vendors/tom-select-demo-init.js"></script>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1772640699">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1772640699">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1772640699">
+        <script type="module" src="../scripts/vendors.js?1772640699"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
         <!-- meta -->
         <meta charset="utf-8">
@@ -16,8 +16,8 @@
         <title>Tom Select</title>
 
         <!-- assets -->
-        <link rel="stylesheet" href="../styles/styles.css?1772546154">
-        <script type="module" src="../scripts/scripts.js?1772546154"></script>
+        <link rel="stylesheet" href="../styles/styles.css?1772640699">
+        <script type="module" src="../scripts/scripts.js?1772640699"></script>
     </head>
     <body style="background-color: white;">
 
@@ -25,14 +25,89 @@
             <br>
             <br>
             <h1>Tom Select</h1>
-            <p>A flexible selection component with support for autocomplete and custom rendering.</p>
+
+
+            <br>
+            <br>
+            <h3>Multi-select (max 3)</h3>
+
+            <select class="tom-select" data-ref="init-tom-select-multi" multiple placeholder="Pick up to 3 states">
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="FL">Florida</option>
+                <option value="HI">Hawaii</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="OR">Oregon</option>
+                <option value="TX">Texas</option>
+                <option value="WA">Washington</option>
+            </select>
+
             <br>
 
-            <h3>Single Select</h3>
-            <p>Standard single choice with search.</p>
+            <select class="tom-select" data-ref="init-tom-select-multi" multiple placeholder="Pick up to 3 states">
+                <option value="CA" selected>California</option>
+                <option value="CO">Colorado</option>
+                <option value="FL">Florida</option>
+                <option value="HI">Hawaii</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NY" selected>New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="OR">Oregon</option>
+                <option value="TX" selected>Texas</option>
+                <option value="WA">Washington</option>
+            </select>
+
             <br>
-            <select class="js-select-single" placeholder="Select a state...">
-                <option value="">Select a state...</option>
+            <br>
+            <h2>Disabled</h2>
+
+
+            <select class="tom-select" data-ref="init-tom-select-multi" multiple placeholder="Pick up to 3 states" disabled>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="FL">Florida</option>
+                <option value="HI">Hawaii</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="OR">Oregon</option>
+                <option value="TX">Texas</option>
+                <option value="WA">Washington</option>
+            </select>
+
+            <br>
+            <select class="tom-select" data-ref="init-tom-select-multi" multiple placeholder="Pick up to 3 states" disabled>
+                <option value="CA" selected>California</option>
+                <option value="CO">Colorado</option>
+                <option value="FL">Florida</option>
+                <option value="HI">Hawaii</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NY" selected>New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="OR">Oregon</option>
+                <option value="TX" selected>Texas</option>
+                <option value="WA">Washington</option>
+            </select>
+
+            <br>
+            <br>
+            <h3>Multi-select (no typing)</h3>
+
+            <select class="tom-select" data-ref="init-tom-select-multi-static" multiple placeholder="Choose up to 3 destinations">
+                <option value="BCN">Barcelona</option>
+                <option value="LIS">Lisbon</option>
+                <option value="NAP">Naples</option>
+                <option value="OSL">Oslo</option>
+                <option value="PRG">Prague</option>
+            </select>
+
+            <br>
+            <br>
+            <h3>Single Select</h3>
+
+            <select class="tom-select" data-ref="init-tom-select-single" placeholder="Select a state...">
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -48,81 +123,41 @@
             <br>
             <br>
             <h3>Single Select (no typing)</h3>
-            <p>Standard single choice without text input (standard select behavior).</p>
-            <br>
-            <select class="js-select-single-static" placeholder="Pick a destination...">
-                <option value="">Pick a destination...</option>
+
+            <select class="tom-select" data-ref="init-tom-select-single-static" placeholder="Pick a destination...">
                 <option value="PAR">Paris</option>
                 <option value="LON">London</option>
                 <option value="ROM">Rome</option>
                 <option value="BER">Berlin</option>
             </select>
 
-            <br>
-            <br>
-            <h3>Single Select (no typing, Role)</h3>
-            <p>Another example of a single choice list without search/input.</p>
-            <br>
-            <select class="js-select-single-static" placeholder="Choose a role...">
-                <option value="">Choose a role...</option>
-                <option value="ADM">Admin</option>
-                <option value="EDI">Editor</option>
-                <option value="VIE">Viewer</option>
-                <option value="MAN">Manager</option>
-            </select>
-
-            <br>
-            <br>
-            <h3>Multi-select (max 3)</h3>
-            <p>Multiple selection with a limit on the number of items and a remove button.</p>
-            <br>
-            <select class="js-select-multi" multiple placeholder="Pick up to 3 states">
-                <option value="CA">California</option>
-                <option value="CO">Colorado</option>
-                <option value="FL">Florida</option>
-                <option value="HI">Hawaii</option>
-                <option value="MA">Massachusetts</option>
-                <option value="NY">New York</option>
-                <option value="NC">North Carolina</option>
-                <option value="OR">Oregon</option>
-                <option value="TX">Texas</option>
-                <option value="WA">Washington</option>
-            </select>
-
-            <br>
-            <br>
-            <h3>Multi-select (no typing)</h3>
-            <p>Multiple selection without text input (selection from the list only).</p>
-            <br>
-            <select class="js-select-multi-static" multiple placeholder="Choose up to 3 destinations">
-                <option value="">Choose up to 3 destinations</option>
-                <option value="BCN">Barcelona</option>
-                <option value="LIS">Lisbon</option>
-                <option value="NAP">Naples</option>
-                <option value="OSL">Oslo</option>
-                <option value="PRG">Prague</option>
-            </select>
 
             <br>
             <br>
             <h3>Tags (create on the fly)</h3>
-            <p>Tag mode: create new items by pressing Enter.</p>
-            <br>
-            <input class="js-select-tags" type="text" placeholder="Add tags: ui, docs, frontend">
+
+            <input class="tom-select" data-ref="init-tom-select-tags" type="text" placeholder="Add tags: ui, docs, frontend">
+
 
             <br>
             <br>
             <h3>Custom Rendering</h3>
-            <p>Custom rendering of items using avatars and additional information.</p>
-            <br>
-            <select class="js-select-custom" placeholder="Search for a person..."></select>
+
+            <select class="tom-select" data-ref="init-tom-select-bonuses" placeholder="Select a value..."></select>
 
             <br>
             <br>
             <h3>Remote Loading (GitHub API)</h3>
-            <p>Loading data from an external server as you type.</p>
+
+            <select class="tom-select" data-ref="init-tom-select-remote" placeholder="Search for GitHub repository..."></select>
+
+
             <br>
-            <select class="js-select-remote" placeholder="Search for GitHub repository..."></select>
+            <br>
+            <h3>.clear-tom-select</h3>
+
+            <select class="clear-tom-select" data-ref="init-tom-select-bonuses" placeholder="Select a value..."></select>
+
 
             <br>
             <br>

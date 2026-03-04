@@ -2,10 +2,13 @@
 <html class="sidebar-expanded" lang="en">
     <head>
         <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1772546154">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1772546154">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1772546154">
-        <script type="module" src="../scripts/vendors.js?1772546154"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1772640699">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1772640699">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1772640699">
+        <script type="module" src="../scripts/vendors.js?1772640699"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
         <!-- meta -->
         <meta charset="utf-8">
@@ -22,8 +25,8 @@
         <link rel="manifest" href="../manifest.json">
 
         <!-- assets -->
-        <link rel="stylesheet" href="../styles/styles.css?1772546154">
-        <script type="module" src="../scripts/scripts.js?1772546154"></script>
+        <link rel="stylesheet" href="../styles/styles.css?1772640699">
+        <script type="module" src="../scripts/scripts.js?1772640699"></script>
 
     </head>
     <body>
@@ -1286,15 +1289,305 @@
                             <!--/temp -->
 
                             <div class="editor">
-                                <div class="editor__summary">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid animi commodi delectus error incidunt odio officia officiis, perferendis porro quaerat soluta tempore temporibus velit? Ab architecto corporis hic illum ipsa laudantium molestiae, nam nobis omnis perferendis, placeat quas quasi quia, quisquam reiciendis tempore vero. A consequatur culpa cumque delectus, eligendi esse, fuga illum nam nihil quidem, repellat sit soluta sunt. Beatae dignissimos doloribus harum illo ipsam iste labore neque, quibusdam sed similique soluta unde veritatis voluptates. Ducimus ea iure, maxime nobis numquam odio! Accusantium blanditiis, deleniti exercitationem itaque, laudantium odit officiis quam quo repellendus sint vel vero. Eveniet!
-                                </div>
+                                <section class="editor__summary">
+                                    <div class="editor__summary-heading">
+                                        <h1 class="title">
+                                            Talent Information
+                                        </h1>
+                                    </div>
+                                    <div class="editor__summary-actions">
+                                        <a class="button button--height-36px button--square button--light-gray-outline" href="#">
+                                            <i class="icon">search</i>
+                                        </a>
+                                        <a class="button button--height-36px button--square button--light-gray-outline" href="#">
+                                            <i class="icon">calendar_month</i>
+                                        </a>
+                                        <a class="button button--height-36px button--square button--light-gray-outline" href="#">
+                                            <i class="icon">account_balance</i>
+                                        </a>
+                                    </div>
+                                    <div class="editor__summary-body">
+                                        <div class="talent">
+                                            <a class="talent__preview" href="#">
+                                                <img class="talent__photo"
+                                                     srcset="../temp/avatars/avatar-150x150@2x.jpg 2x"
+                                                     src="../temp/avatars/avatar-150x150@1x.jpg"
+                                                     width="150"
+                                                     height="150"
+                                                     alt=""
+                                                >
+                                            </a>
+                                            <div class="talent__body">
+                                                <div class="talent__name">
+                                                    <h3 class="title">
+                                                        <a class="link link--text-alike" href="#">
+                                                            Zeeshan Syed
+                                                        </a>
+                                                    </h3>
+                                                    <button class="icon-action" type="button">
+                                                        <i class="icon">north_east</i>
+                                                    </button>
+                                                </div>
+                                                <div class="talent__info">
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">location_on</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            Katy, Texas USA
+                                                        </div>
+                                                    </div>
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">event_available</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            Since December 15, 2015
+                                                        </div>
+                                                    </div>
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">mail</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            <div class="prefixed">
+                                                                <div class="prefixed__content">
+                                                                    <a class="link link--inverted-text-alike" href="mailto:zeeshan@wanderlust-videos.com">
+                                                                        zeeshan@wanderlust-videos.com
+                                                                    </a>
+                                                                </div>
+                                                                <div class="prefixed__action">
+                                                                    <div class="copy" data-value="zeeshan@wanderlust-videos.com">
+                                                                        <button class="icon-action" type="button">
+                                                                            <i class="icon">content_copy</i>
+                                                                        </button>
+                                                                        <div class="copy__bubble">
+                                                                            Copied
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">diamond_shine</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            Final Cut Pro, DaVinci Resolve, Premier Pro
+                                                        </div>
+                                                    </div>
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">hourglass</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            8 hours/day
+                                                        </div>
+                                                    </div>
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">star</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            Semi-Senior
+                                                        </div>
+                                                    </div>
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">language</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            English, Spanish, Italian, French. Urdu
+                                                        </div>
+                                                    </div>
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">flag</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            --
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
                                 <div class="editor__data">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid animi commodi delectus error incidunt odio officia officiis, perferendis porro quaerat soluta tempore temporibus velit? Ab architecto corporis hic illum ipsa laudantium molestiae, nam nobis omnis perferendis, placeat quas quasi quia, quisquam reiciendis tempore vero. A consequatur culpa cumque delectus, eligendi esse, fuga illum nam nihil quidem, repellat sit soluta sunt. Beatae dignissimos doloribus harum illo ipsam iste labore neque, quibusdam sed similique soluta unde veritatis voluptates. Ducimus ea iure, maxime nobis numquam odio! Accusantium blanditiis, deleniti exercitationem itaque, laudantium odit officiis quam quo repellendus sint vel vero. Eveniet!
+                                    <div class="numbers">
+                                        <section class="numbers__section">
+                                            <div class="numbers__heading">
+                                                <h3 class="title">Delivery Requirements</h3>
+                                            </div>
+                                            <div class="numbers__total">
+                                                $14.78&nbsp;<span class="gray">(16%)</span>
+                                            </div>
+                                            <table class="numbers__table">
+                                                <tbody class="numbers__tbody">
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            Detailed and complete footage review
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--value">
+                                                            $0&nbsp;<span class="gray">(4%)</span>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select class="tom-select" data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            Storytelling consistent with client's requests/style
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--value">
+                                                            $31.42&nbsp;<span class="gray">(34%)</span>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select class="tom-select" data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            Technical aspects consistent with the project brief
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--value">
+                                                            $0&nbsp;<span class="gray">(4%)</span>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select class="tom-select" data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            Export Neatness
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--value">
+                                                            $0&nbsp;<span class="gray">(4%)</span>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select class="tom-select" data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </section>
+                                        <section class="numbers__section">
+                                            <div class="numbers__heading">
+                                                <h3 class="title">Delivery Requirements</h3>
+                                            </div>
+                                            <div class="numbers__total">
+                                                $14.78&nbsp;<span class="gray">(16%)</span>
+                                            </div>
+                                            <table class="numbers__table">
+                                                <tbody class="numbers__tbody">
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            Delivery to quality assurance
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--editable-value">
+                                                            <select class="clear-tom-select" data-ref="init-tom-select-bonuses"></select>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select class="tom-select" data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            On-time Final delivery
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--editable-value">
+                                                            <select class="clear-tom-select" data-ref="init-tom-select-bonuses"></select>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select class="tom-select" data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            Revisions delivered before 72 hours
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--editable-value">
+                                                            <select class="clear-tom-select" data-ref="init-tom-select-bonuses"></select>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select class="tom-select" data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            Project files approved within 48 hours
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--editable-value">
+                                                            <select class="clear-tom-select" data-ref="init-tom-select-bonuses"></select>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select class="tom-select" data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </section>
+                                        <div class="numbers__report">
+                                            <h4 class="numbers__report-heading">
+                                                Report
+                                            </h4>
+                                            <div class="numbers__report-field">
+                                                <div class="input input--expandable">
+                                                    <textarea class="input__widget" rows="5"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="numbers__report-submit">
+                                                <button class="button button--black button--height-32px" type="button">
+                                                    Submit
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="numbers__report">
+                                            <h4 class="numbers__report-heading">
+                                                Report
+                                            </h4>
+                                            <div class="numbers__report-field">
+                                                <div class="input input--expandable">
+                                                    <textarea class="input__widget" rows="5"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="numbers__report-submit">
+                                                <button class="button button--black button--height-32px" type="button">
+                                                    Submit
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="editor__payment">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid animi commodi delectus error incidunt odio officia officiis, perferendis porro quaerat soluta tempore temporibus velit? Ab architecto corporis hic illum ipsa laudantium molestiae, nam nobis omnis perferendis, placeat quas quasi quia, quisquam reiciendis tempore vero. A consequatur culpa cumque delectus, eligendi esse, fuga illum nam nihil quidem, repellat sit soluta sunt. Beatae dignissimos doloribus harum illo ipsam iste labore neque, quibusdam sed similique soluta unde veritatis voluptates. Ducimus ea iure, maxime nobis numquam odio! Accusantium blanditiis, deleniti exercitationem itaque, laudantium odit officiis quam quo repellendus sint vel vero. Eveniet!
-                                </div>
+                                <section class="editor__payment">
+                                    <div class="editor__payment-heading">
+                                        <h3 class="title">Full Project Value</h3>
+                                    </div>
+                                    <div class="editor__payment-full-value">
+                                        <div class="title">$136.62</div>
+                                    </div>
+                                    <div class="editor__payment-details">
+                                        <div class="sheet sheet--sparse">
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Guaranteed Payout:</b>
+                                                <div class="sheet__value">$68.31</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Performance Payout:</b>
+                                                <div class="sheet__value">$13.66</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Bonus:</b>
+                                                <div class="sheet__value">Peak Season 2026 - $0.00</div>
+                                            </div>
+                                            <div class="sheet__row sheet__row--total">
+                                                <b class="sheet__param">Total Payment:</b>
+                                                <div class="sheet__value">$81.97</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
 
 
