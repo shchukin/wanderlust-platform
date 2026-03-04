@@ -1,6 +1,31 @@
 import TomSelect from 'https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.js/+esm';
 
 
+// 3. Multi-select (max 3)
+document.querySelectorAll('[data-ref="init-tom-select-multi"]').forEach((el) => {
+    new TomSelect(el, {
+        hidePlaceholder: false,
+        maxItems: 3,
+        plugins: ['remove_button'],
+        placeholder: el.getAttribute('placeholder') || 'Pick up to 3 options'
+    });
+});
+
+// 4. Multi-select (max 3, no typing/static)
+document.querySelectorAll('[data-ref="init-tom-select-multi-static"]').forEach((el) => {
+    new TomSelect(el, {
+        allowEmptyOption: true,
+        create: false,
+        maxItems: 3,
+        plugins: ['remove_button'],
+        placeholder: el.getAttribute('placeholder') || 'Pick up to 3 options',
+        onInitialize: function() {
+            this.control_input.readOnly = true;
+            this.wrapper.classList.add('ts-control-readonly');
+        }
+    });
+});
+
 // 7. Custom Rendering (Inline HTML)
 document.querySelectorAll('[data-ref="init-tom-select-bonuses"]').forEach((el) => {
     new TomSelect(el, {
@@ -50,42 +75,18 @@ document.querySelectorAll('[data-ref="init-tom-select-single"]').forEach((el) =>
 });
 
 // 2. Single select (no typing/static)
-document.querySelectorAll('[data-ref="init-tom-select-single-static"]').forEach((el) => {
-    new TomSelect(el, {
-        allowEmptyOption: true,
-        create: false,
-        placeholder: el.getAttribute('placeholder') || 'Select an option',
-        onInitialize: function() {
-            this.control_input.readOnly = true;
-            this.wrapper.classList.add('ts-control-readonly');
-        }
-    });
-});
+// document.querySelectorAll('[data-ref="init-tom-select-single-static"]').forEach((el) => {
+//     new TomSelect(el, {
+//         allowEmptyOption: true,
+//         create: false,
+//         placeholder: el.getAttribute('placeholder') || 'Select an option',
+//         onInitialize: function() {
+//             this.control_input.readOnly = true;
+//             this.wrapper.classList.add('ts-control-readonly');
+//         }
+//     });
+// });
 
-// 3. Multi-select (max 3)
-document.querySelectorAll('[data-ref="init-tom-select-multi"]').forEach((el) => {
-    new TomSelect(el, {
-        hidePlaceholder: false,
-        maxItems: 3,
-        plugins: ['remove_button'],
-        placeholder: el.getAttribute('placeholder') || 'Pick up to 3 options'
-    });
-});
-
-// 4. Multi-select (max 3, no typing/static)
-document.querySelectorAll('[data-ref="init-tom-select-multi-static"]').forEach((el) => {
-    new TomSelect(el, {
-        allowEmptyOption: true,
-        create: false,
-        maxItems: 3,
-        plugins: ['remove_button'],
-        placeholder: el.getAttribute('placeholder') || 'Pick up to 3 options',
-        onInitialize: function() {
-            this.control_input.readOnly = true;
-            this.wrapper.classList.add('ts-control-readonly');
-        }
-    });
-});
 
 // 5. Tags (create on the fly)
 document.querySelectorAll('[data-ref="init-tom-select-tags"]').forEach((el) => {
