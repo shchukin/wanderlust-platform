@@ -29,7 +29,7 @@
             top: var(--project-subpage-padding);
             display: flex;
             align-items: flex-start;
-            gap: 5px;
+            gap: 8px;
         }
 
         .notes__body {
