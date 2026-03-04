@@ -11,7 +11,7 @@
     height: var(--header-height);
     padding-left: var(--container-padding);
     padding-right: var(--container-padding);
-    background-color: var(--background);
+    background-color: var(--body-background);
 }
     .header::before {
         content: ""; /* pusher */
