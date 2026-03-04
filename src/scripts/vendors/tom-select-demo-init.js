@@ -91,7 +91,44 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 6. Remote Loading (GitHub)
+    // 6. Custom Rendering (Inline HTML)
+    document.querySelectorAll('.js-select-custom-html').forEach((el) => {
+        new TomSelect(el, {
+            valueField: 'id',
+            labelField: 'amount',
+            searchField: ['amount'],
+            allowEmptyOption: true,
+            create: false,
+            options: [
+                {id: 1, amount: '31.42', change: '34%'},
+                {id: 2, amount: '28.05', change: '12%'},
+                {id: 3, amount: '45.90', change: '7%'},
+                {id: 4, amount: '19.76', change: '4%'},
+                {id: 5, amount: '62.10', change: '22%'},
+                {id: 6, amount: '37.58', change: '9%'},
+                {id: 7, amount: '53.33', change: '18%'},
+                {id: 8, amount: '24.67', change: '3%'},
+                {id: 9, amount: '70.21', change: '41%'},
+                {id: 10, amount: '16.89', change: '2%'}
+            ],
+            render: {
+                option: (data, escape) => `
+                    <div>
+                        $${escape(data.amount)} <span class="gray">(${escape(data.change)})</span>
+                    </div>`,
+                item: (data, escape) => `
+                    <div>
+                        $${escape(data.amount)} <span class="gray">(${escape(data.change)})</span>
+                    </div>`
+            },
+            onInitialize: function() {
+                this.control_input.readOnly = true;
+                this.wrapper.classList.add('ts-control-readonly');
+            }
+        });
+    });
+
+    // 7. Remote Loading (GitHub)
     document.querySelectorAll('.js-select-remote').forEach((el) => {
         new TomSelect(el, {
             valueField: 'html_url',
