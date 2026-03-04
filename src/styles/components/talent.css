@@ -1,0 +1,51 @@
+.talent {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+    .talent__preview {
+        flex-shrink: 0;
+    }
+        .talent__photo {
+            vertical-align: top;
+            background-color: var(--image-fallback);
+            border-radius: 5px;
+        }
+
+    .talent__body {
+        flex-grow: 1;
+    }
+        .talent__name {
+
+        }
+            .talent__name .icon {
+                margin-top: 1px;
+                color: var(--blue);
+            }
+
+        .talent__info {
+            /*display: grid;*/
+            /*grid-template-columns: repeat(2, minmax(0, 1fr));*/
+            columns: 2;
+        }
+            .talent__stat {
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-left: 28px;
+                position: relative;
+            }
+                .talent__icon {
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                }
+                    .talent__icon .icon {
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: var(--blue);
+                    }
+
+                .talent__param {
+
+                }
+

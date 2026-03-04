@@ -1,5 +1,5 @@
 .copy {
-    position: absolute;
+    position: relative;
     width: fit-content;
 }
     .copy__bubble {

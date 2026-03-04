@@ -19,6 +19,7 @@
 @import url("components/link.css");
 @import url("components/button.css");
 @import url("components/icon-action.css");
+@import url("components/prefixed.css");
 @import url("components/input.css");
 @import url("components/choice.css");
 @import url("components/photo-upload.css");
@@ -86,3 +87,4 @@
 @import url("components/editor.css");
 @import url("components/notes.css");
 @import url("components/feedback.css");
+@import url("components/talent.css");

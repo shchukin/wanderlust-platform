@@ -1,0 +1,19 @@
+.prefixed {
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+    .prefixed__content {
+        flex-grow: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .prefixed__action {
+        flex-shrink: 0;
+    }
+        .prefixed__action:has(.copy) {
+            margin: -6px -6px -6px 0;
+        }
