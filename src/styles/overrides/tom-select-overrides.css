@@ -22,3 +22,38 @@
 /*.ts-wrapper.ts-control-readonly .ts-control {*/
 /*    cursor: pointer;*/
 /*}*/
+
+
+.tom-select {
+
+}
+	.tom-select .ts-control {
+		padding: 9px var(--input-h-padding); /* 40px tall, same as default widget */
+		border-radius: var(--input-radius);
+		border-color: var(--input-border);
+	}
+
+	/*???*/
+/*.ts-wrapper.multi.has-items .ts-control {*/
+/*	padding: calc(8px - 2px - 0) 8px calc(8px - 2px - 3px - 0);*/
+/*}*/
+
+	.tom-select .ts-control:hover {
+		border-color: var(--input-border-hover);
+	}
+
+	.tom-select .ts-control:has(> input:focus) {
+		border-color: var(--input-border-focus);
+	}
+
+	.tom-select .ts-control > input {
+		font-family: inherit;
+		font-size: var(--input-font-size);
+		line-height: var(--input-line-height) !important;
+		letter-spacing: inherit;
+		color: var(--black);
+	}
+
+	.tom-select .ts-control > input::placeholder {
+		color: var(--placeholder-color) !important;
+	}

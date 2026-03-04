@@ -29,6 +29,17 @@
     --light-gray: #d5d5d5;
     --hover-over-white: #f9fafb; /* matching with body background */
     --hover-over-body: #fbe8f3; /* matching with body background */
+
+    --table-header-background: #f6f6f6;
+    --table-header-hover: #eeeeee;
+    --radius: 10px;
+    --shadow: 0 0 7px rgb(0 0 0 / 10%);
+    --shadow-light: 0 0 0 1px #e8e8e8, 0 0 5px rgb(0 0 0 / 7%);
+
+    --input-h-padding: 12px;
+    --input-radius: 5px;
+    --input-font-size: 15px;
+    --input-line-height: 20px;
     --input-border: var(--light-gray);
     --input-border-hover: var(--blue-50pct);
     --input-border-focus: var(--blue);
@@ -36,12 +47,6 @@
     --disabled-background: #ececec;
     --disabled-color: #737373;
     --error: #ff0033;
-
-    --table-header-background: #f6f6f6;
-    --table-header-hover: #eeeeee;
-    --radius: 10px;
-    --shadow: 0 0 7px rgb(0 0 0 / 10%);
-    --shadow-light: 0 0 0 1px #e8e8e8, 0 0 5px rgb(0 0 0 / 7%);
 
     --header-height: 126px;
     --page-bottom-padding: 48px;
