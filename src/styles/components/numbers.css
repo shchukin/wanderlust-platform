@@ -3,13 +3,6 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 36px;
 }
-
-@media (width < 1500px) {
-    .numbers {
-        gap: 24px;
-    }
-}
-
     .numbers__section {
         position: relative;
     }
@@ -92,3 +85,28 @@
         .numbers__report-submit {
             margin-top: 14px;
         }
+
+
+@media (width < 1500px) {
+
+    .numbers {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+        .numbers__row {
+            border-top-width: 24px;
+        }
+            .numbers__cell--value {
+                width: 160px;
+                padding-left: 30px;
+            }
+
+            .numbers__cell--editable-value {
+                width: 190px;
+                padding-left: 30px;
+            }
+
+            .numbers__cell--action {
+                width: 170px;
+                padding-left: 18px;
+            }
+}
