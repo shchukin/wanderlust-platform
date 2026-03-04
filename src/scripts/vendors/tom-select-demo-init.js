@@ -88,28 +88,42 @@ document.querySelectorAll('[data-ref="init-tom-select-single-static"]').forEach(
     });
 });
 
-const renderApprovalStatus = (data, escape) => {
-    const label = escape(data.text || data.label || data.value || '');
-
-    if (label === 'Approved') {
-        return `<span class="blue">${label}</span>`;
-    }
-
-    if (label === 'N/A') {
-        return `<span class="gray">${label}</span>`;
-    }
-
-    return label;
-};
-
 // 3. Approval status (no typing/static, custom render)
-document.querySelectorAll('[data-ref="init-tom-select-approval"]').forEach((el) => {
+const approvalDefaults = ['Approved', 'Rejected', 'N/A', 'Approved', 'Rejected', 'N/A', 'Approved', 'Rejected'];
+
+document.querySelectorAll('[data-ref="init-tom-select-approval"]').forEach((el, index) => {
     new TomSelect(el, {
         allowEmptyOption: true,
         create: false,
+        items: [approvalDefaults[index] || 'Approved'],
+        options: [
+            {value: 'Approved', text: 'Approved'},
+            {value: 'Rejected', text: 'Rejected'},
+            {value: 'N/A', text: 'N/A'}
+        ],
         render: {
-            option: (data, escape) => `<div>${renderApprovalStatus(data, escape)}</div>`,
-            item: (data, escape) => `<div>${renderApprovalStatus(data, escape)}</div>`
+            option: (data, escape) => {
+                if (data.value === 'Approved') {
+                    return '<div><span class="blue">Approved</span></div>';
+                }
+
+                if (data.value === 'N/A') {
+                    return '<div><span class="gray">N/A</span></div>';
+                }
+
+                return `<div>${escape(data.text || data.label || data.value || '')}</div>`;
+            },
+            item: (data, escape) => {
+                if (data.value === 'Approved') {
+                    return '<div><span class="blue">Approved</span></div>';
+                }
+
+                if (data.value === 'N/A') {
+                    return '<div><span class="gray">N/A</span></div>';
+                }
+
+                return `<div>${escape(data.text || data.label || data.value || '')}</div>`;
+            }
         },
         onInitialize: function() {
             this.control_input.readOnly = true;
