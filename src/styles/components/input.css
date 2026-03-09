@@ -106,9 +106,8 @@
 
 /* Readonly */
 .input__widget[readonly] {
-    background-color: #F5F6F8;
+    background-color: #f9fafb;
     border-color: var(--input-border);
-    color: var(--disabled-color);
 }
 
 .input__widget[readonly]::placeholder {
@@ -303,3 +302,6 @@ select.input__widget:disabled {
         align-items: center;
         justify-content: center;
     }
+        .input:has(.input__widget[readonly]) .icon-action:hover::before {
+            background-color: #e9eaeb;
+        }
