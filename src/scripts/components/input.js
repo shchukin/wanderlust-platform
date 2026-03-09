@@ -60,6 +60,13 @@ export const input = () => {
         if (!$input) {
             return;
         }
+        const $passwordWidget = $input.querySelector('.input__widget[type="password"]');
+        if (!$passwordWidget && !$input.dataset.passwordInput) {
+            return;
+        }
+        if ($passwordWidget) {
+            $input.dataset.passwordInput = 'true';
+        }
         const $widget = $input.querySelector('.input__widget');
         if (!$widget || ($widget.type !== 'password' && $widget.type !== 'text')) {
             return;
