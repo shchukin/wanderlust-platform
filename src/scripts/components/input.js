@@ -52,15 +52,33 @@ export const input = () => {
     /* Toggle password visibility */
 
     document.addEventListener('click', (event) => {
-        const $inputShowPassword = event.target.closest('.input__show-password');
-        if (!$inputShowPassword) {
+        const $button = event.target.closest('.input__action .icon-action');
+        if (!$button) {
             return;
         }
-        const $input = $inputShowPassword.closest('.input');
+        const $input = $button.closest('.input');
+        if (!$input) {
+            return;
+        }
         const $widget = $input.querySelector('.input__widget');
-        const isVisible = $input.classList.toggle('input--password-is-visible');
-        if ($widget.type === 'password' || $widget.type === 'text') {
-            $widget.type = isVisible ? 'text' : 'password';
+        if (!$widget || ($widget.type !== 'password' && $widget.type !== 'text')) {
+            return;
+        }
+        const $icon = $button.querySelector('.icon');
+        const iconName = $icon?.textContent?.trim();
+        if (iconName !== 'visibility' && iconName !== 'visibility_off') {
+            return;
+        }
+        if (iconName === 'visibility_off' && $widget.type !== 'password') {
+            return;
+        }
+        if (iconName === 'visibility' && $widget.type !== 'text') {
+            return;
+        }
+        const isVisible = $widget.type === 'password';
+        $widget.type = isVisible ? 'text' : 'password';
+        if ($icon) {
+            $icon.textContent = isVisible ? 'visibility' : 'visibility_off';
         }
     });
 };
