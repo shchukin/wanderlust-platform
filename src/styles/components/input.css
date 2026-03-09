@@ -34,6 +34,15 @@
     }
 
 
+.input--height-36px {
+
+}
+    .input--height-36px .input__widget {
+        height: 36px;
+        padding: 7px 10px;
+    }
+
+
 .input--height-32px {
 
 }
@@ -60,6 +69,10 @@
     .input__widget[type="color"] {
         width: 100px;
         padding: 4px 8px;
+    }
+
+    .input--height-36px .input__widget[type="color"] {
+        padding: 3px 4px;
     }
 
     .input--height-32px .input__widget[type="color"] {
@@ -91,6 +104,18 @@
 }
 
 
+/* Readonly */
+.input__widget[readonly] {
+    background-color: #F5F6F8;
+    border-color: var(--input-border);
+    color: var(--disabled-color);
+}
+
+.input__widget[readonly]::placeholder {
+    color: var(--disabled-color);
+}
+
+
 /* Error */
 .input--error {
 
@@ -114,6 +139,16 @@ textarea.input__widget {
     height: auto; /* user rows="" attribute to set a default height */
     min-height: 40px; /* 1 row */
     max-height: calc(10*20px + 2*9px + 2*2px); /* rows + vertical paddings + vertical borders */
+    resize: vertical;
+}
+/* stylelint-enable */
+
+
+/* stylelint-disable */
+.input--height-36px textarea.input__widget {
+    height: auto; /* user rows="" attribute to set a default height */
+    min-height: 36px; /* 1 row */
+    max-height: calc(10*18px + 2*6px + 2*2px); /* rows + vertical paddings + vertical borders */
     resize: vertical;
 }
 /* stylelint-enable */
@@ -237,3 +272,34 @@ select.input__widget:disabled {
 
 
 
+
+.input {
+    --input-action: 40px;
+}
+
+.input--height-36px {
+    --input-action: 36px;
+}
+
+.input--height-32px {
+    --input-action: 32px;
+}
+
+
+.input:has(.input__action) {
+
+}
+    .input:has(.input__action) .input__widget {
+        padding-right: var(--input-action);
+    }
+
+    .input__action {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: var(--input-action);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
