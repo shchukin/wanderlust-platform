@@ -85,6 +85,17 @@
             </div>
 
 
+
+
+            <br>
+            <br>
+            <br>
+            <h2>:readonly</h2>
+
+            <div class="input">
+                <input class="input__widget" type="text" value="Foo bar baz" readonly>
+            </div>
+
             <br>
             <br>
             <br>
@@ -431,33 +442,60 @@
 
 
 
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>Password toggler</h2>
-
-            <div class="input">
-                <input class="input__widget" type="password" value="foobarbaz">
-                <button class="input__show-password" type="button">
-                    <div class="input__eye-on">
-                        <i class="icon">visibility</i>
-                    </div>
-                    <div class="input__eye-off">
-                        <i class="icon">visibility_off</i>
-                    </div>
-                </button>
-            </div>
-
-
-            <br>
             <br>
             <br>
             <h2>
                 .input__action
             </h2>
+            <p>
+                Any 40x40 content can be placed inside, e.g. <a href="icon-action.html">icon-action</a>.
+            </p>
+            <p>
+                In smaller variants use 36x36 and 32x32 accordingly:
+            </p>
 
+
+            <div class="input">
+                <input class="input__widget" type="text" placeholder="Video id">
+                <div class="input__action">
+                    <button class="icon-action" type="button">
+                        <i class="icon">refresh</i>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input input--height-36px">
+                <input class="input__widget" type="text" placeholder="Video id">
+                <div class="input__action">
+                    <button class="icon-action icon-action--36px" type="button">
+                        <i class="icon">refresh</i>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input input--height-32px">
+                <input class="input__widget" type="text" placeholder="Video id">
+                <div class="input__action">
+                    <button class="icon-action icon-action--32px" type="button">
+                        <i class="icon">refresh</i>
+                    </button>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <h3>With <a href="copy.html">copy</a> component</h3>
+            <p>
+                As far as the sizes matche 40x40, 36x36, 32x32 pattern, any action can be inside.
+            </p>
+            <p>
+                Also in this specific case use <b><i>readonly</i></b> attribute.
+            </p>
 
             <div class="input">
                 <input class="input__widget" type="text" placeholder="Url" value="dp.wanderlust-videos.com" readonly>
@@ -506,6 +544,25 @@
                     </div>
                 </div>
             </div>
+
+
+
+            <br>
+            <br>
+            <h3>Password toggler</h3>
+
+            <div class="input">
+                <input class="input__widget" type="password" value="foobarbaz">
+                <button class="input__show-password" type="button">
+                    <div class="input__eye-on">
+                        <i class="icon">visibility</i>
+                    </div>
+                    <div class="input__eye-off">
+                        <i class="icon">visibility_off</i>
+                    </div>
+                </button>
+            </div>
+
 
 
             <br>

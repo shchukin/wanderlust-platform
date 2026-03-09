@@ -302,6 +302,10 @@ select.input__widget:disabled {
         align-items: center;
         justify-content: center;
     }
+        .input__action .icon-action .icon {
+            color: var(--black);
+        }
+
         .input:has(.input__widget[readonly]) .icon-action:hover::before {
-            background-color: #e9eaeb;
+            background-color: #ebeded;
         }
