@@ -26,9 +26,12 @@ export const input = () => {
 
     document.querySelectorAll('select.input__widget').forEach(($element) => {
         selectPlaceholder($element);
-        $element.addEventListener('change', () => {
-            selectPlaceholder($element);
-        });
+    });
+
+    document.addEventListener('change', (event) => {
+        const $select = event.target.closest('select.input__widget');
+        if (!$select) return;
+        selectPlaceholder($select);
     });
 
 
@@ -43,9 +46,12 @@ export const input = () => {
 
     document.querySelectorAll('.input--expandable .input__widget').forEach(($element) => {
         expandTextarea($element);
-        $element.addEventListener('input', () => {
-            expandTextarea($element);
-        });
+    });
+
+    document.addEventListener('input', (event) => {
+        const $textarea = event.target.closest('.input--expandable .input__widget');
+        if (!$textarea) return;
+        expandTextarea($textarea);
     });
 
 
