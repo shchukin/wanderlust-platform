@@ -5,7 +5,7 @@
 /* stylelint-disable */
 .chat {
     height: calc(100svh - var(--header-height));
-    min-height: 480px;
+    min-height: 500px;
     margin-bottom: calc(-1 * var(--page-bottom-padding));
     display: grid;
     grid-template-columns: minmax(0, 292fr) minmax(0, 1238fr);
@@ -119,3 +119,12 @@
 
                     }
 
+
+
+
+@media (width < 1240px), (height < 540px) {
+
+    .chat {
+        height: auto;
+    }
+}
