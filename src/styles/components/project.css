@@ -92,9 +92,10 @@
 
     .project__chat {
         position: fixed;
+        z-index: 100; /* just in case of overlapping bug */
         top: var(--header-height);
         bottom: var(--page-bottom-padding);
         right: var(--container-padding);
         width: var(--project-aside-width);
-        padding-top: 20px;
+        /*padding-top: 20px; May be needed to follow PSD design, but it looks weird */
     }
