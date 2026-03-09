@@ -78,3 +78,11 @@
         width: 440px;
     }
 }
+
+
+@media (width < 1240px), (height < 540px) {
+
+    .header {
+        position: absolute;
+    }
+}

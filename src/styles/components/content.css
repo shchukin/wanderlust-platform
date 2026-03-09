@@ -22,3 +22,10 @@
             flex-direction: column;
             gap: 6px;
         }
+
+@media (width < 1240px), (height < 540px) {
+
+    .content__sticky-aside-part {
+        position: absolute;
+    }
+}

@@ -56,3 +56,12 @@
         top: 27px;
     }
 }
+
+
+@media (width < 1240px), (height < 540px) {
+
+    .sidebar-toggler {
+        position: absolute;
+    }
+}
+

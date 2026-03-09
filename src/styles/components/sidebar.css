@@ -59,38 +59,18 @@
 
 
 @media (width < 1500px) {
+    .sidebar__logo {
+        width: 52px;
+        height: 52px;
+    }
+}
+
+
+
+@media (width < 1240px), (height < 540px) {
 
     .sidebar {
-
+        position: absolute;
+        bottom: auto;
     }
-        .sidebar__logo {
-            width: 52px;
-            height: 52px;
-        }
-
-        .sidebar__nav {
-
-        }
-
-        .sidebar__info {
-
-        }
-
-
-
-
-    .sidebar-expanded .sidebar {
-
-    }
-        .sidebar-expanded .sidebar__logo {
-
-        }
-
-        .sidebar__nav {
-
-        }
-
-        .sidebar-expanded .sidebar__info {
-
-        }
 }

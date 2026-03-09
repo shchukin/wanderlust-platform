@@ -1,4 +1,5 @@
 body {
+    position: relative; /* header is absoluted on width < 1240px */
     height: 100%;
     background-color: var(--body-background);
     -webkit-font-smoothing: antialiased;
