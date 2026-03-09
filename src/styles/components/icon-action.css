@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     border: none;
     padding: 0;
     text-decoration: none;
@@ -21,8 +21,8 @@
         position: absolute;
         inset: 0;
         margin: auto;
-        width: 28px;
-        height: 28px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
     }
 
@@ -32,8 +32,8 @@
 
     .icon-action .icon {
         position: relative;
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 18px;
+        line-height: 18px;
         color: var(--blue);
     }
 
@@ -48,9 +48,38 @@
     cursor: default;
 }
     .icon-action .icon {
-        margin-left: -6px;
-        margin-right: -6px;
-        font-size: 1.2em;
-        line-height: inherit;
+
     }
 
+
+
+
+.icon-action--36px {
+    width: 36px;
+    height: 36px;
+}
+    .icon-action--36px::before {
+        width: 28px;
+        height: 28px;
+    }
+
+    .icon-action--36px .icon {
+        font-size: 17px;
+        line-height: 17px;
+    }
+
+
+
+.icon-action--32px {
+    width: 32px;
+    height: 32px;
+}
+    .icon-action--32px::before {
+        width: 26px;
+        height: 26px;
+    }
+
+    .icon-action--32px .icon {
+        font-size: 16px;
+        line-height: 16px;
+    }

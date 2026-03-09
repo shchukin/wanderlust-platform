@@ -35,3 +35,12 @@
                 line-height: var(--base-line-height);
                 word-break: break-word;
             }
+
+
+
+@media (width < 1500px) {
+    .references {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 24px;
+    }
+}
