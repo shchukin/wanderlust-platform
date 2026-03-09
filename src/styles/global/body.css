@@ -9,3 +9,12 @@ body {
     letter-spacing: -0.025em;
     color: var(--black);
 }
+
+
+
+@media (width < 1240px), (height < 540px) {
+
+    body {
+        height: auto;
+    }
+}

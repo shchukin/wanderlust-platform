@@ -1,4 +1,12 @@
 html {
-    min-width: 1240px;
     height: 100%;
+}
+
+
+@media (width < 1240px), (height < 540px) {
+
+    html {
+        min-width: 1240px;
+        height: auto;
+    }
 }

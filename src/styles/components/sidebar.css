@@ -72,5 +72,6 @@
     .sidebar {
         position: absolute;
         bottom: auto;
+        height: 100%;
     }
 }
