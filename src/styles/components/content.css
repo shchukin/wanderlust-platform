@@ -26,6 +26,6 @@
 @media (width < 1240px), (height < 540px) {
 
     .content__sticky-aside-part {
-        position: absolute;
+        position: static;
     }
 }

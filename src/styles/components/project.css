@@ -99,3 +99,12 @@
         width: var(--project-aside-width);
         /*padding-top: 20px; May be needed to follow PSD design, but it looks weird */
     }
+
+
+@media (width < 1240px), (height < 540px) {
+
+    .project__chat {
+        position: absolute;
+        bottom: auto;
+    }
+}
