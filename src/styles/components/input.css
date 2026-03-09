@@ -237,34 +237,3 @@ select.input__widget:disabled {
 
 
 
-
-.input {
-    --input-action: 40px;
-}
-
-.input--height-36px {
-    --input-action: 36px;
-}
-
-.input--height-32px {
-    --input-action: 32px;
-}
-
-
-.input:has(.input__action) {
-
-}
-    .input:has(.input__action) .input__widget {
-        padding-right: var(--input-action);
-    }
-
-    .input__action {
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        width: var(--input-action);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
