@@ -6,7 +6,7 @@
     .messaging-window__body {
         position: relative;
         flex-grow: 1;
-        min-height: 0; /* Override default "min-height: auto" so the grid item can actually be constrained by height: 100% (below) */
+        min-height: 0; /* Override default "min-height: auto" so the flex item won't stretch over the flex (if filled with longer content) */
         overflow-y: auto;
         scrollbar-width: thin;
     }

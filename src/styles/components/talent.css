@@ -18,6 +18,7 @@
 
     .talent__body {
         flex-grow: 1;
+        min-width: 0; /* Override default "min-width: auto" so the flex item won't stretch over the flex (if filled with longer content) */
     }
         .talent__name {
             display: flex;

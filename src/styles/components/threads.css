@@ -82,5 +82,5 @@
 
     .threads__widget {
         flex-grow: 1;
-        min-height: 0;
+        min-height: 0; /* Override default "min-height: auto" so the grid item can actually be constrained by height: 100% (below) */
     }
