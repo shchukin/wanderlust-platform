@@ -8,7 +8,6 @@
 
 .ts-control {
 	gap: 4px;
-	height: var(--input-height);
 	padding: 5px var(--input-h-padding); /* 40px tall, same as default widget */
 	border-radius: var(--input-radius);
 	border-color: var(--input-border);
@@ -99,7 +98,7 @@
 .ts-control > input {
 	font-family: inherit;
 	font-size: var(--input-font-size);
-	line-height: calc(var(--input-line-height) + 8px) !important; /* same as added items */
+	line-height: var(--tom-tag-height) !important; /* same as added items */
 	letter-spacing: inherit;
 	color: var(--black);
 }
@@ -127,22 +126,9 @@
 }
 
 .ts-dropdown [data-selectable] .highlight {
-	/*background: rgba(125, 168, 208, 0.2);*/
-	/*border-radius: 1px;*/
+	background-color: var(--gray);
 }
 
-.ts-dropdown .option,
-.ts-dropdown .optgroup-header,
-.ts-dropdown .no-results,
-.ts-dropdown .create {
-	/*padding: 5px 8px;*/
-}
-.ts-dropdown .option,
-.ts-dropdown [data-disabled],
-.ts-dropdown [data-disabled] [data-selectable].option {
-	/*cursor: inherit;*/
-	/*opacity: 0.5;*/
-}
 
 .ts-dropdown [data-selectable].option {
 	padding: 7px 24px 7px 16px;
@@ -234,25 +220,6 @@
 .ts-wrapper .dropdown-header {
 	border-bottom: 1px solid var(--gray);
 	background: #f9fafb;
-}
-
-.ts-wrapper .dropdown-header-close {
-	/*position: absolute;*/
-	/*right: 8px;*/
-	/*top: 50%;*/
-	/*color: #303030;*/
-	/*opacity: 0.4;*/
-	/*margin-top: -12px;*/
-	/*line-height: 20px;*/
-	/*font-size: 20px !important;*/
-}
-.ts-wrapper .dropdown-header-close:hover {
-	/*color: black;*/
-}
-
-
-.ts-dropdown.plugin-optgroup_columns .ts-dropdown-content {
-	/*display: flex;*/
 }
 
 .ts-wrapper.plugin-remove_button .item .remove {
@@ -347,3 +314,22 @@
 		border-color: transparent;
 		border-radius: calc(var(--input-height) / 2);
 	}
+
+
+/* Sizes */
+.ts-styling-height-36px .ts-control {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	--tom-tag-height: 26px;
+}
+
+.ts-styling-height-32px .ts-control {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 14px;
+	--tom-tag-height: 24px;
+}
+	.ts-styling-height-32px .ts-control input {
+		font-size: 14px;
+	}
+

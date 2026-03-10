@@ -5,7 +5,7 @@ import TomSelect from 'https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom
 document.querySelectorAll('[data-ref="init-tom-select-multi"]').forEach((el) => {
     new TomSelect(el, {
         hidePlaceholder: false,
-        maxItems: 3,
+        maxItems: 7,
         plugins: ['remove_button'],
         placeholder: el.getAttribute('placeholder') || 'Pick up to 3 options'
     });
