@@ -1,7 +1,9 @@
 export const input = () => {
 
 
-    /* Input error */
+     /* TO DO: this part is just a demo of how "input--error" class must be used.
+     * Code a proper validation in the project and remove this part.
+     */
 
     document.addEventListener('focusin', (event) => {
         const $input = event.target.closest('.input');
@@ -54,7 +56,7 @@ export const input = () => {
         expandTextarea($textarea);
     });
 
-    
+
 
     /* Toggle password visibility */
 
