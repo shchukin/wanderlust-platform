@@ -54,44 +54,29 @@ export const input = () => {
         expandTextarea($textarea);
     });
 
+    
 
     /* Toggle password visibility */
 
     document.addEventListener('click', (event) => {
-        const $button = event.target.closest('.input__action .icon-action');
-        if (!$button) {
+        const $eyeButton = event.target.closest('.input__action .icon-action');
+        if (!$eyeButton) {
             return;
         }
-        const $input = $button.closest('.input');
-        if (!$input) {
-            return;
-        }
-        const $passwordWidget = $input.querySelector('.input__widget[type="password"]');
-        if (!$passwordWidget && !$input.dataset.passwordInput) {
-            return;
-        }
-        if ($passwordWidget) {
-            $input.dataset.passwordInput = 'true';
-        }
-        const $widget = $input.querySelector('.input__widget');
-        if (!$widget || ($widget.type !== 'password' && $widget.type !== 'text')) {
-            return;
-        }
-        const $icon = $button.querySelector('.icon');
+
+        const $icon = $eyeButton.querySelector('.icon');
+
+        /* Check if we work with input that contains eye button */
         const iconName = $icon?.textContent?.trim();
-        if (iconName !== 'visibility' && iconName !== 'visibility_off') {
+        if (!$icon || (iconName !== 'visibility' && iconName !== 'visibility_off')) {
             return;
         }
-        if (iconName === 'visibility_off' && $widget.type !== 'password') {
-            return;
-        }
-        if (iconName === 'visibility' && $widget.type !== 'text') {
-            return;
-        }
+
+        const $widget = $eyeButton.closest('.input').querySelector('.input__widget');
+
         const isVisible = $widget.type === 'password';
+
         $widget.type = isVisible ? 'text' : 'password';
-        if ($icon) {
-            $icon.textContent = isVisible ? 'visibility' : 'visibility_off';
-        }
+        $icon.textContent = isVisible ? 'visibility' : 'visibility_off';
     });
 };
