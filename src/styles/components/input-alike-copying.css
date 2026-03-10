@@ -1,0 +1,24 @@
+.input-alike-copying {
+    position: relative;
+}
+    .input-alike-copying__widget {
+        height: var(--input-height);
+        padding: 9px 34px 9px var(--input-h-padding);
+        background-color: #ffffff; /* reset grey background in some cases, such as <select> */
+        background-clip: padding-box; /* hack for iOS to make box-shadow works (same as border-radius in the past) */
+        border: 1px solid var(--input-border);
+        border-radius: var(--input-radius);
+        font-size: var(--input-font-size);
+        line-height: var(--input-line-height);
+        color: var(--black);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .input-alike-copying__action {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }

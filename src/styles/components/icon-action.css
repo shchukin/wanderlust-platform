@@ -52,6 +52,10 @@
     }
 
 
+.icon-action--black .icon {
+    color: var(--black);
+}
+
 
 
 .icon-action--36px {

@@ -42,7 +42,7 @@
             <br>
             <h2>With <a href="label.html">.label</a> and <a href="helper.html">.helper</a></h2>
             <p>
-                These two are not part of <b><i>.input</i></b> component. However, they often used together,
+                These two are not part of <b><i>input</i></b> component. However, they often used together,
                 placed before and after, like so:
             </p>
 
@@ -168,7 +168,7 @@
             </div>
 
             <br>
-            <h3>.input--expandable</h3>
+            <h3>input--expandable</h3>
             <p>
                 Using JavaScript, calculate the height to make the textarea expand as the user types.
                 In this case, the <b><i>rows</i></b> attribute will serve as a starting point, and the <b><i>max-height</i></b>
@@ -233,7 +233,7 @@
             </p>
             <p>
                 Assign first option to be a placeholder: <b><i>&lt;option value="placeholder"&gt;</i></b>. Then
-                use JS to check if this option is selected and toggle the <b><i>.input--placeholder-is-chosen</i></b>
+                use JS to check if this option is selected and toggle the <b><i>input--placeholder-is-chosen</i></b>
                 class to change the color.
             </p>
 
@@ -444,21 +444,22 @@
 
             <br>
             <br>
+            <br>
             <h2>
                 input__action
             </h2>
             <p>
-                Any 40x40 content can be placed inside, e.g. <a href="icon-action.html">icon-action</a>.
+                Any 40x40 content can be placed inside, e.g. <a href="icon-action.html"><b><i>icon-action</i></b></a> (preferably <b><i>icon-action--black</i></b> variant).
             </p>
             <p>
-                In smaller variants use 36x36 and 32x32 accordingly:
+                In smaller inputs, use <b><i>icon-action--36px</i></b> and <b><i>icon-action--32px</i></b> accordingly:
             </p>
 
 
             <div class="input">
                 <input class="input__widget" type="text" placeholder="Video id">
                 <div class="input__action">
-                    <button class="icon-action" type="button">
+                    <button class="icon-action icon-action--black" type="button">
                         <i class="icon">refresh</i>
                     </button>
                 </div>
@@ -469,7 +470,7 @@
             <div class="input input--height-36px">
                 <input class="input__widget" type="text" placeholder="Video id">
                 <div class="input__action">
-                    <button class="icon-action icon-action--36px" type="button">
+                    <button class="icon-action icon-action--black icon-action--36px" type="button">
                         <i class="icon">refresh</i>
                     </button>
                 </div>
@@ -480,7 +481,7 @@
             <div class="input input--height-32px">
                 <input class="input__widget" type="text" placeholder="Video id">
                 <div class="input__action">
-                    <button class="icon-action icon-action--32px" type="button">
+                    <button class="icon-action icon-action--black icon-action--32px" type="button">
                         <i class="icon">refresh</i>
                     </button>
                 </div>
@@ -489,19 +490,17 @@
 
             <br>
             <br>
-            <h3>With <a href="copy.html">copy</a> component</h3>
+            <h3>With <a href="copy.html"><i>copy</i></a> component</h3>
             <p>
-                As far as the sizes matche 40x40, 36x36, 32x32 pattern, any action can be inside.
-            </p>
-            <p>
-                Also in this specific case use <b><i>readonly</i></b> attribute.
+                As far as the sizes match the 40x40 / 36x36 / 32x32 pattern, any action can be used inside.
+                For example (<b>just for example</b>) more complex <a href="copy.html"><b><i>copy</i></b></a> component can be passed into:
             </p>
 
             <div class="input">
-                <input class="input__widget" type="text" placeholder="Url" value="dp.wanderlust-videos.com" readonly>
+                <input class="input__widget" type="text" placeholder="Url" value="dp.wanderlust-videos.com/?q=f9r134n$n24-11233256">
                 <div class="input__action">
-                    <div class="copy" data-value="dp.wanderlust-videos.com">
-                        <button class="icon-action" type="button">
+                    <div class="copy" data-value="dp.wanderlust-videos.com/?q=f9r134n$n24-11233256">
+                        <button class="icon-action icon-action--black" type="button">
                             <i class="icon">content_copy</i>
                         </button>
                         <div class="copy__bubble">
@@ -515,10 +514,10 @@
             <br>
 
             <div class="input input--height-36px">
-                <input class="input__widget" type="text" placeholder="Url" value="dp.wanderlust-videos.com" readonly>
+                <input class="input__widget" type="text" placeholder="Url" value="dp.wanderlust-videos.com/?q=f9r134n$n24-11233256">
                 <div class="input__action">
-                    <div class="copy" data-value="dp.wanderlust-videos.com">
-                        <button class="icon-action icon-action--36px" type="button">
+                    <div class="copy" data-value="dp.wanderlust-videos.com/?q=f9r134n$n24-11233256">
+                        <button class="icon-action icon-action--black icon-action--36px" type="button">
                             <i class="icon">content_copy</i>
                         </button>
                         <div class="copy__bubble">
@@ -532,10 +531,10 @@
             <br>
 
             <div class="input input--height-32px">
-                <input class="input__widget" type="text" placeholder="Url" value="dp.wanderlust-videos.com" readonly>
+                <input class="input__widget" type="text" placeholder="Url" value="dp.wanderlust-videos.com/?q=f9r134n$n24-11233256">
                 <div class="input__action">
-                    <div class="copy" data-value="dp.wanderlust-videos.com">
-                        <button class="icon-action icon-action--32px" type="button">
+                    <div class="copy" data-value="dp.wanderlust-videos.com/?q=f9r134n$n24-11233256">
+                        <button class="icon-action icon-action--black icon-action--32px" type="button">
                             <i class="icon">content_copy</i>
                         </button>
                         <div class="copy__bubble">
@@ -544,18 +543,27 @@
                     </div>
                 </div>
             </div>
+
+            <p>
+                Although for this specific case it's better use <a href="input-alike-copying.html"><b><i>input-alike-copying</i></b></a>
+                because the <b><i>input</i></b> tag here works a bit strange with ellpising and text scrolling. Also this
+                component already has some hover effects and so on.
+            </p>
 
 
 
             <br>
             <br>
             <h3>Password toggler</h3>
+            <p>
+                Add a bit of Java script to the button:
+            </p>
 
 
             <div class="input">
                 <input class="input__widget" type="password" value="foobarbaz">
                 <div class="input__action">
-                    <button class="icon-action" type="button">
+                    <button class="icon-action icon-action--black" type="button">
                         <i class="icon">visibility_off</i>
                     </button>
                 </div>
@@ -566,7 +574,7 @@
             <div class="input input--height-36px">
                 <input class="input__widget" type="password" value="foobarbaz">
                 <div class="input__action">
-                    <button class="icon-action" type="button">
+                    <button class="icon-action icon-action--black" type="button">
                         <i class="icon">visibility_off</i>
                     </button>
                 </div>
@@ -577,7 +585,7 @@
             <div class="input input--height-32px">
                 <input class="input__widget" type="password" value="foobarbaz">
                 <div class="input__action">
-                    <button class="icon-action" type="button">
+                    <button class="icon-action icon-action--black" type="button">
                         <i class="icon">visibility_off</i>
                     </button>
                 </div>
