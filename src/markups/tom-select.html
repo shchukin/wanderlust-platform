@@ -25,13 +25,18 @@
             <br>
             <br>
             <h1>Tom Select</h1>
+            <p>
+                Please add <b><i>tom-select</i></b> class to all of them. This could be useful for styling,
+                if later on we need to apply custom styles.
+            </p>
 
 
             <br>
             <br>
-            <h3>Multi-select (max 3)</h3>
+            <h2>Multi-select</h2>
 
-            <select class="tom-select" data-ref="init-tom-select-multi" multiple placeholder="Pick up to 3 states">
+            <select data-ref="init-tom-select-multi" multiple placeholder="Pick up to 3 states">
+                <option value="">Select a state...</option>
                 <option value="CA">California</option>
                 <option value="CO">Colorado</option>
                 <option value="FL">Florida</option>
@@ -46,7 +51,8 @@
 
             <br>
 
-            <select class="tom-select" data-ref="init-tom-select-multi" multiple placeholder="Pick up to 3 states">
+            <select data-ref="init-tom-select-multi" multiple placeholder="Pick up to 3 states">
+                <option value="">Select a state...</option>
                 <option value="CA" selected>California</option>
                 <option value="CO">Colorado</option>
                 <option value="FL">Florida</option>
@@ -60,11 +66,11 @@
             </select>
 
             <br>
-            <br>
-            <h2>Disabled</h2>
+            <h3>Disabled</h3>
 
 
-            <select class="tom-select" data-ref="init-tom-select-multi" multiple placeholder="Pick up to 3 states" disabled>
+            <select data-ref="init-tom-select-multi" multiple placeholder="Pick up to 3 states" disabled>
+                <option value="">Select a state...</option>
                 <option value="CA">California</option>
                 <option value="CO">Colorado</option>
                 <option value="FL">Florida</option>
@@ -78,7 +84,9 @@
             </select>
 
             <br>
-            <select class="tom-select" data-ref="init-tom-select-multi" multiple placeholder="Pick up to 3 states" disabled>
+
+            <select data-ref="init-tom-select-multi" multiple placeholder="Pick up to 3 states" disabled>
+                <option value="">Select a state...</option>
                 <option value="CA" selected>California</option>
                 <option value="CO">Colorado</option>
                 <option value="FL">Florida</option>
@@ -91,11 +99,15 @@
                 <option value="WA">Washington</option>
             </select>
 
-            <br>
-            <br>
-            <h3>Multi-select (no typing)</h3>
 
-            <select class="tom-select" data-ref="init-tom-select-multi-static" multiple placeholder="Choose up to 3 destinations">
+            <br>
+            <h3>No typing</h3>
+            <p>
+                In addition to JS options, please also add <b><i>ts-styling-readonly</i></b> styles for hover effect and styling of the cursor.
+                You can do that via JS (as in this demo), or directly in HTML markup.
+            </p>
+
+            <select data-ref="init-tom-select-multi-static" multiple placeholder="Choose up to 3 destinations">
                 <option value="BCN">Barcelona</option>
                 <option value="LIS">Lisbon</option>
                 <option value="NAP">Naples</option>
@@ -103,11 +115,36 @@
                 <option value="PRG">Prague</option>
             </select>
 
-            <br>
-            <br>
-            <h3>Single Select</h3>
+            <p>
+                Though, you may just want to use a simple <a href="input.html"><b><i>input</i></b></a> component
+                for this specific case.
+            </p>
 
-            <select class="tom-select" data-ref="init-tom-select-single" placeholder="Select a state...">
+
+            <br>
+            <h3>Clear button</h3>
+
+            <select data-ref="init-tom-select-multi-clear-button" multiple placeholder="Pick up to 3 states">
+                <option value="">Select a state...</option>
+                <option value="CA" selected>California</option>
+                <option value="CO">Colorado</option>
+                <option value="FL">Florida</option>
+                <option value="HI">Hawaii</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NY" selected>New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="OR">Oregon</option>
+                <option value="TX" selected>Texas</option>
+                <option value="WA">Washington</option>
+            </select>
+
+            <br>
+            <br>
+            <br>
+            <h2>Single Select</h2>
+
+            <select data-ref="init-tom-select-single" placeholder="Select a state...">
+                <option value="">Select a state...</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -121,10 +158,30 @@
             </select>
 
             <br>
-            <br>
-            <h3>Single Select (no typing)</h3>
+            <h3>Disabled</h3>
 
-            <select class="tom-select" data-ref="init-tom-select-single-static" placeholder="Pick a destination...">
+            <select data-ref="init-tom-select-single" placeholder="Select a state..." disabled>
+                <option value="">Select a state...</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+            </select>
+
+            <br>
+            <h3>No typing</h3>
+            <p>
+                In addition to JS options, please also add <b><i>ts-styling-readonly</i></b> styles for hover effect and styling of the cursor.
+                You can do that via JS (as in this demo), or directly in HTML markup.
+            </p>
+
+            <select data-ref="init-tom-select-single-static" placeholder="Pick a destination...">
                 <option value="PAR">Paris</option>
                 <option value="LON">London</option>
                 <option value="ROM">Rome</option>
@@ -134,29 +191,40 @@
 
             <br>
             <br>
-            <h3>Tags (create on the fly)</h3>
+            <br>
+            <h2>Tags (create on the fly)</h2>
 
-            <input class="tom-select" data-ref="init-tom-select-tags" type="text" placeholder="Add tags: ui, docs, frontend">
+            <input data-ref="init-tom-select-tags" type="text" placeholder="Add tags: ui, docs, frontend">
+
+            <br>
+            <br>
+            <h2>Remote Loading (GitHub API)</h2>
+
+            <select data-ref="init-tom-select-remote" placeholder="Search for GitHub repository..."></select>
+
 
 
             <br>
             <br>
-            <h3>Custom Rendering</h3>
+            <h2>Custom Rendering</h2>
+            <p>
+                Init options in the dropdown with custom HTML:
+            </p>
 
-            <select class="tom-select" data-ref="init-tom-select-bonuses" placeholder="Select a value..."></select>
+            <select data-ref="init-tom-select-approval" placeholder="Select"></select>
+
+            <br>
+
+            <select data-ref="init-tom-select-bonuses" placeholder="Select a value..."></select>
 
             <br>
             <br>
-            <h3>Remote Loading (GitHub API)</h3>
+            <h2>Clear variant</h2>
+            <p>
+                Unlike all of the exampels above this CSS only case. Add <b><i>ts-styling-clear-variant</i></b> for this kind of    styling:
+            </p>
 
-            <select class="tom-select" data-ref="init-tom-select-remote" placeholder="Search for GitHub repository..."></select>
-
-
-            <br>
-            <br>
-            <h3>.clear-tom-select</h3>
-
-            <select class="clear-tom-select" data-ref="init-tom-select-bonuses" placeholder="Select a value..."></select>
+            <select class="ts-styling-clear-variant" data-ref="init-tom-select-bonuses" placeholder="Select a value..."></select>
 
 
             <br>

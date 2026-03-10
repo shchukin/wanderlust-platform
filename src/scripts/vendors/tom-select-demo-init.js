@@ -1,7 +1,7 @@
 import TomSelect from 'https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.js/+esm';
 
 
-// 3. Multi-select (max 3)
+// Multi-select (max 3)
 document.querySelectorAll('[data-ref="init-tom-select-multi"]').forEach((el) => {
     new TomSelect(el, {
         hidePlaceholder: false,
@@ -11,7 +11,8 @@ document.querySelectorAll('[data-ref="init-tom-select-multi"]').forEach((el) => 
     });
 });
 
-// 4. Multi-select (max 3, no typing/static)
+
+// Multi-select (max 3, no typing/static)
 document.querySelectorAll('[data-ref="init-tom-select-multi-static"]').forEach((el) => {
     new TomSelect(el, {
         allowEmptyOption: true,
@@ -21,12 +22,83 @@ document.querySelectorAll('[data-ref="init-tom-select-multi-static"]').forEach((
         placeholder: el.getAttribute('placeholder') || 'Pick up to 3 options',
         onInitialize: function() {
             this.control_input.readOnly = true;
-            this.wrapper.classList.add('ts-control-readonly');
+            this.wrapper.classList.add('ts-styling-readonly');
         }
     });
 });
 
-// 7. Custom Rendering (Inline HTML)
+document.querySelectorAll('[data-ref="init-tom-select-multi-clear-button"]').forEach((el) => {
+    new TomSelect(el, {
+        hidePlaceholder: false,
+        maxItems: 3,
+        plugins: ['remove_button', 'clear_button'],
+        placeholder: el.getAttribute('placeholder') || 'Pick up to 3 options'
+    });
+});
+
+
+
+// Single select
+document.querySelectorAll('[data-ref="init-tom-select-single"]').forEach((el) => {
+    new TomSelect(el, {
+        create: false,
+        sortField: { field: 'text', direction: 'asc' }
+    });
+});
+
+// Single select (no typing/static)
+document.querySelectorAll('[data-ref="init-tom-select-single-static"]').forEach((el) => {
+    new TomSelect(el, {
+        allowEmptyOption: true,
+        create: false,
+        placeholder: el.getAttribute('placeholder') || 'Select an option',
+        onInitialize: function() {
+            this.control_input.readOnly = true;
+            this.wrapper.classList.add('ts-styling-readonly');
+        }
+    });
+});
+
+
+
+// Tags (create on the fly)
+document.querySelectorAll('[data-ref="init-tom-select-tags"]').forEach((el) => {
+    new TomSelect(el, {
+        create: true,
+        persist: false,
+        plugins: ['remove_button'],
+        placeholder: el.getAttribute('placeholder') || 'Add tags'
+    });
+});
+
+
+
+// Remote Loading (GitHub example)
+document.querySelectorAll('[data-ref="init-tom-select-remote"]').forEach((el) => {
+    new TomSelect(el, {
+        valueField: 'html_url',
+        labelField: 'full_name',
+        searchField: 'full_name',
+        load: function(query, callback) {
+            const url = `https://api.github.com/search/repositories?q=${encodeURIComponent(query)}`;
+            fetch(url)
+                .then(response => response.json())
+                .then(json => callback(json.items))
+                .catch(() => callback());
+        },
+        render: {
+            option: (item, escape) => `
+                <div>
+                    <div>${escape(item.full_name)}</div>
+                    <div class="gray">${escape(item.description || 'No description')}</div>
+                </div>`,
+            item: (item, escape) => `<div>${escape(item.full_name)}</div>`
+        }
+    });
+});
+
+
+// Custom Rendering: Bonuses
 document.querySelectorAll('[data-ref="init-tom-select-bonuses"]').forEach((el) => {
     new TomSelect(el, {
         valueField: 'id',
@@ -59,7 +131,7 @@ document.querySelectorAll('[data-ref="init-tom-select-bonuses"]').forEach((el) =
         },
         onInitialize: function() {
             this.control_input.readOnly = true;
-            this.wrapper.classList.add('ts-control-readonly');
+            this.wrapper.classList.add('ts-styling-readonly');
         }
     });
 });
@@ -67,28 +139,9 @@ document.querySelectorAll('[data-ref="init-tom-select-bonuses"]').forEach((el) =
 
 
 
-// 1. Single select
-document.querySelectorAll('[data-ref="init-tom-select-single"]').forEach((el) => {
-    new TomSelect(el, {
-        create: false,
-        sortField: { field: 'text', direction: 'asc' }
-    });
-});
 
-// 2. Single select (no typing/static)
-document.querySelectorAll('[data-ref="init-tom-select-single-static"]').forEach((el) => {
-    new TomSelect(el, {
-        allowEmptyOption: true,
-        create: false,
-        placeholder: el.getAttribute('placeholder') || 'Select an option',
-        onInitialize: function() {
-            this.control_input.readOnly = true;
-            this.wrapper.classList.add('ts-control-readonly');
-        }
-    });
-});
+// Custom Rendering: Approval (colored statuses)
 
-// 3. Approval status (no typing/static, custom render)
 const approvalDefaults = ['Approved', 'Rejected', 'N/A', 'Approved', 'Rejected', 'N/A', 'Approved', 'Rejected'];
 
 document.querySelectorAll('[data-ref="init-tom-select-approval"]').forEach((el, index) => {
@@ -127,43 +180,7 @@ document.querySelectorAll('[data-ref="init-tom-select-approval"]').forEach((el, 
         },
         onInitialize: function() {
             this.control_input.readOnly = true;
-            this.wrapper.classList.add('ts-control-readonly');
-        }
-    });
-});
-
-
-// 5. Tags (create on the fly)
-document.querySelectorAll('[data-ref="init-tom-select-tags"]').forEach((el) => {
-    new TomSelect(el, {
-        create: true,
-        persist: false,
-        plugins: ['remove_button'],
-        placeholder: el.getAttribute('placeholder') || 'Add tags'
-    });
-});
-
-
-// 8. Remote Loading (GitHub)
-document.querySelectorAll('[data-ref="init-tom-select-remote"]').forEach((el) => {
-    new TomSelect(el, {
-        valueField: 'html_url',
-        labelField: 'full_name',
-        searchField: 'full_name',
-        load: function(query, callback) {
-            const url = `https://api.github.com/search/repositories?q=${encodeURIComponent(query)}`;
-            fetch(url)
-                .then(response => response.json())
-                .then(json => callback(json.items))
-                .catch(() => callback());
-        },
-        render: {
-            option: (item, escape) => `
-                <div class="py-1">
-                    <div class="font-medium">${escape(item.full_name)}</div>
-                    <div class="text-xs opacity-50">${escape(item.description || 'No description')}</div>
-                </div>`,
-            item: (item, escape) => `<div>${escape(item.full_name)}</div>`
+            this.wrapper.classList.add('ts-styling-readonly');
         }
     });
 });
