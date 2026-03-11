@@ -5,9 +5,9 @@ import TomSelect from 'https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom
 document.querySelectorAll('[data-ref="init-tom-select-multi"]').forEach((el) => {
     new TomSelect(el, {
         hidePlaceholder: false,
-        maxItems: 7,
+        maxItems: 10,
         plugins: ['remove_button'],
-        placeholder: el.getAttribute('placeholder') || 'Pick up to 3 options'
+        placeholder: el.getAttribute('placeholder') || 'Pick up to 10 options'
     });
 });
 
@@ -17,9 +17,9 @@ document.querySelectorAll('[data-ref="init-tom-select-multi-static"]').forEach((
     new TomSelect(el, {
         allowEmptyOption: true,
         create: false,
-        maxItems: 3,
+        maxItems: 10,
         plugins: ['remove_button'],
-        placeholder: el.getAttribute('placeholder') || 'Pick up to 3 options',
+        placeholder: el.getAttribute('placeholder') || 'Pick up to 10 options',
         onInitialize: function() {
             this.control_input.readOnly = true;
             this.wrapper.classList.add('ts-styling-readonly');
@@ -30,9 +30,9 @@ document.querySelectorAll('[data-ref="init-tom-select-multi-static"]').forEach((
 document.querySelectorAll('[data-ref="init-tom-select-multi-clear-button"]').forEach((el) => {
     new TomSelect(el, {
         hidePlaceholder: false,
-        maxItems: 3,
+        maxItems: 10,
         plugins: ['remove_button', 'clear_button'],
-        placeholder: el.getAttribute('placeholder') || 'Pick up to 3 options'
+        placeholder: el.getAttribute('placeholder') || 'Pick up to 10 options'
     });
 });
 
