@@ -50,7 +50,7 @@
             }
 
             .header__action:hover::before {
-                background-color: var(--hover-over-body);
+                background-color: var(--hover-over-gray);
             }
 
             .header__action .icon {

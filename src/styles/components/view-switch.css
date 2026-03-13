@@ -1,0 +1,62 @@
+.view-switch {
+    display: flex;
+    align-items: stretch;
+    width: fit-content;
+    background-color: var(--light-gray);
+    border-radius: 4px;
+}
+    .view-switch__handler {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        padding: 4px;
+        border: none;
+        cursor: pointer;
+    }
+        .view-switch__handler::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: 24px;
+            height: 24px;
+            border-radius: 2px;
+        }
+
+        .view-switch__handler:hover::before {
+            background-color: var(--hover-over-gray);
+        }
+
+        .view-switch__handler .icon {
+            position: relative;
+            font-size: 16px;
+            line-height: 16px;
+            color: inherit;
+        }
+
+        .view-switch__handler:first-child {
+            margin-left: -1px;
+            border-left: 2px solid transparent;
+        }
+
+        .view-switch__handler:last-child {
+            margin-right: -1px;
+            border-right: 2px solid transparent;
+        }
+
+
+.view-switch__handler--current {
+    cursor: default;
+}
+    .view-switch__handler--current::before {
+        background-color: #ffffff;
+    }
+
+    .view-switch__handler--current:hover::before {
+        background-color: #ffffff;
+    }
+
+    .view-switch__handler--current .icon {
+        color: var(--blue);
+    }

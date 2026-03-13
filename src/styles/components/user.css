@@ -15,7 +15,7 @@
     }
 
     .user__handler:hover {
-        background-color: var(--hover-over-body);
+        background-color: var(--hover-over-gray);
     }
 
     .user__handler:active {
