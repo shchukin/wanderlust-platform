@@ -13,7 +13,7 @@
         }
 
         a.talent__preview:hover .talent__photo {
-            filter: brightness(105%) contrast(105%);
+            filter: var(--hover-images);
         }
 
     .talent__body {

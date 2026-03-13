@@ -17,5 +17,5 @@
     cursor: pointer;
 }
     .avatar--with-hover:hover .avatar__image {
-        filter: brightness(105%) contrast(105%);
+        filter: var(--hover-images);
     }
