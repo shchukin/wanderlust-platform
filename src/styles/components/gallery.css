@@ -17,23 +17,28 @@
             align-items: center;
         }
             .gallery__search {
-                width: 272px;
+                width: 284px;
             }
 
             .gallery__filter {
-
+                margin-left: 12px;
             }
 
             .gallery__view {
-
+                margin-left: 8px;
             }
 
     .gallery__body {
 
     }
         .gallery__section {
-
+            margin-top: 20px;
         }
+
+        .gallery__section:first-child {
+            margin-top: 0;
+        }
+
             .gallery__sub-heading {
                 margin-top: 0;
                 margin-bottom: 0;
