@@ -50,3 +50,41 @@
         .find__input:focus-visible {
             border-color: var(--input-border-focus);
         }
+
+
+
+
+.find--height-36px {
+
+}
+    .find--height-36px .find__icon {
+        width: 36px;
+    }
+        .find--height-36px .find__icon .icon {
+            font-size: 17px;
+            line-height: 17px;
+        }
+
+    .find--height-36px .find__input {
+        height: 36px;
+        padding: 7px 10px 7px 30px;
+    }
+
+
+.find--height-32px {
+
+}
+    .find--height-32px .find__icon {
+        width: 32px;
+    }
+        .find--height-32px .find__icon .icon {
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+    .find--height-32px .find__input {
+        height: 32px;
+        padding: 6px 9px 6px 26px;
+        font-size: 14px;
+        line-height: 18px;
+    }
