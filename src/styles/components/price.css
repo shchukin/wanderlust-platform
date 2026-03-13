@@ -81,12 +81,17 @@
                     padding: 5px 16px 5px 24px;
                     background-image: linear-gradient(to right, transparent, transparent 16px, #d5d5d5 16px, #d5d5d5 17px, transparent 17px, transparent);
                     font-weight: normal;
+                    font-size: var(--smaller-font-size);
+                    line-height: var(--smaller-line-height);
                     color: var(--gray);
+                    white-space: nowrap;
                     text-align: left;
                 }
 
                 .price__value {
-                    padding: 5px 0 5px 2px;
+                    padding: 5px 12px 5px 2px;
+                    font-size: var(--smaller-font-size);
+                    line-height: var(--smaller-line-height);
                     color: var(--blue);
                 }
                     .price__value .icon {
@@ -98,10 +103,18 @@
 
             }
                 .price__row--total .price__param {
+                    background-image: none;
+                    padding-left: 16px;
+                    padding-bottom: 12px;
+                    font-size: var(--base-font-size);
+                    line-height: var(--base-line-height);
                     color: var(--black);
                 }
 
                 .price__row--total .price__value {
+                    padding-bottom: 12px;
+                    font-size: var(--base-font-size);
+                    line-height: var(--base-line-height);
                     color: var(--black);
                 }
 
