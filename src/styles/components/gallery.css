@@ -32,7 +32,11 @@
 
             }
 
-    .gallery__body {
+    .gallery__list-view {
+        margin-top: 30px;
+    }
+
+    .gallery__grid-view {
 
     }
         .gallery__section {
