@@ -22,37 +22,53 @@
         cursor: pointer;
     }
 
-    .price__handler:hover {
-         background-color: var(--hover-over-gray);
-    }
-
     .price__handler:active {
         transform: translateY(1px);
     }
+        /* hover */
+        .price__handler::before {
+            content: "";
+            position: absolute;
+            inset: 4px;
+            border-radius: 3px;
+        }
 
-    .price__handler::after {
-        content: "keyboard_arrow_down";
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        width: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: var(--font-icons);
-        font-size: 18px;
-        line-height: 18px;
-    }
+        .price__handler:hover::before {
+            background-color: var(--hover-over-gray);
+        }
 
-    .price-expanded .price__handler::after {
-        transform: scaleY(-100%);
-    }
+        .price__handler-inner {
+            position: relative;
+        }
 
+        /* chevron */
+        .price__handler::after {
+            content: "keyboard_arrow_down";
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-icons);
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+        .price-expanded .price__handler::after {
+            transform: scaleY(-100%);
+        }
 
     .price__dropdown {
         display: none;
     }
+
+    .price-expanded .price__dropdown {
+        display: block;
+    }
+
         .price__table {
             vertical-align: top;
             width: 100%;
