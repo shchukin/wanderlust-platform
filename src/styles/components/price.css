@@ -60,7 +60,7 @@
             line-height: 18px;
         }
 
-        .price-expanded .price__handler::after {
+        .price--expanded .price__handler::after {
             transform: scaleY(-100%);
         }
 
@@ -68,7 +68,7 @@
         display: none;
     }
 
-    .price-expanded .price__dropdown {
+    .price--expanded .price__dropdown {
         display: block;
     }
 

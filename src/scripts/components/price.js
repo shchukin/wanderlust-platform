@@ -5,7 +5,7 @@ export const price = () => {
         if (event.target.closest('.price__handler')) {
             event.preventDefault();
             const $currentDropdown = event.target.closest('.price');
-            $currentDropdown.classList.toggle('price-expanded');
+            $currentDropdown.classList.toggle('price--expanded');
         }
     });
 

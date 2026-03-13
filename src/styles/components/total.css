@@ -29,3 +29,40 @@
             flex-direction: column;
             gap: 18px;
         }
+
+        .total__list {
+            padding-top: 20px;
+            border-bottom: 1px solid var(--light-gray);
+            padding-bottom: 20px;
+        }
+            .total__row {
+                margin-top: 13px;
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+            }
+
+            .total__row:first-child {
+                margin-top: 0;
+            }
+
+                .total__param {
+
+                }
+
+                .total__value {
+                    font-weight: 500;
+                }
+
+        .total__discount {
+
+        }
+            .total__discount-icon {
+                width: ;
+            }
+
+
+
+
+
+
