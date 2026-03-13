@@ -59,9 +59,17 @@
                         text-decoration: none;
                     }
 
+                    .inner-nav__tab:active {
+                        transform: translateY(1px);
+                    }
+
                     .inner-nav__tab--disabled {
                         color: var(--gray);
                         cursor: default;
+                    }
+
+                    .inner-nav__tab--disabled:active {
+                        transform: none;
                     }
                         .inner-nav__tab::before {
                             content: "";
@@ -94,6 +102,9 @@
                         cursor: default;
                     }
 
+                    .inner-nav__tab--current:active {
+                        transform: none;
+                    }
                         .inner-nav__tab--current::before {
                             display: none;
                         }

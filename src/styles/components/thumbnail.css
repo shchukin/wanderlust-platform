@@ -1,6 +1,7 @@
 .thumbnail {
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
     border: 1px solid var(--light-gray);
     border-radius: 10px;
     cursor: pointer;
@@ -37,6 +38,9 @@
 
     .thumbnail__body {
         padding: 17px 16px 16px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
     }
         .thumbnail__heading {
 

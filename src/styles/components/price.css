@@ -1,0 +1,91 @@
+.price {
+    background-color: #f7f7f7;
+    border: 1px solid var(--light-gray);
+    border-radius: 10px;
+}
+    .price__handler {
+        position: relative;
+        border: none;
+        display: block;
+        width: 100%;
+        padding: 4px 26px 4px 10px;
+        background-color: transparent;
+        border-radius: 9px;
+        font-family: inherit;
+        letter-spacing: inherit;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--black);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .price__handler:hover {
+         background-color: var(--hover-over-gray);
+    }
+
+    .price__handler:active {
+        transform: translateY(1px);
+    }
+
+    .price__handler::after {
+        content: "keyboard_arrow_down";
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-icons);
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .price-expanded .price__handler::after {
+        transform: scaleY(-100%);
+    }
+
+
+    .price__dropdown {
+        display: none;
+    }
+        .price__table {
+            vertical-align: top;
+            width: 100%;
+            border-collapse: collapse;
+        }
+            .price__row {
+
+            }
+                .price__param {
+                    padding: 5px 16px 5px 24px;
+                    background-image: linear-gradient(to right, transparent, transparent 16px, #d5d5d5 16px, #d5d5d5 17px, transparent 17px, transparent);
+                    font-weight: normal;
+                    color: var(--gray);
+                    text-align: left;
+                }
+
+                .price__value {
+                    padding: 5px 0 5px 2px;
+                    color: var(--blue);
+                }
+                    .price__value .icon {
+                        font-size: 18px;
+                        line-height: var(--base-line-height);
+                    }
+
+            .price__row--total {
+
+            }
+                .price__row--total .price__param {
+                    color: var(--black);
+                }
+
+                .price__row--total .price__value {
+                    color: var(--black);
+                }
+

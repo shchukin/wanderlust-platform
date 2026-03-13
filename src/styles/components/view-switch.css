@@ -14,6 +14,11 @@
         border: none;
         cursor: pointer;
     }
+
+    .view-switch__handler:active {
+        transform: translateY(1px);
+    }
+
         .view-switch__handler::before {
             content: "";
             position: absolute;

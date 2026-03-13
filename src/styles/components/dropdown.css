@@ -19,6 +19,7 @@
 }
     .dropdown--expanded .dropdown__handler .button {
         background-color: var(--hover-over-white);
+        box-shadow: 0 0 0 1px var(--light-gray);
     }
 
     .dropdown--expanded .dropdown__body {
