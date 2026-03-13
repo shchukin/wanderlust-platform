@@ -1,0 +1,27 @@
+.checkout {
+
+}
+    .checkout__heading {
+
+    }
+
+    .checkout__description {
+
+    }
+
+    .checkout__body {
+        display: flex;
+        align-items: stretch;
+        gap: var(--container-padding);
+    }
+        .checkout__content {
+            flex-grow: 1;
+            min-width: 0; /* Override default "min-width: auto" so the flex item won't stretch over the flex (if filled with longer content) */
+        }
+            .checkout__navigation {
+
+            }
+
+        .checkout__aside {
+            flex-shrink: 0;
+        }
