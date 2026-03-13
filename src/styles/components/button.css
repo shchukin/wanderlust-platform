@@ -119,6 +119,18 @@
 }
 
 
+.button--clear {
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--black);
+}
+
+.button--clear:hover {
+    box-shadow: 0 0 0 1px var(--input-border);
+    background-color: #f6f6f6;
+}
+
+
 .button--square {
     min-width: 0;
     width: 40px;

@@ -1,4 +1,25 @@
 .gallery {
+    padding: 30px 20px;
     background-color: #ffffff;
     border-radius: 10px;
 }
+    .gallery__heading {
+
+    }
+
+    .gallery__operations {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+        .gallery__search {
+
+        }
+
+        .gallery__filter {
+
+        }
+
+        .gallery__view {
+
+        }
