@@ -1,0 +1,106 @@
+.thumbnail {
+    position: relative;
+    display: block;
+    border: 1px solid var(--light-gray);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.thumbnail:has(.thumbnail__widget:checked) {
+    border-color: var(--blue);
+}
+
+.thumbnail:has(.thumbnail__widget:focus) {
+
+}
+    .thumbnail__widget {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+
+    .thumbnail__preview {
+
+    }
+        .thumbnail__image {
+            vertical-align: top;
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
+        }
+
+        .thumbnail__preview:hover .thumbnail__image {
+            filter: brightness(105%) contrast(105%);
+        }
+
+    .thumbnail__body {
+        padding: 17px 16px 16px;
+    }
+        .thumbnail__heading {
+
+        }
+
+        .thumbnail__description {
+            margin-top: 10px;
+            min-height: 80px;
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        .thumbnail__footer {
+            margin-top: auto;
+            padding-top: 10px;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+            .thumbnail__pricing {
+                display: flex;
+                align-items: baseline;
+                gap: 12px;
+                font-size: 14px;
+                line-height: 18px;
+            }
+                .thumbnail__total {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+
+            .thumbnail__button {
+                margin-left: auto;
+                width: 40px;
+                height: 40px;
+                border: 1px solid var(--light-gray);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .thumbnail__button:hover {
+                background-color: var(--hover-over-white);
+            }
+
+                .thumbnail__button .icon {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+
+                .thumbnail__icon--plus {
+
+                }
+
+                .thumbnail__icon--check {
+                    display: none;
+                }
+
+
+                .thumbnail:has(.thumbnail__widget:checked) .thumbnail__icon--plus {
+                    display: none;
+                }
+
+                .thumbnail:has(.thumbnail__widget:checked) .thumbnail__icon--check {
+                    display: block;
+                }
