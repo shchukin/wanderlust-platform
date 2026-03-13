@@ -18,7 +18,6 @@
     .view-switch__handler:active {
         transform: translateY(1px);
     }
-
         .view-switch__handler::before {
             content: "";
             position: absolute;
@@ -53,6 +52,10 @@
 
 .view-switch__handler--current {
     cursor: default;
+}
+
+.view-switch__handler:active {
+    transform: none;
 }
     .view-switch__handler--current::before {
         background-color: #ffffff;
