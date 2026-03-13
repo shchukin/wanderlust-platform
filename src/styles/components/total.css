@@ -9,16 +9,22 @@
         border-radius: 9px;
     }
         .total__heading {
-            margin-right: 40px;
+            margin-right: 20px;
         }
+            .total__heading .title {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
 
         .total__actions {
             position: absolute;
-            right: 6px;
+            right: 7px;
             top: 12px;
         }
 
         .total__details {
+            margin-top: 12px;
             display: flex;
             flex-direction: column;
             gap: 18px;

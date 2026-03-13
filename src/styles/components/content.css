@@ -13,7 +13,7 @@
 
     .content__aside {
         flex-shrink: 0;
-        width: calc(var(--aside-width) - var(--container-padding));
+        width: calc(var(--aside-width));
     }
         .content__sticky-aside-part {
             position: sticky;
