@@ -1,16 +1,22 @@
 .project-card {
     display: grid;
+    align-items: flex-start;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
 }
     .project-card__preview {
-
+        position: relative;
     }
         .project-card__image {
             width: 100%;
             height: auto;
             border-radius: 10px;
         }
+
+        a.project-card__preview:hover {
+            filter: var(--hover-images);
+        }
+
 
     .project-card__body {
 

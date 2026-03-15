@@ -1,0 +1,14 @@
+.play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 23%;
+    aspect-ratio: 1/1;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255 255 255 / 62%);
+    background-image: url("../../images/play.svg");
+    background-size: 40% 40%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+}

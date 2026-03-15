@@ -1,5 +1,9 @@
 .gallery {
-    padding: 30px 20px;
+    --gallery-v-padding: 30px;
+}
+
+.gallery {
+    padding: var(--gallery-v-padding) 20px;
     background-color: #ffffff;
     border-radius: 10px;
 }
@@ -34,6 +38,7 @@
 
     .gallery__list-view {
         margin-top: 30px;
+        margin-bottom: calc(-1 * var(--gallery-v-padding));
     }
 
     .gallery__grid-view {
