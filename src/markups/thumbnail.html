@@ -25,15 +25,50 @@
             <br>
             <br>
             <h1>thumbnail</h1>
-            <p>
-                This works as a checkbox. No JS requred.
-            </p>
+
             <br>
+
+            <div class="thumbnail">
+                <a class="thumbnail__preview" href="#">
+                    <img class="thumbnail__image" src="https://picsum.photos/558/320?random=1" alt="">
+                    <i class="play" aria-hidden="true"></i>
+                </a>
+                <div class="thumbnail__body">
+                    <div class="thumbnail__heading">
+                        <h3 class="title">
+                            <a class="link link--inverted-text-alike" href="#">Highlights Film</a>
+                        </h3>
+                    </div>
+                    <div class="thumbnail__description">
+                        Relive the magic with a cinematic highlight of the wedding’s best moments, complete with soundtracks, speeches, voiceovers, and SFX.
+                    </div>
+                    <div class="thumbnail__zoom">
+                        <a class="button button--square" href="#">
+                            <i class="icon">frame_inspect</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <h2>Selectable</h2>
+            <p>
+                Make it selectable using a combintion of <b><i>&lt;label&gt;</i></b> tag and <b><i>thumbnail__widget</i></b> checkbox inside.
+            </p>
+            <p>
+                Also add <b><i>thumbnail__footer</i></b> in this case.
+            </p>
+            <p>
+                No JS required.
+            </p>
 
             <label class="thumbnail">
                 <input class="thumbnail__widget" type="checkbox">
                 <div class="thumbnail__preview">
-                    <img class="thumbnail__image" src="https://picsum.photos/600/300" alt="">
+                    <img class="thumbnail__image" src="https://picsum.photos/558/320?random=2" alt="">
+                    <i class="play" aria-hidden="true"></i>
                 </div>
                 <div class="thumbnail__body">
                     <div class="thumbnail__heading">

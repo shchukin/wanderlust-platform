@@ -16,19 +16,29 @@
     .checkout__body {
         margin-top: 24px;
     }
-
-    .checkout__footer {
-        margin-top: 24px;
-        display: flex;
-        align-items: flex-start;
-    }
-        .checkout__save-draft {
+        .checkout__content {
 
         }
+            .checkout__step {
 
-        .checkout__next {
-            margin-left: auto;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
+            }
+
+            .checkout__footer {
+                margin-top: 24px;
+                display: flex;
+                align-items: flex-start;
+            }
+                .checkout__save-draft {
+
+                }
+
+                .checkout__next {
+                    margin-left: auto;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 10px;
+                }
+
+        .checkout__aside {
+
         }

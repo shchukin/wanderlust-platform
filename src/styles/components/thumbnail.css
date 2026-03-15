@@ -4,6 +4,9 @@
     flex-direction: column;
     border: 1px solid var(--light-gray);
     border-radius: 10px;
+}
+
+.thumbnail:has(.thumbnail__widget) {
     cursor: pointer;
 }
 
@@ -12,7 +15,7 @@
 }
 
 .thumbnail:has(.thumbnail__widget:focus) {
-
+    outline: auto;
 }
     .thumbnail__widget {
         position: absolute;
@@ -32,7 +35,7 @@
             border-top-right-radius: 9px;
         }
 
-        .thumbnail__preview:hover {
+        a.thumbnail__preview:hover {
             filter: var(--hover-images);
         }
 
@@ -51,6 +54,14 @@
             min-height: 80px;
             font-size: 15px;
             line-height: 20px;
+        }
+
+
+        .thumbnail__zoom {
+            margin-top: auto;
+            padding-top: 10px;
+            width: fit-content;
+            margin-left: auto;
         }
 
         .thumbnail__footer {
