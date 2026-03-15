@@ -882,7 +882,6 @@
                             <br>
                             <h2>Or list view:</h2>
                             <p>Note the usage of <b><i>nobr</i></b> class inside labels, checkboxes and table headings. This is necessary because the wrapping table would try to collaps the width to minimum state causing line breaks.</p>
-                            <p>Use <b><i>vertical-align: middle</i></b> inline style to align the cell with button.</p>
                             <!--/temp -->
 
                             <div class="gallery__list-view">
@@ -1038,13 +1037,15 @@
                                                 <div class="lead">$619</div>
                                             </td>
                                             <td class="table__cell">
-                                                <label class="select-button">
-                                                    <input class="select-button__widget" type="checkbox">
-                                                    <div class="select-button__icon select-button__icon--plus">
-                                                        <i class="icon">add</i>
-                                                    </div>
-                                                    <div class="select-button__icon select-button__icon--check">
-                                                        <i class="icon">check</i>
+                                                <label class="standalone-check">
+                                                    <input class="standalone-check__widget" type="checkbox">
+                                                    <div class="standalone-check__button">
+                                                        <div class="standalone-check__icon standalone-check__icon--plus">
+                                                            <i class="icon">add</i>
+                                                        </div>
+                                                        <div class="standalone-check__icon standalone-check__icon--check">
+                                                            <i class="icon">check</i>
+                                                        </div>
                                                     </div>
                                                 </label>
                                             </td>
@@ -1103,28 +1104,13 @@
                                                     <b class="label">
                                                         <span class="nobr">Color Grading</span>
                                                     </b>
-                                                    <label class="choice choice--smaller choice--full-width choice--blue-when-checked">
+                                                    <label class="choice choice--smaller choice--full-width choice--blue-when-checked choice--toggler">
                                                         <input class="choice__widget" type="checkbox">
                                                         <div class="choice__icon choice__icon--unchecked">
-                                                            <i class="icon">check_box_outline_blank</i>
+                                                            <i class="icon">toggle_off</i>
                                                         </div>
                                                         <div class="choice__icon choice__icon--checked">
-                                                            <i class="icon">select_check_box</i>
-                                                        </div>
-                                                        <div class="choice__label">
-                                                            Yes
-                                                        </div>
-                                                    </label>
-                                                    <b class="label">
-                                                        <span class="nobr">Creative FX</span>
-                                                    </b>
-                                                    <label class="choice choice--smaller choice--full-width choice--blue-when-checked">
-                                                        <input class="choice__widget" type="checkbox" checked>
-                                                        <div class="choice__icon choice__icon--unchecked">
-                                                            <i class="icon">check_box_outline_blank</i>
-                                                        </div>
-                                                        <div class="choice__icon choice__icon--checked">
-                                                            <i class="icon">select_check_box</i>
+                                                            <i class="icon">toggle_on</i>
                                                         </div>
                                                         <div class="choice__label">
                                                             Yes
@@ -1176,13 +1162,15 @@
                                                 <div class="lead">$619</div>
                                             </td>
                                             <td class="table__cell">
-                                                <label class="select-button">
-                                                    <input class="select-button__widget" type="checkbox">
-                                                    <div class="select-button__icon select-button__icon--plus">
-                                                        <i class="icon">add</i>
-                                                    </div>
-                                                    <div class="select-button__icon select-button__icon--check">
-                                                        <i class="icon">check</i>
+                                                <label class="standalone-check">
+                                                    <input class="standalone-check__widget" type="checkbox">
+                                                    <div class="standalone-check__button">
+                                                        <div class="standalone-check__icon standalone-check__icon--plus">
+                                                            <i class="icon">add</i>
+                                                        </div>
+                                                        <div class="standalone-check__icon standalone-check__icon--check">
+                                                            <i class="icon">check</i>
+                                                        </div>
                                                     </div>
                                                 </label>
                                             </td>
@@ -1241,28 +1229,13 @@
                                                     <b class="label">
                                                         <span class="nobr">Color Grading</span>
                                                     </b>
-                                                    <label class="choice choice--smaller choice--full-width choice--blue-when-checked">
+                                                    <label class="choice choice--smaller choice--full-width choice--blue-when-checked choice--toggler">
                                                         <input class="choice__widget" type="checkbox">
                                                         <div class="choice__icon choice__icon--unchecked">
-                                                            <i class="icon">check_box_outline_blank</i>
+                                                            <i class="icon">toggle_off</i>
                                                         </div>
                                                         <div class="choice__icon choice__icon--checked">
-                                                            <i class="icon">select_check_box</i>
-                                                        </div>
-                                                        <div class="choice__label">
-                                                            Yes
-                                                        </div>
-                                                    </label>
-                                                    <b class="label">
-                                                        <span class="nobr">Creative FX</span>
-                                                    </b>
-                                                    <label class="choice choice--smaller choice--full-width choice--blue-when-checked">
-                                                        <input class="choice__widget" type="checkbox" checked>
-                                                        <div class="choice__icon choice__icon--unchecked">
-                                                            <i class="icon">check_box_outline_blank</i>
-                                                        </div>
-                                                        <div class="choice__icon choice__icon--checked">
-                                                            <i class="icon">select_check_box</i>
+                                                            <i class="icon">toggle_on</i>
                                                         </div>
                                                         <div class="choice__label">
                                                             Yes

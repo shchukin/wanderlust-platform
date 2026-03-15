@@ -1,6 +1,7 @@
 .standalone-check {
     position: relative;
     margin: -24px -15px; /* table padding */
+    padding: 8px;
     height: calc(100% + 2 * 24px);
     display: flex;
     align-items: center;
