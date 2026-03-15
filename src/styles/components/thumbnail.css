@@ -92,12 +92,6 @@
                 color: #ffffff;
                 box-shadow: none;
             }
-
-                .thumbnail__button .icon {
-                    font-size: 20px;
-                    line-height: 20px;
-                }
-
                 .thumbnail__icon--plus {
 
                 }
@@ -114,3 +108,7 @@
                 .thumbnail:has(.thumbnail__widget:checked) .thumbnail__icon--check {
                     display: block;
                 }
+                    .thumbnail__button .icon {
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
