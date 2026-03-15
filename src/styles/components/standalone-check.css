@@ -1,0 +1,81 @@
+.standalone-check {
+    position: relative;
+    margin: -24px -15px; /* table padding */
+    height: calc(100% + 2 * 24px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.table--stretched-columns .standalone-check {
+
+}
+    /* hover */
+    .standalone-check::before {
+        content: "";
+        position: absolute;
+        inset: 10px;
+        border-radius: 6px;
+    }
+
+    .standalone-check:hover::before {
+        background-color: var(--hover-over-white);
+    }
+
+
+    .standalone-check:has(.standalone-check__widget:focus) {
+
+    }
+
+    .standalone-check__widget {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        opacity: 0;
+    }
+
+    .standalone-check__button {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 0 1px var(--light-gray);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .standalone-check__button:hover {
+        background-color: var(--hover-over-white);
+    }
+
+    .standalone-check:has(.standalone-check__widget:checked) .standalone-check__button {
+        background-color: var(--blue);
+        color: #ffffff;
+        box-shadow: none;
+    }
+        .standalone-check__icon {
+
+        }
+
+        .standalone-check__icon--plus {
+
+        }
+
+        .standalone-check__icon--check {
+            display: none;
+        }
+
+
+        .standalone-check:has(.standalone-check__widget:checked) .standalone-check__icon--plus {
+            display: none;
+        }
+
+        .standalone-check:has(.standalone-check__widget:checked) .standalone-check__icon--check {
+            display: block;
+        }
+            .standalone-check__icon .icon {
+                font-size: 20px;
+                line-height: 20px;
+            }

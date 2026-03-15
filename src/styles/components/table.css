@@ -5,6 +5,7 @@
 .table {
     vertical-align: top;
     width: 100%;
+    height: 100%; /* pass height inside so "height: 100%" can be used deeper */
     border-collapse: collapse;
 }
     .table__section {
