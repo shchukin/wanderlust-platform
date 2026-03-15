@@ -2,6 +2,10 @@
     --choice-outset: 16px;
 }
 
+.table .choice {
+    --choice-outset: 8px;
+}
+
 .choice {
     position: relative;
     display: flex;
@@ -198,4 +202,12 @@
 }
     .choice--blue-icon-when-checked:has(.choice__widget:checked) .choice__icon .icon {
         color: var(--blue);
+    }
+
+
+.choice--nowrap {
+
+}
+    .choice--nowrap .choice__label {
+        white-space: nowrap;
     }

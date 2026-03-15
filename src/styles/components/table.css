@@ -154,3 +154,17 @@
 .table--equal-columns {
     table-layout: fixed;
 }
+
+
+
+.table--stretched-columns {
+
+}
+    .table--stretched-columns .table__section--body .table__cell:first-child {
+        padding-left: 0;
+    }
+
+    .table--stretched-columns .table__section--body .table__cell:last-child {
+        padding-right: 0;
+    }
+
