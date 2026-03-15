@@ -5,3 +5,9 @@
     margin-top: -8px;
     margin-bottom: -8px;
 }
+    .tasks-check-list .label {
+        padding-top: 8px;
+        padding-bottom: 3px;
+    }
+
+
