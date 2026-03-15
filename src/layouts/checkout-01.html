@@ -358,12 +358,117 @@
                         <div class="checkout__content">
                             <div class="checkout__step">
                                 <div class="basics">
-                                    <div class="basics__data">
-                                        <div class="basics__data-heading">
-                                            <h2 class="title">Enter your project’s basic information below</h2>
+                                    <div class="basics__heading">
+                                        <h2 class="title">Enter your project’s basic information below</h2>
+                                    </div>
+                                    <div class="basics__form">
+                                        <div class="basics__row">
+                                            <div class="basics__label">
+                                                <label class="label label--inline" for="project-name">
+                                                    Project Name:
+                                                </label>
+                                            </div>
+                                            <div class="basics__field">
+                                                <div class="input">
+                                                    <input class="input__widget" type="text" id="project-name">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="basics__form">
-                                            1
+                                        <div class="basics__row basics__field--halved">
+                                            <div class="basics__label">
+                                                <label class="label label--inline" for="footage-size">
+                                                    Estimated Footage File Size:
+                                                </label>
+                                            </div>
+                                            <div class="basics__field">
+                                                <div class="input">
+                                                    <select class="input__widget" id="footage-size">
+                                                        <option value="placeholder" selected>Choose</option>
+                                                        <option>100GB</option>
+                                                        <option>200GB</option>
+                                                        <option>...</option>
+                                                        <option>1TB (1000GB)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="helper">
+                                                    Base price includes 1 TB (1000GB) footage file size
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="basics__row basics__field--halved">
+                                            <div class="basics__label">
+                                                <label class="label label--inline" for="language">
+                                                    Language:
+                                                </label>
+                                            </div>
+                                            <div class="basics__field">
+                                                <div class="input">
+                                                    <select class="input__widget" id="language">
+                                                        <option value="placeholder" selected>Choose</option>
+                                                        <option>English</option>
+                                                        <option>Spanish</option>
+                                                        <option>...</option>
+                                                        <option>Thai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="basics__row">
+                                            <div class="basics__label">
+                                                <label class="label label--inline" for="editing-platform">
+                                                    Preferred Editing Platform:
+                                                </label>
+                                            </div>
+                                            <div class="basics__field">
+                                                <div class="input">
+                                                    <select class="input__widget" id="editing-platform">
+                                                        <option value="placeholder" selected>Choose</option>
+                                                        <option>DaVinchi</option>
+                                                        <option>Spanish</option>
+                                                        <option>...</option>
+                                                        <option>FinalCut</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="basics__row basics__field--halved">
+                                            <div class="basics__label">
+                                                <label class="label label--inline" for="event-duration">
+                                                    Event Duration:
+                                                </label>
+                                            </div>
+                                            <div class="basics__field">
+                                                <div class="input">
+                                                    <select class="input__widget" id="event-duration">
+                                                        <option value="placeholder" selected>Choose</option>
+                                                        <option>30 min</option>
+                                                        <option>60 min</option>
+                                                        <option>...</option>
+                                                        <option>2 hours</option>
+                                                    </select>
+                                                </div>
+                                                <div class="helper">
+                                                    Base price includes 1 day
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="basics__row basics__field--halved">
+                                            <div class="basics__label">
+                                                <label class="label label--inline" for="wedding-date">
+                                                    Wedding Date:
+                                                </label>
+                                            </div>
+                                            <div class="basics__field">
+                                                <div class="input">
+                                                    <input class="input__widget" type="text" id="wedding-date" placeholder="Choose">
+                                                    <div class="input__icon">
+                                                        <i class="icon">calendar_month</i>
+                                                    </div>
+                                                </div>
+                                                <div class="helper">
+                                                    Base price includes 1 day
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -259,3 +259,20 @@ select.input__widget:disabled {
         .input:has(.input__widget[readonly]) .icon-action:hover::before {
             background-color: #ebeded;
         }
+
+    .input__icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: var(--input-action);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+    }
+        .input__icon .icon {
+            font-size: 18px;
+            line-height: 18px;
+            color: var(--black);
+        }

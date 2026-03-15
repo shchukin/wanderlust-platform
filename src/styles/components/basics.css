@@ -1,12 +1,47 @@
-.basics__data {
+.basics {
     padding: 17px 20px 38px;
     background-color: #ffffff;
     border-radius: var(--radius);
 }
-    .basics__data-heading {
+    .basics__heading {
 
     }
 
     .basics__form {
-
+        margin-top: 18px;
+        max-width: 560px;
     }
+        .basics__row {
+            margin-top: 10px;
+            display: grid;
+            align-items: start;
+            grid-template-columns: minmax(0, 190fr) minmax(0, 350fr);
+            gap: 20px;
+        }
+
+        .basics__row:first-child {
+            margin-top: 0;
+        }
+            .basics__label {
+                min-height: 40px;
+                display: flex;
+                align-items: center;
+            }
+
+        .basics__field {
+
+        }
+
+        .basics__field--halved {
+
+        }
+            .basics__field--halved .input {
+                width: 50%;
+            }
+
+        .basics__field--tripled {
+
+        }
+            .basics__field--tripled .input {
+                width: 33.3333%;
+            }

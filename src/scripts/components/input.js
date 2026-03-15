@@ -8,12 +8,14 @@ export const input = () => {
     document.addEventListener('focusin', (event) => {
         const $input = event.target.closest('.input');
         if (!$input) return;
-        $input.classList.remove('input--error');
-        let $sibling = $input.nextElementSibling;
-        while ($sibling && $sibling.classList.contains('helper')) {
-            $sibling.classList.remove('helper--error');
-            $sibling.hidden = true;
-            $sibling = $sibling.nextElementSibling;
+        if ($input.classList.contains('input--error')) {
+            $input.classList.remove('input--error');
+            let $sibling = $input.nextElementSibling;
+            while ($sibling && $sibling.classList.contains('helper')) {
+                $sibling.classList.remove('helper--error');
+                $sibling.hidden = true;
+                $sibling = $sibling.nextElementSibling;
+            }
         }
     });
 
