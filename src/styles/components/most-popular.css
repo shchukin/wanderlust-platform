@@ -1,0 +1,22 @@
+.most-popular {
+    padding: 17px 20px 22px;
+    background-color: #ffffff;
+    border-radius: var(--radius);
+}
+    .most-popular__heading {
+
+    }
+
+    .most-popular__list {
+        margin-top: 18px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px;
+    }
+
+    .most-popular__more {
+        margin-top: 40px;
+    }
+        .most-popular__more .button {
+            width: 100%;
+        }

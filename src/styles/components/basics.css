@@ -1,32 +1,12 @@
-.basics {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
+.basics__data {
+    padding: 17px 20px 38px;
+    background-color: #ffffff;
+    border-radius: var(--radius);
 }
-    .basics__data {
-        padding: 17px 20px 38px;
+    .basics__data-heading {
+
     }
-        .basics__data-heading {
 
-        }
+    .basics__form {
 
-        .basics__form {
-
-        }
-
-    .basics__popular {
-        padding: 17px 20px 22px;
     }
-        .basics__popular-heading {
-
-        }
-
-        .basics__popular-list {
-            margin-top: 18px;
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 28px;
-        }
-
-        .basics__more {
-            margin-top: 40px;
-        }

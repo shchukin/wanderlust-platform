@@ -15,9 +15,13 @@
 
     .checkout__body {
         margin-top: 24px;
+        display: flex;
+        align-items: flex-start;
+        gap: var(--container-padding);
     }
         .checkout__content {
-
+            flex-grow: 1;
+            min-width: 0; /* Override default "min-width: auto" so the flex item won't stretch over the flex (if filled with longer content) */
         }
             .checkout__step {
 
@@ -40,5 +44,6 @@
                 }
 
         .checkout__aside {
-
+            flex-shrink: 0;
+            width: 50%;
         }
