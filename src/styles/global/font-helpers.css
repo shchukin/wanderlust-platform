@@ -1,0 +1,11 @@
+.lead {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+
+small,
+.small {
+    font-size: var(--smaller-font-size);
+    line-height: var(--smaller-line-height);
+}
