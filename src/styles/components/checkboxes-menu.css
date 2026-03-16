@@ -1,0 +1,16 @@
+.checkboxes-menu {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+    .checkboxes-menu__item {
+        flex-grow: 1;
+    }
+
+
+.checkboxes-menu--fixed-width {
+
+}
+    .checkboxes-menu--fixed-width .checkboxes-menu__item {
+        flex-basis: 0;
+    }

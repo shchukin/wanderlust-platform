@@ -22,7 +22,7 @@
         flex-shrink: 0;
         padding-left: calc(var(--chat-padding) - var(--threads-tab-padding));
         padding-right: calc(var(--chat-padding) - var(--threads-tab-padding));
-        background-image: linear-gradient(to top, #d5d5d5, #d5d5d5 1px, transparent 1px, transparent);
+        background-image: linear-gradient(to top, var(--light-gray), var(--light-gray) 1px, transparent 1px, transparent);
         overflow-x: auto;
     }
         .threads__ribbon {

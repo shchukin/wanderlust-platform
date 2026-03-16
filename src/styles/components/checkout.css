@@ -13,6 +13,10 @@
         margin-top: 22px;
     }
 
+    .checkout__sub-heading {
+        margin-top: 28px;
+    }
+
     .checkout__body {
         margin-top: 24px;
         display: flex;

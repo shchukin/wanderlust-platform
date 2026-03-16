@@ -39,7 +39,7 @@
                 width: 34px;
                 height: 34px;
                 background-color: #ffffff;
-                border: 1px solid #d5d5d5;
+                border: 1px solid var(--light-gray);
                 border-radius: 8px;
             }
                 .channels__icon .icon {

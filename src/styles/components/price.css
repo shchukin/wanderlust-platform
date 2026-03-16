@@ -83,7 +83,7 @@
             }
                 .price__param {
                     padding: 0 16px 0 26px;
-                    background-image: linear-gradient(to right, transparent, transparent 16px, #d5d5d5 16px, #d5d5d5 17px, transparent 17px, transparent);
+                    background-image: linear-gradient(to right, transparent, transparent 16px, var(--light-gray) 16px, var(--light-gray) 17px, transparent 17px, transparent);
                     font-weight: 500;
                     font-size: var(--smaller-font-size);
                     line-height: var(--smaller-line-height);

@@ -38,7 +38,7 @@
         }
             .check-list__sub-list .choice {
                 padding-left: 48px;
-                background-image: linear-gradient(to right, transparent, transparent 32px, #d5d5d5 32px, #d5d5d5 33px, transparent 33px, transparent);
+                background-image: linear-gradient(to right, transparent, transparent 32px, var(--light-gray) 32px, var(--light-gray) 33px, transparent 33px, transparent);
             }
 
 
@@ -70,6 +70,6 @@
             }
                 .check-list__sub-list .choice {
                     padding-left: 32px;
-                    background-image: linear-gradient(to right, transparent, transparent 20px, #d5d5d5 20px, #d5d5d5 21px, transparent 21px, transparent);
+                    background-image: linear-gradient(to right, transparent, transparent 20px, var(--light-gray) 20px, var(--light-gray) 21px, transparent 21px, transparent);
                 }
 }

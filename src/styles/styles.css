@@ -67,6 +67,8 @@
 @import url("components/play.css");
 @import url("components/standalone-check.css");
 @import url("components/form.css");
+@import url("components/checkboxes-menu.css");
+
 
 @import url("components/sidebar.css");
 @import url("components/sidebar-toggler.css");
@@ -108,3 +110,5 @@
 @import url("components/most-popular.css");
 @import url("components/pricing.css");
 @import url("components/details.css");
+@import url("components/checking-out-references.css");
+@import url("components/cases.css");

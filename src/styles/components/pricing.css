@@ -1,5 +1,5 @@
 .pricing {
-    padding-top: 6px;
+
 }
     .pricing__item {
         position: relative;
@@ -8,6 +8,11 @@
         background-color: #ffffff;
         border-radius: var(--radius);
     }
+
+    .pricing__item:first-child {
+        margin-top: 0;
+    }
+
         .pricing__handler {
             position: relative;
             width: calc(100% + 2 * var(--checkout-padding));

@@ -68,8 +68,8 @@
                 position: absolute;
                 inset: 0;
                 background-color: var(--table-header-background);
-                border-top: 1px solid #d5d5d5;
-                border-bottom: 1px solid #d5d5d5;
+                border-top: 1px solid var(--light-gray);
+                border-bottom: 1px solid var(--light-gray);
             }
 
             .table__section--head .table__cell:first-child::before {
@@ -88,9 +88,9 @@
                 bottom: 0;
                 width: 5px;
                 background-color: var(--table-header-background);
-                border-left: 1px solid #d5d5d5;
-                border-top: 1px solid #d5d5d5;
-                border-bottom: 1px solid #d5d5d5;
+                border-left: 1px solid var(--light-gray);
+                border-top: 1px solid var(--light-gray);
+                border-bottom: 1px solid var(--light-gray);
                 border-top-left-radius: 5px;
                 border-bottom-left-radius: 5px;
             }
@@ -103,9 +103,9 @@
                 bottom: 0;
                 width: 5px;
                 background-color: var(--table-header-background);
-                border-right: 1px solid #d5d5d5;
-                border-top: 1px solid #d5d5d5;
-                border-bottom: 1px solid #d5d5d5;
+                border-right: 1px solid var(--light-gray);
+                border-top: 1px solid var(--light-gray);
+                border-bottom: 1px solid var(--light-gray);
                 border-top-right-radius: 5px;
                 border-bottom-right-radius: 5px;
             }

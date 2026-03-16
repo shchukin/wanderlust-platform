@@ -3,7 +3,7 @@
     width: fit-content;
     padding-top: 13px;
     padding-bottom: 13px;
-    border: 1px solid #d5d5d5;
+    border: 1px solid var(--light-gray);
     background-color: #ffffff;
     box-shadow: var(--shadow);
     border-radius: 15px;
