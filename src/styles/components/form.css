@@ -1,0 +1,50 @@
+.form {
+    --form-max-width: 560px;
+    --form-label-width: 190px;
+}
+
+.form {
+    max-width: var(--form-max-width);
+}
+    .form__row {
+        margin-top: 12px;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .form__row:first-child {
+        margin-top: 0;
+    }
+
+    .form__row--no-margin {
+        margin-top: 0;
+    }
+        .form__label {
+            min-height: 40px;
+            flex-basis: var(--form-label-width);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .form__field {
+            min-height: 40px;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+            .form__widget {
+                flex-grow: 1;
+            }
+
+        .form__field--halved {
+
+        }
+            @media (width >= 1500px) {
+
+                /* shrink only input here leaving helper to take all the width */
+                .form__field--halved .input {
+                    width: 50%;
+                }
+            }
