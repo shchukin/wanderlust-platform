@@ -11,20 +11,37 @@
         margin-top: 24px;
     }
 
-    .cases__list {
+    .cases__body {
         margin-top: 24px;
     }
-        .cases__item {
-            margin-top: 28px;
-            border-top: 1px solid var(--light-gray);
-            padding-top: 28px;
+        .cases__tab {
+            display: none;
         }
 
-        .cases__item:first-child {
-            margin-top: 0;
-            border-top: none;
-            padding-top: 0;
+        .cases__tab--current {
+            display: block;
         }
+
+            /* First tab */
+
+            .cases__list {
+
+            }
+                .cases__item {
+                    margin-top: 28px;
+                    border-top: 1px solid var(--light-gray);
+                    padding-top: 28px;
+                }
+
+                .cases__item:first-child {
+                    margin-top: 0;
+                    border-top: none;
+                    padding-top: 0;
+                }
+
+            /* Second tab */
+
+            /* Third tab */
 
     .cases__notes {
 
