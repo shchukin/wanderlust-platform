@@ -1,12 +1,12 @@
 .info {
     padding: 1px;
     background-image: linear-gradient(#f1289f, #670aea);
-    border-radius: 10px;
+    border-radius: var(--radius);
 }
     .info__background {
         padding: 25px 14px 28px;
         background-image: linear-gradient(45deg, #f0e7fd, #f8f8f6 33%, #fdeef3);
-        border-radius: 9px;
+        border-radius: calc(var(--radius) - 1px);
     }
         .info__pre-heading {
             display: block;

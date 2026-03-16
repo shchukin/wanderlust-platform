@@ -5,3 +5,7 @@
 .blue {
     color: var(--blue);
 }
+
+.black {
+    color: var(--black);
+}

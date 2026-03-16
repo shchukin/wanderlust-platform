@@ -3,7 +3,7 @@
     min-height: 100px;
     background-color: var(--table-header-background);
     border: 1px solid var(--input-border);
-    border-radius: 10px;
+    border-radius: var(--radius);
     align-items: center;
     justify-content: center;
     font-weight: 500;
