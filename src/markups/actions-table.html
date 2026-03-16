@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css">
+        <script type="module" src="../scripts/vendors.js"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>actions-table</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script type="module" src="../scripts/scripts.js"></script>
+    </head>
+    <body style="background-color: white;">
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>actions-table</h1>
+
+            <table class="actions-table">
+                <thead class="actions-table__section actions-table__section--head">
+                    <tr class="actions-table__row">
+                        <th class="actions-table__cell">
+                            Select your video
+                        </th>
+                        <th class="actions-table__cell">
+                            Enter reference URL below
+                        </th>
+                        <th class="actions-table__cell">
+                            <span class="visuallyhidden">Add</span>
+                        </th>
+                        <th class="actions-table__cell">
+                            <span class="visuallyhidden">Delete</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="actions-table__section actions-table__section--body">
+                    <tr class="actions-table__row">
+                        <td class="actions-table__cell">
+                            <div class="input">
+                                <select class="input__widget">
+                                    <option value="placeholder">Select film</option>
+                                    <option value="1">Foo</option>
+                                    <option value="2">Bar</option>
+                                    <option value="3">Baz</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td class="actions-table__cell">
+                            <div class="input">
+                                <input class="input__widget" type="text" placeholder="Please enter a valid URL">
+                            </div>
+                        </td>
+                        <td class="actions-table__cell actions-table__cell--action">
+                            <button class="button button--square button--light-gray-outline" type="button">
+                                <i class="icon">add</i>
+                            </button>
+                        </td>
+                        <td class="actions-table__cell actions-table__cell--action">
+                            <button class="button button--square button--light-gray-outline" type="button">
+                                <i class="icon">delete</i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="actions-table__row">
+                        <td class="actions-table__cell">
+                            <div class="input">
+                                <select class="input__widget">
+                                    <option value="placeholder">Select film</option>
+                                    <option value="1">Foo</option>
+                                    <option value="2">Bar</option>
+                                    <option value="3">Baz</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td class="actions-table__cell">
+                            <div class="input">
+                                <input class="input__widget" type="text" placeholder="Please enter a valid URL">
+                            </div>
+                        </td>
+                        <td class="actions-table__cell actions-table__cell--action">
+                            <button class="button button--square button--light-gray-outline" type="button">
+                                <i class="icon">add</i>
+                            </button>
+                        </td>
+                        <td class="actions-table__cell actions-table__cell--action">
+                            <button class="button button--square button--light-gray-outline" type="button">
+                                <i class="icon">delete</i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+    </body>
+</html>

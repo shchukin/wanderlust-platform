@@ -57,6 +57,18 @@
 }
 
 
+.icon-action--white {
+
+}
+    .icon-action--white:hover::before {
+        background-color: rgb(255 255 255 / 15%);
+    }
+
+    .icon-action--white .icon {
+        color: #ffffff;
+    }
+
+
 
 .icon-action--36px {
     width: 36px;

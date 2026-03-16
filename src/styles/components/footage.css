@@ -25,6 +25,14 @@
 
             /* First tab */
 
+            .footage__field {
+                margin-top: 18px;
+            }
+
+            .footage__field:first-child {
+                margin-top: 0;
+            }
+
 
             /* Second tab */
 

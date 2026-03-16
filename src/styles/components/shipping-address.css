@@ -1,0 +1,33 @@
+.shipping-address {
+    position: relative;
+    padding: 10px 40px;
+    background-color: var(--black);
+    color: #ffffff;
+    border-radius: 5px;
+}
+    .shipping-address__icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+    }
+        .shipping-address__icon .icon {
+            font-size: 17px;
+            line-height: 17px;
+            color: #ffffff;
+        }
+
+    .shipping-address__copy {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+    }
