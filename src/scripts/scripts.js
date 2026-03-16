@@ -10,6 +10,7 @@ import { enter } from './components/enter.js';
 import { dropdown } from './components/dropdown.js';
 import { copy } from './components/copy.js';
 import { price } from './components/price.js';
+import { pricing } from './components/pricing.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     sidebarToggler();
@@ -24,4 +25,5 @@ document.addEventListener('DOMContentLoaded', () => {
     dropdown();
     copy();
     price();
+    pricing();
 });

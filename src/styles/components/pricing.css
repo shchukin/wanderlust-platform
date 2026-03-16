@@ -77,4 +77,5 @@
 
         .pricing__item--expanded .pricing__item-widget {
             display: block;
+            animation: slide-down 500ms var(--ease-out-quint);
         }
