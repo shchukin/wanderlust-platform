@@ -20,6 +20,7 @@
 
         .cases__tab--current {
             display: block;
+            animation: slide-down 500ms var(--ease-out-quint);
         }
 
             /* First tab */
@@ -39,10 +40,27 @@
                     padding-top: 0;
                 }
 
+
             /* Second tab */
+
+            .cases__previous-video {
+
+            }
+
 
             /* Third tab */
 
-    .cases__notes {
+            .cases__fieldset {
+                margin-top: 24px;
+            }
 
+            .cases__fieldset:first-child {
+                margin-top: 0;
+            }
+                .cases__field {
+                    margin-top: 18px;
+                }
+
+    .cases__notes {
+        margin-top: 48px;
     }

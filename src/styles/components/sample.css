@@ -57,12 +57,13 @@
                     padding: 0;
                     vertical-align: top;
                     font-weight: normal;
+                    white-space: nowrap;
                     text-align: left;
                 }
 
                 .sample__value {
                     vertical-align: top;
-                    padding: 0 0 0 6px;
+                    padding: 0 0 0 10px;
                     font-weight: 500;
                 }
 

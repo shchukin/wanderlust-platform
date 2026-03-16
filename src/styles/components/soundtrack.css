@@ -20,10 +20,17 @@
 
         .soundtrack__tab--current {
             display: block;
+            animation: slide-down 500ms var(--ease-out-quint);
         }
+
+            /* First tab */
+
             .soundtrack__link {
 
             }
+
+
+            /* Second tab */
 
             .soundtrack__genre {
 
