@@ -1,7 +1,7 @@
 .checkboxes-menu {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 16px 20px;
 }
     .checkboxes-menu__item {
         flex-grow: 1;
@@ -13,4 +13,13 @@
 }
     .checkboxes-menu--fixed-width .checkboxes-menu__item {
         flex-basis: 0;
+    }
+
+
+.checkboxes-menu--two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+    .checkboxes-menu--two-columns .checkboxes-menu__item {
+
     }

@@ -4,7 +4,7 @@ export const cases = () => {
     labels.forEach((label) => {
         label.addEventListener('click', () => {
             const targetRef = label.dataset.casesTarget;
-            const targetTab = document.querySelector(`[data-cases-tab-ref="${targetRef}"]`);
+            const targetTab = document.querySelector(`[data-cases-tab="${targetRef}"]`);
 
             if (targetTab) {
                 document.querySelectorAll('.cases__tab').forEach((tab) => {
