@@ -13,6 +13,7 @@ import { price } from './components/price.js';
 import { pricing } from './components/pricing.js';
 import { soundtrack } from './components/soundtrack.js';
 import { cases } from './components/cases.js';
+import { footage } from './components/footage.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     sidebarToggler();
@@ -30,4 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
     pricing();
     soundtrack();
     cases();
+    footage();
 });

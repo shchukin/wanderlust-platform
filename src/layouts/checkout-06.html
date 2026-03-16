@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html class="sidebar-expanded" lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css">
+        <script type="module" src="../scripts/vendors.js"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wanderlust</title>
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+        <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#FFFFFF">
+
+        <!-- manifest -->
+        <link rel="manifest" href="../manifest.json">
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script type="module" src="../scripts/scripts.js"></script>
+
+    </head>
+    <body>
+
+        <div class="sidebar">
+            <div class="sidebar__logo">
+                Wanderlust
+            </div>
+            <div class="sidebar__nav">
+                <nav class="nav">
+                    <div class="nav__section">
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">grid_view</i>
+                                <div class="nav__label">Dashboard</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav__section">
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">new_label</i>
+                                <div class="nav__label">New Project</div>
+                            </div>
+                        </a>
+                        <button class="nav__more" type="button">
+                            Toggle sub menu
+                        </button>
+                        <div class="nav__sub-menu">
+                            <a class="nav__link" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">diamond_shine</i>
+                                    <div class="nav__label">Pro Project</div>
+                                </div>
+                            </a>
+                            <a class="nav__link" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">star</i>
+                                    <div class="nav__label">Lite Project</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav__section">
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">bookmark</i>
+                                <div class="nav__label">My Projects</div>
+                            </div>
+                        </a>
+                        <button class="nav__more" type="button">
+                            Toggle sub menu
+                        </button>
+                        <div class="nav__sub-menu">
+                            <a class="nav__link" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">cycle</i>
+                                    <div class="nav__label">All Projects</div>
+                                </div>
+                            </a>
+                            <a class="nav__link" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">rotate_right</i>
+                                    <div class="nav__label">In Progress (2)</div>
+                                </div>
+                            </a>
+                            <a class="nav__link nav__link--current" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">alarm_pause</i>
+                                    <div class="nav__label">Pending Feedback</div>
+                                </div>
+                            </a>
+                            <a class="nav__link" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">arrow_upload_progress</i>
+                                    <div class="nav__label">Pending Footage</div>
+                                </div>
+                            </a>
+                            <a class="nav__link" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">draft_orders</i>
+                                    <div class="nav__label">Drafts</div>
+                                </div>
+                            </a>
+                            <a class="nav__link" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">done_all</i>
+                                    <div class="nav__label">Completed</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav__section">
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">mail</i>
+                                <div class="nav__label">Inbox</div>
+                            </div>
+                        </a>
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">handshake</i>
+                                <div class="nav__label">Onboarding Questionnaire</div>
+                            </div>
+                        </a>
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">cloud</i>
+                                <div class="nav__label">WanderDrive</div>
+                            </div>
+                        </a>
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">camera</i>
+                                <div class="nav__label">Technical Template</div>
+                            </div>
+                        </a>
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">redeem</i>
+                                <div class="nav__label">Gifts</div>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="sidebar__info">
+                <div class="info">
+                    <div class="info__background">
+                        <div class="info__pre-heading">
+                            Introducing
+                        </div>
+                        <div class="info__heading">
+                            AfterWrap<br> Socials
+                        </div>
+                        <div class="info__message">
+                            <div class="wysiwyg">
+                                <p>Reclaim your time by offloading your social media editing.</p>
+                                <p>We’ll cut, polish, and optimize your videos so you can focus on posting and growing your audience.</p>
+                            </div>
+                        </div>
+                        <div class="info__action">
+                            <button class="button button--height-44px">
+                                Learn more
+                                <i class="icon">east</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="sidebar-toggler">
+            <span class="sidebar-toggler__inner">
+                Toggle sidebar
+            </span>
+        </button>
+        <header class="header">
+            <div class="header__search">
+                <div class="search">
+                    <input class="search__input" type="text" placeholder="Search">
+                    <div class="search__filter">
+                        <button class="search__handler" type="button">
+                            <span class="search__output">All</span>
+                        </button>
+                        <div class="search__dropdown">
+                            <div class="menu">
+                                <a class="menu__item menu__item--current" href="#">
+                                    <i class="icon">settings</i>
+                                    All
+                                </a>
+                                <a class="menu__item" href="#">
+                                    <i class="icon">savings</i>
+                                    Lorem Ipsum
+                                </a>
+                                <a class="menu__item" href="#">
+                                    <i class="icon">logout</i>
+                                    Dolor Sit Amen
+                                </a>
+                                <div class="menu__close">
+                                    <button class="button button--height-32px button--black" type="button">
+                                        <i class="icon">close</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__operations">
+                <a class="header__action" href="#">
+                    <i class="icon">mail</i>
+                    <div class="header__action-counter">
+                        <div class="counter counter--bubble">2</div>
+                    </div>
+                </a>
+                <a class="header__action" href="#">
+                    <i class="icon">notifications_active</i>
+                    <div class="header__action-counter">
+                        <div class="counter counter--bubble counter--pink">999</div>
+                    </div>
+                </a>
+                <div class="header__new-project">
+                    <div class="create">
+                        <div class="create__handler">
+                            <button class="button button--height-44px" type="button">
+                                <i class="icon">add</i>
+                                New Project
+                            </button>
+                        </div>
+                        <div class="create__dropdown">
+                            <div class="create__variants">
+                                <a class="button" href="#">
+                                    <i class="icon">diamond_shine</i>
+                                    PRO Project
+                                </a>
+                                <a class="button" href="#">
+                                    <i class="icon">star</i>
+                                    PRO Project
+                                </a>
+                            </div>
+                            <div class="create__close">
+                                <button class="button button--height-32px button--black" type="button">
+                                    <i class="icon">close</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__user">
+                    <div class="user">
+                        <button class="user__handler" type="button">
+                            <div class="user__preview">
+                                <img class="user__photo"
+                                     srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                     src="../temp/avatars/avatar-40x40@1x.jpg"
+                                     width="40"
+                                     height="40"
+                                     alt=""
+                                >
+                            </div>
+                            <span class="user__name">
+                                Client Name
+                            </span>
+                        </button>
+                        <button class="user__edit" type="button">
+                            <i class="icon">edit</i>
+                        </button>
+                        <div class="user__dropdown">
+                            <div class="menu">
+                                <a class="menu__item menu__item--current" href="#">
+                                    <i class="icon">settings</i>
+                                    Manage Account
+                                </a>
+                                <a class="menu__item" href="#">
+                                    <i class="icon">savings</i>
+                                    WanderCoins
+                                </a>
+                                <a class="menu__item" href="#">
+                                    <i class="icon">logout</i>
+                                    Logout
+                                </a>
+                                <div class="menu__close">
+                                    <button class="button button--height-32px button--black" type="button">
+                                        <i class="icon">close</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <main class="content__body">
+                <div class="checkout">
+                    <div class="checkout__heading">
+                        <h1 class="title title--30px">
+                            New Project
+                        </h1>
+                    </div>
+                    <div class="checkout__description">
+                        Tip: You are creating a PRO project. If you need less customization and faster turnaround time, choose a <a class="link" href="#">LITE project</a>
+                    </div>
+                    <div class="checkout__navigation">
+                        <div class="inner-nav">
+                            <div class="inner-nav__scroll hide-scrollbar">
+                                <div class="inner-nav__ribbon">
+                                    <a class="inner-nav__tab inner-nav__tab--current" href="#">
+                                        <div class="inner-nav__tab-label">
+                                            <i class="icon">forms_add_on</i>
+                                            Basic Information
+                                        </div>
+                                    </a>
+                                    <a class="inner-nav__tab" href="#">
+                                        <div class="inner-nav__tab-label">
+                                            <i class="icon">video_call</i>
+                                            Video Catalog
+                                        </div>
+                                    </a>
+                                    <a class="inner-nav__tab" href="#">
+                                        <div class="inner-nav__tab-label">
+                                            <i class="icon">add_card</i>
+                                            Checkout
+                                        </div>
+                                    </a>
+                                    <div class="inner-nav__tab inner-nav__tab--disabled">
+                                        <div class="inner-nav__tab-label">
+                                            <i class="icon">center_focus_strong</i>
+                                            References
+                                        </div>
+                                    </div>
+                                    <div class="inner-nav__tab inner-nav__tab--disabled">
+                                        <div class="inner-nav__tab-label">
+                                            <i class="icon">shutter_speed</i>
+                                            Technical Template
+                                        </div>
+                                    </div>
+                                    <div class="inner-nav__tab inner-nav__tab--disabled">
+                                        <div class="inner-nav__tab-label">
+                                            <i class="icon">cloud_upload</i>
+                                            Footage Files
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout__body">
+                        <div class="checkout__content">
+                            <div class="checkout__step">
+                                <section class="footage">
+                                    <div class="footage__heading">
+                                        <h2 class="title">Enter your project’s basic information below</h2>
+                                    </div>
+                                    <div class="footage__navigation">
+                                        <div class="checkboxes-menu">
+                                            <div class="checkboxes-menu__item">
+                                                <label class="choice choice--input-alike choice--full-width choice--blue-when-checked" data-footage-target="drive-shipping">
+                                                    <input class="choice__widget" type="radio" name="footage-source" checked>
+                                                    <div class="choice__icon choice__icon--unchecked">
+                                                        <i class="icon">radio_button_unchecked</i>
+                                                    </div>
+                                                    <div class="choice__icon choice__icon--checked">
+                                                        <i class="icon">radio_button_checked</i>
+                                                    </div>
+                                                    <div class="choice__label">
+                                                        I’ll ship my hard drive to you
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="checkboxes-menu__item">
+                                                <label class="choice choice--input-alike choice--full-width choice--blue-when-checked" data-footage-target="cloud-storage">
+                                                    <input class="choice__widget" type="radio" name="footage-source">
+                                                    <div class="choice__icon choice__icon--unchecked">
+                                                        <i class="icon">radio_button_unchecked</i>
+                                                    </div>
+                                                    <div class="choice__icon choice__icon--checked">
+                                                        <i class="icon">radio_button_checked</i>
+                                                    </div>
+                                                    <div class="choice__label">
+                                                        External Link (Google Drive, Dropbox etc.)
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="checkboxes-menu__item">
+                                                <label class="choice choice--input-alike choice--full-width choice--blue-when-checked" data-footage-target="wanderdrive">
+                                                    <input class="choice__widget" type="radio" name="footage-source">
+                                                    <div class="choice__icon choice__icon--unchecked">
+                                                        <i class="icon">radio_button_unchecked</i>
+                                                    </div>
+                                                    <div class="choice__icon choice__icon--checked">
+                                                        <i class="icon">radio_button_checked</i>
+                                                    </div>
+                                                    <div class="choice__label">
+                                                        Upload to WanderDrive
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="checkboxes-menu__item">
+                                                <label class="choice choice--input-alike choice--full-width choice--blue-when-checked" data-footage-target="not-sure">
+                                                    <input class="choice__widget" type="radio" name="footage-source">
+                                                    <div class="choice__icon choice__icon--unchecked">
+                                                        <i class="icon">radio_button_unchecked</i>
+                                                    </div>
+                                                    <div class="choice__icon choice__icon--checked">
+                                                        <i class="icon">radio_button_checked</i>
+                                                    </div>
+                                                    <div class="choice__label">
+                                                        I’m not sure yet
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footage__body">
+                                        <div class="footage__tab footage__tab--current" data-footage-tab="drive-shipping">
+                                            <div class="footage__">
+                                                <label class="label" for="footage-url">
+                                                    Great! Please ship the drive(s) to the addresses listed below.
+                                                </label>
+                                                34234123
+                                            </div>
+                                        </div>
+                                        <div class="footage__tab" data-footage-tab="cloud-storage">
+                                            foo
+                                        </div>
+                                        <div class="footage__tab" data-footage-tab="wanderdrive">
+                                            bar
+                                        </div>
+                                        <div class="footage__tab" data-footage-tab="not-sure">
+                                            baz
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="checkout__footer">
+                                <div class="checkout__save-draft">
+                                    <a class="button button--black button--height-44px" href="#">
+                                        Save as draft <i class="icon">save</i>
+                                    </a>
+                                </div>
+                                <div class="checkout__next">
+                                    <a class="button button--height-44px" href="#">
+                                        <i class="icon">west</i> Back
+                                    </a>
+                                    <a class="button button--height-44px" href="#">
+                                        Next <i class="icon">east</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout__aside">
+                            <!-- Keep it in the DOM and keep it empty -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

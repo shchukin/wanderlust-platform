@@ -1,0 +1,35 @@
+.footage {
+    padding: var(--checkout-padding) var(--checkout-padding) calc(var(--checkout-padding) + 20px);
+    background-color: #ffffff;
+    border-radius: var(--radius);
+}
+    .footage__heading {
+
+    }
+
+    .footage__navigation {
+        margin-top: 24px;
+    }
+
+    .footage__body {
+        margin-top: 24px;
+    }
+        .footage__tab {
+            display: none;
+        }
+
+        .footage__tab--current {
+            display: block;
+            animation: slide-down 500ms var(--ease-out-quint);
+        }
+
+            /* First tab */
+
+
+            /* Second tab */
+
+
+            /* Third tab */
+
+
+            /* Fourth tab */
