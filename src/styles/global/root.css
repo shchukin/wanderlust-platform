@@ -2,12 +2,14 @@
     --font: "DM Sans", sans-serif;
     --font-heading: "Poppins";
     --font-icons: "Material Symbols Rounded";
-    --base-font-size: 15px;
-    --base-line-height: 20px;
     --smaller-font-size: 14px;
     --smaller-line-height: 18px;
+    --base-font-size: 15px;
+    --base-line-height: 20px;
     --larger-font-size: 16px;
     --larger-line-height: 22px;
+    --lead-font-size: 18px;
+    --lead-line-height: 24px;
     --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
     --transition-hover: 100ms ease;
     --transition-show: 1200ms var(--ease-out-quint);
