@@ -370,7 +370,6 @@
                                                            choice--full-width
                                                            choice--blue-when-checked
                                                     "
-                                                       data-footage-target="drive-shipping"
                                                 >
                                                     <input class="choice__widget" type="radio" name="footage-source" checked>
                                                     <div class="choice__icon choice__icon--unchecked">
@@ -391,7 +390,6 @@
                                                            choice--full-width
                                                            choice--blue-when-checked
                                                     "
-                                                    data-footage-target="cloud-storage"
                                                 >
                                                     <input class="choice__widget" type="radio" name="footage-source">
                                                     <div class="choice__icon choice__icon--unchecked">
@@ -482,13 +480,14 @@
                                             </div>
                                         </div>
                                         <div class="footage__tab" data-footage-tab="cloud-storage">
-                                            foo
-                                        </div>
-                                        <div class="footage__tab" data-footage-tab="wanderdrive">
-                                            bar
-                                        </div>
-                                        <div class="footage__tab" data-footage-tab="not-sure">
-                                            baz
+                                            <div class="footage__field">
+                                                <label class="label" for="cloud-url">
+                                                    Url
+                                                </label>
+                                                <div class="input">
+                                                    <input class="input__widget" type="text" placeholder="Tracking number" id="cloud-url">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </section>
