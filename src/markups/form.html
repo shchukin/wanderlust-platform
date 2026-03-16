@@ -151,27 +151,81 @@
             </div>
 
 
+
             <br>
             <br>
             <br>
+            <br>
+            <h2>Variant with button and two togglers</h2>
+            <p>
+                Note there are two togglers coming one after another.
+                Add <b><i>form__row--no-margin</i></b> class to the second one
+                to remove the margin between them:
+            </p>
             <br>
 
             <div class="form">
                 <div class="form__row">
                     <div class="form__label">
-                        <label class="label label--inline" for="event-duration-2">
-                            Event Duration
+                        <b class="label label--inline">
+                            Color Grading
+                        </b>
+                    </div>
+                    <div class="form__field">
+                        <div class="form__widget">
+                            <label class="choice choice--toggler choice--blue-icon-when-checked">
+                                <input class="choice__widget" type="checkbox" checked>
+                                <div class="choice__icon choice__icon--unchecked">
+                                    <i class="icon">toggle_off</i>
+                                </div>
+                                <div class="choice__icon choice__icon--checked">
+                                    <i class="icon">toggle_on</i>
+                                </div>
+                                <div class="choice__label">
+                                    Yes
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__row form__row--no-margin">
+                    <div class="form__label">
+                        <b class="label label--inline">
+                            Creative Effects
+                        </b>
+                    </div>
+                    <div class="form__field">
+                        <div class="form__widget">
+                            <label class="choice choice--toggler choice--blue-icon-when-checked">
+                                <input class="choice__widget" type="checkbox">
+                                <div class="choice__icon choice__icon--unchecked">
+                                    <i class="icon">toggle_off</i>
+                                </div>
+                                <div class="choice__icon choice__icon--checked">
+                                    <i class="icon">toggle_on</i>
+                                </div>
+                                <div class="choice__label">
+                                    No
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__label">
+                        <label class="label label--inline" for="resolution-1">
+                            Resolution
                         </label>
                     </div>
-                    <div class="form__field form__field--halved">
+                    <div class="form__field">
                         <div class="form__widget">
                             <div class="input">
-                                <select class="input__widget" id="event-duration-2">
-                                    <option value="placeholder" selected>Choose</option>
-                                    <option>1 day (included)</option>
-                                    <option>2 days</option>
+                                <select class="input__widget" id="resolution-1">
+                                    <option value="placeholder">Resolution</option>
+                                    <option selected>3840x2160 Letterbox (UHD-4k)</option>
+                                    <option>3840x2160 Letterbox (UHD-4k)</option>
                                     <option>...</option>
-                                    <option>5 days</option>
+                                    <option>3840x2160 Letterbox (UHD-4k)</option>
                                 </select>
                             </div>
                         </div>
@@ -179,19 +233,19 @@
                 </div>
                 <div class="form__row">
                     <div class="form__label">
-                        <label class="label label--inline" for="footage-size-2">
-                            Footage File Size
+                        <label class="label label--inline" for="extra-export-1">
+                            Extra Export
                         </label>
                     </div>
-                    <div class="form__field form__field--halved">
+                    <div class="form__field">
                         <div class="form__widget">
                             <div class="input">
-                                <select class="input__widget" id="footage-size-2">
-                                    <option value="placeholder" selected>Choose</option>
-                                    <option>100GB</option>
-                                    <option>200GB</option>
+                                <select class="input__widget" id="extra-export-1">
+                                    <option value="placeholder">Select</option>
+                                    <option>Foo</option>
+                                    <option>Bar</option>
                                     <option>...</option>
-                                    <option>1TB (1000GB)</option>
+                                    <option>Baz</option>
                                 </select>
                             </div>
                             <div class="helper">
@@ -208,7 +262,19 @@
                     </div>
                     <div class="form__field form__field--halved">
                         <div class="form__widget">
-                            <big style="font-weight: 500">$150</big>
+                            <big style="font-weight: 500">$720</big>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__label">
+
+                    </div>
+                    <div class="form__field form__field--halved">
+                        <div class="form__widget">
+                            <button class="button" type="button">
+                                Update
+                            </button>
                         </div>
                     </div>
                 </div>
