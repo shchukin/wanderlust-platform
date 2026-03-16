@@ -13,10 +13,6 @@
 .thumbnail:has(.thumbnail__widget:checked) {
     border-color: var(--blue);
 }
-
-.thumbnail:has(.thumbnail__widget:focus) {
-    outline: auto;
-}
     .thumbnail__widget {
         position: absolute;
         left: 50%;
