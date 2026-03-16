@@ -8,53 +8,62 @@
         background-color: #ffffff;
         border-radius: var(--radius);
     }
-        .pricing__item-heading {
-
-        }
-
         .pricing__handler {
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 68px;
-            height: 68px;
+            position: relative;
+            width: calc(100% + 2 * var(--checkout-padding));
+            margin: calc(-1 * var(--checkout-padding));
             background-color: transparent;
-            padding: 0;
+            padding: var(--checkout-padding);
             border: none;
+            font-family: inherit;
+            font-weight: inherit;
+            letter-spacing: inherit;
+            text-decoration: none;
+            text-align: left;
             cursor: pointer;
-        }
-
-        .pricing__handler:active {
-            transform: translateY(1px);
         }
             .pricing__handler::before {
                 content: "";
                 position: absolute;
-                inset: 0;
-                margin: auto;
+                inset: 5px;
+                border-radius: calc(var(--radius) - 5px);
+            }
+
+            .pricing__handler:hover::before {
+                background-color: var(--hover-over-white);
+            }
+
+            .pricing__sub-heading {
+                position: relative;
+            }
+
+            .pricing__chevron {
+                position: absolute;
+                right: 18px;
+                top: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 32px;
                 height: 32px;
                 background-color: #e8e8e8;
                 border-radius: 8px;
+                border: none;
+                cursor: pointer;
             }
+                .pricing__chevron .icon {
+                    position: relative;
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: var(--black);
+                }
 
-            .pricing__handler:hover::before {
-                background-color: var(--hover-over-gray);
-            }
-
-            .pricing__handler .icon {
-                position: relative;
-                font-size: 24px;
-                line-height: 24px;
-                color: var(--black);
-            }
-
-            .pricing__item--expanded .pricing__handler .icon {
-                transform: scaleY(-100%);
-            }
+                .pricing__item--expanded .pricing__chevron .icon {
+                    transform: scaleY(-100%);
+                }
 
         .pricing__item-widget {
-            margin-top: 12px;
+            margin-top: 24px;
         }
 
     .pricing__section {
