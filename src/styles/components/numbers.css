@@ -65,26 +65,7 @@
 
     .numbers__report {
         margin-top: 26px;
-        padding: 22px 10px 20px;
-        background-color: #f6f8fb;
-        border: 1px solid var(--light-gray);
-        border-radius: 5px;
     }
-        .numbers__report-heading {
-            margin-top: 0;
-            margin-bottom: 0;
-            font-weight: 500;
-            font-size: 15px;
-            line-height: 22px;
-        }
-
-        .numbers__report-field {
-            margin-top: 20px;
-        }
-
-        .numbers__report-submit {
-            margin-top: 14px;
-        }
 
 
 @media (width < 1500px) {

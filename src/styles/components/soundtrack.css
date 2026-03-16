@@ -1,0 +1,38 @@
+.soundtrack {
+    padding: var(--checkout-padding) var(--checkout-padding) calc(var(--checkout-padding) + 20px);
+    background-color: #ffffff;
+    border-radius: var(--radius);
+}
+    .soundtrack__heading {
+
+    }
+
+    .soundtrack__navigation {
+        margin-top: 24px;
+    }
+
+    .soundtrack__body {
+        margin-top: 24px;
+    }
+        .soundtrack__tab {
+            display: none;
+        }
+
+        .soundtrack__tab--current {
+            display: block;
+        }
+            .soundtrack__link {
+
+            }
+
+            .soundtrack__genre {
+
+            }
+
+            .soundtrack__style {
+                margin-top: 18px;
+            }
+
+    .soundtrack__notes {
+        margin-top: 48px;
+    }

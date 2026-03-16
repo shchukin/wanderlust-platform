@@ -1,0 +1,22 @@
+.edit-notes {
+    margin-top: 26px;
+    padding: 22px 10px 20px;
+    background-color: #f6f8fb;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+}
+    .edit-notes__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .edit-notes__field {
+        margin-top: 20px;
+    }
+
+    .edit-notes__submit {
+        margin-top: 14px;
+    }
