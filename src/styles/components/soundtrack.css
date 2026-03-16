@@ -12,9 +12,10 @@
     }
 
     .soundtrack__body {
-        margin-top: 24px;
+
     }
         .soundtrack__tab {
+            margin-top: 24px; /* move margin to here from soundtrack__body in case there is no active tab (no need spacing at all) */
             display: none;
         }
 

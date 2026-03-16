@@ -12,9 +12,10 @@
     }
 
     .footage__body {
-        margin-top: 24px;
+
     }
         .footage__tab {
+            margin-top: 24px; /* move margin to here from footage__body in case there is no active tab (no need spacing at all) */
             display: none;
         }
 

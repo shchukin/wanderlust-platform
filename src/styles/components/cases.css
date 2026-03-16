@@ -12,9 +12,10 @@
     }
 
     .cases__body {
-        margin-top: 24px;
+
     }
         .cases__tab {
+            margin-top: 24px; /* move margin to here from cases__body in case there is no active tab (no need spacing at all) */
             display: none;
         }
 
