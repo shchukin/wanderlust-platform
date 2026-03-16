@@ -1,11 +1,16 @@
-.lead {
-    font-size: 18px;
-    line-height: 26px;
-}
-
-
 small,
 .small {
     font-size: var(--smaller-font-size);
     line-height: var(--smaller-line-height);
+}
+
+big,
+.big {
+    font-size: var(--larger-font-size);
+    line-height: var(--larger-line-height);
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 26px;
 }

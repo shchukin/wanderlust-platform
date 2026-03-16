@@ -6,6 +6,8 @@
     --base-line-height: 20px;
     --smaller-font-size: 14px;
     --smaller-line-height: 18px;
+    --larger-font-size: 16px;
+    --larger-line-height: 22px;
     --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
     --transition-hover: 100ms ease;
     --transition-show: 1200ms var(--ease-out-quint);
@@ -60,6 +62,7 @@
     --aside-width: 300px;
     --aside-padding: 20px;
     --defenitions-spacing: 4px;
+    --checkout-padding: 20px;
     --project-subpage-padding: 20px;
     --project-subpage-with-table-padding: 16px 10px 0;
 }

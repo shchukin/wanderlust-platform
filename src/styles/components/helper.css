@@ -11,3 +11,8 @@
 .helper + .helper {
     padding-top: 4px;
 }
+
+.helper--smaller {
+    font-size: 13px;
+    line-height: 18px;
+}
