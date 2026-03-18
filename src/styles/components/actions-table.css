@@ -15,8 +15,8 @@
 
     }
         .actions-table__row {
-            border-top: 15px solid transparent;
-            border-bottom: 15px solid transparent;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
         }
 
         .actions-table__row:first-child {

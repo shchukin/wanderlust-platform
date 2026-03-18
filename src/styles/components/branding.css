@@ -7,8 +7,15 @@
 
     }
 
+    .branding__body {
+        margin-top: 18px;
+    }
+
     .branding__field {
         margin-top: 24px;
     }
 
+    .branding__field:first-child {
+        margin-top: 0;
+    }
 
