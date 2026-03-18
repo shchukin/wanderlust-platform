@@ -14,6 +14,8 @@ export const range = () => {
             return suffix || '';
         };
 
+        const thumbSize = parseFloat(getComputedStyle(input).getPropertyValue('--range-thumb-size')) || 18;
+
         const update = () => {
             const min = input.min === '' ? 0 : Number(input.min);
             const max = input.max === '' ? 100 : Number(input.max);
@@ -23,9 +25,12 @@ export const range = () => {
 
             output.textContent = `${value}${suffix}`;
 
+            /* We need to deal with thumb size because the native widget works kinda weird.
+             * Good, but weird. When thumb comes to the beginning or the end of the range,
+             * it doesn't align it's center to 0% or 100%. It is kinda touching it
+             * by it's edge. So we need to mind it's width:
+             */
             const inputWidth = input.getBoundingClientRect().width;
-            const thumbSize = parseFloat(getComputedStyle(input)
-                .getPropertyValue('--range-thumb-size')) || 18;
             const left = percent * (inputWidth - thumbSize) + (thumbSize / 2);
 
             output.style.left = `${left}px`;

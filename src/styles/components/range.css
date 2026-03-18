@@ -1,7 +1,14 @@
 .range {
-    position: relative;
     --range-thumb-size: 18px;
+}
 
+.range {
+    position: relative;
+}
+
+.range:has(.range__output) {
+    padding-bottom: 8px;
+    margin-bottom: -8px;
 }
     .range__widget {
         -webkit-appearance: none;
@@ -14,11 +21,10 @@
 
     .range__output {
         position: absolute;
-        top: -6px;
-        transform: translateX(-50%);
-        font-size: 12px;
-        line-height: 1;
-        color: var(--black);
+        bottom: 0;
+        font-size: 13px;
+        line-height: 16px;
+        color: var(--blue);
         pointer-events: none;
         white-space: nowrap;
     }
