@@ -15,48 +15,71 @@
             opacity: 0;
         }
 
-        .position__label {
-            padding: 14px 20px;
-            border: 1px solid var(--light-gray);
+        .position__frame {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 154px;
+            height: 88px;
             font-weight: 500;
+            text-align: center;
             cursor: pointer;
         }
 
-        .position__widget:checked + .position__label {
-            background-color: var(--blue);
-            border-color: transparent;
+        .position__widget:checked + .position__frame {
             color: #ffffff;
         }
 
+            /* border */
+            .position__frame::before {
+                content: "";
+                position: absolute;
+                inset: 19px;
+                border: 1px solid var(--light-gray);
+            }
+
+            .position__item:hover .position__frame::before {
+                background-color: var(--hover-over-white);
+            }
+
+            .position__widget:checked + .position__frame::before {
+                background-color: var(--blue);
+                border-color: transparent;
+            }
+
+            .position-text {
+                position: relative;
+            }
+
     .position__item-left-top {
-        left: 19px;
-        top: 19px;
+        left: 0;
+        top: 0;
     }
-        .position__item-left-top .position__label {
+        .position__item-left-top .position__frame::before {
             border-radius: 0 25px 25px 25px;
         }
 
     .position__item-right-top {
-        right: 19px;
-        top: 19px;
+        right: 0;
+        top: 0;
     }
-        .position__item-right-top .position__label {
+        .position__item-right-top .position__frame::before {
             border-radius: 25px 0 25px 25px;
         }
 
     .position__item-right-bottom {
-        right: 19px;
-        bottom: 19px;
+        right: 0;
+        bottom: 0;
     }
-        .position__item-right-bottom .position__label {
+        .position__item-right-bottom .position__frame::before {
             border-radius: 25px 25px 0 25px;
         }
 
     .position__item-left-bottom {
-        left: 19px;
-        bottom: 19px;
+        left: 0;
+        bottom: 0;
     }
-        .position__item-left-bottom .position__label {
+        .position__item-left-bottom .position__frame::before {
             border-radius: 25px 25px 25px 0;
         }
 
@@ -66,6 +89,6 @@
         width: fit-content;
         height: fit-content;
     }
-        .position__item-center .position__label {
+        .position__item-center .position__frame::before {
             border-radius: 25px;
         }
