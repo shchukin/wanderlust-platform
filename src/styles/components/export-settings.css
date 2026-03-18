@@ -1,0 +1,22 @@
+.export-settings {
+    padding: var(--checkout-padding) var(--checkout-padding) calc(2 * var(--checkout-padding));
+    background-color: #ffffff;
+    border-radius: var(--radius);
+}
+    .export-settings__heading {
+
+    }
+
+    .export-settings__list {
+        margin-top: 18px;
+        display: flex;
+        gap: 20px;
+    }
+        .export-settings__item {
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+
+    .export-settings__notes {
+        margin-top: 20px;
+    }
