@@ -7,39 +7,13 @@
 
     }
 
-    .soundtrack__navigation {
-        margin-top: 24px;
+    .soundtrack__content {
+        margin-top: 18px;
     }
 
-    .soundtrack__body {
-
-    }
-        .soundtrack__tab {
-            margin-top: 24px; /* move margin to here from soundtrack__body in case there is no active tab (no need spacing at all) */
-            display: none;
+        .soundtrack__style {
+            margin-top: 18px;
         }
-
-        .soundtrack__tab--current {
-            display: block;
-            animation: slide-down 500ms var(--ease-out-quint);
-        }
-
-            /* First tab */
-
-            .soundtrack__link {
-
-            }
-
-
-            /* Second tab */
-
-            .soundtrack__genre {
-
-            }
-
-            .soundtrack__style {
-                margin-top: 18px;
-            }
 
     .soundtrack__notes {
         margin-top: 48px;

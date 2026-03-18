@@ -7,60 +7,35 @@
 
     }
 
-    .cases__navigation {
-        margin-top: 24px;
+    .cases__content {
+        margin-top: 18px;
     }
 
     .cases__body {
 
     }
-        .cases__tab {
-            margin-top: 24px; /* move margin to here from cases__body in case there is no active tab (no need spacing at all) */
-            display: none;
+        /* First tab */
+
+
+        /* Second tab */
+
+
+        /* Third tab */
+
+        .cases__fieldset {
+            margin-top: 24px;
         }
 
-        .cases__tab--current {
-            display: block;
-            animation: slide-down 500ms var(--ease-out-quint);
+        .cases__fieldset:first-child {
+            margin-top: 0;
         }
-
-            /* First tab */
-
-            .cases__list {
-
-            }
-                .cases__item {
-                    margin-top: 28px;
-                    border-top: 1px solid var(--light-gray);
-                    padding-top: 28px;
-                }
-
-                .cases__item:first-child {
-                    margin-top: 0;
-                    border-top: none;
-                    padding-top: 0;
-                }
-
-
-            /* Second tab */
-
-            .cases__previous-video {
+            .cases__sub-heading {
 
             }
 
-
-            /* Third tab */
-
-            .cases__fieldset {
-                margin-top: 24px;
+            .cases__field {
+                margin-top: 18px;
             }
-
-            .cases__fieldset:first-child {
-                margin-top: 0;
-            }
-                .cases__field {
-                    margin-top: 18px;
-                }
 
     .cases__notes {
         margin-top: 48px;
