@@ -2,7 +2,7 @@
 
 }
     .tabs__bodies {
-
+        margin-top: 24px;
     }
         .tabs__body {
             display: none;

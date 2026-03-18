@@ -1,7 +1,7 @@
 export const tabs = () => {
-    const tabsRoots = document.querySelectorAll('.tabs');
+    const $tabs = document.querySelectorAll('.tabs');
 
-    tabsRoots.forEach((tabsRoot) => {
+    $tabs.forEach((tabsRoot) => {
         const radios = tabsRoot.querySelectorAll('[data-tab-target]');
 
         radios.forEach((radio) => {
