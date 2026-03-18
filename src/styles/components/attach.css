@@ -1,0 +1,19 @@
+.attach {
+    padding: 40px;
+}
+    .attach__icon {
+
+    }
+        .attach__icon .icon {
+            font-size: 24px;
+            line-height: 24px;
+            color: var(--blue);
+        }
+
+    .attach__label {
+        margin-top: 10px;
+        font-family: var(--font);
+        font-size: var(--base-font-size);
+        line-height: var(--base-line-height);
+        color: var(--black);
+    }
