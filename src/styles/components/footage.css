@@ -14,31 +14,21 @@
     .footage__body {
 
     }
-        .footage__tab {
-            margin-top: 24px; /* move margin to here from footage   __body in case there is no active tab (no need spacing at all) */
-            display: none;
+        /* First tab */
+
+        .footage__field {
+            margin-top: 18px;
         }
 
-        .footage__tab--current {
-            display: block;
-            animation: slide-down 500ms var(--ease-out-quint);
+        .footage__field:first-child {
+            margin-top: 0;
         }
 
-            /* First tab */
 
-            .footage__field {
-                margin-top: 18px;
-            }
-
-            .footage__field:first-child {
-                margin-top: 0;
-            }
+        /* Second tab */
 
 
-            /* Second tab */
+        /* Third tab */
 
 
-            /* Third tab */
-
-
-            /* Fourth tab */
+        /* Fourth tab */
