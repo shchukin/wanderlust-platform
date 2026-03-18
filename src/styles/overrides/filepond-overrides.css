@@ -1,3 +1,22 @@
-/*.filepond--root .filepond--drop-label {*/
-/*    min-height: 400px;*/
-/*}*/
+.filepond--root .filepond--drop-label {
+    min-height: 150px;
+}
+
+.filepond--drip {
+    opacity: 100%;
+    background-color: #f6f8fb;
+    border: 1px dashed var(--black);
+    cursor: pointer;
+}
+
+.filepond--drop-label {
+    cursor: pointer;
+}
+
+.filepond--drop-label.filepond--drop-label label {
+    cursor: pointer;
+}
+
+.filepond:has(.filepond--drop-label:hover) .filepond--drip {
+    background-color: var(--hover-over-gray);
+}

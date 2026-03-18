@@ -19,7 +19,7 @@ FilePond.setOptions({
                 '<i class="icon">attach_file</i> ' +
             '</div>' +
             '<div class="attach__label">' +
-                'Click here to upload your Logo, or drag & drop' +
+                '<span class="link link--text-alike">Click here to upload your Logo</span>, or drag & drop' +
             '</div>' +
         '</div>'
     ,
@@ -29,7 +29,7 @@ FilePond.setOptions({
     acceptedFileTypes: ['image/png', 'image/jpeg', 'image/gif', 'application/pdf'],
 });
 
-const input = document.querySelector('input.filepond');
+const input = document.querySelector('[data-ref="filepond-demo"]');
 const pond = FilePond.create(input);
 
 /* Events */
