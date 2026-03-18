@@ -1,4 +1,6 @@
 .range {
+    position: relative;
+    --range-thumb-size: 18px;
 
 }
     .range__widget {
@@ -8,6 +10,17 @@
         height: 38px; /* height of touch area */
         background: transparent;
         cursor: pointer;
+    }
+
+    .range__output {
+        position: absolute;
+        top: -6px;
+        transform: translateX(-50%);
+        font-size: 12px;
+        line-height: 1;
+        color: var(--black);
+        pointer-events: none;
+        white-space: nowrap;
     }
 
     /* Трек — единый цвет во всех браузерах */
@@ -34,30 +47,30 @@
     .range__widget::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
-        width: 18px;
-        height: 18px;
+        width: var(--range-thumb-size);
+        height: var(--range-thumb-size);
         margin-top: -7px;      /* центрируем по высоте трека */
         background-color: var(--black);
         border-radius: 50%;
         cursor: pointer;
     }
 
-    .range::-moz-range-thumb {
+    .range__widget::-moz-range-thumb {
         -webkit-appearance: none;
         appearance: none;
-        width: 18px;
-        height: 18px;
+        width: var(--range-thumb-size);
+        height: var(--range-thumb-size);
         margin-top: -7px;      /* центрируем по высоте трека */
         background-color: var(--black);
         border-radius: 50%;
         cursor: pointer;
     }
 
-    .range::-ms-thumb {
+    .range__widget::-ms-thumb {
         -webkit-appearance: none;
         appearance: none;
-        width: 18px;
-        height: 18px;
+        width: var(--range-thumb-size);
+        height: var(--range-thumb-size);
         margin-top: -7px;      /* центрируем по высоте трека */
         background-color: var(--black);
         border-radius: 50%;
