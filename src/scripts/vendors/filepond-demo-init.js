@@ -1,15 +1,17 @@
-import * as FilePond from 'https://cdn.jsdelivr.net/npm/filepond@4.30.6/+esm';
-import FilePondPluginImagePreview from 'https://cdn.jsdelivr.net/npm/filepond-plugin-image-preview@4.6.11/+esm';
-import FilePondPluginFileValidateType from 'https://cdn.jsdelivr.net/npm/filepond-plugin-file-validate-type@1.2.8/+esm';
+import * as FilePond from 'https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.esm.min.js';
+import * as FilePondPluginImagePreview from 'https://cdn.jsdelivr.net/npm/filepond-plugin-image-preview@4.6.12/dist/filepond-plugin-image-preview.esm.min.js';
+import * as FilePondPluginFileValidateSize from 'https://cdn.jsdelivr.net/npm/filepond-plugin-file-validate-size@2.2.8/dist/filepond-plugin-file-validate-size.esm.min.js';
+import * as FilePondPluginFileValidateType  from 'https://cdn.jsdelivr.net/npm/filepond-plugin-file-validate-type@1.2.8/dist/filepond-plugin-file-validate-type.esm.min.js';
 
+// Регистрация плагинов
 FilePond.registerPlugin(
-    FilePondPluginImagePreview,
-    FilePondPluginFileValidateType
+    FilePondPluginImagePreview.default,
+    FilePondPluginFileValidateSize.default,
+    FilePondPluginFileValidateType.default
 );
 
-const inputElement = document.querySelector('.my-pond');
-
-const pond = FilePond.create(inputElement, {
+// Глобальные настройки
+FilePond.setOptions({
     credits: false,
     labelIdle:
         '<div class="attach">' +
@@ -21,26 +23,21 @@ const pond = FilePond.create(inputElement, {
             '</div>' +
         '</div>'
     ,
-    acceptedFileTypes: ['image/*'], // Валидация типов
-    allowMultiple: true,
-    imagePreviewHeight: 170,
-
-    server: {
-        url: '/api',
-        process: {
-            url: '/upload',
-            method: 'POST',
-            onload: (response) => {
-                console.log('Server response:', response);
-                return response.key;
-            }
-        },
-        revert: '/undo-upload'
-    }
+    allowMultiple: false,
+    maxFiles: 1,
+    maxFileSize: '10MB',
+    acceptedFileTypes: ['image/png', 'image/jpeg', 'image/gif', 'application/pdf'],
 });
 
-pond.on('processfile', (error, file) => {
-    if (!error) {
-        console.log('File processed successfully:', file.filename);
-    }
+const input = document.querySelector('input.filepond');
+const pond = FilePond.create(input);
+
+/* Events */
+pond.on('addfile', (err, file) => {
+    if (err) return console.error(err);
+    console.log('Added:', file.filename);
+});
+
+pond.on('removefile', (err, file) => {
+    console.log('Removed:', file.filename);
 });
