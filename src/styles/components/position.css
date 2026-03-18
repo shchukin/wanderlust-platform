@@ -49,6 +49,7 @@
 
             .position-text {
                 position: relative;
+                user-select: none;
             }
 
     .position__item-left-top {

@@ -1,0 +1,14 @@
+.tabs {
+
+}
+    .tabs__bodies {
+
+    }
+        .tabs__body {
+            display: none;
+        }
+
+        .tabs__body--current {
+            display: block;
+            animation: slide-down 500ms var(--ease-out-quint);
+        }
