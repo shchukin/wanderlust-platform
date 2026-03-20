@@ -26,7 +26,7 @@
             flex-grow: 1;
             min-width: 0; /* Override default "min-width: auto" so the flex item won't stretch over the flex (if filled with longer content) */
         }
-            .checkout__step {
+            .checkout__content-widget {
 
             }
 
@@ -50,12 +50,19 @@
             flex-shrink: 0;
             width: 50%;
         }
+            .checkout__aside-widget {
 
-        .checkout__aside--smaller {
-            width: 300px;
-        }
+            }
 
-        .checkout__aside--sticky .checkout__aside-inner {
-            position: sticky;
-            top: var(--header-height);
-        }
+
+.checkout__aside--smaller {
+    width: 300px;
+}
+
+.checkout__aside--sticky {
+
+}
+    .checkout__aside--sticky .checkout__aside-widget {
+        position: sticky;
+        top: var(--header-height);
+    }
