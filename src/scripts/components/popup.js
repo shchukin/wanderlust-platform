@@ -63,7 +63,7 @@ export const popup = () => {
     document.querySelectorAll('[data-popup-handler]').forEach((handler) => {
         handler.addEventListener('click', (event) => {
             event.preventDefault();
-            const selector = handler.getAttribute('href');
+            const selector = handler.getAttribute('data-popup-handler');
             const targetPopup = selector ? document.querySelector(selector) : null;
             if (targetPopup) {
                 popupShow(targetPopup);

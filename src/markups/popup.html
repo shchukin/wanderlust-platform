@@ -27,9 +27,13 @@
             <br>
             <br>
             <h1>popup</h1>
-            <br>
-            Skeleton:
-            <a data-popup-handler href="#foo">Beam me up!</a>
+            <p>
+                <br>
+                Skeleton:
+            </p>
+            <button data-popup-handler="#foo" type="button">
+                Open modal
+            </button>
 
 
             <div class="popup" id="foo">
@@ -47,7 +51,13 @@
 
             <br>
             <br>
-            <a data-popup-handler href="#bar">Beam me up!</a>
+            <p>
+                With <a href="window.html"><b><i>window</i></b></a> component
+            </p>
+
+            <button data-popup-handler="#bar" type="button">
+                Open modal
+            </button>
 
             <div class="popup" id="bar">
                 <div class="popup__container">
@@ -55,7 +65,7 @@
                         <div class="popup__slot">
 
                             <div class="window">
-                                <button class="window__close">
+                                <button class="window__close" data-close-popup>
                                     <i class="icon">close</i>
                                 </button>
                                 <div class="window__heading">
@@ -66,7 +76,7 @@
                                 </div>
                                 <div class="window__actions">
                                     <button class="button button--height-44px" type="button">Save</button>
-                                    <button class="button button--height-44px button--light-gray-outline" type="button" data-hystclose>Cancel</button>
+                                    <button class="button button--height-44px button--light-gray-outline" type="button" data-close-popup>Cancel</button>
                                 </div>
                             </div>
 
