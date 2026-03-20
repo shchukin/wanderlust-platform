@@ -1,6 +1,11 @@
 .checkout {
 
 }
+
+.checkout--lite {
+    --blue: var(--pink);
+}
+
     .checkout__heading {
 
     }
