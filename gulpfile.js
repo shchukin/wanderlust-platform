@@ -6,7 +6,6 @@ var stylelint = require('gulp-stylelint');
 var cleanCSS = require('gulp-clean-css');
 var postcss = require('gulp-postcss');
 var postcssPresetEnv = require('postcss-preset-env');
-var postcssHoverMediaFeature = require('postcss-hover-media-feature');
 var base64 = require('gulp-base64');
 var change = require('gulp-change');
 var esbuild = require('gulp-esbuild');
@@ -127,7 +126,6 @@ gulp.task('styles', function () {
 
     var processors = [
         postcssPresetEnv(),
-        postcssHoverMediaFeature()
     ];
 
     return gulp.src('src/styles/styles.css', {encoding: false})
