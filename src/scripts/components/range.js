@@ -31,10 +31,21 @@ export const range = () => {
              * by it's edge. So we need to mind it's width:
              */
             const inputWidth = input.getBoundingClientRect().width;
+            if (inputWidth <= 0) return;
             const left = percent * (inputWidth - thumbSize) + (thumbSize / 2);
 
             output.style.left = `${left}px`;
             output.style.transform = 'translateX(-50%)';
+        };
+
+
+        let rafId = null;
+        const scheduleUpdate = () => {
+            if (rafId) cancelAnimationFrame(rafId);
+            rafId = requestAnimationFrame(() => {
+                rafId = null;
+                update();
+            });
         };
 
         if (getComputedStyle(container).position === 'static') {
@@ -42,7 +53,12 @@ export const range = () => {
         }
 
         input.addEventListener('input', update);
-        window.addEventListener('resize', update);
-        update();
+        window.addEventListener('resize', scheduleUpdate);
+        window.addEventListener('load', scheduleUpdate, { once: true });
+        if (typeof ResizeObserver !== 'undefined') {
+            const ro = new ResizeObserver(scheduleUpdate);
+            ro.observe(input);
+        }
+        scheduleUpdate();
     });
 };
