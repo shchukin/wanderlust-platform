@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774032638">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774032638">
+        <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
+        <script type="module" src="../scripts/vendors.js?1774032638"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>callout</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css?1774032638">
+        <script type="module" src="../scripts/scripts.js?1774032638"></script>
+    </head>
+    <body>
+
+        <div style="max-width: 920px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>callout</h1>
+
+            <div class="callout">
+                <div class="callout__icon">
+                    <i class="icon">
+                        camera
+                    </i>
+                </div>
+                <div class="callout__message">
+                    <strong>Lorem ipsum dolor sit amet</strong> Consectetur adipisicing elit. Accusantium aliquid autem debitis ipsam.
+                </div>
+                <button class="callout__close" type="button">
+                    <i class="icon">close</i>
+                </button>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <h2>Icon size</h2>
+            <p>Visually some icons may look smaller. Adjust them with inline styles, like so:</p>
+            <pre>&lt;div class="callout__icon" <b>style="font-size: 24px; line-height: 24px;</b>"&gt;</pre>
+            <br>
+
+            <div class="callout">
+                <div class="callout__icon" style="font-size: 24px; line-height: 24px;">
+                    <i class="icon">
+                        brand_awareness
+                    </i>
+                </div>
+                <div class="callout__message">
+                    <strong>New editing features available!</strong> Check out the latest updates to streamline your editing process.
+                </div>
+                <button class="callout__close" type="button">
+                    <i class="icon">close</i>
+                </button>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+
+
+            <h2>callout--danger</h2>
+
+            <div class="callout callout--danger">
+                <div class="callout__icon">
+                    <i class="icon">
+                        sentiment_dissatisfied
+                    </i>
+                </div>
+                <div class="callout__message">
+                    <strong>You have a remaining balance of $125.98.</strong> Click here to complete the payment
+                </div>
+                <button class="callout__close" type="button">
+                    <i class="icon">close</i>
+                </button>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+    </body>
+</html>

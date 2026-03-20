@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774032638">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774032638">
+        <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
+        <script type="module" src="../scripts/vendors.js?1774032638"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>status</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css?1774032638">
+        <script type="module" src="../scripts/scripts.js?1774032638"></script>
+    </head>
+    <body style="background-color: white;">
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>status</h1>
+            <br>
+
+            <div class="status status--editing">
+                Editing
+            </div>
+
+            <br>
+
+            <div class="status status--internal-review">
+                Internal Review
+            </div>
+
+            <br>
+
+            <div class="status status--client-review">
+                Client Review
+            </div>
+
+            <br>
+
+            <div class="status status--under-revision">
+                Under Revision
+            </div>
+
+            <br>
+
+            <div class="status status--pending">
+                Pending / Pending Footage / Missing Footage
+            </div>
+
+
+            <br>
+
+            <div class="status status--rejected">
+                Rejected
+            </div>
+
+            <br>
+
+            <div class="status status--file-requested">
+                File Requested
+            </div>
+
+            <br>
+
+            <div class="status status--approved">
+                Approved
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <h2>With icons</h2>
+            <p>
+                Use any icons from the Materials Icon Font. Atm it's unclear what icons will represent what status,
+                so icons below are random.
+            </p>
+            <p>
+                Also note there is no spacing between icons and text.
+            </p>
+            <br>
+
+
+            <div class="status status--editing">
+                <i class="icon">edit</i>Editing
+            </div>
+
+            <br>
+
+            <div class="status status--internal-review">
+                <i class="icon">content_copy</i>Internal Review
+            </div>
+
+            <br>
+
+            <div class="status status--client-review">
+                <i class="icon">rotate_right</i>Client Review
+            </div>
+
+            <br>
+
+            <div class="status status--under-revision">
+                <i class="icon">refresh</i>Under Revision
+            </div>
+
+            <br>
+
+            <div class="status status--pending">
+                <i class="icon">circle</i>Pending / Pending Footage / Missing Footage
+            </div>
+
+
+            <br>
+
+            <div class="status status--rejected">
+                <i class="icon">star</i>Rejected
+            </div>
+
+            <br>
+
+            <div class="status status--file-requested">
+                <i class="icon">logout</i>File Requested
+            </div>
+
+            <br>
+
+            <div class="status status--approved">
+                <i class="icon">label</i>Approved
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Pending Icons</h2>
+            <p>
+                Unfortunately, there is no bullet icon in the font. So to make a single dot like the one below,
+                I had to write additional styles overriding the icon.
+            </p>
+            <p>
+                We still need to use <b><i>icon</i></b> class in here, so the sizes and spacings will be similar
+                to the rest of the set, but the icon itself is overwritten under <b><i>status--pending</i></b> class.
+            </p>
+
+            <div class="status status--pending">
+                <i class="icon">circle</i>Pending / Pending Footage / Missing Footage
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Clickable status</h2>
+            <p>
+                As far as I understand, admin can change the status, so it should be clickable.
+                Use <b><i>&lt;button&gt;</i></b> tag for that:
+            </p>
+
+
+            <button class="status status--rejected" type="button">
+                <i class="icon">star</i>Rejected
+            </button>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>
+                Statuses list
+            </h2>
+            <p>
+                Use a <b><i>&lt;div class="statuses-list"&gt;...&lt;/div&gt;</i></b> wrapper
+                when there is a list of them to give them similar clickable area and correct spacing
+                around first and last element.
+            </p>
+
+            <div class="statuses-list">
+                <button class="status status--editing" type="button">
+                    <i class="icon">edit</i>Editing
+                </button>
+                <button class="status status--internal-review" type="button">
+                    <i class="icon">content_copy</i>Internal Review
+                </button>
+                <button class="status status--client-review" type="button">
+                    <i class="icon">rotate_right</i>Client Review
+                </button>
+                <button class="status status--under-revision" type="button">
+                    <i class="icon">refresh</i>Under Revision
+                </button>
+                <button class="status status--pending" type="button">
+                    <i class="icon">circle</i>Pending
+                </button>
+                <button class="status status--rejected" type="button">
+                    <i class="icon">star</i>Rejected
+                </button>
+                <button class="status status--file-requested" type="button">
+                    <i class="icon">logout</i>File Requested
+                </button>
+                <button class="status status--approved" type="button">
+                    <i class="icon">label</i>Approved
+                </button>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+    </body>
+</html>

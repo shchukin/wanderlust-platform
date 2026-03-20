@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774032638">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774032638">
+        <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
+        <script type="module" src="../scripts/vendors.js?1774032638"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tom Select</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css?1774032638">
+        <script type="module" src="../scripts/scripts.js?1774032638"></script>
+    </head>
+    <body style="background-color: white;">
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>Tom Select</h1>
+            <p>
+                Please add <b><i>tom-select</i></b> class to all of them. This could be useful for styling,
+                if later on we need to apply custom styles.
+            </p>
+
+
+            <br>
+            <br>
+            <h2>Multi-select</h2>
+
+            <select data-ref="init-tom-select-multi" multiple placeholder="Pick up to 10 states">
+                <option value="">Select a state...</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="FL">Florida</option>
+                <option value="HI">Hawaii</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="OR">Oregon</option>
+                <option value="TX">Texas</option>
+                <option value="WA">Washington</option>
+            </select>
+
+            <br>
+
+            <select data-ref="init-tom-select-multi" multiple placeholder="Pick up to 10 states">
+                <option value="">Select a state...</option>
+                <option value="CA" selected>California</option>
+                <option value="CO">Colorado</option>
+                <option value="FL">Florida</option>
+                <option value="HI">Hawaii</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NY" selected>New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="OR">Oregon</option>
+                <option value="TX" selected>Texas</option>
+                <option value="WA">Washington</option>
+            </select>
+
+            <br>
+
+            <select data-ref="init-tom-select-multi" multiple placeholder="Pick up to 10 states">
+                <option value="">Select a state...</option>
+                <option value="CA" selected>California</option>
+                <option value="CO" selected>Colorado</option>
+                <option value="FL" selected>Florida</option>
+                <option value="HI" selected>Hawaii</option>
+                <option value="MA" selected>Massachusetts</option>
+                <option value="NY" selected>New York</option>
+                <option value="NC" selected>North Carolina</option>
+                <option value="OR" selected>Oregon</option>
+                <option value="TX" selected>Texas</option>
+                <option value="WA" selected>Washington</option>
+            </select>
+
+            <br>
+            <h3>Disabled</h3>
+
+
+            <select data-ref="init-tom-select-multi" multiple placeholder="Pick up to 10 states" disabled>
+                <option value="">Select a state...</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="FL">Florida</option>
+                <option value="HI">Hawaii</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="OR">Oregon</option>
+                <option value="TX">Texas</option>
+                <option value="WA">Washington</option>
+            </select>
+
+            <br>
+
+            <select data-ref="init-tom-select-multi" multiple placeholder="Pick up to 10 states" disabled>
+                <option value="">Select a state...</option>
+                <option value="CA" selected>California</option>
+                <option value="CO">Colorado</option>
+                <option value="FL">Florida</option>
+                <option value="HI">Hawaii</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NY" selected>New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="OR">Oregon</option>
+                <option value="TX" selected>Texas</option>
+                <option value="WA">Washington</option>
+            </select>
+
+            <br>
+
+            <select data-ref="init-tom-select-multi" multiple placeholder="Pick up to 10 states" disabled>
+                <option value="">Select a state...</option>
+                <option value="CA" selected>California</option>
+                <option value="CO" selected>Colorado</option>
+                <option value="FL" selected>Florida</option>
+                <option value="HI" selected>Hawaii</option>
+                <option value="MA" selected>Massachusetts</option>
+                <option value="NY" selected>New York</option>
+                <option value="NC" selected>North Carolina</option>
+                <option value="OR" selected>Oregon</option>
+                <option value="TX" selected>Texas</option>
+                <option value="WA" selected>Washington</option>
+            </select>
+
+
+            <br>
+            <h3>No typing</h3>
+            <p>
+                In addition to JS options, please also add <b><i>ts-styling-readonly</i></b> styles for hover effect and styling of the cursor.
+                You can do that via JS (as in this demo), or directly in HTML markup.
+            </p>
+
+            <select data-ref="init-tom-select-multi-static" multiple placeholder="Choose up to 10 destinations">
+                <option value="BCN">Barcelona</option>
+                <option value="LIS">Lisbon</option>
+                <option value="NAP">Naples</option>
+                <option value="OSL">Oslo</option>
+                <option value="PRG">Prague</option>
+            </select>
+
+            <p>
+                Though, you may just want to use a simple <a href="input.html"><b><i>input</i></b></a> component
+                for this specific case.
+            </p>
+
+
+            <br>
+            <h3>Clear button</h3>
+
+            <select data-ref="init-tom-select-multi-clear-button" multiple placeholder="Pick up to 10 states">
+                <option value="">Select a state...</option>
+                <option value="CA" selected>California</option>
+                <option value="CO">Colorado</option>
+                <option value="FL">Florida</option>
+                <option value="HI">Hawaii</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NY" selected>New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="OR">Oregon</option>
+                <option value="TX" selected>Texas</option>
+                <option value="WA">Washington</option>
+            </select>
+
+            <br>
+            <br>
+            <br>
+            <h2>Single Select</h2>
+
+            <select data-ref="init-tom-select-single" placeholder="Select a state...">
+                <option value="">Select a state...</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+            </select>
+
+            <br>
+            <h3>Disabled</h3>
+
+            <select data-ref="init-tom-select-single" placeholder="Select a state..." disabled>
+                <option value="">Select a state...</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+            </select>
+
+            <br>
+            <h3>No typing</h3>
+            <p>
+                In addition to JS options, please also add <b><i>ts-styling-readonly</i></b> styles for hover effect and styling of the cursor.
+                You can do that via JS (as in this demo), or directly in HTML markup.
+            </p>
+
+            <select data-ref="init-tom-select-single-static" placeholder="Pick a destination...">
+                <option value="PAR">Paris</option>
+                <option value="LON">London</option>
+                <option value="ROM">Rome</option>
+                <option value="BER">Berlin</option>
+            </select>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Tags (create on the fly)</h2>
+
+            <input data-ref="init-tom-select-tags" type="text" placeholder="Add tags: ui, docs, frontend">
+
+            <br>
+            <br>
+            <h2>Remote Loading (GitHub API)</h2>
+
+            <select data-ref="init-tom-select-remote" placeholder="Search for GitHub repository..."></select>
+
+
+
+            <br>
+            <br>
+            <h2>Custom Rendering</h2>
+            <p>
+                Init options in the dropdown with custom HTML:
+            </p>
+
+            <select data-ref="init-tom-select-approval" placeholder="Select"></select>
+
+            <br>
+
+            <select data-ref="init-tom-select-bonuses" placeholder="Select a value..."></select>
+
+            <br>
+            <br>
+            <h2>Clear variant</h2>
+            <p>
+                Unlike all of the exampels above this CSS only case. Add <b><i>ts-styling-clear-variant</i></b> for this kind of    styling:
+            </p>
+
+            <select class="ts-styling-clear-variant" data-ref="init-tom-select-bonuses" placeholder="Select a value..."></select>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>ts-styling-height-36px</h2>
+
+            <select class="ts-styling-height-36px" data-ref="init-tom-select-multi" multiple placeholder="Pick up to 10 states">
+                <option value="">Select a state...</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="FL">Florida</option>
+                <option value="HI">Hawaii</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="OR">Oregon</option>
+                <option value="TX">Texas</option>
+                <option value="WA">Washington</option>
+            </select>
+
+            <br>
+
+            <select class="ts-styling-height-36px" data-ref="init-tom-select-multi" multiple placeholder="Pick up to 10 states">
+                <option value="">Select a state...</option>
+                <option value="CA">California</option>
+                <option value="CO" selected>Colorado</option>
+                <option value="FL">Florida</option>
+                <option value="HI">Hawaii</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NY">New York</option>
+                <option value="NC" selected>North Carolina</option>
+                <option value="OR">Oregon</option>
+                <option value="TX" selected>Texas</option>
+                <option value="WA" selected>Washington</option>
+            </select>
+
+            <br>
+
+            <select class="ts-styling-height-36px" data-ref="init-tom-select-multi" multiple placeholder="Pick up to 10 states">
+                <option value="">Select a state...</option>
+                <option value="CA" selected>California</option>
+                <option value="CO" selected>Colorado</option>
+                <option value="FL" selected>Florida</option>
+                <option value="HI" selected>Hawaii</option>
+                <option value="MA" selected>Massachusetts</option>
+                <option value="NY" selected>New York</option>
+                <option value="NC" selected>North Carolina</option>
+                <option value="OR" selected>Oregon</option>
+                <option value="TX" selected>Texas</option>
+                <option value="WA" selected>Washington</option>
+            </select>
+
+            <br>
+            <br>
+            <br>
+            <h2>ts-styling-height-32px</h2>
+
+            <select class="ts-styling-height-32px" data-ref="init-tom-select-multi" multiple placeholder="Pick up to 10 states">
+                <option value="">Select a state...</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="FL">Florida</option>
+                <option value="HI">Hawaii</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="OR">Oregon</option>
+                <option value="TX">Texas</option>
+                <option value="WA">Washington</option>
+            </select>
+
+            <br>
+
+            <select class="ts-styling-height-32px" data-ref="init-tom-select-multi" multiple placeholder="Pick up to 10 states">
+                <option value="">Select a state...</option>
+                <option value="CA">California</option>
+                <option value="CO" selected>Colorado</option>
+                <option value="FL">Florida</option>
+                <option value="HI">Hawaii</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NY">New York</option>
+                <option value="NC" selected>North Carolina</option>
+                <option value="OR">Oregon</option>
+                <option value="TX" selected>Texas</option>
+                <option value="WA" selected>Washington</option>
+            </select>
+
+            <br>
+
+            <select class="ts-styling-height-32px" data-ref="init-tom-select-multi" multiple placeholder="Pick up to 10 states">
+                <option value="">Select a state...</option>
+                <option value="CA" selected>California</option>
+                <option value="CO" selected>Colorado</option>
+                <option value="FL" selected>Florida</option>
+                <option value="HI" selected>Hawaii</option>
+                <option value="MA" selected>Massachusetts</option>
+                <option value="NY" selected>New York</option>
+                <option value="NC" selected>North Carolina</option>
+                <option value="OR" selected>Oregon</option>
+                <option value="TX" selected>Texas</option>
+                <option value="WA" selected>Washington</option>
+            </select>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+    </body>
+</html>

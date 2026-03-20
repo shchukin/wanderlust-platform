@@ -1,0 +1,2463 @@
+<!DOCTYPE html>
+<html class="sidebar-expanded" lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774032638">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774032638">
+        <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
+        <script type="module" src="../scripts/vendors.js?1774032638"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wanderlust</title>
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+        <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#FFFFFF">
+
+        <!-- manifest -->
+        <link rel="manifest" href="../manifest.json">
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css?1774032638">
+        <script type="module" src="../scripts/scripts.js?1774032638"></script>
+
+    </head>
+    <body>
+
+        <div class="sidebar">
+            <div class="sidebar__logo">
+                Wanderlust
+            </div>
+            <div class="sidebar__nav">
+                <nav class="nav">
+                    <div class="nav__section">
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">grid_view</i>
+                                <div class="nav__label">Dashboard</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav__section">
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">new_label</i>
+                                <div class="nav__label">New Project</div>
+                            </div>
+                        </a>
+                        <button class="nav__more" type="button">
+                            Toggle sub menu
+                        </button>
+                        <div class="nav__sub-menu">
+                            <a class="nav__link" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">diamond_shine</i>
+                                    <div class="nav__label">Pro Project</div>
+                                </div>
+                            </a>
+                            <a class="nav__link" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">star</i>
+                                    <div class="nav__label">Lite Project</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav__section">
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">bookmark</i>
+                                <div class="nav__label">My Projects</div>
+                            </div>
+                        </a>
+                        <button class="nav__more" type="button">
+                            Toggle sub menu
+                        </button>
+                        <div class="nav__sub-menu">
+                            <a class="nav__link" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">cycle</i>
+                                    <div class="nav__label">All Projects</div>
+                                </div>
+                            </a>
+                            <a class="nav__link" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">rotate_right</i>
+                                    <div class="nav__label">In Progress (2)</div>
+                                </div>
+                            </a>
+                            <a class="nav__link nav__link--current" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">alarm_pause</i>
+                                    <div class="nav__label">Pending Feedback</div>
+                                </div>
+                            </a>
+                            <a class="nav__link" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">arrow_upload_progress</i>
+                                    <div class="nav__label">Pending Footage</div>
+                                </div>
+                            </a>
+                            <a class="nav__link" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">draft_orders</i>
+                                    <div class="nav__label">Drafts</div>
+                                </div>
+                            </a>
+                            <a class="nav__link" href="#">
+                                <div class="nav__container">
+                                    <i class="icon">done_all</i>
+                                    <div class="nav__label">Completed</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav__section">
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">mail</i>
+                                <div class="nav__label">Inbox</div>
+                            </div>
+                        </a>
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">handshake</i>
+                                <div class="nav__label">Onboarding Questionnaire</div>
+                            </div>
+                        </a>
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">cloud</i>
+                                <div class="nav__label">WanderDrive</div>
+                            </div>
+                        </a>
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">camera</i>
+                                <div class="nav__label">Technical Template</div>
+                            </div>
+                        </a>
+                        <a class="nav__link" href="#">
+                            <div class="nav__container">
+                                <i class="icon">redeem</i>
+                                <div class="nav__label">Gifts</div>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="sidebar__info">
+                <div class="info">
+                    <div class="info__background">
+                        <div class="info__pre-heading">
+                            Introducing
+                        </div>
+                        <div class="info__heading">
+                            AfterWrap<br> Socials
+                        </div>
+                        <div class="info__message">
+                            <div class="wysiwyg">
+                                <p>Reclaim your time by offloading your social media editing.</p>
+                                <p>We’ll cut, polish, and optimize your videos so you can focus on posting and growing your audience.</p>
+                            </div>
+                        </div>
+                        <div class="info__action">
+                            <button class="button button--height-44px">
+                                Learn more
+                                <i class="icon">east</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="sidebar-toggler">
+            <span class="sidebar-toggler__inner">
+                Toggle sidebar
+            </span>
+        </button>
+        <header class="header">
+            <div class="header__search">
+                <div class="search">
+                    <input class="search__input" type="text" placeholder="Search">
+                    <div class="search__filter">
+                        <button class="search__handler" type="button">
+                            <span class="search__output">All</span>
+                        </button>
+                        <div class="search__dropdown">
+                            <div class="menu">
+                                <a class="menu__item menu__item--current" href="#">
+                                    <i class="icon">settings</i>
+                                    All
+                                </a>
+                                <a class="menu__item" href="#">
+                                    <i class="icon">savings</i>
+                                    Lorem Ipsum
+                                </a>
+                                <a class="menu__item" href="#">
+                                    <i class="icon">logout</i>
+                                    Dolor Sit Amen
+                                </a>
+                                <div class="menu__close">
+                                    <button class="button button--height-32px button--black" type="button">
+                                        <i class="icon">close</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__operations">
+                <a class="header__action" href="#">
+                    <i class="icon">mail</i>
+                    <div class="header__action-counter">
+                        <div class="counter counter--bubble">2</div>
+                    </div>
+                </a>
+                <a class="header__action" href="#">
+                    <i class="icon">notifications_active</i>
+                    <div class="header__action-counter">
+                        <div class="counter counter--bubble counter--pink">999</div>
+                    </div>
+                </a>
+                <div class="header__new-project">
+                    <div class="create">
+                        <div class="create__handler">
+                            <button class="button button--height-44px" type="button">
+                                <i class="icon">add</i>
+                                New Project
+                            </button>
+                        </div>
+                        <div class="create__dropdown">
+                            <div class="create__variants">
+                                <a class="button" href="#">
+                                    <i class="icon">diamond_shine</i>
+                                    PRO Project
+                                </a>
+                                <a class="button" href="#">
+                                    <i class="icon">star</i>
+                                    PRO Project
+                                </a>
+                            </div>
+                            <div class="create__close">
+                                <button class="button button--height-32px button--black" type="button">
+                                    <i class="icon">close</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__user">
+                    <div class="user">
+                        <button class="user__handler" type="button">
+                            <div class="user__preview">
+                                <img class="user__photo"
+                                     srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                     src="../temp/avatars/avatar-40x40@1x.jpg"
+                                     width="40"
+                                     height="40"
+                                     alt=""
+                                >
+                            </div>
+                            <span class="user__name">
+                                Client Name
+                            </span>
+                        </button>
+                        <button class="user__edit" type="button">
+                            <i class="icon">edit</i>
+                        </button>
+                        <div class="user__dropdown">
+                            <div class="menu">
+                                <a class="menu__item menu__item--current" href="#">
+                                    <i class="icon">settings</i>
+                                    Manage Account
+                                </a>
+                                <a class="menu__item" href="#">
+                                    <i class="icon">savings</i>
+                                    WanderCoins
+                                </a>
+                                <a class="menu__item" href="#">
+                                    <i class="icon">logout</i>
+                                    Logout
+                                </a>
+                                <div class="menu__close">
+                                    <button class="button button--height-32px button--black" type="button">
+                                        <i class="icon">close</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <main class="content__body">
+                <div class="project">
+                    <div class="project__body">
+                        <div class="project__notifications">
+                            <div class="callout callout--danger">
+                                <div class="callout__icon">
+                                    <i class="icon">
+                                        sentiment_dissatisfied
+                                    </i>
+                                </div>
+                                <div class="callout__message">
+                                    <strong>You have a remaining balance of $125.98.</strong> Click here to complete the payment
+                                </div>
+                                <button class="callout__close" type="button">
+                                    <i class="icon">close</i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project__head">
+                            <div class="project__heading">
+                                <h1 class="title title--30px">
+                                    Ross & Rachel
+                                </h1>
+                            </div>
+                            <div class="project__actions">
+                                <div class="actions-menu">
+                                    <button class="button button--square button--light-gray-outline" type="button">
+                                        <i class="icon">notifications_active</i>
+                                    </button>
+                                    <button class="button button--square button--light-gray-outline" type="button">
+                                        <i class="icon">label</i>
+                                    </button>
+                                    <div class="dropdown">
+                                        <div class="dropdown__handler">
+                                            <button class="button button--square button--light-gray-outline" type="button">
+                                                <i class="icon">more_vert</i>
+                                            </button>
+                                        </div>
+                                        <div class="dropdown__body">
+                                            <div class="menu">
+                                                <a class="menu__item" href="#">
+                                                    <i class="icon">edit</i>
+                                                    Edit
+                                                </a>
+                                                <a class="menu__item" href="#">
+                                                    <i class="icon">forward</i>
+                                                    Lorem Ipsum
+                                                </a>
+                                                <a class="menu__item" href="#">
+                                                    <i class="icon">forward</i>
+                                                    Dolor Sit amen
+                                                </a>
+                                                <a class="menu__item menu__item--danger" href="#">
+                                                    <i class="icon">delete</i>
+                                                    Delete
+                                                </a>
+                                                <div class="menu__close">
+                                                    <button class="button button--height-32px button--black" type="button">
+                                                        <i class="icon">close</i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- temp -->
+                                &nbsp;&nbsp;&nbsp;&nbsp;of (if client):&nbsp;&nbsp;&nbsp;&nbsp;
+                                <!--/temp -->
+
+                                <a class="button button--height-36px" href="#">
+                                    <i class="icon">download</i>
+                                    Download Project Files
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project__summary">
+                            <div class="summary">
+                                <div class="summary__column">
+                                    <table class="summary__table">
+                                        <tbody class="summary__tbody">
+                                            <tr class="summary__row">
+                                                <th class="summary__cell summary__cell--heading">
+                                                    Project Status:
+                                                </th>
+                                                <td class="summary__cell summary__cell--value">
+                                                    <div class="status status--pending">Pending</div>
+                                                </td>
+                                                <td class="summary__cell summary__cell--actions">
+                                                    <button class="icon-action icon-action--32px" type="button">
+                                                        <i class="icon">refresh</i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr class="summary__row">
+                                                <th class="summary__cell summary__cell--heading">
+                                                    Project ID:
+                                                </th>
+                                                <td class="summary__cell summary__cell--value">
+                                                    #1243
+                                                </td>
+                                                <td class="summary__cell summary__cell--actions">
+                                                    <div class="copy" data-value="#1243">
+                                                        <button class="icon-action icon-action--32px" type="button">
+                                                            <i class="icon">content_copy</i>
+                                                        </button>
+                                                        <div class="copy__bubble">
+                                                            Copied
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="summary__row">
+                                                <th class="summary__cell summary__cell--heading">
+                                                    Date of Purchase:
+                                                </th>
+                                                <td class="summary__cell summary__cell--value">
+                                                    <a class="link--fake" name="fake-link-to-prevent-browsers-parsing">Aug 05, 2025</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="summary__row">
+                                                <th colspan="3" class="summary__cell summary__cell--section-heading">
+                                                    Event Details
+                                                </th>
+                                            </tr>
+                                            <tr class="summary__row">
+                                                <th class="summary__cell summary__cell--heading">
+                                                    Wedding Date:
+                                                </th>
+                                                <td class="summary__cell summary__cell--value">
+                                                    <a class="link--fake" name="fake-link-to-prevent-browsers-parsing">04 Oct, 2025</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="summary__row">
+                                                <th class="summary__cell summary__cell--heading">
+                                                    Event Duration:
+                                                </th>
+                                                <td class="summary__cell summary__cell--value">
+                                                    1-day
+                                                </td>
+                                            </tr>
+                                            <tr class="summary__row">
+                                                <th class="summary__cell summary__cell--heading">
+                                                    Project language:
+                                                </th>
+                                                <td class="summary__cell summary__cell--value">
+                                                    French
+                                                </td>
+                                            </tr>
+                                            <tr class="summary__row">
+                                                <th class="summary__cell summary__cell--heading">
+                                                    Delivery Date:
+                                                </th>
+                                                <td class="summary__cell summary__cell--value">
+                                                    <a class="link--fake" name="fake-link-to-prevent-browsers-parsing">Jan 05, 2026</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="summary__row">
+                                                <th class="summary__cell summary__cell--heading">
+                                                    Project Type:
+                                                </th>
+                                                <td class="summary__cell summary__cell--value">
+                                                    PRO
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="summary__column">
+                                    <table class="summary__table">
+                                        <tbody class="summary__tbody">
+                                            <tr class="summary__row">
+                                                <th class="summary__cell summary__cell--heading">
+                                                    Project Manager:
+                                                </th>
+                                                <td class="summary__cell summary__cell--value">
+                                                    <a class="link link--text-alike" href="#">Veera</a>
+                                                </td>
+                                                <td class="summary__cell summary__cell--actions">
+
+                                                </td>
+                                            </tr>
+                                            <tr class="summary__row">
+                                                <th class="summary__cell summary__cell--heading">
+                                                    Footage Delivery:
+                                                </th>
+                                                <td class="summary__cell summary__cell--value">
+                                                    Dropbox or GoogleDrive link
+                                                </td>
+                                                <td class="summary__cell summary__cell--actions">
+                                                    <button class="icon-action icon-action--32px" type="button">
+                                                        <i class="icon">edit</i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr class="summary__row">
+                                                <th class="summary__cell summary__cell--heading">
+                                                    Footage Size:
+                                                </th>
+                                                <td class="summary__cell summary__cell--value">
+                                                    <div class="summary__editing">
+                                                        <div class="input input--height-32px">
+                                                            <input class="input__widget" type="text" value="117 GB">
+                                                        </div>
+                                                        <button class="button button--height-32px button--square" type="button">
+                                                            <i class="icon">check</i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td class="summary__cell summary__cell--actions">
+                                                    <button class="icon-action icon-action--32px" type="button">
+                                                        <i class="icon">close</i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__navigation">
+                            <div class="inner-nav">
+                                <div class="inner-nav__scroll hide-scrollbar">
+                                    <div class="inner-nav__ribbon">
+                                        <a class="inner-nav__tab inner-nav__tab--current" href="#">
+                                            <div class="inner-nav__tab-label">Videos</div>
+                                        </a>
+                                        <a class="inner-nav__tab" href="#">
+                                            <div class="inner-nav__tab-label">Editor</div>
+                                        </a>
+                                        <a class="inner-nav__tab" href="#">
+                                            <div class="inner-nav__tab-label">References</div>
+                                        </a>
+                                        <a class="inner-nav__tab" href="#">
+                                            <div class="inner-nav__tab-label">Technical Template</div>
+                                        </a>
+                                        <a class="inner-nav__tab" href="#">
+                                            <div class="inner-nav__tab-label">Feedback</div>
+                                        </a>
+                                        <a class="inner-nav__tab" href="#">
+                                            <div class="inner-nav__tab-label">Payment</div>
+                                        </a>
+                                        <a class="inner-nav__tab" href="#">
+                                            <div class="inner-nav__tab-label">Notes</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__sub-page">
+
+                            <!-- temp -->
+                            <br>
+                            <br>
+                            <p>
+                                There are 7 tabs (subpages). Each created via it's own component:
+                                <br>- <b><i>videos-info</i></b>
+                                <br>- <b><i>technical-template</i></b>
+                                <br>- <b><i>references</i></b>
+                                <br>- <b><i>payment</i></b>
+                                <br>- <b><i>editor</i></b> (admin only)
+                                <br>- <b><i>feedback</i></b> (admin only)
+                                <br>- <b><i>notes</i></b> (admin only)
+                            </p>
+                            <p>
+                                In some cases, client and admin may have slightly different contains: different fields, different actions.
+                                But the layouting components are always the same.
+                            </p>
+                            <!--/temp -->
+
+                            <!-- temp -->
+                            <br>
+                            <h2>video-info</h2>
+                            <p>Client variant:</p>
+                            <!--/temp -->
+
+                            <div class="videos-info">
+                                <div class="videos-info__body">
+                                    <table class="table table--align-top">
+                                        <thead class="table__section table__section--head">
+                                            <tr class="table__row">
+                                                <th class="table__cell">
+                                                    <div class="table__label">Video Type</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Settings</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Reviews</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Status</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Actions</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table__section table__section--body">
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    Documentary Full Film
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="definitions">
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Resolution:</b>
+                                                            <div class="definitions__details">3840x2160 Letterbox <span class="nobr">(UHD 4K)</span></div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Creative FX:</b>
+                                                            <div class="definitions__details">No</div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Duration:</b>
+                                                            <div class="definitions__details">3-5 min</div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Extra Export:</b>
+                                                            <div class="definitions__details">No</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    1 / 2
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="statuses-list">
+                                                        <button class="status status--editing" type="button">
+                                                            <i class="icon">edit</i>Editing
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="described-actions-list">
+                                                        <button class="described-action" type="button">
+                                                            <div class="described-action__icon">
+                                                                <i class="icon">play_circle</i>
+                                                            </div>
+                                                            Watch Video
+                                                        </button>
+                                                        <button class="described-action" type="button">
+                                                            <div class="described-action__icon">
+                                                                <i class="icon">thumb_up</i>
+                                                            </div>
+                                                            Approve
+                                                        </button>
+                                                        <button class="described-action" type="button">
+                                                            <div class="described-action__icon">
+                                                                <i class="icon">thumb_down</i>
+                                                            </div>
+                                                            Request Revisions
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    Documentary Full Film
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="definitions">
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Resolution:</b>
+                                                            <div class="definitions__details">3840x2160 Letterbox <span class="nobr">(UHD 4K)</span></div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Creative FX:</b>
+                                                            <div class="definitions__details">No</div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Duration:</b>
+                                                            <div class="definitions__details">3-5 min</div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Extra Export:</b>
+                                                            <div class="definitions__details">No</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    1 / 2
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="statuses-list">
+                                                        <button class="status status--editing" type="button">
+                                                            <i class="icon">edit</i>Editing
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="described-actions-list">
+                                                        <button class="described-action" type="button">
+                                                            <div class="described-action__icon">
+                                                                <i class="icon">play_circle</i>
+                                                            </div>
+                                                            Watch Video
+                                                        </button>
+                                                        <button class="described-action" type="button">
+                                                            <div class="described-action__icon">
+                                                                <i class="icon">thumb_up</i>
+                                                            </div>
+                                                            Approve
+                                                        </button>
+                                                        <button class="described-action" type="button">
+                                                            <div class="described-action__icon">
+                                                                <i class="icon">thumb_down</i>
+                                                            </div>
+                                                            Request Revisions
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="videos-info__add">
+                                    <button class="button button--height-44px button--blue-outline button--panel" type="button">
+                                        <i class="icon">add</i>
+                                        Add Another Video, Save 5%
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- temp -->
+                            <br>
+                            <p>Admin variant (has more information):</p>
+                            <!--/temp -->
+
+                            <div class="videos-info">
+                                <div class="videos-info__body">
+                                    <table class="table table--align-top">
+                                        <thead class="table__section table__section--head">
+                                            <tr class="table__row">
+                                                <th class="table__cell">
+                                                    <div class="table__label">Video Type</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Settings</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Reviews</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Duration</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Status</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Actions</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table__section table__section--body">
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    <div class="project-price">
+                                                        <b class="project-price__title">
+                                                            Ceremony Clean Edit
+                                                        </b>
+                                                        <div class="project-price__info">
+                                                            <span class="project-price__heading">Price:</span> $684
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="definitions">
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Resolution:</b>
+                                                            <div class="definitions__details">3840x2160 Letterbox <span class="nobr">(UHD 4K)</span></div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Creative FX:</b>
+                                                            <div class="definitions__details">No</div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Duration:</b>
+                                                            <div class="definitions__details">3-5 min</div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Extra Export:</b>
+                                                            <div class="definitions__details">No</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="definitions">
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Internal:</b>
+                                                            <div class="definitions__details">01</div>
+                                                        </div>
+                                                        <div class="definitions__item">
+                                                            <b class="definitions__term">Client:</b>
+                                                            <div class="definitions__details">00</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    7 days
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="statuses-list">
+                                                        <button class="status status--editing" type="button">
+                                                            <i class="icon">edit</i>Editing
+                                                        </button>
+                                                        <button class="status status--internal-review" type="button">
+                                                            <i class="icon">content_copy</i>Internal Review
+                                                        </button>
+                                                        <button class="status status--client-review" type="button">
+                                                            <i class="icon">rotate_right</i>Client Review
+                                                        </button>
+                                                        <button class="status status--under-revision" type="button">
+                                                            <i class="icon">refresh</i>Under Revision
+                                                        </button>
+                                                        <button class="status status--pending" type="button">
+                                                            <i class="icon">circle</i>Pending
+                                                        </button>
+                                                        <button class="status status--rejected" type="button">
+                                                            <i class="icon">star</i>Rejected
+                                                        </button>
+                                                        <button class="status status--file-requested" type="button">
+                                                            <i class="icon">logout</i>File Requested
+                                                        </button>
+                                                        <button class="status status--approved" type="button">
+                                                            <i class="icon">label</i>Approved
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="actions-menu actions-menu--4-columns">
+                                                        <button class="button button--square button--light-gray-outline" type="button">
+                                                            <i class="icon">play_circle</i>
+                                                        </button>
+                                                        <button class="button button--square button--light-gray-outline" type="button">
+                                                            <i class="icon">edit</i>
+                                                        </button>
+                                                        <button class="button button--square button--light-gray-outline" type="button">
+                                                            <i class="icon">settings</i>
+                                                        </button>
+                                                        <button class="button button--square button--light-gray-outline" type="button">
+                                                            <i class="icon">delete</i>
+                                                        </button>
+                                                        <button class="button button--square button--light-gray-outline" type="button">
+                                                            <i class="icon">create_new_folder</i>
+                                                        </button>
+                                                        <button class="button button--square button--light-gray-outline" type="button">
+                                                            <i class="icon">visibility</i>
+                                                        </button>
+                                                        <button class="button button--square button--green" type="button">
+                                                            <i class="icon">thumb_up</i>
+                                                        </button>
+                                                        <button class="button button--square button--red" type="button">
+                                                            <i class="icon">thumb_down</i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="videos-info__add">
+                                    <button class="button button--height-44px button--blue-outline button--panel" type="button">
+                                        <i class="icon">add</i>
+                                    </button>
+                                </div>
+                            </div>
+
+
+
+                            <!-- temp -->
+                            <br>
+                            <h2>technical-template</h2>
+                            <p>Similar to both client and admin</p>
+                            <!--/temp -->
+
+                            <div class="technical-template">
+                                <table class="table table--align-top">
+                                    <thead class="table__section table__section--head">
+                                    <tr class="table__row">
+                                        <th class="table__cell">
+                                            <div class="table__label">Settings</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">LUTS</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Branding</div>
+                                        </th>
+                                        <th class="table__cell">
+                                            <div class="table__label">Font</div>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="table__section table__section--body">
+                                    <tr class="table__row">
+                                        <td class="table__cell">
+                                            <div class="definitions">
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Software:</b>
+                                                    <div class="definitions__details">FCPX</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Codec:</b>
+                                                    <div class="definitions__details">H264</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Compression:</b>
+                                                    <div class="definitions__details">Youtube 4k <span class="nobr">(35-45 mbps)</span></div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">FPS:</b>
+                                                    <div class="definitions__details">23,976</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="definitions">
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Name:</b>
+                                                    <div class="definitions__details">Zeeshan’s LUT</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Incidence:</b>
+                                                    <div class="definitions__details">No</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Type:</b>
+                                                    <div class="definitions__details">Corrective</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="definitions">
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">File:</b>
+                                                    <div class="definitions__details"><a class="link" href="#">Click here to download logo</a></div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Size:</b>
+                                                    <div class="definitions__details">10</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Appearance:</b>
+                                                    <div class="definitions__details">Opening</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Animation:</b>
+                                                    <div class="definitions__details">Other: I want the font to appear as if out of nowhere!</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell">
+                                            <div class="definitions">
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Name:</b>
+                                                    <div class="definitions__details">DM Sans</div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Link:</b>
+                                                    <div class="definitions__details"><a class="link" href="#">Click here to download</a></div>
+                                                </div>
+                                                <div class="definitions__item">
+                                                    <b class="definitions__term">Appearance:</b>
+                                                    <div class="definitions__details">Opening</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                            <!-- temp -->
+                            <br>
+                            <h2>references</h2>
+                            <p>Similar to both client and admin</p>
+                            <!--/temp -->
+
+                            <div class="references">
+                                <div class="references__column">
+                                    <div class="references__heading">
+                                        <h3 class="title">
+                                            Video References
+                                        </h3>
+                                    </div>
+                                    <div class="references__item">
+                                        <b class="references__definition">
+                                            Main reference
+                                        </b>
+                                        <div class="references__term">
+                                            <a class="link" href="#">https://galleries.vidflow.co/zvjn3w16123412fasdf32f23rfk23m4f24f23f4r2rf</a>
+                                        </div>
+                                    </div>
+                                    <div class="references__item">
+                                        <b class="references__definition">
+                                            Storytelling:
+                                        </b>
+                                        <div class="references__term">
+                                            <a class="link" href="#">https://www.instagram.com/reels/D12d3425rf23fd245f4f2d3op1234m235rfmo2p43m5fpo2</a>
+                                        </div>
+                                    </div>
+                                    <div class="references__item">
+                                        <b class="references__definition">
+                                            Video reference links for specific videos:
+                                        </b>
+                                        <div class="references__term">
+                                            -
+                                        </div>
+                                    </div>
+                                    <div class="references__item">
+                                        <div class="references__definition">
+                                            Observations video reference
+                                        </div>
+                                        <div class="references__term">
+                                            Please refer to the highlight video in the
+                                            main reference link, none of the others.
+                                        </div>
+                                    </div>
+                                    <div class="references__item">
+                                        <div class="references__definition">
+                                            Additional Notes for this project
+                                        </div>
+                                        <div class="references__term">
+                                            I'll take care of the opening title of the
+                                            couple. Just leave a spot open for me
+                                            to place it. Usually use a shot of the couple
+                                            as a backdrop. Use video references to
+                                            observe.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="references__column">
+                                    <div class="references__heading">
+                                        <h3 class="title">
+                                            Soundtrack References
+                                        </h3>
+                                    </div>
+                                    <div class="references__item">
+                                        <b class="references__definition">
+                                            Soundtrack:
+                                        </b>
+                                        <div class="references__term">
+                                            <a class="link" href="#">https://vimeo.com/11055ewee61939ndcasniduc8u2ncn298cn9123cjn0193nci3ec2r</a>
+                                        </div>
+                                    </div>
+                                    <div class="references__item">
+                                        <b class="references__definition">
+                                            Preferred music:
+                                        </b>
+                                        <div class="references__term">
+                                            <a class="link" href="#">https://vimeo.com/11055dsfdsf619323ircniu4nr9c24n50oin24cir0n2rcnu24r</a>
+                                        </div>
+                                    </div>
+                                    <div class="references__item">
+                                        <b class="references__definition">
+                                            Observations for referenced music:
+                                        </b>
+                                        <div class="references__term">
+                                            There's two songs. Open with the upbeat
+                                            song and second half will be the chill one.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- temp -->
+                            <br>
+                            <h2>payment</h2>
+                            <p>
+                                Client variant has Totals section and extra headings:
+                            </p>
+                            <!--/temp -->
+
+                            <div class="payment">
+                                <div class="payment__totals">
+                                    <div class="payment__totals-heading">
+                                        <h3 class="title">
+                                            Totals
+                                        </h3>
+                                    </div>
+                                    <div class="payment__list">
+                                        <div class="sheet">
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Subtotal</b>
+                                                <div class="sheet__value">$648</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Total Discounts</b>
+                                                <div class="sheet__value">-$84.70</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Total Surcharges</b>
+                                                <div class="sheet__value">$0.00</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Refunds</b>
+                                                <div class="sheet__value">$0.00</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Total Due</b>
+                                                <div class="sheet__value">$563.30</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Total Paid</b>
+                                                <div class="sheet__value">$563.30</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Balance Due</b>
+                                                <div class="sheet__value">$0.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment__payment-details">
+                                    <div class="payment__payment-details-heading">
+                                        <h3 class="title">
+                                            Payment Details
+                                        </h3>
+                                    </div>
+                                    <div class="payment__data">
+                                        <table class="
+                                            table
+                                            table--align-top
+                                            table--no-rows-separator
+                                            table--equal-columns
+                                        ">
+                                            <thead class="table__section table__section--head">
+                                                <tr class="table__row">
+                                                    <th class="table__cell">
+                                                        <div class="table__label">Date</div>
+                                                    </th>
+                                                    <th class="table__cell">
+                                                        <div class="table__label">Method</div>
+                                                    </th>
+                                                    <th class="table__cell">
+                                                        <div class="table__label">Amount</div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="table__section table__section--body">
+                                                <tr class="table__row">
+                                                    <td class="table__cell">
+                                                        <a class="date-time" name="fake-link-to-prevent-browser-parsing">22 Jul, 2025</a>
+                                                    </td>
+                                                    <td class="table__cell">
+                                                        Stripe
+                                                    </td>
+                                                    <td class="table__cell">
+                                                        $404.10
+                                                    </td>
+                                                </tr>
+                                                <tr class="table__row">
+                                                    <td class="table__cell">
+                                                        <a class="date-time" name="fake-link-to-prevent-browser-parsing">25 Sep, 2025</a>
+                                                    </td>
+                                                    <td class="table__cell">
+                                                        Payoneer
+                                                    </td>
+                                                    <td class="table__cell">
+                                                        $159.20
+                                                    </td>
+                                                </tr>
+                                                <tr class="table__row">
+                                                    <td class="table__cell">
+                                                        <a class="date-time" name="fake-link-to-prevent-browser-parsing">01 Dec, 2025</a>
+                                                    </td>
+                                                    <td class="table__cell">
+                                                        External
+                                                    </td>
+                                                    <td class="table__cell">
+                                                        $100.00
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <br>
+                            <p>
+                                Admin variant is simpler. Don't output <b><i>payment__totals</i></b> and <b><i>payment__payment-details-heading</i></b>:
+                            </p>
+
+                            <div class="payment">
+                                <div class="payment__payment-details">
+                                    <div class="payment__data">
+                                        <table class="
+                                            table
+                                            table--align-top
+                                            table--no-rows-separator
+                                        ">
+                                            <thead class="table__section table__section--head">
+                                            <tr class="table__row">
+                                                <th class="table__cell">
+                                                    <div class="table__label">Date</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Amount</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Method</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Description</div>
+                                                </th>
+                                                <th class="table__cell">
+                                                    <div class="table__label">Type</div>
+                                                </th>
+                                            </tr>
+                                            </thead>
+                                            <tbody class="table__section table__section--body">
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    <a class="date-time" name="fake-link-to-prevent-browser-parsing">
+                                                        <b class="date-time__date">16 Jul, 2025</b>
+                                                        <div class="date-time__time">03:12 PM</div>
+                                                    </a>
+                                                </td>
+                                                <td class="table__cell">
+                                                    $621
+                                                </td>
+                                                <td class="table__cell">
+                                                    Paypal
+                                                </td>
+                                                <td class="table__cell">
+                                                    Project ID: #1234 - Ross & Rachel
+                                                </td>
+                                                <td class="table__cell">
+                                                    Sale
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    <a class="date-time" name="fake-link-to-prevent-browser-parsing">
+                                                        <b class="date-time__date">30 Sep, 2025</b>
+                                                        <div class="date-time__time">06:49 PM</div>
+                                                    </a>
+                                                </td>
+                                                <td class="table__cell">
+                                                    $119
+                                                </td>
+                                                <td class="table__cell">
+                                                    Payoneer
+                                                </td>
+                                                <td class="table__cell">
+                                                    Payment to Miguel Aram Miranda Eliazarián
+                                                </td>
+                                                <td class="table__cell">
+                                                    Editor Expense
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    <a class="date-time" name="fake-link-to-prevent-browser-parsing">
+                                                        <b class="date-time__date">07 Oct, 2025</b>
+                                                        <div class="date-time__time">03:58 PM</div>
+                                                    </a>
+                                                </td>
+                                                <td class="table__cell">
+                                                    $142.80
+                                                </td>
+                                                <td class="table__cell">
+                                                    Payoneer
+                                                </td>
+                                                <td class="table__cell">
+                                                    Payment to Miguel Aram Miranda Eliazarián
+                                                </td>
+                                                <td class="table__cell">
+                                                    Editor Expense
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- temp -->
+                            <br>
+                            <h2>editor (admin only)</h2>
+                            <!--/temp -->
+
+                            <div class="editor">
+                                <section class="editor__summary">
+                                    <div class="editor__summary-heading">
+                                        <h1 class="title">
+                                            Talent Information
+                                        </h1>
+                                    </div>
+                                    <div class="editor__summary-actions">
+                                        <a class="button button--height-36px button--square button--light-gray-outline" href="#">
+                                            <i class="icon">search</i>
+                                        </a>
+                                        <a class="button button--height-36px button--square button--light-gray-outline" href="#">
+                                            <i class="icon">calendar_month</i>
+                                        </a>
+                                        <a class="button button--height-36px button--square button--light-gray-outline" href="#">
+                                            <i class="icon">account_balance</i>
+                                        </a>
+                                    </div>
+                                    <div class="editor__summary-body">
+                                        <div class="talent">
+                                            <a class="talent__preview" href="#">
+                                                <img class="talent__photo"
+                                                     srcset="../temp/avatars/avatar-150x150@2x.jpg 2x"
+                                                     src="../temp/avatars/avatar-150x150@1x.jpg"
+                                                     width="150"
+                                                     height="150"
+                                                     alt=""
+                                                >
+                                            </a>
+                                            <div class="talent__body">
+                                                <div class="talent__name">
+                                                    <h3 class="title">
+                                                        <a class="link link--text-alike" href="#">
+                                                            Zeeshan Syed
+                                                        </a>
+                                                    </h3>
+                                                    <button class="icon-action icon-action--32px" type="button">
+                                                        <i class="icon">north_east</i>
+                                                    </button>
+                                                </div>
+                                                <div class="talent__info">
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">location_on</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            Katy, Texas USA
+                                                        </div>
+                                                    </div>
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">event_available</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            Since December 15, 2015
+                                                        </div>
+                                                    </div>
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">mail</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            <div class="prefixed">
+                                                                <div class="prefixed__content">
+                                                                    <a class="link link--inverted-text-alike" href="mailto:zeeshan@wanderlust-videos.com">
+                                                                        zeeshan@wanderlust-videos.com
+                                                                    </a>
+                                                                </div>
+                                                                <div class="prefixed__action">
+                                                                    <div class="copy" data-value="zeeshan@wanderlust-videos.com">
+                                                                        <button class="icon-action icon-action--32px" type="button">
+                                                                            <i class="icon">content_copy</i>
+                                                                        </button>
+                                                                        <div class="copy__bubble">
+                                                                            Copied
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">diamond_shine</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            Final Cut Pro, DaVinci Resolve, Premier Pro
+                                                        </div>
+                                                    </div>
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">hourglass</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            8 hours/day
+                                                        </div>
+                                                    </div>
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">star</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            Semi-Senior
+                                                        </div>
+                                                    </div>
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">language</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            English, Spanish, Italian, French. Urdu
+                                                        </div>
+                                                    </div>
+                                                    <div class="talent__stat">
+                                                        <div class="talent__icon">
+                                                            <i class="icon">flag</i>
+                                                        </div>
+                                                        <div class="talent__param">
+                                                            --
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="editor__data">
+                                    <div class="numbers">
+                                        <section class="numbers__section">
+                                            <div class="numbers__heading">
+                                                <h3 class="title">Delivery Requirements</h3>
+                                            </div>
+                                            <div class="numbers__total">
+                                                $14.78&nbsp;<span class="gray">(16%)</span>
+                                            </div>
+                                            <table class="numbers__table">
+                                                <tbody class="numbers__tbody">
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            Detailed and complete footage review
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--value">
+                                                            $0&nbsp;<span class="gray">(4%)</span>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            Storytelling consistent with client's requests/style
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--value">
+                                                            $31.42&nbsp;<span class="gray">(34%)</span>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            Technical aspects consistent with the project brief
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--value">
+                                                            $0&nbsp;<span class="gray">(4%)</span>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            Export Neatness
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--value">
+                                                            $0&nbsp;<span class="gray">(4%)</span>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </section>
+                                        <section class="numbers__section">
+                                            <div class="numbers__heading">
+                                                <h3 class="title">Delivery Requirements</h3>
+                                            </div>
+                                            <div class="numbers__total">
+                                                $14.78&nbsp;<span class="gray">(16%)</span>
+                                            </div>
+                                            <table class="numbers__table">
+                                                <tbody class="numbers__tbody">
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            Delivery to quality assurance
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--editable-value">
+                                                            <select class="ts-styling-clear-variant" data-ref="init-tom-select-bonuses"></select>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            On-time Final delivery
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--editable-value">
+                                                            <select class="ts-styling-clear-variant" data-ref="init-tom-select-bonuses"></select>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            Revisions delivered before 72 hours
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--editable-value">
+                                                            <select class="ts-styling-clear-variant" data-ref="init-tom-select-bonuses"></select>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="numbers__row">
+                                                        <th class="numbers__cell numbers__cell--param">
+                                                            Project files approved within 48 hours
+                                                        </th>
+                                                        <td class="numbers__cell numbers__cell--editable-value">
+                                                            <select class="ts-styling-clear-variant" data-ref="init-tom-select-bonuses"></select>
+                                                        </td>
+                                                        <td class="numbers__cell numbers__cell--action">
+                                                            <select data-ref="init-tom-select-approval" placeholder="Select"></select>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </section>
+                                        <div class="numbers__report">
+                                            <div class="edit-notes">
+                                                <h4 class="edit-notes__heading">
+                                                    Report
+                                                </h4>
+                                                <div class="edit-notes__field">
+                                                    <div class="input input--expandable">
+                                                        <textarea class="input__widget" rows="5"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="edit-notes__submit">
+                                                    <button class="button button--black button--height-32px" type="button">
+                                                        Submit
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="numbers__report">
+                                            <div class="edit-notes">
+                                                <h4 class="edit-notes__heading">
+                                                    Report
+                                                </h4>
+                                                <div class="edit-notes__field">
+                                                    <div class="input input--expandable">
+                                                        <textarea class="input__widget" rows="5"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="edit-notes__submit">
+                                                    <button class="button button--black button--height-32px" type="button">
+                                                        Submit
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <section class="editor__payment">
+                                    <div class="editor__payment-heading">
+                                        <h3 class="title">Full Project Value</h3>
+                                    </div>
+                                    <div class="editor__payment-full-value">
+                                        <div class="title">$136.62</div>
+                                    </div>
+                                    <div class="editor__payment-details">
+                                        <div class="sheet sheet--sparse">
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Guaranteed Payout:</b>
+                                                <div class="sheet__value">$68.31</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Performance Payout:</b>
+                                                <div class="sheet__value">$13.66</div>
+                                            </div>
+                                            <div class="sheet__row">
+                                                <b class="sheet__param">Bonus:</b>
+                                                <div class="sheet__value">Peak Season 2026 - $0.00</div>
+                                            </div>
+                                            <div class="sheet__row sheet__row--total">
+                                                <b class="sheet__param">Total Payment:</b>
+                                                <div class="sheet__value">$81.97</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+
+
+                            <!-- temp -->
+                            <br>
+                            <h2>notes (admin only)</h2>
+                            <!--/temp -->
+
+                            <div class="notes">
+                                <div class="notes__item">
+                                    <div class="notes__heading">
+                                        <h2 class="title">Note title here</h2>
+                                    </div>
+                                    <div class="notes__info">
+                                        by <a class="link link--text-alike" href="#">Zeeshan Syed</a> - <a class="link link--fake" name="fake-link-to-prevent-browser-parsing">03 Jan, 2026 04:29 AM</a>
+                                    </div>
+                                    <div class="notes__actions">
+                                        <button class="button button--square button--height-36px button--light-gray-outline" type="button">
+                                            <span class="icon">edit</span>
+                                        </button>
+                                        <button class="button button--square button--height-36px button--light-gray-outline" type="button">
+                                            <span class="icon">delete</span>
+                                        </button>
+                                    </div>
+                                    <div class="notes__body">
+                                        <div class="wysiwyg wysiwyg--sparse">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <a href="#">ullamco laboris</a> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                            <ul>
+                                                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</li>
+                                                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</li>
+                                                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</li>
+                                            </ul>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <a href="#">ullamco laboris</a> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notes__add">
+                                    <button class="button button--height-44px button--blue-outline button--panel" type="button">
+                                        <i class="icon">add</i>
+                                        Add a Note
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <!-- temp -->
+                            <br>
+                            <h2>feedback (admin only)</h2>
+                            <!--/temp -->
+
+                            <div class="feedback__item">
+                                <div class="feedback__heading">
+                                    <h2 class="title">Customer Feedback</h2>
+                                </div>
+                                <div class="feedback__description">
+                                    Your feedback is highly valuable to us. We use your feedback to analyze each project and improve our services. Please rate every
+                                    aspect of your project using a 5-star method.
+                                </div>
+                                <div class="feedback__rating">
+                                    <div class="feedback__rating-table">
+                                        <table class="grading">
+                                            <tbody class="grading__section">
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Storytelling
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating">
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="storytelling-rating" value="5">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="storytelling-rating" value="4">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="storytelling-rating" value="3">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="storytelling-rating" value="2">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="storytelling-rating" value="1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Sound Editing
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating">
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="sound-editing-rating" value="5">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="sound-editing-rating" value="4">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="sound-editing-rating" value="3">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="sound-editing-rating" value="2">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="sound-editing-rating" value="1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Quality
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating">
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="quality-rating" value="5">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="quality-rating" value="4">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="quality-rating" value="3">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="quality-rating" value="2">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="quality-rating" value="1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="feedback__rating-table">
+                                        <table class="grading">
+                                            <tbody class="grading__section">
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Customer Services
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating">
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="customer-services-rating" value="5">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="customer-services-rating" value="4">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="customer-services-rating" value="3">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="customer-services-rating" value="2">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="customer-services-rating" value="1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Turnaround Time
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating">
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="turnaround-time-rating" value="5">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="turnaround-time-rating" value="4">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="turnaround-time-rating" value="3">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="turnaround-time-rating" value="2">
+                                                            </label>
+                                                            <label class="rating__label">
+                                                                <input class="rating__input" type="radio" name="turnaround-time-rating" value="1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="feedback__edit-comment">
+                                    <div class="commenting">
+                                        <div class="commenting__heading">
+                                            <h3 class="title title--18px">Leave us a comment</h3>
+                                        </div>
+                                        <div class="commenting__field">
+                                            <div class="input input--expandable">
+                                                <textarea class="input__widget" placeholder="Your message" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="commenting__permissions-description">
+                                            Please let us know if we can share your feedback, and how you'd like it to appear. We may feature comments on our website,
+                                            social media, email newsletters, or other promotional channels.
+                                        </div>
+                                        <div class="commenting__permissions-list">
+                                            <label class="
+                                                choice
+                                                choice--gray
+                                                choice--black-when-checked
+                                                choice--smaller
+                                                choice--full-width
+                                            ">
+                                                <input class="choice__widget" type="radio" name="permissions">
+                                                <div class="choice__icon choice__icon--unchecked">
+                                                    <i class="icon">radio_button_unchecked</i>
+                                                </div>
+                                                <div class="choice__icon choice__icon--checked">
+                                                    <i class="icon">radio_button_checked</i>
+                                                </div>
+                                                <div class="choice__label">
+                                                    I give Wanderlust Videos permission to share this comment with reference to my name or business, as relevant.
+                                                </div>
+                                            </label>
+                                            <label class="
+                                                choice
+                                                choice--gray
+                                                choice--black-when-checked
+                                                choice--smaller
+                                                choice--full-width
+                                            ">
+                                                <input class="choice__widget" type="radio" name="permissions">
+                                                <div class="choice__icon choice__icon--unchecked">
+                                                    <i class="icon">radio_button_unchecked</i>
+                                                </div>
+                                                <div class="choice__icon choice__icon--checked">
+                                                    <i class="icon">radio_button_checked</i>
+                                                </div>
+                                                <div class="choice__label">
+                                                    I give Wanderlust Videos permission to share this comment without referencing my name or business.
+                                                </div>
+                                            </label>
+                                            <label class="
+                                                choice
+                                                choice--gray
+                                                choice--black-when-checked
+                                                choice--smaller
+                                                choice--full-width
+                                            ">
+                                                <input class="choice__widget" type="radio" name="permissions">
+                                                <div class="choice__icon choice__icon--unchecked">
+                                                    <i class="icon">radio_button_unchecked</i>
+                                                </div>
+                                                <div class="choice__icon choice__icon--checked">
+                                                    <i class="icon">radio_button_checked</i>
+                                                </div>
+                                                <div class="choice__label">
+                                                    I do not give permission to share this comment.
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="commenting__submit">
+                                            <button class="button button--black button--height-32px" type="button">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback__item">
+                                <div class="feedback__heading">
+                                    <h2 class="title">Customer Feedback</h2>
+                                </div>
+                                <div class="feedback__rating">
+                                    <div class="feedback__rating-table">
+                                        <table class="grading">
+                                            <tbody class="grading__section">
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Storytelling
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating rating--output">
+                                                            <div class="rating__fill" style="width: 70%;"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Sound Editing
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating rating--output">
+                                                            <div class="rating__fill" style="width: 70%;"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Quality
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating rating--output">
+                                                            <div class="rating__fill" style="width: 70%;"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="feedback__rating-table">
+                                        <table class="grading">
+                                            <tbody class="grading__section">
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Customer Services
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating rating--output">
+                                                            <div class="rating__fill" style="width: 70%;"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="grading__row">
+                                                    <th class="grading__label">
+                                                        Turnaround Time
+                                                    </th>
+                                                    <td class="grading__value">
+                                                        <div class="rating rating--output">
+                                                            <div class="rating__fill" style="width: 70%;"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="feedback__comment">
+                                    Hey guys! forgot to leave a review on this one. This film truly blew me away. You guys did phenomenal and I had little to no notes for it. It's probably the first time anyone has ever edited my own footage and made me cry haha. Job well done folks.
+                                </div>
+                                <div class="feedback__permission">
+                                    <label class="
+                                        choice
+                                        choice--gray
+                                        choice--black-when-checked
+                                        choice--smaller
+                                        choice--full-width
+                                    ">
+                                        <input class="choice__widget" type="radio" checked>
+                                        <div class="choice__icon choice__icon--unchecked">
+                                            <i class="icon">radio_button_unchecked</i>
+                                        </div>
+                                        <div class="choice__icon choice__icon--checked">
+                                            <i class="icon">radio_button_checked</i>
+                                        </div>
+                                        <div class="choice__label">
+                                            I give Wanderlust Videos permission to share this comment without referencing my name or business.
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <section class="project__chat">
+                        <div class="threads">
+                            <div class="threads__heading">
+                                <h2 class="title">
+                                    Control Room
+                                </h2>
+                            </div>
+                            <div class="threads__navigation hide-scrollbar">
+                                <div class="threads__ribbon">
+                                    <div class="threads__tab threads__tab--current">
+                                        <div class="threads__person">
+                                            <div class="avatar">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                     width="22"
+                                                     height="22"
+                                                     alt=""
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="threads__person">
+                                            <div class="avatar">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                     width="22"
+                                                     height="22"
+                                                     alt=""
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="threads__name">
+                                            PM <> Client
+                                        </div>
+                                    </div>
+                                    <div class="threads__tab">
+                                        <div class="threads__person">
+                                            <div class="avatar">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                     width="22"
+                                                     height="22"
+                                                     alt=""
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="threads__person">
+                                            <div class="avatar">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                     width="22"
+                                                     height="22"
+                                                     alt=""
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="threads__name">
+                                            PM <> Editor
+                                        </div>
+                                    </div>
+                                    <div class="threads__tab">
+                                        <div class="threads__person">
+                                            <div class="avatar">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                     width="22"
+                                                     height="22"
+                                                     alt=""
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="threads__person">
+                                            <div class="avatar">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                     width="22"
+                                                     height="22"
+                                                     alt=""
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="threads__name">
+                                            PM <> QA
+                                        </div>
+                                    </div>
+                                    <div class="threads__tab">
+                                        <div class="threads__person">
+                                            <div class="avatar">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                     width="22"
+                                                     height="22"
+                                                     alt=""
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="threads__person">
+                                            <div class="avatar">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                     width="22"
+                                                     height="22"
+                                                     alt=""
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="threads__name">
+                                            QA <> Editor
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="threads__widget">
+                                <div class="messaging-window">
+                                    <div class="messaging-window__body">
+                                        <div class="messaging-window__ribbon">
+                                            <div class="message">
+                                                <div class="message__preview">
+                                                    <div class="avatar">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt=""
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="message__bubble">
+                                                    We have uploaded the first cut. Please take a moment to review it and let us know, if you have any notes for us. Thank you so much for your time!
+                                                </div>
+                                                <div class="message__time">
+                                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                                </div>
+                                                <div class="message__actions">
+                                                    <button class="message__show-actions">
+                                                        <i class="icon">more_vert</i>
+                                                    </button>
+                                                    <div class="message__dropdown">
+                                                        <div class="menu">
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to QA
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to Editor
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to both
+                                                            </a>
+                                                            <a class="menu__item menu__item--danger" href="#">
+                                                                <i class="icon">delete</i>
+                                                                Delete
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="message message--self">
+                                                <div class="message__preview">
+                                                    <div class="avatar">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt=""
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="message__bubble">
+                                                    Thanks Federica!
+                                                </div>
+                                                <div class="message__time">
+                                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                                </div>
+                                                <div class="message__actions">
+                                                    <button class="message__show-actions">
+                                                        <i class="icon">more_vert</i>
+                                                    </button>
+                                                    <div class="message__dropdown">
+                                                        <div class="menu">
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to QA
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to Editor
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to both
+                                                            </a>
+                                                            <a class="menu__item menu__item--danger" href="#">
+                                                                <i class="icon">delete</i>
+                                                                Delete
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="message">
+                                                <div class="message__preview">
+                                                    <div class="avatar">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt=""
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="message__bubble">
+                                                    We have uploaded the first cut. Please take a moment to review it and let us know, if you have any notes for us. Thank you so much for your time!
+                                                </div>
+                                                <div class="message__time">
+                                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                                </div>
+                                                <div class="message__actions">
+                                                    <button class="message__show-actions">
+                                                        <i class="icon">more_vert</i>
+                                                    </button>
+                                                    <div class="message__dropdown">
+                                                        <div class="menu">
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to QA
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to Editor
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to both
+                                                            </a>
+                                                            <a class="menu__item menu__item--danger" href="#">
+                                                                <i class="icon">delete</i>
+                                                                Delete
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="message message--self">
+                                                <div class="message__preview">
+                                                    <div class="avatar">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt=""
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="message__bubble">
+                                                    Thanks Federica!
+                                                </div>
+                                                <div class="message__time">
+                                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                                </div>
+                                                <div class="message__actions">
+                                                    <button class="message__show-actions">
+                                                        <i class="icon">more_vert</i>
+                                                    </button>
+                                                    <div class="message__dropdown">
+                                                        <div class="menu">
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to QA
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to Editor
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to both
+                                                            </a>
+                                                            <a class="menu__item menu__item--danger" href="#">
+                                                                <i class="icon">delete</i>
+                                                                Delete
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="message">
+                                                <div class="message__preview">
+                                                    <div class="avatar">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt=""
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="message__bubble">
+                                                    We have uploaded the first cut. Please take a moment to review it and let us know, if you have any notes for us. Thank you so much for your time!
+                                                </div>
+                                                <div class="message__time">
+                                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                                </div>
+                                                <div class="message__actions">
+                                                    <button class="message__show-actions">
+                                                        <i class="icon">more_vert</i>
+                                                    </button>
+                                                    <div class="message__dropdown">
+                                                        <div class="menu">
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to QA
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to Editor
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to both
+                                                            </a>
+                                                            <a class="menu__item menu__item--danger" href="#">
+                                                                <i class="icon">delete</i>
+                                                                Delete
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="message message--self">
+                                                <div class="message__preview">
+                                                    <div class="avatar">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt=""
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="message__bubble">
+                                                    Thanks Federica!
+                                                </div>
+                                                <div class="message__time">
+                                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                                </div>
+                                                <div class="message__actions">
+                                                    <button class="message__show-actions">
+                                                        <i class="icon">more_vert</i>
+                                                    </button>
+                                                    <div class="message__dropdown">
+                                                        <div class="menu">
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to QA
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to Editor
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to both
+                                                            </a>
+                                                            <a class="menu__item menu__item--danger" href="#">
+                                                                <i class="icon">delete</i>
+                                                                Delete
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="message">
+                                                <div class="message__preview">
+                                                    <div class="avatar">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt=""
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="message__bubble">
+                                                    We have uploaded the first cut. Please take a moment to review it and let us know, if you have any notes for us. Thank you so much for your time!
+                                                </div>
+                                                <div class="message__time">
+                                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                                </div>
+                                                <div class="message__actions">
+                                                    <button class="message__show-actions">
+                                                        <i class="icon">more_vert</i>
+                                                    </button>
+                                                    <div class="message__dropdown">
+                                                        <div class="menu">
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to QA
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to Editor
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to both
+                                                            </a>
+                                                            <a class="menu__item menu__item--danger" href="#">
+                                                                <i class="icon">delete</i>
+                                                                Delete
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="message message--self">
+                                                <div class="message__preview">
+                                                    <div class="avatar">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt=""
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="message__bubble">
+                                                    Thanks Federica!
+                                                </div>
+                                                <div class="message__time">
+                                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                                </div>
+                                                <div class="message__actions">
+                                                    <button class="message__show-actions">
+                                                        <i class="icon">more_vert</i>
+                                                    </button>
+                                                    <div class="message__dropdown">
+                                                        <div class="menu">
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to QA
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to Editor
+                                                            </a>
+                                                            <a class="menu__item" href="#">
+                                                                <i class="icon">forward</i>
+                                                                Forward to both
+                                                            </a>
+                                                            <a class="menu__item menu__item--danger" href="#">
+                                                                <i class="icon">delete</i>
+                                                                Delete
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="messaging-window__field">
+                                        <div class="messaging-window__widget">
+                                            <div class="enter">
+                                                <textarea class="enter__field" placeholder="Your message" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                        <button class="messaging-window__submit" type="button">
+                                            <i class="icon">send</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+    </body>
+</html>

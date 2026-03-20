@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774032638">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774032638">
+        <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
+        <script type="module" src="../scripts/vendors.js?1774032638"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>form</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css?1774032638">
+        <script type="module" src="../scripts/scripts.js?1774032638"></script>
+    </head>
+    <body>
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>form</h1>
+            <br>
+
+            <div class="form">
+                <div class="form__row">
+                    <div class="form__label">
+                        <label class="label label--inline" for="project-name">
+                            Project Name:
+                        </label>
+                    </div>
+                    <div class="form__field">
+                        <div class="form__widget">
+                            <div class="input">
+                                <input class="input__widget" type="text" id="project-name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__label">
+                        <label class="label label--inline" for="footage-size">
+                            Estimated Footage File Size:
+                        </label>
+                    </div>
+                    <div class="form__field form__field--halved">
+                        <div class="form__widget">
+                            <div class="input">
+                                <select class="input__widget" id="footage-size">
+                                    <option value="placeholder" selected>Choose</option>
+                                    <option>100GB</option>
+                                    <option>200GB</option>
+                                    <option>...</option>
+                                    <option>1TB (1000GB)</option>
+                                </select>
+                            </div>
+                            <div class="helper">
+                                Base price includes 1 TB (1000GB) footage file size
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__label">
+                        <label class="label label--inline" for="language">
+                            Language:
+                        </label>
+                    </div>
+                    <div class="form__field form__field--halved">
+                        <div class="form__widget">
+                            <div class="input">
+                                <select class="input__widget" id="language">
+                                    <option value="placeholder" selected>Choose</option>
+                                    <option>English</option>
+                                    <option>Spanish</option>
+                                    <option>...</option>
+                                    <option>Thai</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__label">
+                        <label class="label label--inline" for="editing-platform">
+                            Preferred Editing Platform:
+                        </label>
+                    </div>
+                    <div class="form__field">
+                        <div class="form__widget">
+                            <div class="input">
+                                <select class="input__widget" id="editing-platform">
+                                    <option value="placeholder" selected>Choose</option>
+                                    <option>DaVinchi</option>
+                                    <option>Spanish</option>
+                                    <option>...</option>
+                                    <option>FinalCut</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__label">
+                        <label class="label label--inline" for="event-duration">
+                            Event Duration:
+                        </label>
+                    </div>
+                    <div class="form__field form__field--halved">
+                        <div class="form__widget">
+                            <div class="input">
+                                <select class="input__widget" id="event-duration">
+                                    <option value="placeholder" selected>Choose</option>
+                                    <option>30 min</option>
+                                    <option>60 min</option>
+                                    <option>...</option>
+                                    <option>2 hours</option>
+                                </select>
+                            </div>
+                            <div class="helper">
+                                Base price includes 1 day
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__label">
+                        <label class="label label--inline" for="wedding-date">
+                            Wedding Date:
+                        </label>
+                    </div>
+                    <div class="form__field form__field--halved">
+                        <div class="form__widget">
+                            <div class="input">
+                                <input class="input__widget" type="text" id="wedding-date" placeholder="Choose">
+                                <div class="input__icon">
+                                    <i class="icon">calendar_month</i>
+                                </div>
+                            </div>
+                            <div class="helper">
+                                Base price includes 1 day
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Variant with button and two togglers</h2>
+            <p>
+                Note there are two togglers coming one after another.
+                Add <b><i>form__row--no-margin</i></b> class to the second one
+                to remove the margin between them:
+            </p>
+            <br>
+
+            <div class="form">
+                <div class="form__row">
+                    <div class="form__label">
+                        <b class="label label--inline">
+                            Color Grading
+                        </b>
+                    </div>
+                    <div class="form__field">
+                        <div class="form__widget">
+                            <label class="choice choice--toggler choice--blue-icon-when-checked">
+                                <input class="choice__widget" type="checkbox" checked>
+                                <div class="choice__icon choice__icon--unchecked">
+                                    <i class="icon">toggle_off</i>
+                                </div>
+                                <div class="choice__icon choice__icon--checked">
+                                    <i class="icon">toggle_on</i>
+                                </div>
+                                <div class="choice__label">
+                                    Yes
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__row form__row--no-margin">
+                    <div class="form__label">
+                        <b class="label label--inline">
+                            Creative Effects
+                        </b>
+                    </div>
+                    <div class="form__field">
+                        <div class="form__widget">
+                            <label class="choice choice--toggler choice--blue-icon-when-checked">
+                                <input class="choice__widget" type="checkbox">
+                                <div class="choice__icon choice__icon--unchecked">
+                                    <i class="icon">toggle_off</i>
+                                </div>
+                                <div class="choice__icon choice__icon--checked">
+                                    <i class="icon">toggle_on</i>
+                                </div>
+                                <div class="choice__label">
+                                    No
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__label">
+                        <label class="label label--inline" for="resolution-1">
+                            Resolution
+                        </label>
+                    </div>
+                    <div class="form__field">
+                        <div class="form__widget">
+                            <div class="input">
+                                <select class="input__widget" id="resolution-1">
+                                    <option value="placeholder">Resolution</option>
+                                    <option selected>3840x2160 Letterbox (UHD-4k)</option>
+                                    <option>3840x2160 Letterbox (UHD-4k)</option>
+                                    <option>...</option>
+                                    <option>3840x2160 Letterbox (UHD-4k)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__label">
+                        <label class="label label--inline" for="extra-export-1">
+                            Extra Export
+                        </label>
+                    </div>
+                    <div class="form__field">
+                        <div class="form__widget">
+                            <div class="input">
+                                <select class="input__widget" id="extra-export-1">
+                                    <option value="placeholder">Select</option>
+                                    <option>Foo</option>
+                                    <option>Bar</option>
+                                    <option>...</option>
+                                    <option>Baz</option>
+                                </select>
+                            </div>
+                            <div class="helper">
+                                Base price includes 1 TB (1000GB) footage file size
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__label">
+                        <label class="label label--inline" for="wedding-date">
+                            Total
+                        </label>
+                    </div>
+                    <div class="form__field form__field--halved">
+                        <div class="form__widget">
+                            <big style="font-weight: 500">$720</big>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__label">
+
+                    </div>
+                    <div class="form__field form__field--halved">
+                        <div class="form__widget">
+                            <button class="button" type="button">
+                                Update
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+    </body>
+</html>

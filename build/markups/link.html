@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774032638">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774032638">
+        <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
+        <script type="module" src="../scripts/vendors.js?1774032638"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>link</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css?1774032638">
+        <script type="module" src="../scripts/scripts.js?1774032638"></script>
+    </head>
+    <body style="background-color: white;">
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>link</h1>
+
+
+            <a class="link" href="#">Contacts</a>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>link--text-alike</h2>
+
+            <a class="link link--text-alike" href="#">Contacts</a>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>link--inverted-text-alike</h2>
+
+            <a class="link link--inverted-text-alike" href="#">Privacy Policy</a>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>link--no-hover</h2>
+            <p>
+                For the case when we <b>need</b> the functionality of <b><i>&lt;a&gt;</i></b>, but we don’t want to emphasize that it is actually a link.
+                For example, a link to a phone number:
+            </p>
+
+            <a class="link link--no-hover" href="tel:+71234567890">+7 (123) 456-78-90</a>
+
+            <br>
+            <br>
+
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>link--fake</h2>
+            <p>
+                For the case when we <b>don’t need</b> the functionality of <b><i>&lt;a&gt;</i></b>, but still must use it.
+            </p>
+            <p>
+                In certain cases browsers attempt to detect links where there are none.
+                For example, long sequences of digits can be mistaken as a phone number.
+                Some dates on the page can be interpreted as information suitable for adding to a calendar.
+                Or the user’s email on hos own page, which shouldn’t be clickable, can still be seen as a link to an email.
+            </p>
+            <p>
+                In these situations, browsers (especially mobile once) often wrap it with an <b><i>&lt;a&gt;</i></b> tag.
+                As a result default blue styling will be applied. To prevent this from happening,
+                we can add the <b><i>&lt;a&gt;</i></b> manually remove its styling:
+            </p>
+            <br>
+
+            <a class="link link--fake">4800004-4994</a>
+
+            <br>
+
+            <a class="link link--fake">March 13, 2023 at 16:20</a>
+
+            <br>
+
+            <a class="link link--fake">foobar@example.org</a>
+
+            <br>
+            <br>
+            <br>
+            <h2>With icon</h2>
+            <p>
+                Can't use normal styles here. Use inline <b><i>margin-left</i></b> and <b><i>margin-right</i></b> accordingly to icon position.
+                Also make sure there are no spaces or other separators between icon and text:
+            </p>
+
+            <a class="link" href="#">
+                <i class="icon" style="margin-right: 4px;">mail</i>Email
+            </a>
+
+            <br>
+            <br>
+            <a class="link" href="#">
+                Gift<i class="icon" style="margin-left: 4px;">redeem</i>
+            </a>
+
+
+            <br>
+            <br>
+            <h3>link--sup-icon</h3>
+
+            <a class="link link--sup-icon" href="#">
+                AfterWrap Studio<i class="icon" style="margin-left: 4px;">outbound</i>
+            </a>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Tags test</h2>
+
+
+            <div class="link" tabindex="0">div.link</div>
+
+            <span class="link" tabindex="0">span.link</span>
+
+            <label class="link" tabindex="0">label.link</label>
+
+            <a class="link" href="#">a.link</a>
+
+            <button class="link" type="button">button.link</button>
+
+            <input class="link" type="button" value="input.link">
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+    </body>
+</html>

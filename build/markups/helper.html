@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774032638">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774032638">
+        <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
+        <script type="module" src="../scripts/vendors.js?1774032638"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>helper</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css?1774032638">
+        <script type="module" src="../scripts/scripts.js?1774032638"></script>
+    </head>
+    <body style="background-color: white;">
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>helper</h1>
+            <p>
+                A simple line of helping text. It has the top padding set, and it meant
+                to be used with components such as <a href="input.html"><b><i>input</i></b></a>:
+            </p>
+
+
+            <div class="input">
+                <input class="input__widget" type="text" placeholder="First name">
+            </div>
+            <div class="helper">
+                Can’t be changed later
+            </div>
+
+
+
+            <br>
+            <p>
+                Notice that helper is placed after input (not inside). It makes helper component universal.
+                So it can be used with any other element:
+            </p>
+
+
+            <!-- temp -->
+            <div style="display: flex; align-items: center; justify-content: center; height: 200px; background-color: purple; color: white;">
+                Random element
+            </div>
+            <!--/temp -->
+
+            <div class="helper">
+                Changes will be saved automatically
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <h2>helper--error</h2>
+            <p>
+                Can be used for outputting error message. A few in a row is also possible:
+            </p>
+
+            <div class="input input--error">
+                <input class="input__widget" type="password" placeholder="Password" value="0xFoo">
+            </div>
+            <div class="helper helper--error">
+                Password is too short
+            </div>
+            <div class="helper helper--error">
+                Password must contain a special character
+            </div>
+            <div class="helper helper--error">
+                Password must be hard to guess: dates, phone numbers and names are not allowed and either it shouldn’t be based on public data
+            </div>
+            <div class="helper helper--error">
+                New password is similar to previous password
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.helper--smaller</h2>
+
+            <div class="input">
+                <input class="input__widget" type="text" id="promo-code">
+            </div>
+            <div class="helper helper--smaller">
+                Discount is only applied on cart total and cannot be combined with special offers, additional features.
+                Discount is only applied on cart total and cannot be combined with special offers, additional features & rush fee.
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+    </body>
+</html>

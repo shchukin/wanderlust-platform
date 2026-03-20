@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774032638">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774032638">
+        <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
+        <script type="module" src="../scripts/vendors.js?1774032638"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>messaging-window</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css?1774032638">
+        <script type="module" src="../scripts/scripts.js?1774032638"></script>
+    </head>
+    <body style="background-color: white;">
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>messaging-window</h1>
+            <p>
+                <i>See also <a href="message.html"><b><i>message</i></b></a>, <a href="enter.html"><b><i>enter</i></b></a></i>
+            </p>
+            <br>
+            <p>
+                This part of the chat will be reused on a few pages and in a different context.
+                So make a reusable component out of it.
+            </p>
+            <p>
+                From the CSS perspective please note it has <b><i>height: 100%</i></b>, so it has to be
+                placed in the context with a specified height.
+            </p>
+            <br>
+
+            <!-- temp -->
+            <div style="height: 600px;">
+            <!--/temp -->
+
+                <div class="messaging-window">
+                    <div class="messaging-window__body">
+                        <div class="messaging-window__ribbon">
+                            <div class="message">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    We have uploaded the first cut. Please take a moment to review it and let us know, if you have any notes for us. Thank you so much for your time!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message message--self">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    Thanks Federica!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    We have uploaded the first cut. Please take a moment to review it and let us know, if you have any notes for us. Thank you so much for your time!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message message--self">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    Thanks Federica!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    We have uploaded the first cut. Please take a moment to review it and let us know, if you have any notes for us. Thank you so much for your time!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message message--self">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    Thanks Federica!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    We have uploaded the first cut. Please take a moment to review it and let us know, if you have any notes for us. Thank you so much for your time!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message message--self">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    Thanks Federica!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="messaging-window__field">
+                        <div class="messaging-window__widget">
+                            <div class="enter">
+                                <textarea class="enter__field" placeholder="Your message" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <button class="messaging-window__submit" type="button">
+                            <i class="icon">send</i>
+                        </button>
+                    </div>
+                </div>
+
+            <!-- temp -->
+            </div>
+            <!--/temp -->
+
+
+            <br>
+            <br>
+            <br>
+            <p>
+                We have discussed that input field might be replaced by <b><i>WYSIWYG</i></b> editor,
+                so it is separated as the <a href="enter.html"><b><i>enter</i></b></a> component and can be removed:
+            </p>
+
+            <!-- temp -->
+            <div style="height: 600px;">
+            <!--/temp -->
+
+                <div class="messaging-window">
+                    <div class="messaging-window__body">
+                        <div class="messaging-window__ribbon">
+                            <div class="message">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    We have uploaded the first cut. Please take a moment to review it and let us know, if you have any notes for us. Thank you so much for your time!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message message--self">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    Thanks Federica!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    We have uploaded the first cut. Please take a moment to review it and let us know, if you have any notes for us. Thank you so much for your time!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message message--self">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    Thanks Federica!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    We have uploaded the first cut. Please take a moment to review it and let us know, if you have any notes for us. Thank you so much for your time!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message message--self">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    Thanks Federica!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    We have uploaded the first cut. Please take a moment to review it and let us know, if you have any notes for us. Thank you so much for your time!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message message--self">
+                                <div class="message__preview">
+                                    <div class="avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/avatars/avatar-40x40@2x.jpg 2x"
+                                             src="../temp/avatars/avatar-40x40@1x.jpg"
+                                             width="40"
+                                             height="40"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="message__bubble">
+                                    Thanks Federica!
+                                </div>
+                                <div class="message__time">
+                                    <a class="link link--fake">21 Sep, 2025 07:31 PM</a>
+                                </div>
+                                <div class="message__actions">
+                                    <button class="message__show-actions">
+                                        <i class="icon">more_vert</i>
+                                    </button>
+                                    <div class="message__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to QA
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to Editor
+                                            </a>
+                                            <a class="menu__item" href="#">
+                                                <i class="icon">forward</i>
+                                                Forward to both
+                                            </a>
+                                            <a class="menu__item menu__item--danger" href="#">
+                                                <i class="icon">delete</i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="messaging-window__field">
+                        <div class="messaging-window__widget">
+                            <!-- temp -->
+                            <div style="background: purple; color: white; height: 100px; display: flex; align-items: center; justify-content: center;">Init WYSIWYG here</div>
+                            <!-- temp -->
+                        </div>
+                        <button class="messaging-window__submit" type="button">
+                            <i class="icon">send</i>
+                        </button>
+                    </div>
+                </div>
+
+            <!-- temp -->
+            </div>
+            <!--/temp -->
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+    </body>
+</html>
