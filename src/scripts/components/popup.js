@@ -31,17 +31,17 @@ export const popup = () => {
      * Popup
      */
 
-    const popupShow = (popup) => {
+    const popupShow = ($popup) => {
         lockPage();
-        if (popup) {
-            popup.classList.add('popup--visible');
-            popup.scrollTop = 0;
+        if ($popup) {
+            $popup.classList.add('popup--visible');
+            $popup.scrollTop = 0;
         }
     };
 
-    const popupHide = (popup) => {
-        if (!popup) { // in case of Esc or something
-            popup = document.querySelectorAll('.popup');
+    const popupHide = ($popup) => {
+        if (!$popup) { // in case of Esc or something
+            $popup = document.querySelectorAll('.popup');
         }
 
         const hideOne = (element) => {
@@ -50,49 +50,44 @@ export const popup = () => {
             unlockPage();
         };
 
-        if (popup instanceof NodeList || Array.isArray(popup)) {
-            popup.forEach((item) => hideOne(item));
+        if ($popup instanceof NodeList || Array.isArray($popup)) {
+            $popup.forEach((item) => hideOne(item));
             return;
         }
 
-        hideOne(popup);
+        hideOne($popup);
     };
 
-    /* show popup by handler click */
 
-    document.querySelectorAll('[data-popup-handler]').forEach((handler) => {
-        handler.addEventListener('click', (event) => {
+
+    /* Clicks */
+
+    document.addEventListener('click', (event) => {
+        const handler = event.target.closest('[data-popup-handler]');
+        if (handler) {
             event.preventDefault();
             const selector = handler.getAttribute('data-popup-handler');
             const targetPopup = selector ? document.querySelector(selector) : null;
             if (targetPopup) {
                 popupShow(targetPopup);
             }
-        });
-    });
+            return;
+        }
 
-
-    /* hide popup by window close click */
-
-    document.querySelectorAll('[data-close-popup]').forEach((closeButton) => {
-        closeButton.addEventListener('click', (event) => {
+        const closeButton = event.target.closest('[data-close-popup]');
+        if (closeButton) {
             event.preventDefault();
             const parentPopup = closeButton.closest('.popup');
             if (parentPopup) {
                 popupHide(parentPopup);
             }
-        });
-    });
+            return;
+        }
 
-
-    /* hide popup by overlay click */
-
-    document.querySelectorAll('.popup').forEach((popupEl) => {
-        popupEl.addEventListener('click', (event) => {
-            if (!event.target.closest('.popup__slot')) {
-                popupHide(document.querySelectorAll('.popup'));
-            }
-        });
+        const popupEl = event.target.closest('.popup');
+        if (popupEl && !event.target.closest('.popup__slot')) {
+            popupHide(document.querySelectorAll('.popup'));
+        }
     });
 
 
