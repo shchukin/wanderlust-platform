@@ -62,9 +62,9 @@
 }
 
 
-
 .ts-wrapper.single .ts-control {
 	appearance: none;
+	flex-wrap: nowrap; /* there was a bug of input jumping to the new raw */
 	padding-left: var(--input-h-padding);
 	padding-right: 38px;
 	background-image: url("../../images/keyboard_arrow_down.svg") !important;
@@ -73,6 +73,9 @@
 	background-position: right 10px center !important;
 	cursor: pointer;
 }
+	.ts-wrapper.single .ts-control > input {
+		min-width: 1px; /* there was a bug of input jumping to the new raw */
+	}
 
 
 /* Disabled */
