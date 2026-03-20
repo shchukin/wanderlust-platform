@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css">
+        <script type="module" src="../scripts/vendors.js"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>tabs</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script type="module" src="../scripts/scripts.js"></script>
+    </head>
+    <body style="background-color: white;">
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>tabs</h1>
+            <br>
+
+            <p>
+                First look onto <a href="checkboxes-menu.html">checkboxes-menu</a> component as
+                it is used inside.
+            </p>
+            <p>
+                These <b><i></i></b> are more of a java script component.
+            </p>
+
+
+            <div class="tabs">
+                <div class="tabs__tags">
+                    <div class="checkboxes-menu checkboxes-menu--two-columns">
+                        <div class="checkboxes-menu__item">
+                            <label class="
+                                choice choice--nowrap
+                                choice--input-alike
+                                choice--full-width
+                                choice--blue-when-checked
+                            ">
+                                <input class="choice__widget" type="radio" name="footage-source" data-tab-target="drive-shipping" checked>
+                                <div class="choice__icon choice__icon--unchecked">
+                                    <i class="icon">radio_button_unchecked</i>
+                                </div>
+                                <div class="choice__icon choice__icon--checked">
+                                    <i class="icon">radio_button_checked</i>
+                                </div>
+                                <div class="choice__label">
+                                    I’ll ship my hard drive to you
+                                </div>
+                            </label>
+                        </div>
+                        <div class="checkboxes-menu__item">
+                            <label class="
+                                choice choice--nowrap
+                                choice--input-alike
+                                choice--full-width
+                                choice--blue-when-checked
+                            ">
+                                <input class="choice__widget" type="radio" name="footage-source" data-tab-target="cloud-storage">
+                                <div class="choice__icon choice__icon--unchecked">
+                                    <i class="icon">radio_button_unchecked</i>
+                                </div>
+                                <div class="choice__icon choice__icon--checked">
+                                    <i class="icon">radio_button_checked</i>
+                                </div>
+                                <div class="choice__label">
+                                    External Link (Google Drive, Dropbox etc.)
+                                </div>
+                            </label>
+                        </div>
+                        <div class="checkboxes-menu__item">
+                            <label class="
+                                choice choice--nowrap
+                                choice--input-alike
+                                choice--full-width
+                                choice--blue-when-checked
+                            ">
+                                <input class="choice__widget" type="radio" name="footage-source">
+                                <div class="choice__icon choice__icon--unchecked">
+                                    <i class="icon">radio_button_unchecked</i>
+                                </div>
+                                <div class="choice__icon choice__icon--checked">
+                                    <i class="icon">radio_button_checked</i>
+                                </div>
+                                <div class="choice__label">
+                                    Upload to WanderDrive
+                                </div>
+                            </label>
+                        </div>
+                        <div class="checkboxes-menu__item">
+                            <label
+                                class="choice choice--nowrap
+                                   choice--input-alike
+                                   choice--full-width
+                                   choice--blue-when-checked
+                            ">
+                                <input class="choice__widget" type="radio" name="footage-source">
+                                <div class="choice__icon choice__icon--unchecked">
+                                    <i class="icon">radio_button_unchecked</i>
+                                </div>
+                                <div class="choice__icon choice__icon--checked">
+                                    <i class="icon">radio_button_checked</i>
+                                </div>
+                                <div class="choice__label">
+                                    I’m not sure yet
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__bodies">
+                    <div class="tabs__body tabs__body--current" data-tab-body="drive-shipping">
+1
+                    </div>
+                    <div class="tabs__body" data-tab-body="cloud-storage">
+2
+                    </div>
+                    <div class="tabs__body" data-tab-body="cloud-storage">
+3
+                    </div>
+                    <div class="tabs__body" data-tab-body="cloud-storage">
+4
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+    </body>
+</html>
