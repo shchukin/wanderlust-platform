@@ -30,24 +30,99 @@
             <br>
 
             <p>
-                First look onto <a href="checkboxes-menu.html">checkboxes-menu</a> component as
-                it is used inside.
+                Also check <a href="checkboxes-menu.html"><b><i>checkboxes-menu</i></b></a> and <a href="choice.html"><b><i>choice</i></b></a> component as theya are being used inside.
             </p>
             <p>
-                These <b><i></i></b> are more of a java script component.
+                This <b><i>tabs</i></b> component is more of a java script component.
             </p>
+            <p>
+                Unlike traditional tabs, we use radio buttons here instead of normal buttons.
+                Those are form elements and can also be send via form submission,
+                to indicate user's choice.
+            </p>
+            <br>
+            <br>
 
 
             <div class="tabs">
-                <div class="tabs__tags">
+                <div class="tabs__navigation">
+                    <div class="checkboxes-menu">
+                        <div class="checkboxes-menu__item">
+                            <label class="choice choice--input-alike choice--full-width choice--blue-when-checked">
+                                <input class="choice__widget" type="radio" name="visuals-source" data-tab-target="defaults" checked>
+                                <div class="choice__icon choice__icon--unchecked">
+                                    <i class="icon">radio_button_unchecked</i>
+                                </div>
+                                <div class="choice__icon choice__icon--checked">
+                                    <i class="icon">radio_button_checked</i>
+                                </div>
+                                <div class="choice__label">
+                                    Wanderlust Videos Defaults
+                                </div>
+                            </label>
+                        </div>
+                        <div class="checkboxes-menu__item">
+                            <label class="choice choice--input-alike choice--full-width choice--blue-when-checked">
+                                <input class="choice__widget" type="radio" name="visuals-source" data-tab-target="previous">
+                                <div class="choice__icon choice__icon--unchecked">
+                                    <i class="icon">radio_button_unchecked</i>
+                                </div>
+                                <div class="choice__icon choice__icon--checked">
+                                    <i class="icon">radio_button_checked</i>
+                                </div>
+                                <div class="choice__label">
+                                    Your Previous Videos
+                                </div>
+                            </label>
+                        </div>
+                        <div class="checkboxes-menu__item">
+                            <label class="choice choice--input-alike choice--full-width choice--blue-when-checked">
+                                <input class="choice__widget" type="radio" name="visuals-source" data-tab-target="custom">
+                                <div class="choice__icon choice__icon--unchecked">
+                                    <i class="icon">radio_button_unchecked</i>
+                                </div>
+                                <div class="choice__icon choice__icon--checked">
+                                    <i class="icon">radio_button_checked</i>
+                                </div>
+                                <div class="choice__label">
+                                    Custom Referencess
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__bodies">
+                    <div class="tabs__item tabs__item--current" data-tab-body="defaults">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias at autem beatae blanditiis delectus dolor dolores enim ex excepturi facere facilis fugit ipsam iure laudantium magni molestiae mollitia natus nisi non obcaecati officiis optio perspiciatis porro praesentium, quibusdam ratione reiciendis repudiandae rerum, sint sit totam.
+                    </div>
+                    <div class="tabs__item" data-tab-body="previous">
+                        Ullam, veniam vitae voluptas voluptatum. Adipisci eveniet exercitationem fuga perspiciatis porro repellendus voluptates voluptatibus. Assumenda dolor et ipsa iure laborum magnam perspiciatis ratione tempora? Beatae facere facilis itaque quas repellendus repudiandae unde voluptates voluptatibus. Ab accusamus atque autem blanditiis cumque debitis doloribus ea facilis illum labore minus modi omnis perferendis quae quaerat quam quasi quo quod sit, vitae! Alias aperiam autem consectetur.
+                    </div>
+                    <div class="tabs__item" data-tab-body="custom">
+                        Provident quae quod quos ratione repudiandae sed soluta tenetur vero vitae voluptas, voluptate! A ad aliquid, ipsum, itaque nobis nostrum, omnis perferendis placeat praesentium quasi rem soluta voluptas. Ab ad adipisci alias architecto beatae blanditiis commodi dolorem eaque esse ex excepturi fugit inventore laudantium, maxime, mollitia neque nesciunt non nostrum obcaecati odio officiis pariatur porro provident quasi quia quis voluptates! Dolorum facere nemo nesciunt possimus repellat voluptatum
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <p>
+                Some <b><i>tabs__item</i></b> can be removed, and that's fine. Corresponding radio buttons will be used just as a form elements:
+            </p>
+            <br>
+
+            <div class="tabs">
+                <div class="tabs__navigation">
                     <div class="checkboxes-menu checkboxes-menu--two-columns">
                         <div class="checkboxes-menu__item">
                             <label class="
-                                choice choice--nowrap
-                                choice--input-alike
-                                choice--full-width
-                                choice--blue-when-checked
-                            ">
+                                                            choice choice--nowrap
+                                                            choice--input-alike
+                                                            choice--full-width
+                                                            choice--blue-when-checked
+                                                        ">
                                 <input class="choice__widget" type="radio" name="footage-source" data-tab-target="drive-shipping" checked>
                                 <div class="choice__icon choice__icon--unchecked">
                                     <i class="icon">radio_button_unchecked</i>
@@ -62,11 +137,11 @@
                         </div>
                         <div class="checkboxes-menu__item">
                             <label class="
-                                choice choice--nowrap
-                                choice--input-alike
-                                choice--full-width
-                                choice--blue-when-checked
-                            ">
+                                                            choice choice--nowrap
+                                                            choice--input-alike
+                                                            choice--full-width
+                                                            choice--blue-when-checked
+                                                        ">
                                 <input class="choice__widget" type="radio" name="footage-source" data-tab-target="cloud-storage">
                                 <div class="choice__icon choice__icon--unchecked">
                                     <i class="icon">radio_button_unchecked</i>
@@ -81,11 +156,11 @@
                         </div>
                         <div class="checkboxes-menu__item">
                             <label class="
-                                choice choice--nowrap
-                                choice--input-alike
-                                choice--full-width
-                                choice--blue-when-checked
-                            ">
+                                                            choice choice--nowrap
+                                                            choice--input-alike
+                                                            choice--full-width
+                                                            choice--blue-when-checked
+                                                        ">
                                 <input class="choice__widget" type="radio" name="footage-source">
                                 <div class="choice__icon choice__icon--unchecked">
                                     <i class="icon">radio_button_unchecked</i>
@@ -101,10 +176,11 @@
                         <div class="checkboxes-menu__item">
                             <label
                                 class="choice choice--nowrap
-                                   choice--input-alike
-                                   choice--full-width
-                                   choice--blue-when-checked
-                            ">
+                                                                   choice--input-alike
+                                                                   choice--full-width
+                                                                   choice--blue-when-checked
+                                                            "
+                            >
                                 <input class="choice__widget" type="radio" name="footage-source">
                                 <div class="choice__icon choice__icon--unchecked">
                                     <i class="icon">radio_button_unchecked</i>
@@ -120,17 +196,11 @@
                     </div>
                 </div>
                 <div class="tabs__bodies">
-                    <div class="tabs__body tabs__body--current" data-tab-body="drive-shipping">
-1
+                    <div class="tabs__item tabs__item--current" data-tab-body="drive-shipping">
+                        Neque odio quae qui quos repellat soluta tempore totam unde velit veniam! A aspernatur autem, delectus explicabo facere officia quasi! Animi omnis quam quis quo quod sapiente sed vero voluptate. Ad adipisci assumenda, autem cum deserunt est fugit harum, hic impedit incidunt laborum minima natus officia officiis omnis porro, possimus provident quaerat qui quia reprehenderit rerum saepe sunt vel voluptate? Corporis distinctio est eum hic iure laborum laudantium minima nobis placeat, suscipit. Aliquam corporis cum expedita, iste non quaerat quia repellat sunt unde vero. Ab accusantium ad alias at blanditiis consequatur dignissimos dolore doloremque dolores, eaque eius est, eveniet expedita iste iusto laborum maxime modi mollitia nemo nostrum odio porro provident quam quas saepe, sapiente soluta vel veniam veritatis voluptate! Accusamus ad aspernatur aut delectus doloremque, esse et fugiat labore officia officiis praesentium quibusdam recusandae repudiandae sed soluta sunt tempora?
                     </div>
-                    <div class="tabs__body" data-tab-body="cloud-storage">
-2
-                    </div>
-                    <div class="tabs__body" data-tab-body="cloud-storage">
-3
-                    </div>
-                    <div class="tabs__body" data-tab-body="cloud-storage">
-4
+                    <div class="tabs__item" data-tab-body="cloud-storage">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quis sit totam. Ad aliquam at, aut dolore doloremque ea eos fuga illo nulla officiis ratione sunt tempora velit veniam voluptatum. Earum eum in molestias neque praesentium reiciendis rem sit soluta. Culpa facere ipsam ipsum nihil saepe? Aliquid earum error reiciendis sequi! Accusantium aliquid dolore, dolorem dolorum ducimus eum illo nemo.
                     </div>
                 </div>
             </div>

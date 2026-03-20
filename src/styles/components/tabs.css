@@ -1,15 +1,19 @@
 .tabs {
 
 }
+    .tabs__navigation {
+
+    }
+
     .tabs__bodies {
 
     }
-        .tabs__body {
+        .tabs__item {
             margin-top: 24px;  /* move margin to here from tabs__bodies in case there is no active tab (no need spacing at all) */
             display: none;
         }
 
-        .tabs__body--current {
+        .tabs__item--current {
             display: block;
             animation: slide-down 500ms var(--ease-out-quint);
         }

@@ -17,12 +17,12 @@ export const tabs = () => {
                 const targetRef = radio.dataset.tabTarget;
                 const $targetTab = tabsRoot.querySelector(`[data-tab-body="${targetRef}"]`);
 
-                tabsRoot.querySelectorAll('.tabs__body').forEach((tab) => {
-                    tab.classList.remove('tabs__body--current');
+                tabsRoot.querySelectorAll('.tabs__item').forEach((tab) => {
+                    tab.classList.remove('tabs__item--current');
                 });
 
                 if ($targetTab) {
-                    $targetTab.classList.add('tabs__body--current');
+                    $targetTab.classList.add('tabs__item--current');
                 }
             });
         });
