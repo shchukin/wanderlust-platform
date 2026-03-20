@@ -1,4 +1,5 @@
 .window {
+    position: relative;
     background-color: #ffffff;
     border-radius: var(--radius);
 }
