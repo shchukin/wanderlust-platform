@@ -20,7 +20,6 @@
     .checkout__body {
         margin-top: 24px;
         display: flex;
-        align-items: flex-start;
         gap: var(--container-padding);
     }
         .checkout__content {
@@ -50,4 +49,13 @@
         .checkout__aside {
             flex-shrink: 0;
             width: 50%;
+        }
+
+        .checkout__aside--smaller {
+            width: 300px;
+        }
+
+        .checkout__aside--sticky .checkout__aside-inner {
+            position: sticky;
+            top: var(--header-height);
         }

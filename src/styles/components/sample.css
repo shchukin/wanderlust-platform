@@ -25,9 +25,9 @@
             filter: var(--hover-images);
         }
             .sample__image {
-                width: 100%;
-                height: auto;
                 vertical-align: top;
+                width: 100%;
+                aspect-ratio: 558/320;
                 background-color: var(--image-fallback);
                 border-top-left-radius: calc(var(--radius) - 1px);
                 border-top-right-radius: calc(var(--radius) - 1px);
