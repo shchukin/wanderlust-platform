@@ -2,6 +2,7 @@
 @import url("../styles/overrides/tom-select-overrides.css");
 @import url("../styles/overrides/choices-overrides.css");
 @import url("../styles/overrides/filepond-overrides.css");
+@import url("../styles/overrides/hyst-modal.css");
 
 @import url("global/fonts.css");
 @import url("global/normalize.css");
@@ -74,6 +75,7 @@
 @import url("components/tabs.css");
 @import url("components/attach.css");
 @import url("components/range.css");
+@import url("components/window.css");
 
 
 @import url("components/sidebar.css");
