@@ -2,9 +2,7 @@
     position: relative;
 }
     .details__heading {
-        position: absolute;
-        left: 0;
-        bottom: 100%;
+        margin-top: -54px;
         margin-bottom: 24px;
     }
 
