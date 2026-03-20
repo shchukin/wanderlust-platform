@@ -16,7 +16,7 @@
 @import url("global/laptop-only.css");
 @import url("global/hide-scrollbar.css");
 @import url("global/helpers.css");
-@import url("global/slide.css");
+@import url("global/animations.css");
 
 @import url("components/icon.css");
 @import url("components/nobr.css");
@@ -76,6 +76,7 @@
 @import url("components/attach.css");
 @import url("components/range.css");
 @import url("components/window.css");
+@import url("components/popup.css");
 
 
 @import url("components/sidebar.css");

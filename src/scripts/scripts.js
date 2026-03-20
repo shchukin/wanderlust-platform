@@ -13,6 +13,7 @@ import { price } from './components/price.js';
 import { pricing } from './components/pricing.js';
 import { tabs } from './components/tabs.js';
 import { range } from './components/range.js';
+import { popup } from './components/popup.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     sidebarToggler();
@@ -30,4 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
     pricing();
     tabs();
     range();
+    popup();
 });
