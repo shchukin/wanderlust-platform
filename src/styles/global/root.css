@@ -54,6 +54,8 @@
     --disabled-background: #ececec;
     --disabled-color: #737373;
     --error: #ff0033;
+    --backdrop-color: rgb(0 0 0 / 60%);
+    --backdrop-timing: 200ms ease;
 
     --header-height: 126px;
     --page-bottom-padding: 48px;

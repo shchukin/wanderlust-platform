@@ -1,11 +1,18 @@
-.swal2-actions {
-    gap: 8px;
+:root {
+    --swal2-padding: 0 0 2.5rem;
 }
+
 
 .swal2-popup {
     border-radius: var(--radius);
 }
 
-:root {
-    --swal2-padding: 0 0 2.5rem;
+
+.swal2-container {
+    background-color: var(--backdrop-color) !important;
+    transition: background-color var(--backdrop-timing);
+}
+
+.swal2-actions {
+    gap: 8px;
 }

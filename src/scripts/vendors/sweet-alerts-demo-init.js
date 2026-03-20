@@ -23,7 +23,6 @@ if (alertBtn) {
             denyButtonText: "Don't save",
             cancelButtonText: "Cancel"
         }).then((result) => {
-            /* Пример обработки результата */
             if (result.isConfirmed) {
                 MySwal.fire("Saved!", "", "success");
             } else if (result.isDenied) {

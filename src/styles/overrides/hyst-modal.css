@@ -1,3 +1,13 @@
 .hystmodal__window {
     background-color: transparent; /* use window component */
 }
+
+.hystmodal::before {
+    opacity: 100%;
+    background-color: transparent;
+    transition: background-color var(--backdrop-timing);
+}
+
+.hystmodal--active:before {
+    background-color: var(--backdrop-color);
+}
