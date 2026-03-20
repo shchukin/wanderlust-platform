@@ -27,6 +27,7 @@
             vertical-align: top;
             width: 100%;
             height: auto;
+            aspect-ratio: 558/320;
             background-color: var(--image-fallback);
             border-top-left-radius: 9px;
             border-top-right-radius: 9px;
