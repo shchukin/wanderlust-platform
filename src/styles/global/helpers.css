@@ -1,3 +1,4 @@
+/* stylelint-disable */
 .black         { color: var(--black); }
 .gray          { color: var(--gray); }
 .light-gray    { color: var(--light-gray); }
@@ -17,3 +18,47 @@
 .bg-pink          { background-color: var(--pink); }
 .bg-green         { background-color: var(--green); }
 .bg-red           { background-color: var(--red); }
+/* stylelint-enable */
+
+
+small,
+.small {
+    font-size: var(--smaller-font-size);
+    line-height: var(--smaller-line-height);
+}
+
+big,
+.big {
+    font-size: var(--larger-font-size);
+    line-height: var(--larger-line-height);
+}
+
+.lead {
+    font-size: var(--lead-font-size);
+    line-height: var(--lead-line-height);
+}
+
+
+.fw-normal {
+    font-weight: 400;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+/* boldest one we have */
+.fw-semibold {
+    font-weight: 600;
+}
+
+/* same as semibold, for compatibility */
+.fw-bold {
+    font-weight: 600;
+}
+
+strong,
+b {
+    font-weight: 600;
+}
+
