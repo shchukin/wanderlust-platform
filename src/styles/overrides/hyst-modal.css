@@ -8,6 +8,6 @@
     transition: background-color var(--backdrop-timing);
 }
 
-.hystmodal--active:before {
+.hystmodal--active::before {
     background-color: var(--backdrop-color);
 }

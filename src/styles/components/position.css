@@ -36,6 +36,7 @@
                 position: absolute;
                 inset: 19px;
                 border: 1px solid var(--light-gray);
+                border-radius: 25px;
             }
 
             .position__item:hover .position__frame::before {
@@ -52,36 +53,36 @@
                 user-select: none;
             }
 
-    .position__item-left-top {
+    .position__item-top-left {
         left: 0;
         top: 0;
     }
-        .position__item-left-top .position__frame::before {
-            border-radius: 0 25px 25px 25px;
+        .position__item-top-left .position__frame::before {
+            border-top-left-radius: 0;
         }
 
-    .position__item-right-top {
+    .position__item-top-right {
         right: 0;
         top: 0;
     }
-        .position__item-right-top .position__frame::before {
-            border-radius: 25px 0 25px 25px;
+        .position__item-top-right .position__frame::before {
+            border-top-right-radius: 0;
         }
 
-    .position__item-right-bottom {
+    .position__item-bottom-right {
         right: 0;
         bottom: 0;
     }
-        .position__item-right-bottom .position__frame::before {
-            border-radius: 25px 25px 0 25px;
+        .position__item-bottom-right .position__frame::before {
+            border-bottom-right-radius: 0;
         }
 
-    .position__item-left-bottom {
+    .position__item-bottom-left {
         left: 0;
         bottom: 0;
     }
-        .position__item-left-bottom .position__frame::before {
-            border-radius: 25px 25px 25px 0;
+        .position__item-bottom-left .position__frame::before {
+            border-bottom-left-radius: 0;
         }
 
     .position__item-center {
