@@ -1,59 +1,52 @@
 .feedback {
-
+    margin-top: 18px;
+    padding: var(--project-subpage-padding);
+    padding-bottom: calc(var(--project-subpage-padding) + 12px);
+    background-color: #ffffff;
+    border-radius: var(--radius);
 }
-    .feedback__item {
-        margin-top: 18px;
-        padding: var(--project-subpage-padding);
-        padding-bottom: calc(var(--project-subpage-padding) + 12px);
-        background-color: #ffffff;
-        border-radius: var(--radius);
+    .feedback__heading {
+
     }
 
-    .feedback__item:first-child {
-        margin-top: 0;
+    .feedback__description {
+        margin-top: 10px;
     }
-        .feedback__heading {
 
+    .feedback__rating {
+        margin-top: 14px;
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        padding-right: 10%;
+    }
+        .feedback__rating-table {
+            flex-grow: 1;
+            min-width: 0; /* Override default "min-width: auto" so the flex item won't stretch over the flex (if filled with longer content) */
         }
 
-        .feedback__description {
-            margin-top: 10px;
+    .feedback__edit-comment {
+        margin-top: 16px;
+    }
+
+    .feedback__comment {
+        position: relative;
+        margin-top: 28px;
+        padding-left: 48px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+        .feedback__comment::before {
+            content: "“";
+            position: absolute;
+            top: -2px;
+            left: 0;
+            font-size: 72px;
+            line-height: 72px;
+            color: var(--blue);
         }
 
-        .feedback__rating {
-            margin-top: 14px;
-            display: flex;
-            align-items: flex-start;
-            gap: 24px;
-            padding-right: 10%;
-        }
-            .feedback__rating-table {
-                flex-grow: 1;
-                min-width: 0; /* Override default "min-width: auto" so the flex item won't stretch over the flex (if filled with longer content) */
-            }
-
-        .feedback__edit-comment {
-            margin-top: 16px;
-        }
-
-        .feedback__comment {
-            position: relative;
-            margin-top: 28px;
-            padding-left: 48px;
-            font-size: 18px;
-            line-height: 30px;
-        }
-            .feedback__comment::before {
-                content: "“";
-                position: absolute;
-                top: -2px;
-                left: 0;
-                font-size: 72px;
-                line-height: 72px;
-                color: var(--blue);
-            }
-
-        .feedback__permission {
-            margin-top: 32px;
-            padding-bottom: 12px;
-        }
+    .feedback__permission {
+        margin-top: 32px;
+        padding-bottom: 12px;
+    }
