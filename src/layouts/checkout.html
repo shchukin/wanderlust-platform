@@ -2693,216 +2693,275 @@
                     <div class="checkout__body">
                         <div class="checkout__content">
                             <div class="checkout__content-widget">
-                                <section class="branding">
-                                    <div class="branding__heading">
-                                        <h2 class="title">Branding</h2>
-                                    </div>
-                                    <div class="branding__body">
-                                        <div class="branding__field">
-                                            <input type="file" data-ref="filepond-demo">
+                                <div class="export-summary">
+                                    <section class="export-settings">
+                                        <div class="export-settings__heading">
+                                            <h2 class="title">Export Settings</h2>
                                         </div>
-                                        <div class="branding__field">
-                                            <label class="label" for="brand-size">Brand Size</label>
-                                            <div class="range">
-                                                <input class="range__widget" type="range" step="5" id="brand-size">
-                                                <output class="range__output" for="brand-size">50%</output>
+                                        <div class="export-settings__list">
+                                            <div class="export-settings__item">
+                                                <div class="input input--placeholder-is-chosen">
+                                                    <select class="input__widget">
+                                                        <option value="placeholder">Codec</option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="export-settings__item">
+                                                <div class="input input--placeholder-is-chosen">
+                                                    <select class="input__widget">
+                                                        <option value="placeholder">Compression</option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="export-settings__item">
+                                                <div class="input input--placeholder-is-chosen">
+                                                    <select class="input__widget">
+                                                        <option value="placeholder">FPS</option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="branding__field">
-                                            <div class="label">
-                                                When
+                                        <div class="export-settings__notes">
+                                            <div class="edit-notes">
+                                                <h4 class="edit-notes__heading">
+                                                    Share any custom export settings or special instructions (e.g., resolution, aspect ratio, audio)
+                                                </h4>
+                                                <div class="edit-notes__field">
+                                                    <div class="input input--expandable">
+                                                        <textarea class="input__widget" rows="5"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="edit-notes__submit">
+                                                    <button class="button button--black button--height-32px" type="button">
+                                                        Save
+                                                    </button>
+                                                </div>
                                             </div>
-                                            <div class="tabs">
-                                                <div class="tabs__navigation">
-                                                    <div class="checkboxes-menu checkboxes-menu--fixed-width">
-                                                        <div class="checkboxes-menu__item">
-                                                            <label
-                                                                class="choice choice--nowrap
+                                        </div>
+                                    </section>
+                                    <section class="branding">
+                                        <div class="branding__heading">
+                                            <h2 class="title">Branding</h2>
+                                        </div>
+                                        <div class="branding__body">
+                                            <div class="branding__field">
+                                                <input type="file" data-ref="filepond-demo">
+                                            </div>
+                                            <div class="branding__field">
+                                                <label class="label" for="brand-size">Brand Size</label>
+                                                <div class="range">
+                                                    <input class="range__widget" type="range" step="5" id="brand-size">
+                                                    <output class="range__output" for="brand-size">50%</output>
+                                                </div>
+                                            </div>
+                                            <div class="branding__field">
+                                                <div class="label">
+                                                    When
+                                                </div>
+                                                <div class="tabs">
+                                                    <div class="tabs__navigation">
+                                                        <div class="checkboxes-menu checkboxes-menu--fixed-width">
+                                                            <div class="checkboxes-menu__item">
+                                                                <label
+                                                                    class="choice choice--nowrap
+                                                                       choice--input-alike
+                                                                       choice--full-width
+                                                                       choice--blue-when-checked
+                                                                "
+                                                                >
+                                                                    <input class="choice__widget" type="radio" name="animation-zoom" data-tab-target="when-opening" checked>
+                                                                    <div class="choice__icon choice__icon--unchecked">
+                                                                        <i class="icon">radio_button_unchecked</i>
+                                                                    </div>
+                                                                    <div class="choice__icon choice__icon--checked">
+                                                                        <i class="icon">radio_button_checked</i>
+                                                                    </div>
+                                                                    <div class="choice__label">
+                                                                        Opening
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkboxes-menu__item">
+                                                                <label
+                                                                    class="choice choice--nowrap
+                                                                       choice--input-alike
+                                                                       choice--full-width
+                                                                       choice--blue-when-checked
+                                                                "
+                                                                >
+                                                                    <input class="choice__widget" type="radio" name="animation-zoom" data-tab-target="when-closing">
+                                                                    <div class="choice__icon choice__icon--unchecked">
+                                                                        <i class="icon">radio_button_unchecked</i>
+                                                                    </div>
+                                                                    <div class="choice__icon choice__icon--checked">
+                                                                        <i class="icon">radio_button_checked</i>
+                                                                    </div>
+                                                                    <div class="choice__label">
+                                                                        Closing
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkboxes-menu__item">
+                                                                <label
+                                                                    class="choice choice--nowrap
+                                                                       choice--input-alike
+                                                                       choice--full-width
+                                                                       choice--blue-when-checked
+                                                                "
+                                                                >
+                                                                    <input class="choice__widget" type="radio" name="animation-zoom" data-tab-target="when-other">
+                                                                    <div class="choice__icon choice__icon--unchecked">
+                                                                        <i class="icon">radio_button_unchecked</i>
+                                                                    </div>
+                                                                    <div class="choice__icon choice__icon--checked">
+                                                                        <i class="icon">radio_button_checked</i>
+                                                                    </div>
+                                                                    <div class="choice__label">
+                                                                        Other
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tabs__bodies">
+                                                        <div class="tabs__item" data-tab-body="when-other">
+                                                            <div class="label">
+                                                                Another moment
+                                                            </div>
+                                                            <div class="input">
+                                                                <input class="input__widget" type="text" placeholder="Tell us more about it">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="branding__field">
+                                                <div class="label">
+                                                    Animation
+                                                </div>
+                                                <div class="tabs">
+                                                    <div class="tabs__navigation">
+                                                        <div class="checkboxes-menu checkboxes-menu--fixed-width">
+                                                            <div class="checkboxes-menu__item">
+                                                                <label class="choice choice--nowrap
                                                                    choice--input-alike
                                                                    choice--full-width
                                                                    choice--blue-when-checked
-                                                            "
-                                                            >
-                                                                <input class="choice__widget" type="radio" name="animation-zoom" data-tab-target="when-opening" checked>
-                                                                <div class="choice__icon choice__icon--unchecked">
-                                                                    <i class="icon">radio_button_unchecked</i>
-                                                                </div>
-                                                                <div class="choice__icon choice__icon--checked">
-                                                                    <i class="icon">radio_button_checked</i>
-                                                                </div>
-                                                                <div class="choice__label">
-                                                                    Opening
-                                                                </div>
-                                                            </label>
-                                                        </div>
-                                                        <div class="checkboxes-menu__item">
-                                                            <label
-                                                                class="choice choice--nowrap
+                                                                ">
+                                                                    <input class="choice__widget" type="radio" name="animation-zoom" data-tab-target="animation-in" checked>
+                                                                    <div class="choice__icon choice__icon--unchecked">
+                                                                        <i class="icon">radio_button_unchecked</i>
+                                                                    </div>
+                                                                    <div class="choice__icon choice__icon--checked">
+                                                                        <i class="icon">radio_button_checked</i>
+                                                                    </div>
+                                                                    <div class="choice__label">
+                                                                        Zoom in
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkboxes-menu__item">
+                                                                <label class="choice choice--nowrap
                                                                    choice--input-alike
                                                                    choice--full-width
                                                                    choice--blue-when-checked
-                                                            "
-                                                            >
-                                                                <input class="choice__widget" type="radio" name="animation-zoom" data-tab-target="when-closing">
-                                                                <div class="choice__icon choice__icon--unchecked">
-                                                                    <i class="icon">radio_button_unchecked</i>
-                                                                </div>
-                                                                <div class="choice__icon choice__icon--checked">
-                                                                    <i class="icon">radio_button_checked</i>
-                                                                </div>
-                                                                <div class="choice__label">
-                                                                    Closing
-                                                                </div>
-                                                            </label>
-                                                        </div>
-                                                        <div class="checkboxes-menu__item">
-                                                            <label
-                                                                class="choice choice--nowrap
+                                                                ">
+                                                                    <input class="choice__widget" type="radio" data-tab-target="animation-out" name="animation-zoom">
+                                                                    <div class="choice__icon choice__icon--unchecked">
+                                                                        <i class="icon">radio_button_unchecked</i>
+                                                                    </div>
+                                                                    <div class="choice__icon choice__icon--checked">
+                                                                        <i class="icon">radio_button_checked</i>
+                                                                    </div>
+                                                                    <div class="choice__label">
+                                                                        Zoom out
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkboxes-menu__item">
+                                                                <label class="choice choice--nowrap
                                                                    choice--input-alike
                                                                    choice--full-width
                                                                    choice--blue-when-checked
-                                                            "
-                                                            >
-                                                                <input class="choice__widget" type="radio" name="animation-zoom" data-tab-target="when-other">
-                                                                <div class="choice__icon choice__icon--unchecked">
-                                                                    <i class="icon">radio_button_unchecked</i>
-                                                                </div>
-                                                                <div class="choice__icon choice__icon--checked">
-                                                                    <i class="icon">radio_button_checked</i>
-                                                                </div>
-                                                                <div class="choice__label">
-                                                                    Other
-                                                                </div>
-                                                            </label>
+                                                                ">
+                                                                    <input class="choice__widget" data-tab-target="animation-other" type="radio" name="animation-zoom">
+                                                                    <div class="choice__icon choice__icon--unchecked">
+                                                                        <i class="icon">radio_button_unchecked</i>
+                                                                    </div>
+                                                                    <div class="choice__icon choice__icon--checked">
+                                                                        <i class="icon">radio_button_checked</i>
+                                                                    </div>
+                                                                    <div class="choice__label">
+                                                                        Other
+                                                                    </div>
+                                                                </label>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="tabs__bodies">
-                                                    <div class="tabs__item" data-tab-body="when-other">
-                                                        <div class="label">
-                                                            Another moment
-                                                        </div>
-                                                        <div class="input">
-                                                            <input class="input__widget" type="text" placeholder="Tell us more about it">
+                                                    <div class="tabs__bodies">
+                                                        <div class="tabs__item" data-tab-body="animation-other">
+                                                            <div class="label">
+                                                                Another animation
+                                                            </div>
+                                                            <div class="input">
+                                                                <input class="input__widget" type="text" placeholder="Tell us more about it">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="branding__field">
-                                            <div class="label">
-                                                Animation
-                                            </div>
-                                            <div class="tabs">
-                                                <div class="tabs__navigation">
-                                                    <div class="checkboxes-menu checkboxes-menu--fixed-width">
-                                                        <div class="checkboxes-menu__item">
-                                                            <label class="choice choice--nowrap
-                                                               choice--input-alike
-                                                               choice--full-width
-                                                               choice--blue-when-checked
-                                                            ">
-                                                                <input class="choice__widget" type="radio" name="animation-zoom" data-tab-target="animation-in" checked>
-                                                                <div class="choice__icon choice__icon--unchecked">
-                                                                    <i class="icon">radio_button_unchecked</i>
-                                                                </div>
-                                                                <div class="choice__icon choice__icon--checked">
-                                                                    <i class="icon">radio_button_checked</i>
-                                                                </div>
-                                                                <div class="choice__label">
-                                                                    Zoom in
-                                                                </div>
-                                                            </label>
-                                                        </div>
-                                                        <div class="checkboxes-menu__item">
-                                                            <label class="choice choice--nowrap
-                                                               choice--input-alike
-                                                               choice--full-width
-                                                               choice--blue-when-checked
-                                                            ">
-                                                                <input class="choice__widget" type="radio" data-tab-target="animation-out" name="animation-zoom">
-                                                                <div class="choice__icon choice__icon--unchecked">
-                                                                    <i class="icon">radio_button_unchecked</i>
-                                                                </div>
-                                                                <div class="choice__icon choice__icon--checked">
-                                                                    <i class="icon">radio_button_checked</i>
-                                                                </div>
-                                                                <div class="choice__label">
-                                                                    Zoom out
-                                                                </div>
-                                                            </label>
-                                                        </div>
-                                                        <div class="checkboxes-menu__item">
-                                                            <label class="choice choice--nowrap
-                                                               choice--input-alike
-                                                               choice--full-width
-                                                               choice--blue-when-checked
-                                                            ">
-                                                                <input class="choice__widget" data-tab-target="animation-other" type="radio" name="animation-zoom">
-                                                                <div class="choice__icon choice__icon--unchecked">
-                                                                    <i class="icon">radio_button_unchecked</i>
-                                                                </div>
-                                                                <div class="choice__icon choice__icon--checked">
-                                                                    <i class="icon">radio_button_checked</i>
-                                                                </div>
-                                                                <div class="choice__label">
-                                                                    Other
-                                                                </div>
-                                                            </label>
-                                                        </div>
-                                                    </div>
+                                            <div class="branding__field">
+                                                <div class="label">
+                                                    Logo Position
                                                 </div>
-                                                <div class="tabs__bodies">
-                                                    <div class="tabs__item" data-tab-body="animation-other">
-                                                        <div class="label">
-                                                            Another animation
+                                                <div class="position">
+                                                    <label class="position__item position__item-top-left">
+                                                        <input class="position__widget" type="radio" name="logo-position">
+                                                        <div class="position__frame">
+                                                            <div class="position-text">Top Left</div>
                                                         </div>
-                                                        <div class="input">
-                                                            <input class="input__widget" type="text" placeholder="Tell us more about it">
+                                                    </label>
+                                                    <label class="position__item position__item-top-right">
+                                                        <input class="position__widget" type="radio" name="logo-position">
+                                                        <div class="position__frame">
+                                                            <div class="position-text">Top Right</div>
                                                         </div>
-                                                    </div>
+                                                    </label>
+                                                    <label class="position__item position__item-bottom-right">
+                                                        <input class="position__widget" type="radio" name="logo-position">
+                                                        <div class="position__frame">
+                                                            <div class="position-text">Bottom Right</div>
+                                                        </div>
+                                                    </label>
+                                                    <label class="position__item position__item-bottom-left">
+                                                        <input class="position__widget" type="radio" name="logo-position">
+                                                        <div class="position__frame">
+                                                            <div class="position-text">Bottom Left</div>
+                                                        </div>
+                                                    </label>
+                                                    <label class="position__item position__item-center">
+                                                        <input class="position__widget" type="radio" name="logo-position">
+                                                        <div class="position__frame">
+                                                            <div class="position-text">Center</div>
+                                                        </div>
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="branding__field">
-                                            <div class="label">
-                                                Logo Position
-                                            </div>
-                                            <div class="position">
-                                                <label class="position__item position__item-top-left">
-                                                    <input class="position__widget" type="radio" name="logo-position">
-                                                    <div class="position__frame">
-                                                        <div class="position-text">Top Left</div>
-                                                    </div>
-                                                </label>
-                                                <label class="position__item position__item-top-right">
-                                                    <input class="position__widget" type="radio" name="logo-position">
-                                                    <div class="position__frame">
-                                                        <div class="position-text">Top Right</div>
-                                                    </div>
-                                                </label>
-                                                <label class="position__item position__item-bottom-right">
-                                                    <input class="position__widget" type="radio" name="logo-position">
-                                                    <div class="position__frame">
-                                                        <div class="position-text">Bottom Right</div>
-                                                    </div>
-                                                </label>
-                                                <label class="position__item position__item-bottom-left">
-                                                    <input class="position__widget" type="radio" name="logo-position">
-                                                    <div class="position__frame">
-                                                        <div class="position-text">Bottom Left</div>
-                                                    </div>
-                                                </label>
-                                                <label class="position__item position__item-center">
-                                                    <input class="position__widget" type="radio" name="logo-position">
-                                                    <div class="position__frame">
-                                                        <div class="position-text">Center</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
+                                    </section>
+                                </div>
                             </div>
                             <div class="checkout__footer">
                                 <div class="checkout__save-draft">
@@ -3032,59 +3091,191 @@
                                             </table>
                                         </div>
                                     </section>
-                                    <section class="export-settings">
-                                        <div class="export-settings__heading">
-                                            <h2 class="title">Export Settings</h2>
+                                    <section class="fonts">
+                                        <div class="fonts__heading">
+                                            <h2 class="title">Fonts</h2>
                                         </div>
-                                        <div class="export-settings__list">
-                                            <div class="export-settings__item">
-                                                <div class="input input--placeholder-is-chosen">
-                                                    <select class="input__widget">
-                                                        <option value="placeholder">Codec</option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                    </select>
+                                        <div class="fonts__body">
+                                            <div class="fonts__field">
+                                                <label class="label" for="font-name">
+                                                    Font Name
+                                                </label>
+                                                <div class="input">
+                                                    <input class="input__widget" type="text" id="font-name">
                                                 </div>
                                             </div>
-                                            <div class="export-settings__item">
-                                                <div class="input input--placeholder-is-chosen">
-                                                    <select class="input__widget">
-                                                        <option value="placeholder">Compression</option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                    </select>
+                                            <div class="fonts__field">
+                                                <label class="label" for="font-link">
+                                                    Link to font archive or Google fonts specimen link
+                                                </label>
+                                                <div class="input">
+                                                    <input class="input__widget" type="text" id="font-link">
                                                 </div>
                                             </div>
-                                            <div class="export-settings__item">
-                                                <div class="input input--placeholder-is-chosen">
-                                                    <select class="input__widget">
-                                                        <option value="placeholder">FPS</option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                    </select>
+                                            <div class="fonts__field">
+                                                <label class="label" for="typography-specifications">
+                                                    Typography specifications
+                                                </label>
+                                                <div class="input">
+                                                    <textarea class="input__widget" rows="5" id="typography-specifications"></textarea>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="export-settings__notes">
-                                            <div class="edit-notes">
-                                                <h4 class="edit-notes__heading">
-                                                    Share any custom export settings or special instructions (e.g., resolution, aspect ratio, audio)
-                                                </h4>
-                                                <div class="edit-notes__field">
-                                                    <div class="input input--expandable">
-                                                        <textarea class="input__widget" rows="5"></textarea>
+                                            <div class="fonts__field">
+                                                <div class="label">
+                                                    Animation
+                                                </div>
+                                                <div class="tabs">
+                                                    <div class="tabs__navigation">
+                                                        <div class="checkboxes-menu checkboxes-menu--fixed-width">
+                                                            <div class="checkboxes-menu__item">
+                                                                <label
+                                                                    class="choice choice--nowrap
+                                                                       choice--input-alike
+                                                                       choice--full-width
+                                                                       choice--blue-when-checked
+                                                                ">
+                                                                    <input class="choice__widget" type="radio" name="animation-zoom">
+                                                                    <div class="choice__icon choice__icon--unchecked">
+                                                                        <i class="icon">radio_button_unchecked</i>
+                                                                    </div>
+                                                                    <div class="choice__icon choice__icon--checked">
+                                                                        <i class="icon">radio_button_checked</i>
+                                                                    </div>
+                                                                    <div class="choice__label">
+                                                                        Yes
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkboxes-menu__item">
+                                                                <label
+                                                                    class="choice choice--nowrap
+                                                                       choice--input-alike
+                                                                       choice--full-width
+                                                                       choice--blue-when-checked
+                                                                ">
+                                                                    <input class="choice__widget" type="radio" name="animation-zoom">
+                                                                    <div class="choice__icon choice__icon--unchecked">
+                                                                        <i class="icon">radio_button_unchecked</i>
+                                                                    </div>
+                                                                    <div class="choice__icon choice__icon--checked">
+                                                                        <i class="icon">radio_button_checked</i>
+                                                                    </div>
+                                                                    <div class="choice__label">
+                                                                        No
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkboxes-menu__item">
+                                                                <label
+                                                                    class="choice choice--nowrap
+                                                                       choice--input-alike
+                                                                       choice--full-width
+                                                                       choice--blue-when-checked
+                                                                "
+                                                                >
+                                                                    <input class="choice__widget" type="radio" name="animation-zoom" data-tab-target="fonts-animation-other">
+                                                                    <div class="choice__icon choice__icon--unchecked">
+                                                                        <i class="icon">radio_button_unchecked</i>
+                                                                    </div>
+                                                                    <div class="choice__icon choice__icon--checked">
+                                                                        <i class="icon">radio_button_checked</i>
+                                                                    </div>
+                                                                    <div class="choice__label">
+                                                                        Other
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tabs__bodies">
+                                                        <div class="tabs__item" data-tab-body="fonts-animation-other">
+                                                            <div class="label">
+                                                                Another overlay text
+                                                            </div>
+                                                            <div class="input">
+                                                                <input class="input__widget" type="text" placeholder="Tell us more about it">
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="edit-notes__submit">
-                                                    <button class="button button--black button--height-32px" type="button">
-                                                        Save
-                                                    </button>
+                                            </div>
+                                            <div class="fonts__field">
+                                                <div class="label">
+                                                    Overlay text
+                                                </div>
+                                                <div class="tabs">
+                                                    <div class="tabs__navigation">
+                                                        <div class="checkboxes-menu checkboxes-menu--fixed-width">
+                                                            <div class="checkboxes-menu__item">
+                                                                <label
+                                                                    class="choice choice--nowrap
+                                                                       choice--input-alike
+                                                                       choice--full-width
+                                                                       choice--blue-when-checked
+                                                                ">
+                                                                    <input class="choice__widget" type="radio" name="animation-zoom">
+                                                                    <div class="choice__icon choice__icon--unchecked">
+                                                                        <i class="icon">radio_button_unchecked</i>
+                                                                    </div>
+                                                                    <div class="choice__icon choice__icon--checked">
+                                                                        <i class="icon">radio_button_checked</i>
+                                                                    </div>
+                                                                    <div class="choice__label">
+                                                                        In the video
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkboxes-menu__item">
+                                                                <label
+                                                                    class="choice choice--nowrap
+                                                                       choice--input-alike
+                                                                       choice--full-width
+                                                                       choice--blue-when-checked
+                                                                ">
+                                                                    <input class="choice__widget" type="radio" name="animation-zoom">
+                                                                    <div class="choice__icon choice__icon--unchecked">
+                                                                        <i class="icon">radio_button_unchecked</i>
+                                                                    </div>
+                                                                    <div class="choice__icon choice__icon--checked">
+                                                                        <i class="icon">radio_button_checked</i>
+                                                                    </div>
+                                                                    <div class="choice__label">
+                                                                        Over black
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkboxes-menu__item">
+                                                                <label
+                                                                    class="choice choice--nowrap
+                                                                       choice--input-alike
+                                                                       choice--full-width
+                                                                       choice--blue-when-checked
+                                                                "
+                                                                >
+                                                                    <input class="choice__widget" type="radio" name="animation-zoom" data-tab-target="overlay-text-other">
+                                                                    <div class="choice__icon choice__icon--unchecked">
+                                                                        <i class="icon">radio_button_unchecked</i>
+                                                                    </div>
+                                                                    <div class="choice__icon choice__icon--checked">
+                                                                        <i class="icon">radio_button_checked</i>
+                                                                    </div>
+                                                                    <div class="choice__label">
+                                                                        Other
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tabs__bodies">
+                                                        <div class="tabs__item" data-tab-body="overlay-text-other">
+                                                            <div class="label">
+                                                                Another overlay text
+                                                            </div>
+                                                            <div class="input">
+                                                                <input class="input__widget" type="text" placeholder="Tell us more about it">
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

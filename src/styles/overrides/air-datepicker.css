@@ -1,0 +1,12 @@
+.air-datepicker {
+    --adp-btn-color: var(--blue);
+    --adp-color-current-date: var(--blue);
+    --adp-day-name-color: var(--red);
+    --adp-nav-arrow-color: var(--gray);
+    --adp-datepicker-color-secondary: var(--gray);
+    --adp-color-other-month: var(--light-gray);
+    --adp-cell-background-color-hover: var(--hover-over-white);
+    --adp-cell-background-color-active: var(--hover-over-white);
+    --adp-background-color-hover: var(--hover-over-white);
+    --adp-background-color-active: var(--hover-over-white);
+}

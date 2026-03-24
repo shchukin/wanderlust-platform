@@ -70,4 +70,5 @@
     .checkout__aside--sticky .checkout__aside-widget {
         position: sticky;
         top: var(--header-height);
+        margin-bottom: 68px; /* height of checkout__footer */
     }
