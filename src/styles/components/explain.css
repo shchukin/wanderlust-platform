@@ -28,8 +28,8 @@
 
 }
     .explain--36px .explain__icon {
-        width: 32px;
-        height: 32px;
+        width: 36px;
+        height: 36px;
     }
 
     .explain--36px .explain__icon .icon {
@@ -37,7 +37,7 @@
     }
 
     .explain--36px .bubble {
-        bottom: calc(100% - 8px);
+        bottom: calc(100% - 9px);
     }
 
 
