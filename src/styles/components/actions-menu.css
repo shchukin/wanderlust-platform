@@ -10,6 +10,14 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+@media (width < 1600px) {
+
+    .actions-menu--4-columns {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
 @media (width < 1500px) {
 
     .actions-menu--4-columns {
