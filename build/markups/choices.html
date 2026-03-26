@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774495309">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774495309">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774495309">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774495309">
-        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774495309">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774495309">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774506787">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774506787">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774506787">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774506787">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774506787">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774506787">
         <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
-        <script type="module" src="../scripts/vendors.js?1774495309"></script>
+        <script type="module" src="../scripts/vendors.js?1774506787"></script>
 
         <!-- Font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -20,8 +20,8 @@
         <title>Choices.js</title>
 
         <!-- assets -->
-        <link rel="stylesheet" href="../styles/styles.css?1774495309">
-        <script type="module" src="../scripts/scripts.js?1774495309"></script>
+        <link rel="stylesheet" href="../styles/styles.css?1774506787">
+        <script type="module" src="../scripts/scripts.js?1774506787"></script>
     </head>
     <body style="background-color: white;">
 
@@ -29,12 +29,13 @@
             <br>
             <br>
             <h1>Choices.js</h1>
-            <p>A lightweight, configurable select box/text input plugin. Similar to Select2 and Selectize but without the jQuery dependency.</p>
+            <p>
+                This is <b>plan b</b> for the <a href="tom-select.html"><b><i>tom-select</i></b></a>
+                since that one has a long history of legacy and it is getting way too hard to style it.
+            </p>
             <br>
 
             <h3>Single Select</h3>
-            <p>Standard single choice with search enabled.</p>
-            <br>
             <select class="js-choices-single" placeholder="Select a state...">
                 <option value="">Select a state...</option>
                 <option value="AL">Alabama</option>
@@ -52,8 +53,6 @@
             <br>
             <br>
             <h3>Multi-select (max 3)</h3>
-            <p>Multiple selection with a limit on the number of items and a remove button.</p>
-            <br>
             <select class="js-choices-multi" multiple placeholder="Pick up to 3 states">
                 <option value="CA">California</option>
                 <option value="CO">Colorado</option>
@@ -70,8 +69,6 @@
             <br>
             <br>
             <h3>Tags (Text Input)</h3>
-            <p>Tag mode: create new items by typing and pressing Enter.</p>
-            <br>
             <input class="js-choices-tags" type="text" placeholder="Add tags: ui, docs, frontend">
 
             <br>

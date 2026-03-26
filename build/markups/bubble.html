@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="min-width: 0">
     <head>
         <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774495309">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774495309">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774495309">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774495309">
-        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774495309">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774495309">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774506787">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774506787">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774506787">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774506787">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774506787">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774506787">
         <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
-        <script type="module" src="../scripts/vendors.js?1774495309"></script>
+        <script type="module" src="../scripts/vendors.js?1774506787"></script>
 
         <!-- Font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -20,10 +20,10 @@
         <title>bubble</title>
 
         <!-- assets -->
-        <link rel="stylesheet" href="../styles/styles.css?1774495309">
-        <script type="module" src="../scripts/scripts.js?1774495309"></script>
+        <link rel="stylesheet" href="../styles/styles.css?1774506787">
+        <script type="module" src="../scripts/scripts.js?1774506787"></script>
     </head>
-    <body style="background-color: white;">
+    <body style="background-color: white; min-width: 0">
 
         <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
@@ -31,10 +31,10 @@
             <h1>bubble</h1>
 
             <p>
-                Смотри так же <a href="explain.html"><b><i>bubble</i></b></a>
+                See also <a href="explain.html"><b><i>explain</i></b></a>
             </p>
             <p>
-                Самый простой кейс -- этот бабл с парой слов, которые бы уместились по ширине даже в экран смартфона:
+                First, the simplest case: bubble with a couple of words that would fit any screen an has no problems with line breaks or positioning:
             </p>
             <br>
             <br>
@@ -42,13 +42,15 @@
 
             <div class="bubble-context">
                 <button class="bubble-handler" type="button">
-                    У этой кнопки есть подсказка
+                    This button has a tooltip
                 </button>
                 <div class="bubble bubble--visible">
                     <div class="bubble__body">
-                        Lorem ipsum dolor sit amet
+                        <i class="bubble__chevron"></i>
+                        <div class="bubble__background">
+                            Lorem ipsum dolor sit amet
+                        </div>
                     </div>
-                    <i class="bubble__chevron"></i>
                 </div>
             </div>
 
@@ -56,18 +58,17 @@
             <br>
             <br>
             <p>
-                Если нужно больше текста, то начинаются проблемы.
+                Problems come when you need more text.
             </p>
             <p>
-                Поскольку баблы позиционируются абсолютно, то текст в них схлопывается, пытаясь занять как можно меньше места (аналог min-content).
-                Т.е. переносы строк будут случаться после каждого слова.
+                Since bubbles are positioned absolutely, the text in them collapses, trying to take up as little space as possible (same as min-content in the CSS).
+                Line breaks would occur after every word.
             </p>
             <p>
-                С другой стороны, браузер всё-равно не может предугадать
-                где в тексте делать переносы, если ширина неопределена и сам так же не сможет выбрать ширину.
+                Also, the browser can't analyze the text in any way to decide where to place line breaks or width (width is undefined in the bubble).
             </p>
             <p>
-                Чтобы избежать этой неоднозначности с шириной и проблем с переносами строк, по-умолчанию в баблах запрещены переносы (стоит <b><i>white-space: nowrap</i></b>):
+                To avoid this, line breaks are disabled by default (using <b><i>white-space: nowrap</i></b>):
             </p>
 
             <br>
@@ -75,42 +76,46 @@
             <br>
             <div class="bubble-context">
                 <button class="bubble-handler" type="button">
-                    У этой кнопки есть подсказка
+                    This button has a tooltip
                 </button>
                 <div class="bubble bubble--visible">
                     <div class="bubble__body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores, aspernatur blanditiis doloribus error excepturi omnis optio pariatur placeat velit.
+                        <i class="bubble__chevron"></i>
+                        <div class="bubble__background">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores, aspernatur blanditiis doloribus error excepturi omnis optio pariatur placeat velit.
+                        </div>
                     </div>
-                    <i class="bubble__chevron"></i>
                 </div>
             </div>
 
             <p>
-                А еcли переносы всё-таки нужны, то, либо проставляем их вручную (тег <b><i>&lt;br&gt;</i></b>), что подходит для небольших баблов:
+                If line breaks are still needed, you can either add them manually (using the <b><i>&lt;br&gt;</i></b> tag), which is suitable for small bubbles:
             </p>
 
             <br>
             <br>
             <br>
             <br>
+            <br>
             <div class="bubble-context">
                 <button class="bubble-handler" type="button">
-                    У этой кнопки есть подсказка
+                    This button has a tooltip
                 </button>
                 <div class="bubble bubble--visible">
                     <div class="bubble__body">
-                        Lorem ipsum dolor sit amet,<br>
-                        consectetur adipisicing elit.<br>
-                        Animi aspernatur consequuntur.<br>
+                        <i class="bubble__chevron"></i>
+                        <div class="bubble__background">
+                            Lorem ipsum dolor sit amet,<br>
+                            consectetur adipisicing elit.<br>
+                            Animi aspernatur consequuntur.<br>
+                        </div>
                     </div>
-                    <i class="bubble__chevron"></i>
                 </div>
             </div>
 
             <p>
-                Либо, чтобы иметь больше контроля (особенно в адаптиве), пишем кастомную разметку.
-                Внутри бабла пишем дополнительные компоненты, в которых жёстко проставлена ширина и отменён nowrap.
-                В таком случае можно выводить любой текст рассчитывая что он будет переноситься от ширины:
+                Or you can write custom markup in the bubble: add additional components with a fixed width and disabled <b><i>nowrap</i></b>.
+                In this case, you can display any text:
             </p>
 
             <br>
@@ -118,149 +123,83 @@
             <br>
             <br>
             <br>
+            <br>
             <div class="bubble-context">
                 <button class="bubble-handler" type="button">
-                    У этой кнопки есть подсказка
+                    This button has a tooltip
                 </button>
                 <div class="bubble bubble--visible">
                     <div class="bubble__body">
-                        <style>
-                            .foo-bar-baz {
-                                width: 300px;
-                                white-space: normal;
-                            }
-
-                            @media (width < 740px) {
+                        <i class="bubble__chevron"></i>
+                        <div class="bubble__background">
+                            <style>
                                 .foo-bar-baz {
-                                    width: 200px;
+                                    width: 300px;
+                                    white-space: normal;
                                 }
-                            }
-                        </style>
-                        <div class="foo-bar-baz">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eius in voluptatem. Consectetur culpa cupiditate deleniti illo in iste qui. Eos ex explicabo impedit, numquam officia provident sunt unde vitae!
+
+                                @media (width < 740px) {
+                                    .foo-bar-baz {
+                                        width: 200px;
+                                    }
+                                }
+                            </style>
+                            <div class="foo-bar-baz">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eius in voluptatem. Consectetur culpa cupiditate deleniti illo in iste qui. Eos ex explicabo impedit, numquam officia provident sunt unde vitae!
+                            </div>
                         </div>
                     </div>
-                    <i class="bubble__chevron"></i>
-                </div>
-            </div>
-
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>Бабл с заголовком</h2>
-            <p>
-                Есть стандартный вид для текстовых баблов. Не обязательно, но можно использовать дополнительные обёртки внутри бабла:
-                <br><b><i>.bubble__heading</i></b>
-                <br><b><i>.bubble__description</i></b>
-                <br><b><i>.bubble__link</i></b>
-            </p>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="bubble-context">
-                <button class="bubble-handler" type="button">
-                    У этой кнопки есть подсказка
-                </button>
-                <div class="bubble bubble--visible">
-                    <div class="bubble__body">
-                        <div class="bubble__heading">
-                            Многоканальный телефон
-                        </div>
-                        <div class="bubble__description">
-                            Для связи с нужным отделом позвоните<br> по номеру и введите добавочный номер
-                        </div>
-                        <div class="bubble__link">
-                            <a class="link" href="#">Ссылка</a>
-                        </div>
-                    </div>
-                    <i class="bubble__chevron"></i>
                 </div>
             </div>
 
 
 
+
+
             <br>
             <br>
             <br>
-            <h2>Показ бабла</h2>
+            <h2>Showing the Bubble</h2>
             <p>
-                На самом деле бабл по-умолчнию скрыт. Во всех примерах выше он был видим просто для удобства
-                чтения доки. Динамика работы следующая.
+                Actually, bubbles are hidden by default. In all the examples above, they are visible just for the convenience of reading this doc.
+                But this is how they are being shown.
             </p>
             <p>
-                По клику на <b><i>.bubble-handler</i></b> скрипт ищет и показывает соответствующий бабл.
-                Соответствующий бабл -- этот тот, который находится внутри то го же <b class="nobr"><i>.bubble-context</i></b>.
-                Это нужно главным образом для мобилок.
+                1) On touch devices we catch clicking on <b><i>.bubble-handler</i></b>, the script finds and shows the related bubble.
+                The related bubble is the one located inside the same <b class="nobr"><i>.bubble-context</i></b>.
             </p>
             <p>
-                На десктопах бабл показывается обычным наведением на <b>.bubble-context</b>.
+                2) On desktops, the bubble is shown by simply hovering over <b>.bubble-context</b> via CSS.
             </p>
             <p>
-                Пример в динамике:
+                Real example in action:
             </p>
 
             <div class="bubble-context">
                 <button class="bubble-handler" type="button">
-                    У этой кнопки есть подсказка
+                    This button has a tooltip
                 </button>
                 <span class="bubble">
                     <span class="bubble__body">
-                        Lorem ipsum dolor sit amet
+                        <i class="bubble__chevron"></i>
+                        <div class="bubble__background">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </div>
                     </span>
-                    <i class="bubble__chevron"></i>
                 </span>
             </div>
 
-
             <br>
             <br>
             <br>
-            <h2>Позиционирование и срезы краем экрана</h2>
+            <h2>Positioning and Screen Edge Clipping</h2>
             <p>
-                Позиционирование по-умолчанию вверх и по-центру. По-умолчанию расстояние от контекста
-                до бабла -- <b>8px</b>. Это значение можно перебивать родительским компонентом.
-                Смотри, например, <a href="explain.html"><b><i>bubble</i></b></a>
-            </p>
-            <p>
-                В теории можно добавить вариант нижнего бабла. Но левые и правые -- не в этой реализации.
-            </p>
-            <p>
-                Проблема в том, что бабл обрезается если расположен близко к краю экрана. Особенно на смартфонах.
-                При открытии страницы (и при ресайзе) запускается скрипт, который проверяет близость к краю,
-                и если бабл обрезан, то сдвигает его в обратную сторону. Уменьшаем окно браузера и смотрим пример:
+                There is a problem: bubble gets clipped if it's located too close to the screen edge.
+                So there is a script running and checking the distance to the edge, and if the bubble is clipped,
+                it shifts it in the opposite direction. Shrink the browser window and see it in the examples above
+                (you can make bubble stay on the page clicking it once).
             </p>
 
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="footer__call">
-                <a class="link link--no-hover" href="tel:+74951368606">+7 495 136–86–06</a>
-                <div class="explain bubble-context">
-                    <button class="explain__icon bubble-handler" type="button">
-                        Подсказка
-                    </button>
-                    <div class="bubble bubble--visible">
-                        <div class="bubble__body">
-                            <div class="bubble__heading">
-                                Многоканальный телефон
-                            </div>
-                            <div class="bubble__description">
-                                Для связи с нужным отделом позвоните<br> по номеру и введите добавочный номер
-                            </div>
-                        </div>
-                        <i class="bubble__chevron"></i>
-                    </div>
-                </div>
-            </div>
 
 
             <br>
