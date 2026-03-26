@@ -1,0 +1,38 @@
+.explain {
+    display: inline-block;
+    vertical-align: top;
+}
+    .explain__icon {
+        display: inline-block;
+        vertical-align: top;
+        width: 40px;
+        height: 40px;
+        padding: 14px;
+        border: none;
+        background-color: transparent;
+        background-image: url("../vectors/explain.svg");
+        background-size: 16px 16px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-indent: 300%;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: help;
+    }
+
+    .explain .bubble {
+        bottom: calc(100% - 12px);
+    }
+
+
+.explain--larger {
+
+}
+    .explain--larger .explain__icon {
+        background-image: url("../vectors/explain-large.svg");
+        background-size: 32px 32px;
+    }
+
+    .explain--larger .bubble {
+        bottom: calc(100% - 5px);
+    }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
+        <script type="module" src="../scripts/vendors.js"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>explain</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script type="module" src="../scripts/scripts.js"></script>
+    </head>
+    <body style="background-color: white;">
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>explain</h1>
+
+            <p>
+                Это небольшой разметочнй блок, который создаёт иконку и добавляет к ней тултип.
+                В качестве тултипа используется отдельный блок <a href="bubble.html"><b><i>bubble</i></b></a>.
+                Скрытие и показ там же. Здесь только иконки и позиционирование.
+            </p>
+            <p>
+                Смотрим:
+            </p>
+
+            <div class="explain bubble-context">
+                <button class="explain__icon bubble-handler" type="button">
+                    Подсказка
+                </button>
+                <div class="bubble">
+                    <div class="bubble__body">
+                        <i class="bubble__chevron"></i>
+                        <div class="bubble__background">
+                            Lorem ipsum dolor sit amet
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.bubble--larger</h2>
+
+            <div class="explain explain--larger bubble-context">
+                <button class="explain__icon bubble-handler" type="button">
+                    Подсказка
+                </button>
+                <div class="bubble">
+                    <div class="bubble__body">
+                        <i class="bubble__chevron"></i>
+                        <div class="bubble__background">
+                            Lorem ipsum dolor sit amet
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+    </body>
+</html>
