@@ -1,7 +1,7 @@
 export const bubble = () => {
 
 
-    /* Показ (тап на смартфонах) */
+    /* Show bubble on touch devices (desktop hovers done via CSS): */
     document.querySelectorAll('.bubble-handler').forEach(handler => {
 
         handler.addEventListener('click', function () {
@@ -12,7 +12,7 @@ export const bubble = () => {
                 return;
             }
 
-            // Закрываем все остальные открытые баблы
+            /* close all the others */
             document.querySelectorAll('.bubble--visible').forEach(openBubble => {
                 if (openBubble !== target) {
                     openBubble.classList.remove('bubble--visible');
@@ -23,7 +23,7 @@ export const bubble = () => {
         });
     });
 
-// Клик вне бабла
+
     document.addEventListener('click', function (event) {
         if (!event.target.closest('.bubble, .bubble-handler')) {
             document.querySelectorAll('.bubble--visible').forEach(bubble => {
@@ -32,7 +32,6 @@ export const bubble = () => {
         }
     });
 
-// Закрытие по Escape
     document.addEventListener('keyup', function (event) {
         if (event.key === 'Escape') {
             document.querySelectorAll('.bubble--visible').forEach(bubble => {
@@ -41,13 +40,15 @@ export const bubble = () => {
         }
     });
 
-    /* Проверяем не обрезаются ли баблы краем экрана */
-    const containerPadding = 20; // Убедитесь, что переменная определена
+
+
+    /* check if bubble is clipped by browser's edge */
+    const containerPadding = 20;
 
     function adjustBubblePosition() {
         const bubbles = document.querySelectorAll('.bubble');
 
-        // Сбрасываем предыдущие замеры
+        /* reset previous measurements */
         bubbles.forEach(bubble => {
             bubble.style.marginRight = '0px';
             const chevron = bubble.querySelector('.bubble__chevron');
@@ -63,7 +64,7 @@ export const bubble = () => {
                 const rect = bubble.getBoundingClientRect();
                 const windowWidth = window.innerWidth;
 
-                // Выходит ли за левый край
+                /* if clipped on the left side */
                 if (rect.left < 0) {
                     const shiftDistance = rect.left - (containerPadding / 2);
                     bubble.style.marginRight = `${shiftDistance}px`;
@@ -71,7 +72,8 @@ export const bubble = () => {
                         chevron.style.left = `${shiftDistance * 2}px`;
                     }
                 }
-                // Выходит ли за правый край
+
+                /* if clipped on the right side */
                 else if (rect.right > windowWidth) {
                     const shiftDistance = rect.right - windowWidth + (containerPadding / 2);
                     bubble.style.marginRight = `${shiftDistance}px`;
@@ -79,19 +81,10 @@ export const bubble = () => {
                         chevron.style.right = `${-1 * shiftDistance * 2}px`;
                     }
                 }
-                // Сброс (уже выполнен выше, но для чистоты логики)
-                else {
-                    bubble.style.marginRight = '0px';
-                    if (chevron) {
-                        chevron.style.right = '0px';
-                        chevron.style.left = '0px';
-                    }
-                }
             });
         });
     }
 
-// Инициализация и обработчики событий
     adjustBubblePosition();
     window.addEventListener('resize', adjustBubblePosition);
     window.addEventListener('load', adjustBubblePosition);
