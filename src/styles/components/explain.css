@@ -3,36 +3,56 @@
     vertical-align: top;
 }
     .explain__icon {
-        display: inline-block;
-        vertical-align: top;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 40px;
         height: 40px;
-        padding: 14px;
+        padding: 0;
         border: none;
         background-color: transparent;
-        background-image: url("../vectors/explain.svg");
-        background-size: 16px 16px;
-        background-position: center center;
-        background-repeat: no-repeat;
-        text-indent: 300%;
-        white-space: nowrap;
-        overflow: hidden;
         cursor: help;
     }
+        .explain__icon .icon {
+            font-size: 16px;
+            line-height: 16px;
+            color: inherit;
+        }
 
     .explain .bubble {
-        bottom: calc(100% - 12px);
+        bottom: calc(100% - 10px);
     }
 
 
-.explain--larger {
+.explain--36px {
 
 }
-    .explain--larger .explain__icon {
-        background-image: url("../vectors/explain-large.svg");
-        background-size: 32px 32px;
+    .explain--36px .explain__icon {
+        width: 32px;
+        height: 32px;
     }
 
-    .explain--larger .bubble {
-        bottom: calc(100% - 5px);
+    .explain--36px .explain__icon .icon {
+        font-size: 15px;
+    }
+
+    .explain--36px .bubble {
+        bottom: calc(100% - 8px);
+    }
+
+
+.explain--32px {
+
+}
+    .explain--32px .explain__icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .explain--32px .explain__icon .icon {
+        font-size: 14px;
+    }
+
+    .explain--32px .bubble {
+        bottom: calc(100% - 8px);
     }

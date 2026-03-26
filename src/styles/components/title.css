@@ -5,6 +5,9 @@
     font-size: 20px;
     line-height: 28px;
 }
+    .title .explain {
+        margin: -4px -6px -8px -10px;
+    }
 
 .title--30px {
     font-size: 30px;
