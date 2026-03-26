@@ -43,7 +43,8 @@ export const bubble = () => {
 
 
     /* check if bubble is clipped by browser's edge */
-    const containerPadding = 20;
+    const containerPadding = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--container-padding'));
+    console.log(containerPadding);
 
     function adjustBubblePosition() {
         const bubbles = document.querySelectorAll('.bubble');
