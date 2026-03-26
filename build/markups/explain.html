@@ -17,7 +17,7 @@
         <!-- meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>photo-upload</title>
+        <title>bubble</title>
 
         <!-- assets -->
         <link rel="stylesheet" href="../styles/styles.css?1774495309">
@@ -28,34 +28,45 @@
         <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
             <br>
-            <h1>photo-upload</h1>
-
-            <div class="photo-upload">
-                <button class="photo-upload__placeholder" type="button">
-                    <i class="icon">account_circle</i>
-                </button>
-                <button class="photo-upload__edit" type="button">
-                    <i class="icon">edit</i>
-                </button>
-            </div>
+            <h1>bubble</h1>
 
             <p>
-                Replace <b><i>photo-upload__placeholder</i></b> <a href="avatar.html"><b><i>avatar</i></b></a>
+                Это небольшой разметочнй блок, который создаёт иконку и добавляет к ней тултип.
+                В качестве тултипа используется отдельный блок <a href="bubble.html"><b><i>bubble</i></b></a>.
+                Скрытие и показ там же. Здесь только иконки и позиционирование.
+            </p>
+            <p>
+                Смотрим:
             </p>
 
-            <div class="photo-upload">
-                <button class="avatar avatar--with-hover" type="button">
-                    <img class="avatar__image"
-                         srcset="../temp/avatars/avatar-56x56@2x.jpg 2x"
-                         src="../temp/avatars/avatar-56x56@1x.jpg"
-                         width="56"
-                         height="56"
-                         alt=""
-                    >
+            <div class="explain bubble-context">
+                <button class="explain__icon bubble-handler" type="button">
+                    Подсказка
                 </button>
-                <button class="photo-upload__edit" type="button">
-                    <i class="icon">edit</i>
+                <div class="bubble">
+                    <div class="bubble__body">
+                        Lorem ipsum dolor sit amet
+                    </div>
+                    <i class="bubble__chevron"></i>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.bubble--larger</h2>
+
+            <div class="explain explain--larger bubble-context">
+                <button class="explain__icon bubble-handler" type="button">
+                    Подсказка
                 </button>
+                <div class="bubble">
+                    <div class="bubble__body">
+                        Lorem ipsum dolor sit amet
+                    </div>
+                    <i class="bubble__chevron"></i>
+                </div>
             </div>
 
 

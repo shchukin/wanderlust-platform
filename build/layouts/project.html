@@ -2,14 +2,14 @@
 <html class="sidebar-expanded" lang="en">
     <head>
         <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774032638">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774032638">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774032638">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774032638">
-        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774032638">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774032638">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774495309">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774495309">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774495309">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774495309">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774495309">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774495309">
         <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
-        <script type="module" src="../scripts/vendors.js?1774032638"></script>
+        <script type="module" src="../scripts/vendors.js?1774495309"></script>
 
         <!-- Font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -29,8 +29,8 @@
         <link rel="manifest" href="../manifest.json">
 
         <!-- assets -->
-        <link rel="stylesheet" href="../styles/styles.css?1774032638">
-        <script type="module" src="../scripts/scripts.js?1774032638"></script>
+        <link rel="stylesheet" href="../styles/styles.css?1774495309">
+        <script type="module" src="../scripts/scripts.js?1774495309"></script>
 
     </head>
     <body>
@@ -632,9 +632,9 @@
                                                 </td>
                                                 <td class="table__cell">
                                                     <div class="statuses-list">
-                                                        <button class="status status--editing" type="button">
-                                                            <i class="icon">edit</i>Editing
-                                                        </button>
+                                                        <div class="status status--internal-review">
+                                                            <i class="icon">content_copy</i>Internal Review
+                                                        </div>
                                                     </div>
                                                 </td>
                                                 <td class="table__cell">
@@ -689,9 +689,9 @@
                                                 </td>
                                                 <td class="table__cell">
                                                     <div class="statuses-list">
-                                                        <button class="status status--editing" type="button">
-                                                            <i class="icon">edit</i>Editing
-                                                        </button>
+                                                        <div class="status status--internal-review">
+                                                            <i class="icon">content_copy</i>Internal Review
+                                                        </div>
                                                     </div>
                                                 </td>
                                                 <td class="table__cell">
@@ -807,29 +807,8 @@
                                                 </td>
                                                 <td class="table__cell">
                                                     <div class="statuses-list">
-                                                        <button class="status status--editing" type="button">
-                                                            <i class="icon">edit</i>Editing
-                                                        </button>
                                                         <button class="status status--internal-review" type="button">
                                                             <i class="icon">content_copy</i>Internal Review
-                                                        </button>
-                                                        <button class="status status--client-review" type="button">
-                                                            <i class="icon">rotate_right</i>Client Review
-                                                        </button>
-                                                        <button class="status status--under-revision" type="button">
-                                                            <i class="icon">refresh</i>Under Revision
-                                                        </button>
-                                                        <button class="status status--pending" type="button">
-                                                            <i class="icon">circle</i>Pending
-                                                        </button>
-                                                        <button class="status status--rejected" type="button">
-                                                            <i class="icon">star</i>Rejected
-                                                        </button>
-                                                        <button class="status status--file-requested" type="button">
-                                                            <i class="icon">logout</i>File Requested
-                                                        </button>
-                                                        <button class="status status--approved" type="button">
-                                                            <i class="icon">label</i>Approved
                                                         </button>
                                                     </div>
                                                 </td>
@@ -1645,10 +1624,14 @@
 
                             <!-- temp -->
                             <br>
-                            <h2>feedback (admin only)</h2>
+                            <h2>feedback</h2>
                             <!--/temp -->
 
-                            <div class="feedback__item">
+                            <!-- temp -->
+                            Client variant (editing):
+                            <!--/temp -->
+
+                            <div class="feedback">
                                 <div class="feedback__heading">
                                     <h2 class="title">Customer Feedback</h2>
                                 </div>
@@ -1868,7 +1851,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="feedback__item">
+
+
+                            <!-- temp -->
+                            <p><br>Admin variant (static):</p>
+                            <!--/temp -->
+
+                            <div class="feedback">
                                 <div class="feedback__heading">
                                     <h2 class="title">Customer Feedback</h2>
                                 </div>
