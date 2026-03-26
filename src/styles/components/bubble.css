@@ -59,7 +59,7 @@
         }
 
 
-
+/* Touch + script */
 .bubble--visible {
     opacity: 1;
     visibility: visible;
@@ -67,7 +67,7 @@
 }
 
 
-/* Если работаем мышью, то показываем c анимациями и по таймауту */
+/* Mouse */
 @media (hover: hover) {
     .bubble-context:hover .bubble {
         opacity: 1;
