@@ -29,7 +29,6 @@
         white-space: nowrap;
     }
 
-    /* Трек — единый цвет во всех браузерах */
     .range__widget::-webkit-slider-runnable-track {
         height: 4px;
         background-color: var(--light-gray);
@@ -46,7 +45,7 @@
         height: 4px;
         background-color: var(--light-gray);
         border-radius: 2px;
-        border: none;          /* убираем стандартный бордер в IE/Edge */
+        border: none;
     }
 
     /* Ручка */
@@ -55,7 +54,7 @@
         appearance: none;
         width: var(--range-thumb-size);
         height: var(--range-thumb-size);
-        margin-top: -7px;      /* центрируем по высоте трека */
+        margin-top: -7px; /* vertical alignment */
         background-color: var(--black);
         border-radius: 50%;
         cursor: pointer;
@@ -66,7 +65,7 @@
         appearance: none;
         width: var(--range-thumb-size);
         height: var(--range-thumb-size);
-        margin-top: -7px;      /* центрируем по высоте трека */
+        margin-top: -7px; /* vertical alignment */
         background-color: var(--black);
         border-radius: 50%;
         cursor: pointer;
@@ -77,7 +76,7 @@
         appearance: none;
         width: var(--range-thumb-size);
         height: var(--range-thumb-size);
-        margin-top: -7px;      /* центрируем по высоте трека */
+        margin-top: -7px; /* vertical alignment */
         background-color: var(--black);
         border-radius: 50%;
         cursor: pointer;
