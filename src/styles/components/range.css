@@ -48,7 +48,7 @@
         border: none;
     }
 
-    /* Ручка */
+    /* handler */
     .range__widget::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;

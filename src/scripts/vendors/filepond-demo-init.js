@@ -3,14 +3,12 @@ import * as FilePondPluginImagePreview from 'https://cdn.jsdelivr.net/npm/filepo
 import * as FilePondPluginFileValidateSize from 'https://cdn.jsdelivr.net/npm/filepond-plugin-file-validate-size@2.2.8/dist/filepond-plugin-file-validate-size.esm.min.js';
 import * as FilePondPluginFileValidateType  from 'https://cdn.jsdelivr.net/npm/filepond-plugin-file-validate-type@1.2.8/dist/filepond-plugin-file-validate-type.esm.min.js';
 
-// Регистрация плагинов
 FilePond.registerPlugin(
     FilePondPluginImagePreview.default,
     FilePondPluginFileValidateSize.default,
     FilePondPluginFileValidateType.default
 );
 
-// Глобальные настройки
 FilePond.setOptions({
     credits: false,
     labelIdle:

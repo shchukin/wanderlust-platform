@@ -2,17 +2,13 @@ import Choices from 'https://cdn.jsdelivr.net/npm/choices.js/public/assets/scrip
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // В некоторых версиях CDN импорт может потребовать: 
-    // const ChoicesLib = Choices.default || Choices;
-    // Но обычно в +esm варианте работает напрямую.
-
     // Single Select
     const singleSelects = document.querySelectorAll('.js-choices-single');
     singleSelects.forEach(el => {
         new Choices(el, {
             searchEnabled: true,
             itemSelectText: '',
-            allowHTML: true, // В новых версиях Choices это обязательно для рендеринга
+            allowHTML: true,
             placeholder: true,
             placeholderValue: el.getAttribute('placeholder') || 'Select an option',
         });
