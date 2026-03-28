@@ -59,6 +59,77 @@ export const input = () => {
     });
 
 
+    /* Dynamic width */
+
+    const dynamicWidthMeasureMap = new WeakMap();
+
+    const createDynamicWidthMeasure = () => {
+        const $measure = document.createElement('div');
+        $measure.setAttribute('aria-hidden', 'true');
+        $measure.style.position = 'absolute';
+        $measure.style.left = '-9999px';
+        $measure.style.top = '0';
+        $measure.style.visibility = 'hidden';
+        $measure.style.whiteSpace = 'pre';
+        $measure.style.height = 'auto';
+        $measure.style.width = 'auto';
+        $measure.style.padding = '0';
+        $measure.style.border = '0';
+        $measure.style.boxSizing = 'content-box';
+        document.body.appendChild($measure);
+        return $measure;
+    };
+
+    const updateDynamicWidth = ($element) => {
+        if (!$element || $element.type !== 'text') return;
+
+        let $measure = dynamicWidthMeasureMap.get($element);
+        if (!$measure) {
+            $measure = createDynamicWidthMeasure();
+            dynamicWidthMeasureMap.set($element, $measure);
+        }
+
+        const computedStyles = window.getComputedStyle($element);
+        $measure.style.font = computedStyles.font;
+        $measure.style.letterSpacing = computedStyles.letterSpacing;
+        $measure.style.textTransform = computedStyles.textTransform;
+
+        const rawValue = $element.value;
+        const placeholder = $element.getAttribute('placeholder') || '';
+        const text = rawValue || placeholder || ' ';
+        $measure.textContent = text;
+
+        const textWidth = $measure.getBoundingClientRect().width;
+        const paddingLeft = parseFloat(computedStyles.paddingLeft) || 0;
+        const paddingRight = parseFloat(computedStyles.paddingRight) || 0;
+        const borderLeft = parseFloat(computedStyles.borderLeftWidth) || 0;
+        const borderRight = parseFloat(computedStyles.borderRightWidth) || 0;
+
+        const width = Math.ceil(textWidth + paddingLeft + paddingRight + borderLeft + borderRight);
+        $element.style.width = `${width}px`;
+    };
+
+    const initDynamicWidth = () => {
+        document.querySelectorAll('.input--dynamic-width .input__widget[type="text"]').forEach(($element) => {
+            updateDynamicWidth($element);
+        });
+    };
+
+    initDynamicWidth();
+
+    if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(() => {
+            initDynamicWidth();
+        });
+    }
+
+    document.addEventListener('input', (event) => {
+        const $input = event.target.closest('.input--dynamic-width .input__widget[type="text"]');
+        if (!$input) return;
+        updateDynamicWidth($input);
+    });
+
+
 
     /* Toggle password visibility */
 

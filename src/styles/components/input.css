@@ -278,6 +278,6 @@ select.input__widget:disabled {
         }
 
 
-.input--dynamic-width {
+.input--dynamic-width .input__widget {
     width: 150px;
 }
