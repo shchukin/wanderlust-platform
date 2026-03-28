@@ -13,10 +13,7 @@ export const scrollable = () => {
             return;
         }
 
-        const actions = scrollable.querySelectorAll('.scrollable__action');
-        actions.forEach(action => {
-            action.style.display = 'block';
-        });
+        scrollable.classList.add('scrollable--initialized');
 
         prev.addEventListener('click', () => {
             body.scrollTo({

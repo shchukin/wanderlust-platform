@@ -24,3 +24,7 @@
     .scrollable__action--next {
         right: 0;
     }
+
+    .scrollable--initialized .scrollable__action {
+        display: block;
+    }
