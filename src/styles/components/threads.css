@@ -18,67 +18,8 @@
     }
 
     .threads__navigation {
-        position: relative;
-        flex-shrink: 0;
-        padding-left: calc(var(--chat-padding) - var(--threads-tab-padding));
-        padding-right: calc(var(--chat-padding) - var(--threads-tab-padding));
-        background-image: linear-gradient(to top, var(--light-gray), var(--light-gray) 1px, transparent 1px, transparent);
-        overflow-x: auto;
+
     }
-        .threads__ribbon {
-            flex-shrink: 0;
-            display: flex;
-            width: fit-content;
-            align-items: flex-start;
-        }
-            .threads__tab {
-                position: relative;
-                flex-shrink: 0;
-                display: flex;
-                align-items: center;
-                gap: 7px;
-                padding: 12px var(--threads-tab-padding) 10px;
-                border-bottom: 2px solid transparent;
-                color: var(--gray);
-                white-space: nowrap;
-                cursor: pointer;
-            }
-
-            .threads__tab:active {
-                transform: translateY(1px);
-            }
-
-                .threads__tab::before {
-                    content: "";
-                    position: absolute;
-                    inset: 4px 2px;
-                    border-radius: 8px;
-                }
-
-                .threads__tab:hover::before {
-                    background-color: var(--hover-over-white);
-                }
-
-            .threads__tab--current {
-                border-block-color: currentColor;
-                color: var(--blue);
-                cursor: default;
-            }
-
-            .threads__tab--current::before {
-                display: none;
-            }
-                .threads__person {
-                    position: relative;
-                }
-
-                .threads__person + .threads__person {
-                    margin-left: -13px;
-                }
-
-                .threads__name {
-                    position: relative;
-                }
 
     .threads__widget {
         flex-grow: 1;

@@ -1,0 +1,24 @@
+.scrollable {
+    position: relative;
+}
+    .scrollable__body {
+        overflow-x: auto;
+    }
+        .scrollable__ribbon {
+            width: fit-content;
+        }
+
+    .scrollable__action {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        bottom: 0;
+    }
+
+    .scrollable__action--prev {
+        left: 0;
+    }
+
+    .scrollable__action--next {
+        right: 0;
+    }

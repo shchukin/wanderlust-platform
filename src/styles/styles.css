@@ -79,7 +79,7 @@
 @import url("components/popup.css");
 @import url("components/bubble.css");
 @import url("components/explain.css");
-
+@import url("components/scrollable.css");
 
 @import url("components/sidebar.css");
 @import url("components/sidebar-toggler.css");
@@ -131,3 +131,4 @@
 @import url("components/fonts.css");
 @import url("components/export-settings.css");
 @import url("components/export-summary.css");
+@import url("components/chat-nav.css");
