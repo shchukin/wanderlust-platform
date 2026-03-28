@@ -16,6 +16,9 @@
 
     .checkout__navigation {
         margin-top: 22px;
+        background-color: #ffffff;
+        border-radius: var(--radius);
+        overflow: hidden; /* can rounded corners (when scrolled) */
     }
 
     .checkout__sub-heading {
