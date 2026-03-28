@@ -27,7 +27,7 @@ export const scrollable = () => {
 
         const onNext = () => {
             $body.scrollTo({
-                left: $body.scrollWidth,
+                left: $body.scrollLeft + $body.clientWidth,
                 behavior: 'smooth'
             });
         };
