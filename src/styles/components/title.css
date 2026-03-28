@@ -82,10 +82,8 @@
 
 
 .title__editing {
-    display: inline-grid;
+    display: inline-flex;
     vertical-align: top;
-    grid-template-columns: 1fr 32px;
     gap: 8px;
-    margin-top: -1px;
-    margin-bottom: -1px;
+    margin-bottom: -2px;
 }
