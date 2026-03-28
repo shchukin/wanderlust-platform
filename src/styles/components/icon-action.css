@@ -1,6 +1,7 @@
 .icon-action {
     position: relative;
-    display: flex;
+    display: inline-flex;
+    vertical-align: top;
     align-items: center;
     justify-content: center;
     width: 40px;
@@ -68,6 +69,13 @@
         color: #ffffff;
     }
 
+
+.icon-action--hover-over-gray {
+
+}
+    .icon-action--hover-over-gray:hover::before {
+        background-color: var(--hover-over-gray);
+    }
 
 
 .icon-action--36px {

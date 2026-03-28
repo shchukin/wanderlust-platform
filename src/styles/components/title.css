@@ -5,21 +5,35 @@
     font-size: 20px;
     line-height: 28px;
 }
-    .title .explain {
-        margin: -4px -6px -8px -10px;
+    .title .explain,
+    .title .icon-action {
+        margin: -4px -6px -8px -8px;
     }
 
 .title--30px {
     font-size: 30px;
     line-height: 36px;
 }
+    .title--30px .explain,
+    .title--30px .icon-action {
+        margin: -1px -2px -3px -8px;
+    }
 
 .title--24px {
     font-size: 24px;
     line-height: 30px;
 }
+    .title--24px .explain,
+    .title--24px .icon-action {
+        margin: -4px -4px -6px -8px;
+    }
+
 
 .title--18px {
     font-size: 18px;
     line-height: 24px;
 }
+    .title--18px .explain,
+    .title--18px .icon-action {
+        margin: -7px -8px -9px -8px;
+    }
