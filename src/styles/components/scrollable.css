@@ -6,6 +6,7 @@
     }
         .scrollable__ribbon {
             width: fit-content;
+            min-width: 100%;
         }
 
     .scrollable__action {
@@ -13,6 +14,7 @@
         z-index: 10;
         top: 0;
         bottom: 0;
+        display: none;
     }
 
     .scrollable__action--prev {
