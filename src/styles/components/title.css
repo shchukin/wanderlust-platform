@@ -5,27 +5,59 @@
     font-size: 20px;
     line-height: 28px;
 }
-    .title .explain,
-    .title .icon-action {
-        margin: -4px -6px -8px -8px;
+    .title > .explain,
+    .title > .icon-action {
+        margin: -4px -6px -8px -6px;
     }
+
+    .title > .explain--36px,
+    .title > .icon-action--36px {
+        margin: -2px -6px -6px -6px;
+    }
+
+    .title > .explain--32px,
+    .title > .icon-action--32px {
+        margin: 0 -6px -4px -6px;
+    }
+
 
 .title--30px {
     font-size: 30px;
     line-height: 36px;
 }
-    .title--30px .explain,
-    .title--30px .icon-action {
-        margin: -1px -2px -3px -8px;
+    .title--30px > .explain,
+    .title--30px > .icon-action {
+        margin: -1px -2px -3px -6px;
     }
+
+    .title--30px > .explain--36px,
+    .title--30px > .icon-action--36px {
+        margin: 1px -2px -1px -6px;
+    }
+
+    .title--30px > .explain--32px,
+    .title--30px > .icon-action--32px {
+        margin: 3px -2px 1px -6px;
+    }
+
 
 .title--24px {
     font-size: 24px;
     line-height: 30px;
 }
-    .title--24px .explain,
-    .title--24px .icon-action {
-        margin: -4px -4px -6px -8px;
+    .title--24px > .explain,
+    .title--24px > .icon-action {
+        margin: -4px -4px -6px -6px;
+    }
+
+    .title--24px > .explain--36px,
+    .title--24px > .icon-action--36px {
+        margin: -2px -4px -4px -6px;
+    }
+
+    .title--24px > .explain--32px,
+    .title--24px > .icon-action--32px {
+        margin: 0 -4px -2px -6px;
     }
 
 
@@ -33,7 +65,27 @@
     font-size: 18px;
     line-height: 24px;
 }
-    .title--18px .explain,
-    .title--18px .icon-action {
-        margin: -7px -8px -9px -8px;
+    .title--18px > .explain,
+    .title--18px > .icon-action {
+        margin: -7px -8px -9px -6px;
     }
+
+    .title--18px > .explain--36px,
+    .title--18px > .icon-action--36px {
+        margin: -5px -8px -7px -6px;
+    }
+
+    .title--18px > .explain--32px,
+    .title--18px > .icon-action--32px {
+        margin: -3px -8px -5px -6px;
+    }
+
+
+.title__editing {
+    display: inline-grid;
+    vertical-align: top;
+    grid-template-columns: 1fr 32px;
+    gap: 8px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
