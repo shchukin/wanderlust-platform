@@ -15,6 +15,7 @@ import { tabs } from './components/tabs.js';
 import { range } from './components/range.js';
 import { popup } from './components/popup.js';
 import { bubble } from './components/bubble.js';
+import { scrollable } from './components/scrollable.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     sidebarToggler();
@@ -34,4 +35,5 @@ document.addEventListener('DOMContentLoaded', () => {
     range();
     popup();
     bubble();
+    scrollable();
 });
