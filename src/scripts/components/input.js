@@ -81,10 +81,11 @@ export const input = () => {
     };
 
     const updateDynamicWidth = ($element) => {
-        if (!$element) return;
-        const isTextInput = $element.matches('input[type="text"]');
+        const isTextInput = $element.matches('input');
         const isSelect = $element.matches('select');
-        if (!isTextInput && !isSelect) return;
+        if (!isTextInput && !isSelect) {
+            return;
+        }
 
         let $measure = dynamicWidthMeasureMap.get($element);
         if (!$measure) {
@@ -133,15 +134,15 @@ export const input = () => {
     }
 
     document.addEventListener('input', (event) => {
-        const $input = event.target.closest('.input--dynamic-width .input__widget[type="text"]');
-        if (!$input) return;
-        updateDynamicWidth($input);
+        const $inputWidget = event.target.closest('.input--dynamic-width .input__widget');
+        if (!$inputWidget || $inputWidget.matches('select')) return; /* not a select */
+        updateDynamicWidth($inputWidget);
     });
 
     document.addEventListener('change', (event) => {
-        const $select = event.target.closest('.input--dynamic-width select.input__widget');
-        if (!$select) return;
-        updateDynamicWidth($select);
+        const $inputWidgetSelect = event.target.closest('.input--dynamic-width select.input__widget'); /* select only */
+        if (!$inputWidgetSelect) return;
+        updateDynamicWidth($inputWidgetSelect);
     });
 
 
