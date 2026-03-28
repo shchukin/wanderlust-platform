@@ -6,6 +6,7 @@ export const scrollable = () => {
         const $next = scrollable.querySelector('.scrollable__action--next');
         const $body = scrollable.querySelector('.scrollable__body');
         const $ribbon = scrollable.querySelector('.scrollable__ribbon');
+        const sizeThreshold = 10; /* Don't init if there is no real need for that (eg 10px is not a need to run scrolling) */
 
         const updateScrollState = () => {
             const edgeThreshold = 10;
@@ -36,7 +37,7 @@ export const scrollable = () => {
         };
 
         const update = () => {
-            const isScrollable = $ribbon.offsetWidth > $body.offsetWidth + 10; /* 10px is some sort of threshold. Don't init if there is no real need for that */
+            const isScrollable = $ribbon.offsetWidth > $body.offsetWidth + sizeThreshold;
 
             if (isScrollable) {
                 if (!scrollable.classList.contains('scrollable--initialized')) {

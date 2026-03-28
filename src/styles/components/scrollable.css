@@ -28,3 +28,15 @@
     .scrollable--initialized .scrollable__action {
         display: block;
     }
+
+
+    .scrollable--scrolled-to-left .scrollable__action--prev {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+
+    .scrollable--scrolled-to-right .scrollable__action--next {
+        opacity: 0;
+        visibility: hidden;
+    }
