@@ -60,6 +60,7 @@ export const scrollable = () => {
         };
 
         update();
+        window.addEventListener('load', update);
         window.addEventListener('resize', update);
     });
 };
