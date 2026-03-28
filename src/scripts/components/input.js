@@ -81,7 +81,10 @@ export const input = () => {
     };
 
     const updateDynamicWidth = ($element) => {
-        if (!$element || $element.type !== 'text') return;
+        if (!$element) return;
+        const isTextInput = $element.matches('input[type="text"]');
+        const isSelect = $element.matches('select');
+        if (!isTextInput && !isSelect) return;
 
         let $measure = dynamicWidthMeasureMap.get($element);
         if (!$measure) {
@@ -94,9 +97,15 @@ export const input = () => {
         $measure.style.letterSpacing = computedStyles.letterSpacing;
         $measure.style.textTransform = computedStyles.textTransform;
 
-        const rawValue = $element.value;
-        const placeholder = $element.getAttribute('placeholder') || '';
-        const text = rawValue || placeholder || ' ';
+        let text = ' ';
+        if (isSelect) {
+            const selectedOption = $element.selectedOptions?.[0];
+            text = selectedOption ? selectedOption.textContent.trim() : ' ';
+        } else {
+            const rawValue = $element.value;
+            const placeholder = $element.getAttribute('placeholder') || '';
+            text = rawValue || placeholder || ' ';
+        }
         $measure.textContent = text;
 
         const textWidth = $measure.getBoundingClientRect().width;
@@ -110,7 +119,7 @@ export const input = () => {
     };
 
     const initDynamicWidth = () => {
-        document.querySelectorAll('.input--dynamic-width .input__widget[type="text"]').forEach(($element) => {
+        document.querySelectorAll('.input--dynamic-width .input__widget').forEach(($element) => {
             updateDynamicWidth($element);
         });
     };
@@ -127,6 +136,12 @@ export const input = () => {
         const $input = event.target.closest('.input--dynamic-width .input__widget[type="text"]');
         if (!$input) return;
         updateDynamicWidth($input);
+    });
+
+    document.addEventListener('change', (event) => {
+        const $select = event.target.closest('.input--dynamic-width select.input__widget');
+        if (!$select) return;
+        updateDynamicWidth($select);
     });
 
 
