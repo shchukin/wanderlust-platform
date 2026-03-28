@@ -16,14 +16,22 @@
         bottom: 0;
         display: none;
         transition: opacity 200ms ease;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        width: 40px;
+        color: inherit;
+        cursor: pointer;
     }
 
     .scrollable__action--prev {
         left: 0;
+        background-image: linear-gradient(to right, #ffffff, #ffffff 10%, transparent);
     }
 
     .scrollable__action--next {
         right: 0;
+        background-image: linear-gradient(to left, #ffffff, #ffffff 10%, transparent);
     }
 
 
@@ -41,3 +49,25 @@
         opacity: 0;
         visibility: hidden;
     }
+        .scrollable__action::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: 30px;
+            height: 30px;
+            background-color: var(--lightest-gray);
+            border-radius: 50%;
+        }
+
+        .scrollable__action:hover::before {
+            background-color: #fdd6ed;
+        }
+
+        .scrollable__action .icon {
+            position: relative;
+            font-size: 18px;
+            line-height: 18px;
+            color: inherit;
+        }
+
