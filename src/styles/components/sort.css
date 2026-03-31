@@ -27,6 +27,10 @@
         transform: translateY(1px);
     }
 
+    .sort--expanded .sort__handler {
+        background-color: var(--table-header-hover);
+    }
+
     .sort__order {
         position: absolute;
         right: 0;
@@ -83,53 +87,9 @@
         z-index: 10;
         right: 0;
         top: calc(100% + 8px);
-        padding-top: 15px;
-        background-color: #ffffff;
-        box-shadow: var(--shadow);
-        border-radius: var(--radius);
         display: none;
     }
 
     .sort--expanded .sort__dropdown {
         display: block;
     }
-
-        .sort__list {
-
-        }
-            .sort__dropdown .choice {
-                --choice-outset: 0;
-            }
-
-            .sort__dropdown .choice {
-                padding-left: 18px;
-                min-width: 160px;
-                padding-right: 24px;
-                border-radius: 0;
-            }
-
-
-        .sort__footer {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 12px 18px 24px;
-        }
-
-            .sort__apply {
-
-            }
-                .sort__apply .button {
-                    position: relative;
-                }
-                    /*.make clickable area larger */
-                    .sort__apply .button::before {
-                        content: "";
-                        position: absolute;
-                        inset: -6px;
-                    }
-
-            .sort__cancel {
-                font-size: 13px;
-                line-height: 16px;
-            }

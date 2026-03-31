@@ -56,10 +56,6 @@
     border-color: var(--input-border-focus);
 }
 
-.panel--gray .choice:hover {
-    background-color: #ffffff;
-    border-color: #ffffff;
-}
 
 /* Checked */
 .choice:has(.choice__widget:checked) {

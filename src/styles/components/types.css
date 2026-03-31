@@ -1,0 +1,49 @@
+.types {
+    width: fit-content;
+    padding-top: 15px;
+    padding-bottom: 24px;
+    background-color: #ffffff;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+}
+    .types__list {
+
+    }
+        .types__list .choice {
+            --choice-outset: 0;
+        }
+
+        .types__list .choice {
+            padding-left: 18px;
+            min-width: 160px;
+            padding-right: 24px;
+            border-radius: 0;
+        }
+
+
+    .types__footer {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 12px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+        .types__apply {
+
+        }
+            .types__apply .button {
+                position: relative;
+            }
+                /*.make clickable area larger */
+                .types__apply .button::before {
+                    content: "";
+                    position: absolute;
+                    inset: -6px;
+                }
+
+        .types__cancel {
+            font-size: 13px;
+            line-height: 16px;
+        }

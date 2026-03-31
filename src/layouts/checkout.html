@@ -686,10 +686,66 @@
                                                 </div>
                                             </div>
                                             <div class="gallery__filter">
-                                                <button class="button button--clear button--height-32px" type="button">
-                                                    <i class="icon">instant_mix</i>
-                                                    Filter
-                                                </button>
+                                                <div class="dropdown">
+                                                    <div class="dropdown__handler">
+                                                        <button class="button button--clear button--height-32px" type="button">
+                                                            <i class="icon">instant_mix</i>
+                                                            Filter
+                                                        </button>
+                                                    </div>
+                                                    <div class="dropdown__body">
+                                                        <div class="types">
+                                                            <div class="types__list">
+                                                                <label class="choice choice--smaller choice--full-width choice--gray choice--blue-when-checked">
+                                                                    <input class="choice__widget" type="checkbox" checked>
+                                                                    <div class="choice__icon choice__icon--unchecked">
+                                                                        <i class="icon">check_box_outline_blank</i>
+                                                                    </div>
+                                                                    <div class="choice__icon choice__icon--checked">
+                                                                        <i class="icon">check_box</i>
+                                                                    </div>
+                                                                    <div class="choice__label">
+                                                                        All
+                                                                    </div>
+                                                                </label>
+                                                                <label class="choice choice--smaller choice--full-width choice--gray choice--blue-when-checked">
+                                                                    <input class="choice__widget" type="checkbox">
+                                                                    <div class="choice__icon choice__icon--unchecked">
+                                                                        <i class="icon">check_box_outline_blank</i>
+                                                                    </div>
+                                                                    <div class="choice__icon choice__icon--checked">
+                                                                        <i class="icon">check_box</i>
+                                                                    </div>
+                                                                    <div class="choice__label">
+                                                                        Projects
+                                                                    </div>
+                                                                </label>
+                                                                <label class="choice choice--smaller choice--full-width choice--gray choice--blue-when-checked">
+                                                                    <input class="choice__widget" type="checkbox">
+                                                                    <div class="choice__icon choice__icon--unchecked">
+                                                                        <i class="icon">check_box_outline_blank</i>
+                                                                    </div>
+                                                                    <div class="choice__icon choice__icon--checked">
+                                                                        <i class="icon">check_box</i>
+                                                                    </div>
+                                                                    <div class="choice__label">
+                                                                        Inbox
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="types__footer">
+                                                                <div class="types__apply">
+                                                                    <button class="button button--height-24px" type="button">
+                                                                        Apply
+                                                                    </button>
+                                                                </div>
+                                                                <div class="types__cancel">
+                                                                    <button class="link" type="button">Cancel</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="gallery__view">
                                                 <div class="view-switch">

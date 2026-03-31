@@ -24,13 +24,13 @@ export const sort = () => {
             return;
         }
 
-        if (event.target.closest('.sort__apply .button')) {
+        if (event.target.closest('.types__apply .button')) {
             event.preventDefault();
             event.target.closest('.sort').classList.remove('sort--expanded');
             return;
         }
 
-        if (event.target.closest('.sort__cancel .link')) {
+        if (event.target.closest('.types__cancel .link')) {
             event.preventDefault();
             event.target.closest('.sort').classList.remove('sort--expanded');
             return;
