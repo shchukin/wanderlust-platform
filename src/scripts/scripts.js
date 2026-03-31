@@ -16,6 +16,7 @@ import { range } from './components/range.js';
 import { popup } from './components/popup.js';
 import { bubble } from './components/bubble.js';
 import { scrollable } from './components/scrollable.js';
+import { youtubePreview } from './components/youtube-preview.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     sidebarToggler();
@@ -36,4 +37,5 @@ document.addEventListener('DOMContentLoaded', () => {
     popup();
     bubble();
     scrollable();
+    youtubePreview();
 });

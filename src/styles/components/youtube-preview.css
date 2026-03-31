@@ -1,0 +1,30 @@
+.youtube-preview {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+    .youtube-preview__handler {
+        vertical-align: top;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+        .youtube-preview__image {
+            vertical-align: top;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .youtube-preview__iframe {
+            vertical-align: top;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .youtube-preview:hover {
+            filter: var(--hover-images);
+        }
