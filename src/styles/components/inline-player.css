@@ -1,0 +1,46 @@
+.inline-player {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+    .inline-player__body {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        margin-top: -5px;
+        margin-bottom: -5px;
+    }
+        .inline-player__playback {
+            display: flex;
+            align-items: center;
+        }
+            .inline-player__playback .icon-action {
+                color: currentColor;
+            }
+
+            .inline-player__playback .icon {
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 22px;
+                color: currentColor;
+            }
+
+            .inline-player__playback::after {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 18px;
+                background-color: currentColor;
+                margin-right: 8px;
+            }
+
+        .inline-player__sound-wave {
+            display: flex;
+            align-items: center;
+        }
+            .inline-player__sound-wave .icon {
+                font-size: 14px;
+                line-height: 14px;
+                color: inherit;
+            }

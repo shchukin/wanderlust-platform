@@ -46,7 +46,7 @@
     }
 
     .choice__label {
-
+        flex-grow: 1;
     }
 
 
