@@ -59,7 +59,7 @@ export const input = () => {
     });
 
 
-    /* Dynamic width */
+    /* Dynamic width (AI written, but looks okay) */
 
     const dynamicWidthMeasureMap = new WeakMap();
 
