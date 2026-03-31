@@ -2,14 +2,14 @@
 <html class="sidebar-expanded" lang="en">
     <head>
         <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774513610">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774513610">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774513610">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774513610">
-        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774513610">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774513610">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774982149">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774982149">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774982149">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774982149">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774982149">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774982149">
         <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
-        <script type="module" src="../scripts/vendors.js?1774513610"></script>
+        <script type="module" src="../scripts/vendors.js?1774982149"></script>
 
         <!-- Font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
@@ -29,8 +29,8 @@
         <link rel="manifest" href="../manifest.json">
 
         <!-- assets -->
-        <link rel="stylesheet" href="../styles/styles.css?1774513610">
-        <script type="module" src="../scripts/scripts.js?1774513610"></script>
+        <link rel="stylesheet" href="../styles/styles.css?1774982149">
+        <script type="module" src="../scripts/scripts.js?1774982149"></script>
 
     </head>
     <body>
@@ -525,31 +525,39 @@
                             </div>
                         </div>
                         <div class="project__navigation">
-                            <div class="inner-nav">
-                                <div class="inner-nav__scroll hide-scrollbar">
-                                    <div class="inner-nav__ribbon">
-                                        <a class="inner-nav__tab inner-nav__tab--current" href="#">
-                                            <div class="inner-nav__tab-label">Videos</div>
-                                        </a>
-                                        <a class="inner-nav__tab" href="#">
-                                            <div class="inner-nav__tab-label">Editor</div>
-                                        </a>
-                                        <a class="inner-nav__tab" href="#">
-                                            <div class="inner-nav__tab-label">References</div>
-                                        </a>
-                                        <a class="inner-nav__tab" href="#">
-                                            <div class="inner-nav__tab-label">Technical Template</div>
-                                        </a>
-                                        <a class="inner-nav__tab" href="#">
-                                            <div class="inner-nav__tab-label">Feedback</div>
-                                        </a>
-                                        <a class="inner-nav__tab" href="#">
-                                            <div class="inner-nav__tab-label">Payment</div>
-                                        </a>
-                                        <a class="inner-nav__tab" href="#">
-                                            <div class="inner-nav__tab-label">Notes</div>
-                                        </a>
+                            <div class="scrollable">
+                                <button class="scrollable__action scrollable__action--prev" type="button">
+                                    <i class="icon">west</i>
+                                </button>
+                                <div class="scrollable__body hide-scrollbar">
+                                    <div class="scrollable__ribbon">
+                                        <div class="inner-nav">
+                                            <a class="inner-nav__tab inner-nav__tab--current" href="#">
+                                                <div class="inner-nav__tab-label">Videos</div>
+                                            </a>
+                                            <a class="inner-nav__tab" href="#">
+                                                <div class="inner-nav__tab-label">Editor</div>
+                                            </a>
+                                            <a class="inner-nav__tab" href="#">
+                                                <div class="inner-nav__tab-label">References</div>
+                                            </a>
+                                            <a class="inner-nav__tab" href="#">
+                                                <div class="inner-nav__tab-label">Technical Template</div>
+                                            </a>
+                                            <a class="inner-nav__tab" href="#">
+                                                <div class="inner-nav__tab-label">Feedback</div>
+                                            </a>
+                                            <a class="inner-nav__tab" href="#">
+                                                <div class="inner-nav__tab-label">Payment</div>
+                                            </a>
+                                            <a class="inner-nav__tab" href="#">
+                                                <div class="inner-nav__tab-label">Notes</div>
+                                            </a>
+                                        </div>
                                     </div>
+                                    <button class="scrollable__action scrollable__action--next" type="button">
+                                        <i class="icon">east</i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1950,7 +1958,6 @@
                                 </div>
                             </div>
 
-
                         </div>
                     </div>
                     <section class="project__chat">
@@ -1960,116 +1967,128 @@
                                     Control Room
                                 </h2>
                             </div>
-                            <div class="threads__navigation hide-scrollbar">
-                                <div class="threads__ribbon">
-                                    <div class="threads__tab threads__tab--current">
-                                        <div class="threads__person">
-                                            <div class="avatar">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
-                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
-                                                     width="22"
-                                                     height="22"
-                                                     alt=""
-                                                >
+                            <div class="threads__navigation">
+                                <div class="scrollable">
+                                    <button class="scrollable__action scrollable__action--prev" type="button">
+                                        <i class="icon">west</i>
+                                    </button>
+                                    <div class="scrollable__body hide-scrollbar">
+                                        <div class="scrollable__ribbon">
+                                            <div class="chat-nav">
+                                                <div class="chat-nav__item chat-nav__item--current">
+                                                    <div class="chat-nav__person">
+                                                        <div class="avatar">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                                 src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                                 width="22"
+                                                                 height="22"
+                                                                 alt=""
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat-nav__person">
+                                                        <div class="avatar">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                                 src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                                 width="22"
+                                                                 height="22"
+                                                                 alt=""
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat-nav__name">
+                                                        PM <> Client
+                                                    </div>
+                                                </div>
+                                                <div class="chat-nav__item">
+                                                    <div class="chat-nav__person">
+                                                        <div class="avatar">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                                 src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                                 width="22"
+                                                                 height="22"
+                                                                 alt=""
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat-nav__person">
+                                                        <div class="avatar">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                                 src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                                 width="22"
+                                                                 height="22"
+                                                                 alt=""
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat-nav__name">
+                                                        PM <> Editor
+                                                    </div>
+                                                </div>
+                                                <div class="chat-nav__item">
+                                                    <div class="chat-nav__person">
+                                                        <div class="avatar">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                                 src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                                 width="22"
+                                                                 height="22"
+                                                                 alt=""
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat-nav__person">
+                                                        <div class="avatar">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                                 src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                                 width="22"
+                                                                 height="22"
+                                                                 alt=""
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat-nav__name">
+                                                        PM <> QA
+                                                    </div>
+                                                </div>
+                                                <div class="chat-nav__item">
+                                                    <div class="chat-nav__person">
+                                                        <div class="avatar">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                                 src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                                 width="22"
+                                                                 height="22"
+                                                                 alt=""
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat-nav__person">
+                                                        <div class="avatar">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
+                                                                 src="../temp/avatars/avatar-22x22@1x.jpg"
+                                                                 width="22"
+                                                                 height="22"
+                                                                 alt=""
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat-nav__name">
+                                                        QA <> Editor
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="threads__person">
-                                            <div class="avatar">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
-                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
-                                                     width="22"
-                                                     height="22"
-                                                     alt=""
-                                                >
-                                            </div>
-                                        </div>
-                                        <div class="threads__name">
-                                            PM <> Client
                                         </div>
                                     </div>
-                                    <div class="threads__tab">
-                                        <div class="threads__person">
-                                            <div class="avatar">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
-                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
-                                                     width="22"
-                                                     height="22"
-                                                     alt=""
-                                                >
-                                            </div>
-                                        </div>
-                                        <div class="threads__person">
-                                            <div class="avatar">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
-                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
-                                                     width="22"
-                                                     height="22"
-                                                     alt=""
-                                                >
-                                            </div>
-                                        </div>
-                                        <div class="threads__name">
-                                            PM <> Editor
-                                        </div>
-                                    </div>
-                                    <div class="threads__tab">
-                                        <div class="threads__person">
-                                            <div class="avatar">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
-                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
-                                                     width="22"
-                                                     height="22"
-                                                     alt=""
-                                                >
-                                            </div>
-                                        </div>
-                                        <div class="threads__person">
-                                            <div class="avatar">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
-                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
-                                                     width="22"
-                                                     height="22"
-                                                     alt=""
-                                                >
-                                            </div>
-                                        </div>
-                                        <div class="threads__name">
-                                            PM <> QA
-                                        </div>
-                                    </div>
-                                    <div class="threads__tab">
-                                        <div class="threads__person">
-                                            <div class="avatar">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
-                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
-                                                     width="22"
-                                                     height="22"
-                                                     alt=""
-                                                >
-                                            </div>
-                                        </div>
-                                        <div class="threads__person">
-                                            <div class="avatar">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/avatars/avatar-22x22@2x.jpg 2x"
-                                                     src="../temp/avatars/avatar-22x22@1x.jpg"
-                                                     width="22"
-                                                     height="22"
-                                                     alt=""
-                                                >
-                                            </div>
-                                        </div>
-                                        <div class="threads__name">
-                                            QA <> Editor
-                                        </div>
-                                    </div>
+                                    <button class="scrollable__action scrollable__action--next" type="button">
+                                        <i class="icon">east</i>
+                                    </button>
                                 </div>
                             </div>
                             <div class="threads__widget">

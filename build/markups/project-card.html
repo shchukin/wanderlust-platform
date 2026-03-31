@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1774982149">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1774982149">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1774982149">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1774982149">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1774982149">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1774982149">
+        <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
+        <script type="module" src="../scripts/vendors.js?1774982149"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>project-card</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css?1774982149">
+        <script type="module" src="../scripts/scripts.js?1774982149"></script>
+    </head>
+    <body>
+
+        <div style="max-width: 620px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>project-card</h1>
+            <p>
+                First see <a href="youtube-preview.html"><b><i>youtube-preview</i></b></a>, it is used inside:
+            </p>
+            <p>
+                Also see <a href="thumbnail.html"><b><i>thumbnail</i></b></a> & <a href="sample.html"><b><i>sample</i></b></a> components for alternatives
+            </p>
+
+
+            <div class="project-card">
+                <div class="project-card__preview">
+                    <div class="youtube-preview" data-yt-url="https://www.youtube.com/embed/WqaL6dJUrbA?si=x_POy9vDuLy1Om-w">
+                        <button class="youtube-preview__handler" type="button">
+                            <img class="youtube-preview__image" src="https://picsum.photos/559/320?random=2" alt="">
+                            <i class="play" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-card__body">
+                    <div class="project-card__heading">
+                        <h2 class="title">Highlight Film</h2>
+                    </div>
+                    <div class="project-card__description">
+                        Relive the magic with a cinematic highlight of the wedding’s best moments, complete with soundtracks, speeches, voiceovers, and SFX.
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <p>
+                Just in case if there is no video or something, you can use a normal image like so:
+            </p>
+
+
+            <div class="project-card">
+                <a class="project-card__preview" href="#">
+                    <img class="project-card__image" src="https://picsum.photos/559/320?random=1" alt="">
+                    <i class="play" aria-hidden="true"></i>
+                </a>
+                <div class="project-card__body">
+                    <div class="project-card__heading">
+                        <h2 class="title">Highlight Film</h2>
+                    </div>
+                    <div class="project-card__description">
+                        Relive the magic with a cinematic highlight of the wedding’s best moments, complete with soundtracks, speeches, voiceovers, and SFX.
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+
+    </body>
+</html>
