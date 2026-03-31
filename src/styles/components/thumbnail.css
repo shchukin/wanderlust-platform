@@ -22,7 +22,7 @@
 
     .thumbnail__preview {
         position: relative;
-        aspect-ratio: 558/320;
+        aspect-ratio: 16/9;
         background-color: var(--image-fallback);
         border-top-left-radius: 9px;
         border-top-right-radius: 9px;
