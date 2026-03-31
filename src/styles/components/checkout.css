@@ -4,6 +4,8 @@
 
 .checkout--lite {
     --blue: var(--pink);
+    --blue-hover: var(--pink-hover);
+    --blue-50pct: var(--pink-50pct);
 }
 
     .checkout__heading {
