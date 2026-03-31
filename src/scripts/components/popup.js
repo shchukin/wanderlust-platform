@@ -1,3 +1,8 @@
+import { refreshExpandableTextareas } from './input.js';
+
+/* Originally it was a jquery piece. Rewritten to vanilla JS by AI */
+
+
 export const popup = () => {
 
     /*
@@ -33,10 +38,9 @@ export const popup = () => {
 
     const popupShow = ($popup) => {
         lockPage();
-        if ($popup) {
-            $popup.classList.add('popup--visible');
-            $popup.scrollTop = 0;
-        }
+        $popup.classList.add('popup--visible');
+        $popup.scrollTop = 0;
+        refreshExpandableTextareas($popup);
     };
 
     const popupHide = ($popup) => {

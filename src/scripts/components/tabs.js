@@ -1,3 +1,5 @@
+import { refreshExpandableTextareas } from './input.js';
+
 export const tabs = () => {
     const $tabs = document.querySelectorAll('.tabs');
 
@@ -24,6 +26,7 @@ export const tabs = () => {
                 if ($targetTab) {
                     $targetTab.classList.add('tabs__item--current');
                 }
+                refreshExpandableTextareas($targetTab || tabsRoot);
             });
         });
     });
