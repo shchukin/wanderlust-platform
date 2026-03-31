@@ -29,81 +29,9 @@
             <br>
             <br>
             <h1>thumbnail</h1>
-
-            <br>
-
-            <article class="thumbnail">
-                <a class="thumbnail__preview" href="#">
-                    <img class="thumbnail__image" src="https://picsum.photos/559/320?random=1" alt="">
-                    <i class="play" aria-hidden="true"></i>
-                </a>
-                <div class="thumbnail__body">
-                    <div class="thumbnail__heading">
-                        <h3 class="title">
-                            <a class="link link--inverted-text-alike" href="#">Highlights Film</a>
-                        </h3>
-                    </div>
-                    <div class="thumbnail__description">
-                        Relive the magic with a cinematic highlight of the wedding’s best moments, complete with soundtracks, speeches, voiceovers, and SFX.
-                    </div>
-                    <div class="thumbnail__zoom">
-                        <a class="button button--square" href="#">
-                            <i class="icon">frame_inspect</i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-
-            <br>
-            <br>
-            <h2>Selectable</h2>
             <p>
-                Make it selectable using a combintion of <b><i>&lt;label&gt;</i></b> tag and <b><i>thumbnail__widget</i></b> checkbox inside.
+                First see <a href="youtube-preview.html"><b><i>youtube-preview</i></b></a> -- it is used inside:
             </p>
-            <p>
-                Also add <b><i>thumbnail__footer</i></b> in this case.
-            </p>
-            <p>
-                No JS required.
-            </p>
-
-            <label class="thumbnail">
-                <input class="thumbnail__widget" type="checkbox">
-                <div class="thumbnail__preview">
-                    <img class="thumbnail__image" src="https://picsum.photos/559/320?random=2" alt="">
-                    <i class="play" aria-hidden="true"></i>
-                </div>
-                <div class="thumbnail__body">
-                    <div class="thumbnail__heading">
-                        <h3 class="title">
-                            Highlights Film
-                        </h3>
-                    </div>
-                    <div class="thumbnail__description">
-                        Relive the magic with a cinematic highlight of the wedding’s best moments, complete with soundtracks, speeches, voiceovers, and SFX.
-                    </div>
-                    <div class="thumbnail__footer">
-                        <div class="thumbnail__pricing">
-                            Starting at
-                            <span class="thumbnail__total">$619</span>
-                        </div>
-                        <div class="thumbnail__button">
-                            <div class="thumbnail__icon thumbnail__icon--plus">
-                                <i class="icon">add</i>
-                            </div>
-                            <div class="thumbnail__icon thumbnail__icon--check">
-                                <i class="icon">check</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </label>
-
-
-            <br>
-            <br>
-
 
             <article class="thumbnail">
                 <div class="thumbnail__preview">
@@ -123,13 +51,91 @@
                     <div class="thumbnail__description">
                         Relive the magic with a cinematic highlight of the wedding’s best moments, complete with soundtracks, speeches, voiceovers, and SFX.
                     </div>
-                    <div class="thumbnail__zoom">
-                        <a class="button button--square" href="#">
-                            <i class="icon">frame_inspect</i>
-                        </a>
+                    <div class="thumbnail__footer">
+                        <div class="thumbnail__pricing">
+                            Starting at
+                            <span class="thumbnail__total">$619</span>
+                        </div>
+                        <div class="thumbnail__button">
+                            <a class="button button--square button--light-gray-outline" href="#">
+                                <i class="icon">add</i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </article>
+
+            <br>
+            <br>
+            <p>
+                Price removed, different button:
+            </p>
+
+            <article class="thumbnail">
+                <div class="thumbnail__preview">
+                    <div class="youtube-preview" data-yt-url="https://www.youtube.com/embed/WqaL6dJUrbA?si=x_POy9vDuLy1Om-w">
+                        <button class="youtube-preview__handler" type="button">
+                            <img class="youtube-preview__image" src="https://picsum.photos/559/320?random=3" alt="">
+                            <i class="play" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="thumbnail__body">
+                    <div class="thumbnail__heading">
+                        <h3 class="title">
+                            <a class="link link--inverted-text-alike" href="#">Highlights Film</a>
+                        </h3>
+                    </div>
+                    <div class="thumbnail__description">
+                        Relive the magic with a cinematic highlight of the wedding’s best moments, complete with soundtracks, speeches, voiceovers, and SFX.
+                    </div>
+                    <div class="thumbnail__footer">
+                        <div class="thumbnail__button">
+                            <a class="button button--square" href="#">
+                                <i class="icon">frame_inspect</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <br>
+            <br>
+            <p>
+                Just in case if there is no video or something, you can use a normal image like so:
+            </p>
+
+            <article class="thumbnail">
+                <div class="thumbnail__preview">
+                    <img class="thumbnail__image" src="https://picsum.photos/559/320?random=1" alt="">
+                </div>
+                <div class="thumbnail__body">
+                    <div class="thumbnail__heading">
+                        <h3 class="title">
+                            <a class="link link--inverted-text-alike" href="#">Highlights Film</a>
+                        </h3>
+                    </div>
+                    <div class="thumbnail__description">
+                        Relive the magic with a cinematic highlight of the wedding’s best moments, complete with soundtracks, speeches, voiceovers, and SFX.
+                    </div>
+                    <div class="thumbnail__footer">
+                        <div class="thumbnail__pricing">
+                            Starting at
+                            <span class="thumbnail__total">$619</span>
+                        </div>
+                        <div class="thumbnail__button">
+                            <a class="button button--square button--light-gray-outline" href="#">
+                                <i class="icon">add</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+
+
+
 
 
 

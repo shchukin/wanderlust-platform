@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
+        <script type="module" src="../scripts/vendors.js"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>youtube-preview</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script type="module" src="../scripts/scripts.js"></script>
+    </head>
+    <body>
+
+        <div style="max-width: 420px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>youtube-preview</h1>
+            <p>
+                This component has <b><i>height: 100%;</i></b> style, and it must be used inside
+                component with fixed height or aspect ratio (e.g. 16:9).
+                See <a href="thumbnail.html"><b><i>thumbnail</i></b></a> for example.
+            </p>
+
+            <p>
+                This is more of a JS component. Click the button and see the script:
+            </p>
+
+            <!-- temp -->
+            <div style="aspect-ratio: 16/9;">
+            <!--/temp -->
+
+                <div class="youtube-preview" data-yt-url="https://www.youtube.com/embed/WqaL6dJUrbA?si=x_POy9vDuLy1Om-w">
+                    <button class="youtube-preview__handler" type="button">
+                        <img class="youtube-preview__image" src="https://picsum.photos/559/320?random=2" alt="">
+                        <i class="play" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+            <!-- temp -->
+            </div>
+            <!--/temp -->
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+    </body>
+</html>
