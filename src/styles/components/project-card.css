@@ -6,11 +6,15 @@
 }
     .project-card__preview {
         position: relative;
+        aspect-ratio: 16/9;
+        border-radius: var(--radius);
+        overflow: hidden; /* cut rounded corners in case of a video */
     }
         .project-card__image {
+            vertical-align: top;
             width: 100%;
-            height: auto;
-            border-radius: var(--radius);
+            height: 100%;
+            object-fit: cover;
         }
 
         a.project-card__preview:hover {

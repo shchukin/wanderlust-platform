@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
+        <script type="module" src="../scripts/vendors.js"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>sample</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script type="module" src="../scripts/scripts.js"></script>
+    </head>
+    <body style="background-color: white;">
+
+        <div style="max-width: 820px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>sample</h1>
+            <p>
+                First see <a href="youtube-preview.html"><b><i>youtube-preview</i></b></a>, it is used inside:
+            </p>
+            <p>
+                Also see <a href="thumbnail.html"><b><i>thumbnail</i></b></a> & <a href="project-card.html"><b><i>project-card</i></b></a> components for alternatives
+            </p>
+
+            <div class="sample">
+                <div class="sample__illustration">
+                    <div class="sample__preview">
+                        <div class="youtube-preview" data-yt-url="https://www.youtube.com/embed/WqaL6dJUrbA?si=x_POy9vDuLy1Om-w">
+                            <button class="youtube-preview__handler" type="button">
+                                <img class="youtube-preview__image" src="https://picsum.photos/559/320?random=1" alt="">
+                                <i class="play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sample__title">
+                        Montage Video
+                    </div>
+                </div>
+                <div class="sample__data">
+                    <table class="sample__table">
+                        <tr class="sample__row">
+                            <th class="sample__param">Storytelling:</th>
+                            <td class="sample__value">
+                                <span class="nobr">90% Chronologic</span>, <span class="nobr">10% Non-Chronologic</span>
+                            </td>
+                        </tr>
+                        <tr class="sample__row">
+                            <th class="sample__param">Soundtrack Style:</th>
+                            <td class="sample__value">Cinematic, Rock, Electronic</td>
+                        </tr>
+                        <tr class="sample__row">
+                            <th class="sample__param">Contrast:</th>
+                            <td class="sample__value">High</td>
+                        </tr>
+                        <tr class="sample__row">
+                            <th class="sample__param">Saturation:</th>
+                            <td class="sample__value">Mid</td>
+                        </tr>
+                        <tr class="sample__row">
+                            <th class="sample__param">Hue/Temp:</th>
+                            <td class="sample__value">Neutral</td>
+                        </tr>
+                        <tr class="sample__row">
+                            <th class="sample__param">Voiceover:</th>
+                            <td class="sample__value">No Audio</td>
+                        </tr>
+                        <tr class="sample__row">
+                            <th class="sample__param">Sound Effects:</th>
+                            <td class="sample__value">Ambient, Foleys</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <p>
+                Just in case if there is no video or something, you can use a normal image like so:
+            </p>
+
+            <div class="sample">
+                <a class="sample__illustration" href="#">
+                    <div class="sample__preview">
+                        <img class="sample__image" src="https://picsum.photos/559/320?random=2" alt="">
+                        <i class="play" aria-hidden="true"></i>
+                    </div>
+                    <div class="sample__title">
+                        Montage Video
+                    </div>
+                </a>
+                <div class="sample__data">
+                    <table class="sample__table">
+                        <tr class="sample__row">
+                            <th class="sample__param">Storytelling:</th>
+                            <td class="sample__value">
+                                <span class="nobr">90% Chronologic</span>, <span class="nobr">10% Non-Chronologic</span>
+                            </td>
+                        </tr>
+                        <tr class="sample__row">
+                            <th class="sample__param">Soundtrack Style:</th>
+                            <td class="sample__value">Cinematic, Rock, Electronic</td>
+                        </tr>
+                        <tr class="sample__row">
+                            <th class="sample__param">Contrast:</th>
+                            <td class="sample__value">High</td>
+                        </tr>
+                        <tr class="sample__row">
+                            <th class="sample__param">Saturation:</th>
+                            <td class="sample__value">Mid</td>
+                        </tr>
+                        <tr class="sample__row">
+                            <th class="sample__param">Hue/Temp:</th>
+                            <td class="sample__value">Neutral</td>
+                        </tr>
+                        <tr class="sample__row">
+                            <th class="sample__param">Voiceover:</th>
+                            <td class="sample__value">No Audio</td>
+                        </tr>
+                        <tr class="sample__row">
+                            <th class="sample__param">Sound Effects:</th>
+                            <td class="sample__value">Ambient, Foleys</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+    </body>
+</html>

@@ -14,11 +14,14 @@
         display: block;
         border: 1px solid var(--light-gray);
         border-radius: var(--radius);
+        overflow: hidden; /* cut rounded corners */
         color: inherit;
         text-decoration: none;
     }
         .sample__preview {
             position: relative;
+            aspect-ratio: 16/9;
+            background-color: var(--image-fallback);
         }
 
         .sample__illustration:hover .sample__preview {
@@ -27,10 +30,9 @@
             .sample__image {
                 vertical-align: top;
                 width: 100%;
-                aspect-ratio: 16/9;
+                height: 100%;
+                object-fit: cover;
                 background-color: var(--image-fallback);
-                border-top-left-radius: calc(var(--radius) - 1px);
-                border-top-right-radius: calc(var(--radius) - 1px);
             }
 
         .sample__title {
