@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
+        <script type="module" src="../scripts/vendors.js"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>edit-notes</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script type="module" src="../scripts/scripts.js"></script>
+    </head>
+    <body style="background-color: white;">
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>edit-notes</h1>
+
+
+            <div class="edit-notes">
+                <h4 class="edit-notes__heading">
+                    Report
+                </h4>
+                <div class="edit-notes__handler">
+                    <button class="button button--square button--light-gray-outline button--height-32px" type="button">
+                        <i class="icon">add</i>
+                    </button>
+                </div>
+                <div class="edit-notes__dropdown">
+                    <div class="edit-notes__field">
+                        <div class="input input--expandable">
+                            <textarea class="input__widget" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="edit-notes__submit">
+                        <button class="button button--black button--height-32px" type="button">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <br>
+            <br>
+            <br>
+            <h2>edit-notes--always-expanded</h2>
+            <p>This widget still confuses me, so just in case here is <b><i>edit-notes--always-expanded</i></b> variant:</p>
+
+            <div class="edit-notes edit-notes--always-expanded">
+                <h4 class="edit-notes__heading">
+                    Report
+                </h4>
+                <div class="edit-notes__dropdown">
+                    <div class="edit-notes__field">
+                        <div class="input input--expandable">
+                            <textarea class="input__widget" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="edit-notes__submit">
+                        <button class="button button--black button--height-32px" type="button">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+    </body>
+</html>

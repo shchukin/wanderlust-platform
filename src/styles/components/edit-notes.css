@@ -1,5 +1,6 @@
 .edit-notes {
-    padding: 22px 12px 20px;
+    position: relative;
+    padding: 20px 12px;
     background-color: #f6f8fb;
     border: 1px solid var(--light-gray);
     border-radius: 5px;
@@ -12,10 +13,45 @@
         line-height: 22px;
     }
 
-    .edit-notes__field {
-        margin-top: 20px;
+    .edit-notes__handler {
+        position: absolute;
+        right: 12px;
+        top: 15px;
     }
 
-    .edit-notes__submit {
-        margin-top: 14px;
+    .edit-notes__dropdown {
+        margin-top: 20px;
+        display: none;
+    }
+        .edit-notes__field {
+
+        }
+
+        .edit-notes__submit {
+            margin-top: 14px;
+        }
+
+
+
+
+.edit-notes--expanded {
+
+}
+    .edit-notes--expanded .edit-notes__dropdown {
+        display: block;
+        animation: slide-down 500ms var(--ease-out-quint);
+    }
+
+
+
+.edit-notes--always-expanded {
+
+}
+    .edit-notes--always-expanded .edit-notes__dropdown {
+        display: block;
+        animation: none;
+    }
+
+    .edit-notes--always-expanded .edit-notes__handler {
+        display: none;
     }
