@@ -5,7 +5,6 @@
 
 .collecting {
     position: relative;
-    padding: 20px 24px 24px;
 }
     .collecting__heading {
 
@@ -13,8 +12,8 @@
 
     .collecting__category {
         position: absolute;
-        right: 0;
-        top: 10px;
+        right: 40px;
+        top: -41px;
         font-size: var(--smaller-font-size);
         line-height: var(--smaller-line-height);
         color: var(--gray);
@@ -27,16 +26,21 @@
         }
 
     .collecting__body {
-        margin-top: 12px;
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 30px;
     }
         .collecting__summary {
-
+            margin-top: 4px;
         }
-            .collecting__preview {
-
+            .collecting__video {
+                vertical-align: top;
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16 / 9;
+                border: none;
+                background-color: #000000;
+                border-radius: var(--radius);
             }
 
             .collecting__note {
@@ -57,21 +61,31 @@
                 margin-top: 0;
             }
 
-    .collecting__footer {
-        margin-top: 40px;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    }
-        .collecting__total {
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 32px;
-        }
+            .collecting__total {
+                margin-top: 14px;
+                margin-bottom: -4px;
+                display: flex;
+                align-items: baseline;
+                gap: 8px;
+                font-size: 18px;
+                line-height: 20px;
+            }
+                .collecting__price {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 32px;
+                }
 
+
+    .collecting__footer {
+        margin-top: 24px;
+        padding-bottom: 8px;
+        display: flex;
+        align-items: flex-start;
+    }
         .collecting__purchase {
             margin-left: auto;
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 18px;
         }
