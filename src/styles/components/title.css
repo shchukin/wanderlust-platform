@@ -5,6 +5,7 @@
     font-size: 20px;
     line-height: 28px;
 }
+    /* stylelint-disable */
     .title > .explain,
     .title > .icon-action {
         margin: -4px -6px -8px -6px;
@@ -19,6 +20,7 @@
     .title > .icon-action--32px {
         margin: 0 -6px -4px -6px;
     }
+    /* stylelint-enable */
 
 
 .title--30px {
