@@ -22,14 +22,16 @@
 
     .thumbnail__preview {
         position: relative;
+        aspect-ratio: 558/320;
+        background-color: var(--image-fallback);
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+        overflow: hidden; /* cut rounded corners in case of a video */
     }
         .thumbnail__image {
             vertical-align: top;
             width: 100%;
-            aspect-ratio: 558/320;
-            background-color: var(--image-fallback);
-            border-top-left-radius: 9px;
-            border-top-right-radius: 9px;
+            height: auto;
         }
 
         a.thumbnail__preview:hover {
