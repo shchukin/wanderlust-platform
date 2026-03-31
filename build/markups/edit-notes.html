@@ -17,7 +17,7 @@
         <!-- meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>input-alike-copying</title>
+        <title>edit-notes</title>
 
         <!-- assets -->
         <link rel="stylesheet" href="../styles/styles.css?1774991048">
@@ -28,28 +28,58 @@
         <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
             <br>
-            <h1>input-alike-copying</h1>
-            <p>
-                Unlike the original <a href="input.html"><b><i>input</i></b></a> component, this one is just a
-                static <b><i>div</i></b> that looks alike. Better to use <b><i>div</i></b> for ellipsing.
-            </p>
+            <h1>edit-notes</h1>
 
-            <div class="input-alike-copying">
-                <div class="input-alike-copying__widget">
-                    dp.wanderlust-videos.com/?q=a8k3m9x7c2b5w1e4t6y0u9i8o7p6q5a4s3d2f1g0h9j8k7l6m5n4b3v2c1x0z9a8s7d6f5g4h3j2k1l0
+
+            <div class="edit-notes">
+                <h4 class="edit-notes__heading">
+                    Report
+                </h4>
+                <div class="edit-notes__handler">
+                    <button class="button button--square button--light-gray-outline button--height-32px" type="button">
+                        <i class="icon">add</i>
+                    </button>
                 </div>
-                <div class="input-alike-copying__action">
-                    <div class="copy" data-value="dp.wanderlust-videos.com/?q=a8k3m9x7c2b5w1e4t6y0u9i8o7p6q5a4s3d2f1g0h9j8k7l6m5n4b3v2c1x0z9a8s7d6f5g4h3j2k1l0">
-                        <button class="icon-action icon-action--black" type="button">
-                            <i class="icon">content_copy</i>
-                        </button>
-                        <div class="copy__bubble">
-                            Copied
+                <div class="edit-notes__dropdown">
+                    <div class="edit-notes__field">
+                        <div class="input input--expandable">
+                            <textarea class="input__widget" rows="5"></textarea>
                         </div>
+                    </div>
+                    <div class="edit-notes__submit">
+                        <button class="button button--black button--height-32px" type="button">
+                            Submit
+                        </button>
                     </div>
                 </div>
             </div>
 
+
+
+
+            <br>
+            <br>
+            <br>
+            <h2>edit-notes--always-expanded</h2>
+            <p>This widget still confuses me, so just in case here is <b><i>edit-notes--always-expanded</i></b> variant:</p>
+
+            <div class="edit-notes edit-notes--always-expanded">
+                <h4 class="edit-notes__heading">
+                    Report
+                </h4>
+                <div class="edit-notes__dropdown">
+                    <div class="edit-notes__field">
+                        <div class="input input--expandable">
+                            <textarea class="input__widget" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="edit-notes__submit">
+                        <button class="button button--black button--height-32px" type="button">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
 
             <br>
             <br>
