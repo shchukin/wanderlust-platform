@@ -13,6 +13,10 @@
         line-height: 22px;
     }
 
+    .edit-notes:has(.edit-notes__handler) .edit-notes__heading {
+        margin-right: 56px;
+    }
+
     .edit-notes__handler {
         position: absolute;
         right: 12px;
