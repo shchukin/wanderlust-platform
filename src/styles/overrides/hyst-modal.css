@@ -1,3 +1,7 @@
+.hystmodal {
+    z-index: 3000 !important;
+}
+
 .hystmodal__window {
     background-color: transparent; /* use window component */
 }
@@ -10,4 +14,10 @@
 
 .hystmodal--active::before {
     background-color: var(--backdrop-color);
+}
+
+
+
+.hystmodal__window {
+
 }

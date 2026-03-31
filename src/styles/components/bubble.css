@@ -7,7 +7,7 @@
     position: absolute;
     right: 50%;
     bottom: 100%;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
     border-bottom: 0 solid transparent; /* animation here */
     transform: translateX(50%);
     z-index: 500;
@@ -33,7 +33,6 @@
         text-align: left;
         text-indent: 0;
     }
-
         .bubble__chevron {
             position: absolute;
             bottom: -5px;
@@ -63,7 +62,7 @@
 .bubble--visible {
     opacity: 1;
     visibility: visible;
-    border-bottom-width: 10px;
+    border-bottom-width: 10px; /* hover animation */
 }
 
 

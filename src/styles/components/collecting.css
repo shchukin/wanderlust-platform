@@ -1,0 +1,77 @@
+.hystmodal__window:has(.collecting) {
+    width: 1000px;
+}
+
+
+.collecting {
+    position: relative;
+    padding: 20px 24px 24px;
+}
+    .collecting__heading {
+
+    }
+
+    .collecting__category {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        font-size: var(--smaller-font-size);
+        line-height: var(--smaller-line-height);
+        color: var(--gray);
+    }
+        .collecting__category .icon {
+            margin-right: 2px;
+            margin-top: 1px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+    .collecting__body {
+        margin-top: 12px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+    }
+        .collecting__summary {
+
+        }
+            .collecting__preview {
+
+            }
+
+            .collecting__note {
+                margin-top: 16px;
+                font-size: var(--smaller-font-size);
+                line-height: var(--smaller-line-height);
+                color: var(--gray);
+            }
+
+        .collecting__settings {
+
+        }
+            .collecting__field {
+                margin-top: 24px;
+            }
+
+            .collecting__field:first-child {
+                margin-top: 0;
+            }
+
+    .collecting__footer {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+        .collecting__total {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+        .collecting__purchase {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }

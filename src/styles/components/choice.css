@@ -48,6 +48,10 @@
     .choice__label {
         flex-grow: 1;
     }
+        .choice__addition {
+            margin-left: auto;
+            width: fit-content;
+        }
 
 
 /* Hover */

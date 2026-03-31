@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
+        <script type="module" src="../scripts/vendors.js"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>collecting</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script type="module" src="../scripts/scripts.js"></script>
+    </head>
+    <body style="background-color: white;">
+
+        <div style="max-width: 1000px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>collecting</h1>
+
+            <section class="collecting">
+                <div class="collecting__heading">
+                    <h2 class="title title--24px">Feature Film</h2>
+                </div>
+                <div class="collecting__category">
+                    <i class="icon">movie</i>
+                    Cinematic collection
+                </div>
+                <div class="collecting__body">
+                    <div class="collecting__summary">
+                        <div class="collecting__preview">
+                            <div style="height: 300px; background: purple"></div>
+                        </div>
+                        <div class="collecting__note">
+                            The Viral Pack includes three viral moments, cinematic-style videos, designed specifically for social media. Each Viral Moment is a short, engaging reel highlighting a particular part from the wedding day, crafted to be entertaining, emotional, or visually stunning.
+                        </div>
+                    </div>
+                    <div class="collecting__settings">
+                        <div class="collecting__field">
+                            <label class="label">
+                                Duration
+                            </label>
+                            <div class="checkboxes-menu checkboxes-menu--fixed-width">
+                                <div class="checkboxes-menu__item">
+                                    <label class="choice choice--input-alike choice--full-width choice--blue-when-checked">
+                                        <input class="choice__widget" type="radio" name="duration">
+                                        <div class="choice__icon choice__icon--unchecked">
+                                            <i class="icon">radio_button_unchecked</i>
+                                        </div>
+                                        <div class="choice__icon choice__icon--checked">
+                                            <i class="icon">radio_button_checked</i>
+                                        </div>
+                                        <div class="choice__label">
+                                            3-5 Min
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="checkboxes-menu__item">
+                                    <label class="choice choice--input-alike choice--full-width choice--blue-when-checked">
+                                        <input class="choice__widget" type="radio" name="duration">
+                                        <div class="choice__icon choice__icon--unchecked">
+                                            <i class="icon">radio_button_unchecked</i>
+                                        </div>
+                                        <div class="choice__icon choice__icon--checked">
+                                            <i class="icon">radio_button_checked</i>
+                                        </div>
+                                        <div class="choice__label">
+                                            6-8 Min
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="checkboxes-menu__item">
+                                    <label class="choice choice--input-alike choice--full-width choice--blue-when-checked">
+                                        <input class="choice__widget" type="radio" name="duration">
+                                        <div class="choice__icon choice__icon--unchecked">
+                                            <i class="icon">radio_button_unchecked</i>
+                                        </div>
+                                        <div class="choice__icon choice__icon--checked">
+                                            <i class="icon">radio_button_checked</i>
+                                        </div>
+                                        <div class="choice__label">
+                                            9-12 Min
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collecting__field">
+                            <label class="label">
+                                Export Resolution
+                            </label>
+                            <div class="input">
+                                <select class="input__widget">
+                                    <option value="placeholder" selected>Choose resolutions</option>
+                                    <option>480p</option>
+                                    <option>720px</option>
+                                    <option>...</option>
+                                    <option>4k</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="collecting__field">
+                            <label class="label">
+                                Export Exports (additional charge)
+                            </label>
+                            <div class="input">
+                                <select class="input__widget">
+                                    <option value="placeholder" selected>Choose resolutions</option>
+                                    <option>Instagram Reel</option>
+                                    <option>Vertical Instagram Reel</option>
+                                    <option>...</option>
+                                    <option>Square Instagram Reel</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="collecting__field">
+                            <label class="label">
+                                Edit settings
+                            </label>
+                            <div class="checkboxes-menu checkboxes-menu--fixed-width">
+                                <div class="checkboxes-menu__item">
+                                    <label class="choice choice--full-width choice--input-alike choice--toggler">
+                                        <input class="choice__widget" type="checkbox">
+                                        <div class="choice__icon choice__icon--unchecked">
+                                            <i class="icon">toggle_off</i>
+                                        </div>
+                                        <div class="choice__icon choice__icon--checked">
+                                            <i class="icon">toggle_on</i>
+                                        </div>
+                                        <div class="choice__label">
+                                            <div class="hinted-text">
+                                                Color Grading
+                                                <div class="hinted-text__hint">
+                                                    <div class="explain bubble-context">
+                                                        <button class="explain__icon bubble-handler" type="button">
+                                                            <i class="icon">info</i>
+                                                        </button>
+                                                        <div class="bubble">
+                                                            <div class="bubble__body">
+                                                                <i class="bubble__chevron"></i>
+                                                                <div class="bubble__background">
+                                                                    Adjusts and harmonizes colors to set the<br>
+                                                                    mood, ensure consistency, and enhance<br>
+                                                                    the visual appeal of your footage.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="checkboxes-menu__item">
+                                    <label class="choice choice--full-width choice--input-alike choice--toggler">
+                                        <input class="choice__widget" type="checkbox">
+                                        <div class="choice__icon choice__icon--unchecked">
+                                            <i class="icon">toggle_off</i>
+                                        </div>
+                                        <div class="choice__icon choice__icon--checked">
+                                            <i class="icon">toggle_on</i>
+                                        </div>
+                                        <div class="choice__label">
+                                            <div class="hinted-text">
+                                                Creative FX
+                                                <div class="hinted-text__hint">
+                                                    <div class="explain bubble-context">
+                                                        <button class="explain__icon bubble-handler" type="button">
+                                                            <i class="icon">info</i>
+                                                        </button>
+                                                        <div class="bubble">
+                                                            <div class="bubble__body">
+                                                                <i class="bubble__chevron"></i>
+                                                                <div class="bubble__background">
+                                                                    Add artistic elements and enhancements to<br>
+                                                                    footage, such as lightleaks, overlays and creative<br>
+                                                                    transitions to create a unique visual style.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collecting__footer">
+                    <button class="button button--light-gray-outline" type="button">
+                        Close
+                    </button>
+                    <div class="collecting__purchase">
+                        <div class="collecting__total">
+                            $760
+                        </div>
+                        <button class="button" type="button">
+                            <i class="icon">add_shopping_cart</i>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+    </body>
+</html>
