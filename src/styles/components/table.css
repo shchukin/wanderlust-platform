@@ -173,3 +173,9 @@
         padding-right: 0;
     }
 
+
+
+.table__cell--middle,
+.table--align-top .table__section--body .table__cell--middle {
+    vertical-align: middle;
+}
