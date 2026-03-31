@@ -1,5 +1,23 @@
-export const input = () => {
 
+export const expandTextarea = ($element) => {
+    $element.style.height = 'auto';
+    const computedStyles = window.getComputedStyle($element);
+    const borderWidth = parseInt(computedStyles.borderWidth, 10) || 0;
+    $element.style.height = `${$element.scrollHeight + 2 * borderWidth}px`;
+};
+
+
+/* AI written refresh */
+export const refreshExpandableTextareas = (root = document) => {
+    if (!root) {
+        return;
+    }
+    root.querySelectorAll('.input--expandable .input__widget').forEach(($element) => {
+        expandTextarea($element);
+    });
+};
+
+export const input = () => {
 
      /* TO DO: this part is just a demo of how "input--error" class must be used.
      * Code a proper validation in the project and remove this part.
@@ -41,16 +59,7 @@ export const input = () => {
 
     /* Expanding textarea */
 
-    const expandTextarea = ($element) => {
-        $element.style.height = 'auto';
-        const computedStyles = window.getComputedStyle($element);
-        const borderWidth = parseInt(computedStyles.borderWidth, 10) || 0;
-        $element.style.height = `${$element.scrollHeight + 2 * borderWidth}px`;
-    };
-
-    document.querySelectorAll('.input--expandable .input__widget').forEach(($element) => {
-        expandTextarea($element);
-    });
+    refreshExpandableTextareas();
 
     document.addEventListener('input', (event) => {
         const $textarea = event.target.closest('.input--expandable .input__widget');
