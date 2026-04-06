@@ -34,8 +34,73 @@
         scrollbar-width: thin;
     }
         .notifications__item {
-
+            position: relative;
+            display: block;
+            padding: 10px 16px 10px 40px;
+            border-top: 1px solid var(--light-gray);
+            text-decoration: none;
+            color: inherit;
         }
+
+        .notifications__item:first-child {
+            border-top: none;
+        }
+
+        .notifications__item--unread {
+            background-color: #f2ecfb;
+            border-top-color: #ffffff;
+        }
+
+        .notifications__item--unread + .notifications__item {
+            border-top-color: #ffffff;
+        }
+
+        .notifications__item:hover {
+            background-color: #fdf5fa;
+        }
+
+        .notifications__item:active {
+            transform: translateY(1px);
+        }
+
+            .notifications__icon {
+                position: absolute;
+                left: 14px;
+                top: 13px;
+            }
+                .notifications__icon .icon {
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: var(--blue);
+                }
+
+            .notifications__type {
+
+            }
+
+            .notifications__message {
+                margin-top: 7px;
+                position: relative;
+                font-size: 15px;
+                line-height: 18px;
+            }
+                .notifications__message::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: -18px;
+                    width: 1px;
+                    background-color: var(--light-gray);
+                }
+
+            .notifications__time {
+                margin-top: 10px;
+                display: block;
+                font-size: 12px;
+                line-height: 16px;
+                color: var(--gray);
+            }
 
     .notifications__more {
         display: flex;
@@ -45,6 +110,8 @@
         padding: 10px 16px;
         background-color: transparent;
         border-top: 1px solid var(--light-gray);
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
         font-family: inherit;
         font-size: 14px;
         line-height: 18px;
@@ -56,6 +123,10 @@
 
     .notifications__more:hover {
         background-color: var(--hover-over-white);
+    }
+
+    .notifications__more:active {
+        transform: translateY(1px);
     }
         .notifications__more .icon {
             font-size: 18px;
