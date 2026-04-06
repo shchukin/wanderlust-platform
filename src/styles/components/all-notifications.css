@@ -1,0 +1,20 @@
+.all-notifications {
+    position: relative;
+    padding-top: 7px;
+}
+    .all-notifications__heading {
+
+    }
+
+    .all-notifications__mark-read {
+        position: absolute;
+        right: 0;
+        top: 7px;
+    }
+
+    .all-notifications__list {
+        margin-top: 22px;
+        padding: 16px 10px 0;
+        background-color: #ffffff;
+        border-radius: var(--radius);
+    }

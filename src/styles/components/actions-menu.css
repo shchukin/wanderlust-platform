@@ -4,6 +4,10 @@
     gap: 9px;
 }
 
+.actions-menu--no-wrap {
+    flex-wrap: nowrap;
+}
+
 .actions-menu--4-columns {
     width: fit-content;
     display: grid;
