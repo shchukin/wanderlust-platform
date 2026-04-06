@@ -1,0 +1,38 @@
+.counted-action {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+.counted-action:active {
+    transform: translateY(1px);
+}
+    .counted-action::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+    }
+
+    .counted-action:hover::before {
+        background-color: var(--hover-over-gray);
+    }
+
+    .counted-action .icon {
+        position: relative;
+        font-size: 22px;
+    }
+
+    .counted-action__counter {
+        position: absolute;
+        left: calc(50% + 3px);
+        top: -4px;
+    }

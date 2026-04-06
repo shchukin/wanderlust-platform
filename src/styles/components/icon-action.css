@@ -57,6 +57,10 @@
     color: var(--black);
 }
 
+.icon-action--gray .icon {
+    color: var(--gray);
+}
+
 
 .icon-action--white {
 
@@ -76,6 +80,23 @@
     .icon-action--hover-over-gray:hover::before {
         background-color: var(--hover-over-gray);
     }
+
+
+.icon-action--44px {
+    width: 44px;
+    height: 44px;
+}
+    .icon-action--44px::before {
+        width: 36px;
+        height: 36px;
+    }
+
+    .icon-action--44px .icon {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+
 
 
 .icon-action--36px {

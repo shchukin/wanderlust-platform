@@ -1,7 +1,7 @@
 export const dropdown = () => {
 
     document.addEventListener('click', (event) => {
-        if (event.target.closest('.dropdown__handler .button')) {
+        if (event.target.closest('.dropdown__handler .button, .dropdown__handler .counted-action')) {
             event.preventDefault();
 
             const $currentDropdown = event.target.closest('.dropdown');
