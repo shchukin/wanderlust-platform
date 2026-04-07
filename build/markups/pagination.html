@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1775507773">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1775507773">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1775507773">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1775507773">
-        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1775507773">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1775507773">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1775555828">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1775555828">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1775555828">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1775555828">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1775555828">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1775555828">
         <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
-        <script type="module" src="../scripts/vendors.js?1775507773"></script>
+        <script type="module" src="../scripts/vendors.js?1775555828"></script>
 
         <!-- Font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
@@ -20,12 +20,12 @@
         <title>pagination</title>
 
         <!-- assets -->
-        <link rel="stylesheet" href="../styles/styles.css?1775507773">
-        <script type="module" src="../scripts/scripts.js?1775507773"></script>
+        <link rel="stylesheet" href="../styles/styles.css?1775555828">
+        <script type="module" src="../scripts/scripts.js?1775555828"></script>
     </head>
     <body style="background-color: white;">
 
-        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+        <div style="max-width: 1020px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
             <br>
             <h1>pagination</h1>
@@ -41,6 +41,35 @@
                     <i class="icon">east</i>
                 </a>
             </div>
+
+            <br>
+            <br>
+            <h2>HTML from back-end</h2>
+
+            <div class="pagination">
+                <div class="pagination__state">
+                    5 of 65 projects
+                </div>
+                <button class="button button--square button--light-gray-outline button--disabled" type="button">
+                    <i class="icon">west</i>
+                </button>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <em class="current">4</em>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <span class="gap">~</span>
+                <a href="#">92</a>
+                <a href="#">93</a>
+                <a class="button button--square button--light-gray-outline" href="#">
+                    <i class="icon">east</i>
+                </a>
+            </div>
+
 
 
             <br>
