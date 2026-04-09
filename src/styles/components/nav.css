@@ -21,10 +21,14 @@
             background-color: var(--hover-over-white);
         }
 
+        /* hold hover on the root element when hovering inside */
+        html:not(.sidebar-expanded) .nav__section:has(.nav__sub-menu):hover > .nav__link {
+            background-color: var(--hover-over-white);
+        }
+
         .nav__link:active {
             transform: translateY(1px);
         }
-
             .nav__container {
                 position: relative;
                 display: flex;
@@ -71,32 +75,6 @@
             justify-content: center;
             font-family: var(--font-icons);
         }
-
-        /*.nav__section--expanded .nav__more {*/
-        /*    display: block;*/
-        /*}*/
-        /*    .nav__more::before {*/
-        /*        content: "";*/
-        /*        position: absolute;*/
-        /*        inset: 0 2px;*/
-        /*        border-radius: 6px;*/
-        /*    }*/
-
-        /*    .nav__more:hover::before {*/
-        /*        background-color: var(--hover-over-white);*/
-        /*    }*/
-
-        /*    !* icon *!*/
-        /*    .nav__more::after {*/
-        /*        content: "more_vert";*/
-        /*        position: absolute;*/
-        /*        inset: 0;*/
-        /*        display: flex;*/
-        /*        align-items: center;*/
-        /*        justify-content: center;*/
-        /*        font-family: var(--font-icons);*/
-        /*        text-indent: 0;*/
-        /*    }*/
 
         .nav__sub-menu {
             display: none;
