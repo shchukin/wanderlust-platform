@@ -6,9 +6,15 @@
     }
         .nav__link {
             display: block;
+            width: 100%;
+            background-color: transparent;
+            border: none;
             text-decoration: none;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding: 10px 0;
+            font-family: inherit;
+            font-weight: inherit;
+            letter-spacing: inherit;
+            cursor: pointer;
         }
 
         .nav__link:hover {
@@ -38,7 +44,7 @@
 
 
             .nav__link--current .nav__container,
-            .nav__section:has(.nav__link--current) > .nav__link .nav__container { /* if current item is deeper in the sub-menu we still need to color parental item (this is especially needed on smartphones) */
+            .nav__section:has(.nav__sub-menu):has(.nav__link--current) > .nav__lnk .nav__container { /* if current item is deeper in the sub-menu we still need to color parental item (this is especially needed on smartphones) */
                 background-color: var(--blue);
                 box-shadow: none;
                 color: #ffffff;
@@ -53,21 +59,20 @@
                 display: none;
             }
 
-        /*.nav__more {*/
-        /*    position: absolute;*/
-        /*    left: calc(50% + var(--sidebar-inner-width) / 2);*/
-        /*    top: calc(50% - var(--sidebar-inner-width) / 2);*/
-        /*    width: var(--nav-more-width);*/
-        /*    height: var(--sidebar-inner-width);*/
-        /*    padding: 0;*/
-        /*    border: none;*/
-        /*    background-color: transparent;*/
-        /*    cursor: pointer;*/
-        /*    text-indent: 200%;*/
-        /*    white-space: nowrap;*/
-        /*    overflow: hidden;*/
-        /*    display: none;*/
-        /*}*/
+        .nav__more {
+            position: absolute;
+            left: calc(50% + var(--sidebar-inner-width) / 2);
+            top: calc(50% - var(--sidebar-inner-width) / 2);
+            width: var(--nav-more-width);
+            height: var(--sidebar-inner-width);
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
 
         /*.nav__section--expanded .nav__more {*/
         /*    display: block;*/
@@ -83,17 +88,17 @@
         /*        background-color: var(--hover-over-white);*/
         /*    }*/
 
-        /*    !* icon *!*/
-        /*    .nav__more::after {*/
-        /*        content: "more_vert";*/
-        /*        position: absolute;*/
-        /*        inset: 0;*/
-        /*        display: flex;*/
-        /*        align-items: center;*/
-        /*        justify-content: center;*/
-        /*        font-family: var(--font-icons);*/
-        /*        text-indent: 0;*/
-        /*    }*/
+            /* icon */
+            .nav__more::after {
+                content: "more_vert";
+                position: absolute;
+                inset: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: var(--font-icons);
+                text-indent: 0;
+            }
 
         .nav__sub-menu {
             display: none;
@@ -103,7 +108,7 @@
             top: 7px;
         }
 
-        .nav__section--expanded .nav__sub-menu {
+        html:not(.sidebar-expanded) .nav__section:hover .nav__sub-menu {
             display: block;
             animation: slide-down 500ms var(--ease-out-quint);
         }
@@ -159,7 +164,7 @@
             }
 
             .sidebar-expanded .nav__link--current .nav__container,
-            .sidebar-expanded .nav__section:has(.nav__link--current) > .nav__link .nav__container { /* if current item is deeper in the sub-menu we still need to color parental item (this is especially needed on smartphones) */
+            .sidebar-expanded .nav__section:has(.nav__sub-menu):has(.nav__link--current) > .nav__link .nav__container { /* if current item is deeper in the sub-menu we still need to color parental item (this is especially needed on smartphones) */
                 background-color: transparent;
                 color: var(--blue);
             }
@@ -187,13 +192,13 @@
         }
 
         .sidebar-expanded .nav__sub-menu {
-            /*display: none;*/
+            display: none;
             position: static;
         }
 
-        .sidebar-expanded .nav__section:has(.nav__link--current) .nav__sub-menu {
-            /*display: block;*/
-            /*animation: slide-down 500ms var(--ease-out-quint);*/
+        .sidebar-expanded .nav__section--expanded .nav__sub-menu {
+            display: block;
+            animation: slide-down 500ms var(--ease-out-quint);
         }
 
             .sidebar-expanded .nav__sub-menu .nav__link {

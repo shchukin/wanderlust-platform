@@ -1,36 +1,21 @@
 export const nav = () => {
 
-    /* Toggle nav sub-menu (collapsed sidebar only) */
+    const $nav = document.querySelector('.nav');
 
     document.addEventListener('click', (event) => {
+
+        /* Root link (expand dropdown) */
         if (event.target.closest('.nav__section:has(.nav__sub-menu) > .nav__link')) {
             event.preventDefault();
             event.target.closest('.nav__section').classList.toggle('nav__section--expanded');
         }
-        
 
-
-
-        // if (event.target.closest('.nav__more')) {
-        //     event.preventDefault();
-        //     event.target.closest('.nav__section').classList.toggle('nav__section--expanded');
-        //     return;
-        // }
-
-        /* Close by clicking outside */
-        // if (!event.target.closest('.nav__sub-menu')) {
-        //     const $navSections = document.querySelector('.nav__section--expanded');
-        //     $navSections?.classList.remove('nav__section--expanded');
-        // }
+        /* Any other link (make it current) */
+        if (event.target.closest('.nav__link:not(.nav__section:has(.nav__sub-menu) > .nav__link)')) {
+            event.preventDefault();
+            $nav.querySelector('.nav__link--current').classList.remove('nav__link--current');
+            event.target.closest('.nav__link').classList.add('nav__link--current');
+        }
     });
 
-    /* Close by Esc */
-    // document.addEventListener('keydown', (event) => {
-    //     if (event.key === 'Escape') {
-    //         const $navSections = document.querySelectorAll('.nav__section--expanded');
-    //         $navSections.forEach((section) => {
-    //             section.classList.remove('nav__section--expanded');
-    //         });
-    //     }
-    // });
 };
