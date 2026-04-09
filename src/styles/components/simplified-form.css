@@ -1,3 +1,8 @@
+.hystmodal__window:has(.simplified-form) {
+    width: 400px;
+}
+
+
 .simplified-form {
 
 }
