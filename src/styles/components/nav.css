@@ -1,3 +1,15 @@
+/*
+ * There are two states: default (tiny sidebar) and "sidebar-expanded" (fully expanded).
+ * They may look like the same thing with just slightly different appearacne, but
+ * "nav__section--expanded" have to work different. For example, in the short version
+ * it can't be open by default. Only user can expand it. Otherwise it looks weird
+ * that dropdown is visible on page load. While in sidebar-expanded state it looks totally fine.
+ * Because of that I used two different ways to expand dropdown:
+ * a) hovers in the short version
+ * b) "nav__section--expanded" in the full version
+ * To make sure they not overlap.
+ */
+
 .nav {
     --nav-more-width: 21px;
 }
