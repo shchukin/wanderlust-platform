@@ -185,8 +185,9 @@
                 }
 
 
-        .sidebar-expanded .nav__more {
-            display: none !important;
+        /* more icon */
+        .sidebar-expanded .nav__section:has(.nav__sub-menu)::after {
+            display: none;
         }
 
         .sidebar-expanded .nav__sub-menu {
