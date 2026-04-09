@@ -23,3 +23,12 @@
     .checkboxes-menu--two-columns .checkboxes-menu__item {
 
     }
+
+
+
+.title .checkboxes-menu {
+    margin-left: 16px;
+    display: inline-flex;
+    vertical-align: top;
+    gap: 12px;
+}

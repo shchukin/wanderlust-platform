@@ -1,0 +1,10 @@
+.simplified-form {
+
+}
+    .simplified-form__row {
+        margin-top: 24px;
+    }
+
+    .simplified-form__row:first-child {
+        margin-top: 0;
+    }

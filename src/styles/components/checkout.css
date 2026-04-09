@@ -12,6 +12,18 @@
 
     }
 
+    .checkout__tabs {
+        margin-top: 24px;
+        width: 400px;
+        background-color: #ffffff;
+        border-radius: 24px;
+        padding: 24px;
+    }
+
+    .checkout__notification {
+        margin-top: 24px;
+    }
+
     .checkout__description {
         margin-top: 8px;
     }
