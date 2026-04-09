@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1775555828">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1775555828">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1775555828">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1775555828">
-        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1775555828">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1775555828">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1775752316">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1775752316">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1775752316">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1775752316">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1775752316">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1775752316">
         <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
-        <script type="module" src="../scripts/vendors.js?1775555828"></script>
+        <script type="module" src="../scripts/vendors.js?1775752316"></script>
 
         <!-- Font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
@@ -20,8 +20,8 @@
         <title>callout</title>
 
         <!-- assets -->
-        <link rel="stylesheet" href="../styles/styles.css?1775555828">
-        <script type="module" src="../scripts/scripts.js?1775555828"></script>
+        <link rel="stylesheet" href="../styles/styles.css?1775752316">
+        <script type="module" src="../scripts/scripts.js?1775752316"></script>
     </head>
     <body>
 
@@ -42,6 +42,38 @@
                 <button class="callout__close" type="button">
                     <i class="icon">close</i>
                 </button>
+            </div>
+
+            <br>
+            <br>
+            <p>
+                Close button can be removed:
+            </p>
+
+            <div class="callout">
+                <div class="callout__icon" style="font-size: 24px; line-height: 24px;">
+                    <i class="icon">
+                        lightbulb
+                    </i>
+                </div>
+                <div class="callout__message">
+                    This project includes <strong>up to 1000gb</strong> of a raw footage from a <strong>1 day</strong> wedding
+                    &nbsp;•&nbsp;
+                    Need more? <a class="link" data-hystmodal="#addons">Click here for add-ons</a>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <p>
+                Icon can be removed:
+            </p>
+            <div class="callout">
+                <div class="callout__message">
+                    If you request a multiple day wedding or extra footage you will see the <b>additional charges</b> reflected in your cart.
+                </div>
             </div>
 
             <br>
@@ -71,7 +103,6 @@
             <br>
             <br>
 
-
             <h2>callout--danger</h2>
 
             <div class="callout callout--danger">
@@ -86,6 +117,35 @@
                 <button class="callout__close" type="button">
                     <i class="icon">close</i>
                 </button>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+
+            <h2>callout--light-gray-outline</h2>
+
+            <div class="callout callout--light-gray-outline">
+                <div class="callout__icon">
+                    <i class="icon">
+                        camera
+                    </i>
+                </div>
+                <div class="callout__message">
+                    <strong>Lorem ipsum dolor sit amet</strong> Consectetur adipisicing elit. Accusantium aliquid autem debitis ipsam.
+                </div>
+                <button class="callout__close" type="button">
+                    <i class="icon">close</i>
+                </button>
+            </div>
+
+            <br>
+
+            <div class="callout callout--light-gray-outline">
+                <div class="callout__message">
+                    If you request a multiple day wedding or extra footage you will see the <b>additional charges</b> reflected in your cart.
+                </div>
             </div>
 
 

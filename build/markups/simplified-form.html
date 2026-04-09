@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Vendors (feel free to add them via Rails gems, composer, webpack/vite or any other package manager) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?1775752316">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css?1775752316">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css?1775752316">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/filepond@4.30.6/dist/filepond.min.css?1775752316">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css?1775752316">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.css?1775752316">
+        <script src="https://cdn.jsdelivr.net/npm/hystmodal@1/dist/hystmodal.min.js"></script>
+        <script type="module" src="../scripts/vendors.js?1775752316"></script>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>simplified-form</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" href="../styles/styles.css?1775752316">
+        <script type="module" src="../scripts/scripts.js?1775752316"></script>
+    </head>
+    <body>
+
+        <div style="max-width: 420px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>simplified-form</h1>
+            <p>
+                See also <a href="form.html"><b><i>form</i></b></a>
+            </p>
+            <br>
+            <br>
+
+            <div class="simplified-form">
+                <div class="simplified-form__row">
+                    <label class="label" for="footage-size">
+                        Footage size
+                    </label>
+                    <div class="input">
+                        <input class="input__widget" type="text" id="footage-size">
+                    </div>
+                    <div class="helper">
+                        Up to 1000 GB is available at no additional cost.
+                    </div>
+                </div>
+                <div class="simplified-form__row">
+                    <label class="label" for="event-duration">
+                        Duration of the event
+                    </label>
+                    <div class="input">
+                        <select class="input__widget" id="event-duration">
+                            <option value="1.0">1 day</option>
+                            <option value="1.5">1,5 day</option>
+                            <option value="2.0">2 days</option>
+                            <option value="2.5">2,5 days</option>
+                            <option value="3.0">3 days</option>
+                            <option value="3.5">3,5 days</option>
+                            <option value="4.0">4 days</option>
+                            <option value="4.5">4,5 days</option>
+                            <option value="5.0">5 days</option>
+                            <option value="99.0">+5 days</option>
+                        </select>
+                    </div>
+                    <div class="helper">
+                        1 day weddings are available at no additional cost.
+                    </div>
+                </div>
+                <div class="simplified-form__agreement">
+                    <label class="choice">
+                        <input class="choice__widget" type="checkbox">
+                        <div class="choice__icon choice__icon--unchecked">
+                            <i class="icon">check_box_outline_blank</i>
+                        </div>
+                        <div class="choice__icon choice__icon--checked">
+                            <i class="icon">check_box</i>
+                        </div>
+                        <div class="choice__label">
+                            By checking this box, you acknowledge that you have read, understood, and agree to be bound by the <a class="link" href="#">terms and conditions</a>.
+                        </div>
+                    </label>
+                </div>
+                <div class="simplified-form__submit">
+                    <button class="button button--height-44px" type="button">
+                        Submit
+                    </button>
+                </div>
+            </div>
+
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+    </body>
+</html>
