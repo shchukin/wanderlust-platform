@@ -12,6 +12,7 @@
 }
 
 /* stylelint-disable */
+.status--draft           { color: #e0b84a; }
 .status--editing         { color: #13993f; }
 .status--internal-review { color: #d48310; }
 .status--client-review   { color: #0b41dc; }
