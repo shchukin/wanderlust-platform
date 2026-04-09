@@ -8,3 +8,22 @@
     .simplified-form__row:first-child {
         margin-top: 0;
     }
+
+    .simplified-form__agreement {
+        margin-top: 8px;
+    }
+
+    .simplified-form__agreement .choice {
+        --choice-outset: 12px;
+    }
+
+    .simplified-form__submit {
+        margin-top: 24px;
+    }
+
+    .simplified-form__agreement + .simplified-form__submit {
+        margin-top: 8px;
+    }
+        .simplified-form__submit .button {
+            width: 100%;
+        }
