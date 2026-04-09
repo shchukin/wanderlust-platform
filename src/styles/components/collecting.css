@@ -88,11 +88,11 @@
     .collecting__footer {
         margin-top: 24px;
         padding-bottom: 8px;
-        display: flex;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
     }
         .collecting__purchase {
-            margin-left: auto;
             display: flex;
             align-items: center;
             gap: 18px;
