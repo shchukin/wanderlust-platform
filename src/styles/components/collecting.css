@@ -1,5 +1,5 @@
 .hystmodal__window:has(.collecting) {
-    width: 1000px;
+    width: 998px;
 }
 
 
@@ -33,6 +33,14 @@
         .collecting__summary {
             margin-top: 4px;
         }
+            .collecting__image {
+                width: 100%;
+                height: auto;
+                vertical-align: top;
+                background-color: var(--image-fallback);
+                border-radius: var(--radius);
+            }
+
             .collecting__video {
                 vertical-align: top;
                 width: 100%;
