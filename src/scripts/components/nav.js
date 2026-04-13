@@ -11,7 +11,7 @@ export const nav = () => {
         /* If you need to catch the click on other links, use the same selector with :not, like so:
         if (event.target.closest('.nav__link:not(.nav__section:has(.nav__sub-menu) > .nav__link)')) {
             event.preventDefault();
-            $nav.querySelector('.nav__link--current').classList.remove('nav__link--current');
+            document.querySelector('.nav__link--current').classList.remove('nav__link--current');
             event.target.closest('.nav__link').classList.add('nav__link--current');
             go to link in here
         }
