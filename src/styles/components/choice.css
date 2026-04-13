@@ -47,6 +47,7 @@
 
     .choice__label {
         flex-grow: 1;
+        text-align: left;
     }
         .choice__addition {
             margin-left: auto;
